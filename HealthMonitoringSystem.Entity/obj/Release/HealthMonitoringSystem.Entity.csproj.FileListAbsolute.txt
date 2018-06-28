@@ -1,0 +1,10 @@
+C:\Users\sorhan\Source\Workspaces\Health Monitoring System\HealthMonitoringSystem\HealthMonitoringSystem.Entity\bin\Release\HealthMonitoringSystem.Entity.dll.config
+C:\Users\sorhan\Source\Workspaces\Health Monitoring System\HealthMonitoringSystem\HealthMonitoringSystem.Entity\bin\Release\HealthMonitoringSystem.Entity.dll
+C:\Users\sorhan\Source\Workspaces\Health Monitoring System\HealthMonitoringSystem\HealthMonitoringSystem.Entity\bin\Release\HealthMonitoringSystem.Entity.pdb
+C:\Users\sorhan\Source\Workspaces\Health Monitoring System\HealthMonitoringSystem\HealthMonitoringSystem.Entity\bin\Release\EntityFramework.dll
+C:\Users\sorhan\Source\Workspaces\Health Monitoring System\HealthMonitoringSystem\HealthMonitoringSystem.Entity\bin\Release\EntityFramework.SqlServer.dll
+C:\Users\sorhan\Source\Workspaces\Health Monitoring System\HealthMonitoringSystem\HealthMonitoringSystem.Entity\bin\Release\EntityFramework.xml
+C:\Users\sorhan\Source\Workspaces\Health Monitoring System\HealthMonitoringSystem\HealthMonitoringSystem.Entity\bin\Release\EntityFramework.SqlServer.xml
+C:\Users\sorhan\Source\Workspaces\Health Monitoring System\HealthMonitoringSystem\HealthMonitoringSystem.Entity\obj\Release\HealthMonitoringSystem.Entity.csprojResolveAssemblyReference.cache
+C:\Users\sorhan\Source\Workspaces\Health Monitoring System\HealthMonitoringSystem\HealthMonitoringSystem.Entity\obj\Release\HealthMonitoringSystem.Entity.dll
+C:\Users\sorhan\Source\Workspaces\Health Monitoring System\HealthMonitoringSystem\HealthMonitoringSystem.Entity\obj\Release\HealthMonitoringSystem.Entity.pdb

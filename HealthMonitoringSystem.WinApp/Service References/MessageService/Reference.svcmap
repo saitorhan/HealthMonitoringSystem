@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="1916c26d-0fe5-46e1-b221-950637d9586f" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:81/messageservice.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="MessageManager.wsdl" MetadataType="Wsdl" ID="c730ee31-4d98-4894-b270-684f9471118f" SourceId="1" SourceUrl="http://localhost:81/MessageService.svc?wsdl" />
+    <MetadataFile FileName="MessageService.xsd" MetadataType="Schema" ID="4a49889f-28f3-4f2e-a0d8-84c55b8f769d" SourceId="1" SourceUrl="http://localhost:81/MessageService.svc?xsd=xsd2" />
+    <MetadataFile FileName="MessageService1.xsd" MetadataType="Schema" ID="c4b222dd-5de5-4e72-92ba-ea2be5d6fe86" SourceId="1" SourceUrl="http://localhost:81/MessageService.svc?xsd=xsd0" />
+    <MetadataFile FileName="MessageService2.xsd" MetadataType="Schema" ID="d74392a2-4459-4ba4-a214-d96c18321548" SourceId="1" SourceUrl="http://localhost:81/MessageService.svc?xsd=xsd1" />
+    <MetadataFile FileName="MessageService.disco" MetadataType="Disco" ID="341fd9d3-40c3-43ad-8a23-c6001acb0a85" SourceId="1" SourceUrl="http://localhost:81/MessageService.svc?disco" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

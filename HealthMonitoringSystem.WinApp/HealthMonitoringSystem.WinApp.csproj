@@ -1,0 +1,1376 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{F1B290DC-D51A-4D88-824E-C0BDB7B469D5}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>HealthMonitoringSystem.WinApp</RootNamespace>
+    <AssemblyName>HealthMonitoringSystem.WinApp</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <IsWebBootstrapper>true</IsWebBootstrapper>
+    <PublishUrl>C:\inetpub\wwwroot\installHMS\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Web</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <InstallUrl>http://SAIT/installHMS/</InstallUrl>
+    <ProductName>Safer Hastane Yönetim Sistemi</ProductName>
+    <PublisherName>SAFER YAZILIM</PublisherName>
+    <CreateWebPageOnPublish>true</CreateWebPageOnPublish>
+    <WebPage>index.htm</WebPage>
+    <OpenBrowserOnPublish>false</OpenBrowserOnPublish>
+    <ApplicationRevision>15</ApplicationRevision>
+    <ApplicationVersion>6.6.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <CreateDesktopShortcut>true</CreateDesktopShortcut>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>icon.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>562BC08037DF97C5F97ACA5B49E4B1F9DFF83B67</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>HealthMonitoringSystem.WinApp_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>false</SignManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.BonusSkins.v15.2">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Data.v15.2">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Office.v15.2.Core, Version=15.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Printing.v15.2.Core, Version=15.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v15.2">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Sparkline.v15.2.Core">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraBars.v15.2, Version=15.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v15.2">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraGauges.v15.2.Core, Version=15.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGauges.v15.2.Win, Version=15.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGrid.v15.2, Version=15.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v15.2, Version=15.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraNavBar.v15.2, Version=15.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="PresentationFramework">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Printing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Extensions\Extensions.cs" />
+    <Compile Include="Extensions\ExtensionsMethods.cs" />
+    <Compile Include="GUI\FormMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\FormMain.Designer.cs">
+      <DependentUpon>FormMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Patient.cs" />
+    <Compile Include="GUI\SplashScreenStarting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\SplashScreenStarting.Designer.cs">
+      <DependentUpon>SplashScreenStarting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\WaitFormLoading.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\WaitFormLoading.Designer.cs">
+      <DependentUpon>WaitFormLoading.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\XtraFormAddCommandToPres.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\XtraFormAddCommandToPres.Designer.cs">
+      <DependentUpon>XtraFormAddCommandToPres.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\XtraFormCity.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\XtraFormCity.Designer.cs">
+      <DependentUpon>XtraFormCity.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\XtraFormCityCountry.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\XtraFormCityCountry.Designer.cs">
+      <DependentUpon>XtraFormCityCountry.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\XtraFormCountry.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\XtraFormCountry.Designer.cs">
+      <DependentUpon>XtraFormCountry.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\XtraFormDegree.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\XtraFormDegree.Designer.cs">
+      <DependentUpon>XtraFormDegree.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\XtraFormDeleteRendezvous.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\XtraFormDeleteRendezvous.Designer.cs">
+      <DependentUpon>XtraFormDeleteRendezvous.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\XtraFormDepartment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\XtraFormDepartment.Designer.cs">
+      <DependentUpon>XtraFormDepartment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\XtraFormDiagnosis.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\XtraFormDiagnosis.Designer.cs">
+      <DependentUpon>XtraFormDiagnosis.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\XtraFormDiagnosisMedicament.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\XtraFormDiagnosisMedicament.Designer.cs">
+      <DependentUpon>XtraFormDiagnosisMedicament.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\XtraFormDoctor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\XtraFormDoctor.Designer.cs">
+      <DependentUpon>XtraFormDoctor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\XtraFormDoctorDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\XtraFormDoctorDetail.Designer.cs">
+      <DependentUpon>XtraFormDoctorDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\XtraFormDownloadLanguages.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\XtraFormDownloadLanguages.Designer.cs">
+      <DependentUpon>XtraFormDownloadLanguages.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\XtraFormExamDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\XtraFormExamDetails.Designer.cs">
+      <DependentUpon>XtraFormExamDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\XtraFormExaminationDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\XtraFormExaminationDetail.Designer.cs">
+      <DependentUpon>XtraFormExaminationDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\XtraFormHoliday.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\XtraFormHoliday.Designer.cs">
+      <DependentUpon>XtraFormHoliday.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\XtraFormHolidayDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\XtraFormHolidayDetails.Designer.cs">
+      <DependentUpon>XtraFormHolidayDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\XtraFormLaboratuvarRequest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\XtraFormLaboratuvarRequest.Designer.cs">
+      <DependentUpon>XtraFormLaboratuvarRequest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\XtraFormLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\XtraFormLogin.Designer.cs">
+      <DependentUpon>XtraFormLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\XtraFormMedicament.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\XtraFormMedicament.Designer.cs">
+      <DependentUpon>XtraFormMedicament.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\XtraFormPatient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\XtraFormPatient.Designer.cs">
+      <DependentUpon>XtraFormPatient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\XtraFormPatientDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\XtraFormPatientDetail.Designer.cs">
+      <DependentUpon>XtraFormPatientDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\XtraFormPrescription.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\XtraFormPrescription.Designer.cs">
+      <DependentUpon>XtraFormPrescription.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\XtraFormRendezvousProcess.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\XtraFormRendezvousProcess.Designer.cs">
+      <DependentUpon>XtraFormRendezvousProcess.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\XtraFormRendezvous.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\XtraFormRendezvous.Designer.cs">
+      <DependentUpon>XtraFormRendezvous.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\XtraFormService.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\XtraFormService.Designer.cs">
+      <DependentUpon>XtraFormService.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\XtraFormThema.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\XtraFormThema.Designer.cs">
+      <DependentUpon>XtraFormThema.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\XtraUserControlDepInfo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\XtraUserControlDepInfo.Designer.cs">
+      <DependentUpon>XtraUserControlDepInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Resources\GlobalVariables.cs" />
+    <Compile Include="Service References\BloodGroupService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\CityService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\CounrtyService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\DegreeService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\DepartmentService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\XtraFormDepartmantDegree.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\XtraFormDepartmantDegree.Designer.cs">
+      <DependentUpon>XtraFormDepartmantDegree.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\DiagnosisService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\DoctorMailService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\DoctorPhoneService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\DoctorService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\ExaminationService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\HolidayService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\LaboratoryRequestItemService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\LaboratoryRequestService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\LaboratoryRequestTypeService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\MedicamentService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\MessageService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\PatientService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\PrescriptionItemService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\PrescriptionService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\RendezvousService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\RendezvousTimeService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\SystemService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="GUI\FormMain.resx">
+      <DependentUpon>FormMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\SplashScreenStarting.resx">
+      <DependentUpon>SplashScreenStarting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\WaitFormLoading.resx">
+      <DependentUpon>WaitFormLoading.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\XtraFormAddCommandToPres.resx">
+      <DependentUpon>XtraFormAddCommandToPres.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\XtraFormCity.resx">
+      <DependentUpon>XtraFormCity.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\XtraFormCityCountry.resx">
+      <DependentUpon>XtraFormCityCountry.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\XtraFormCountry.resx">
+      <DependentUpon>XtraFormCountry.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\XtraFormDegree.resx">
+      <DependentUpon>XtraFormDegree.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\XtraFormDeleteRendezvous.resx">
+      <DependentUpon>XtraFormDeleteRendezvous.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\XtraFormDepartment.resx">
+      <DependentUpon>XtraFormDepartment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\XtraFormDiagnosis.resx">
+      <DependentUpon>XtraFormDiagnosis.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\XtraFormDiagnosisMedicament.resx">
+      <DependentUpon>XtraFormDiagnosisMedicament.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\XtraFormDoctor.resx">
+      <DependentUpon>XtraFormDoctor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\XtraFormDoctorDetail.resx">
+      <DependentUpon>XtraFormDoctorDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\XtraFormDownloadLanguages.resx">
+      <DependentUpon>XtraFormDownloadLanguages.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\XtraFormExamDetails.resx">
+      <DependentUpon>XtraFormExamDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\XtraFormExaminationDetail.resx">
+      <DependentUpon>XtraFormExaminationDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\XtraFormHoliday.resx">
+      <DependentUpon>XtraFormHoliday.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\XtraFormHolidayDetails.resx">
+      <DependentUpon>XtraFormHolidayDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\XtraFormLaboratuvarRequest.resx">
+      <DependentUpon>XtraFormLaboratuvarRequest.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\XtraFormLogin.resx">
+      <DependentUpon>XtraFormLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\XtraFormMedicament.resx">
+      <DependentUpon>XtraFormMedicament.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\XtraFormPatient.resx">
+      <DependentUpon>XtraFormPatient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\XtraFormPatientDetail.resx">
+      <DependentUpon>XtraFormPatientDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\XtraFormPrescription.resx">
+      <DependentUpon>XtraFormPrescription.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\XtraFormRendezvous.resx">
+      <DependentUpon>XtraFormRendezvous.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\XtraFormRendezvousProcess.resx">
+      <DependentUpon>XtraFormRendezvousProcess.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\XtraFormService.resx">
+      <DependentUpon>XtraFormService.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\XtraFormThema.resx">
+      <DependentUpon>XtraFormThema.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\XtraUserControlDepInfo.resx">
+      <DependentUpon>XtraUserControlDepInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="GUI\XtraFormDepartmantDegree.resx">
+      <DependentUpon>XtraFormDepartmantDegree.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="HealthMonitoringSystem.WinApp_TemporaryKey.pfx" />
+    <None Include="Properties\DataSources\HealthMonitoringSystem.WinApp.DepartmentService.Doctor.datasource" />
+    <None Include="Properties\DataSources\HealthMonitoringSystem.WinApp.DoctorService.DoctorMail.datasource" />
+    <None Include="Properties\DataSources\HealthMonitoringSystem.WinApp.DoctorService.DoctorPhone.datasource" />
+    <None Include="Properties\DataSources\HealthMonitoringSystem.WinApp.ExaminationService.LaboratoryRequest.datasource" />
+    <None Include="Properties\DataSources\HealthMonitoringSystem.WinApp.ExaminationService.Prescription.datasource" />
+    <None Include="Properties\DataSources\HealthMonitoringSystem.WinApp.ExaminationService.PrescriptionItem.datasource" />
+    <None Include="Properties\DataSources\HealthMonitoringSystem.WinApp.LaboratoryRequestService.LaboratoryRequestItem.datasource" />
+    <None Include="Properties\DataSources\HealthMonitoringSystem.WinApp.PrescriptionService.PrescriptionItem.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="Service References\BloodGroupService\BloodGroupManager.wsdl" />
+    <None Include="Service References\BloodGroupService\BloodGroupService.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\BloodGroupService\BloodGroupService1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\BloodGroupService\BloodGroupService2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\BloodGroupService\HealthMonitoringSystem.WinApp.BloodGroupService.BloodGroup.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CityService\CityManager.wsdl" />
+    <None Include="Service References\CityService\CityService.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\CityService\CityService1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\CityService\CityService2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\CityService\CityService3.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\CityService\CityService4.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\CityService\HealthMonitoringSystem.WinApp.CityService.City.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CityService\HealthMonitoringSystem.WinApp.CityService.ProcessResult.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CounrtyService\CountryManager.wsdl" />
+    <None Include="Service References\CounrtyService\CountryService.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\CounrtyService\CountryService1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\CounrtyService\CountryService2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\CounrtyService\CountryService3.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\CounrtyService\CountryService4.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\CounrtyService\HealthMonitoringSystem.WinApp.CounrtyService.Country.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CounrtyService\HealthMonitoringSystem.WinApp.CounrtyService.ProcessResult.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\DegreeService\DegreeManager.wsdl" />
+    <None Include="Service References\DegreeService\DegreeService.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\DegreeService\DegreeService1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\DegreeService\DegreeService2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\DegreeService\DegreeService3.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\DegreeService\DegreeService31.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\DegreeService\HealthMonitoringSystem.WinApp.DegreeService.Degree.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\DegreeService\HealthMonitoringSystem.WinApp.DegreeService.ProcessResult.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\DepartmentService\DepartmentManager.wsdl" />
+    <None Include="Service References\DepartmentService\DepartmentService.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\DepartmentService\DepartmentService1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\DepartmentService\DepartmentService2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\DepartmentService\DepartmentService3.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\DepartmentService\DepartmentService4.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\DepartmentService\HealthMonitoringSystem.WinApp.DepartmentService.Department.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\DepartmentService\HealthMonitoringSystem.WinApp.DepartmentService.ProcessResult.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\DiagnosisService\DiagnosisManager.wsdl" />
+    <None Include="Service References\DiagnosisService\DiagnosisService.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\DiagnosisService\DiagnosisService1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\DiagnosisService\DiagnosisService2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\DiagnosisService\DiagnosisService3.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\DiagnosisService\DiagnosisService4.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\DiagnosisService\HealthMonitoringSystem.WinApp.DiagnosisService.Diagnosis.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\DiagnosisService\HealthMonitoringSystem.WinApp.DiagnosisService.ProcessResult.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\DoctorMailService\DoctorMailManager.wsdl" />
+    <None Include="Service References\DoctorMailService\DoctorMailService.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\DoctorMailService\DoctorMailService1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\DoctorMailService\DoctorMailService2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\DoctorMailService\DoctorMailService3.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\DoctorMailService\DoctorMailService31.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\DoctorMailService\HealthMonitoringSystem.WinApp.DoctorMailService.DoctorMail.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\DoctorMailService\HealthMonitoringSystem.WinApp.DoctorMailService.ProcessResult.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\DoctorPhoneService\DoctorPhoneManager.wsdl" />
+    <None Include="Service References\DoctorPhoneService\DoctorPhoneService.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\DoctorPhoneService\DoctorPhoneService1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\DoctorPhoneService\DoctorPhoneService2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\DoctorPhoneService\DoctorPhoneService3.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\DoctorPhoneService\DoctorPhoneService31.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\DoctorPhoneService\HealthMonitoringSystem.WinApp.DoctorPhoneService.DoctorPhone.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\DoctorPhoneService\HealthMonitoringSystem.WinApp.DoctorPhoneService.ProcessResult.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\DoctorService\DoctorManager.wsdl" />
+    <None Include="Service References\DoctorService\DoctorService.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\DoctorService\DoctorService1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\DoctorService\DoctorService2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\DoctorService\DoctorService3.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\DoctorService\DoctorService4.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\DoctorService\HealthMonitoringSystem.WinApp.DoctorService.Doctor.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\DoctorService\HealthMonitoringSystem.WinApp.DoctorService.ProcessResult.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ExaminationService\ExaminationManager.wsdl" />
+    <None Include="Service References\ExaminationService\ExaminationService.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ExaminationService\ExaminationService1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ExaminationService\ExaminationService2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ExaminationService\HealthMonitoringSystem.WinApp.ExaminationService.Examination.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\HolidayService\HealthMonitoringSystem.WinApp.HolidayService.Holiday.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\HolidayService\HealthMonitoringSystem.WinApp.HolidayService.ProcessResult.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\HolidayService\HolidayManager1.wsdl" />
+    <None Include="Service References\HolidayService\HolidayService5.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\HolidayService\HolidayService51.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\HolidayService\HolidayService52.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\HolidayService\HolidayService53.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\HolidayService\HolidayService54.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\LaboratoryRequestItemService\HealthMonitoringSystem.WinApp.LaboratoryRequestItemService.LaboratoryRequestItem.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\LaboratoryRequestItemService\LaboratoryRequestItemManager.wsdl" />
+    <None Include="Service References\LaboratoryRequestItemService\LaboratoryRequestItemService.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\LaboratoryRequestItemService\LaboratoryRequestItemService1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\LaboratoryRequestItemService\LaboratoryRequestItemService2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\LaboratoryRequestService\HealthMonitoringSystem.WinApp.LaboratoryRequestService.LaboratoryRequest.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\LaboratoryRequestService\LaboratoryRequest.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\LaboratoryRequestService\LaboratoryRequest1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\LaboratoryRequestService\LaboratoryRequest2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\LaboratoryRequestService\LaboratoryRequestManager.wsdl" />
+    <None Include="Service References\LaboratoryRequestTypeService\HealthMonitoringSystem.WinApp.LaboratoryRequestTypeService.LaboratoryRequestType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\LaboratoryRequestTypeService\LaboratoryRequestTypeManager.wsdl" />
+    <None Include="Service References\LaboratoryRequestTypeService\LaboratoryRequestTypeService.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\LaboratoryRequestTypeService\LaboratoryRequestTypeService1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\LaboratoryRequestTypeService\LaboratoryRequestTypeService2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\MedicamentService\HealthMonitoringSystem.WinApp.MedicamentService.Medicament.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\MedicamentService\HealthMonitoringSystem.WinApp.MedicamentService.ProcessResult.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\MedicamentService\MedicamentManager.wsdl" />
+    <None Include="Service References\MedicamentService\MedicamentService.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\MedicamentService\MedicamentService1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\MedicamentService\MedicamentService2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\MessageService\HealthMonitoringSystem.WinApp.MessageService.Message.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\MessageService\MessageManager.wsdl" />
+    <None Include="Service References\MessageService\MessageService.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\MessageService\MessageService1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\MessageService\MessageService2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\PatientService\HealthMonitoringSystem.WinApp.PatientService.Patient.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\PatientService\HealthMonitoringSystem.WinApp.PatientService.ProcessResult.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\PatientService\PatientManager.wsdl" />
+    <None Include="Service References\PatientService\PatientService.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\PatientService\PatientService1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\PatientService\PatientService2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\PatientService\PatientService3.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\PatientService\PatientService4.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\PrescriptionItemService\HealthMonitoringSystem.WinApp.PrescriptionItemService.PrescriptionItem.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\PrescriptionItemService\PrescriptionItemManager.wsdl" />
+    <None Include="Service References\PrescriptionItemService\PrescriptionItemService.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\PrescriptionItemService\PrescriptionItemService1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\PrescriptionItemService\PrescriptionItemService2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\PrescriptionService\HealthMonitoringSystem.WinApp.PrescriptionService.Prescription.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\PrescriptionService\HealthMonitoringSystem.WinApp.PrescriptionService.PrescriptionItem1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\PrescriptionService\HealthMonitoringSystem.WinApp.PrescriptionService.ProcessResult.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\PrescriptionService\PrescriptionManager.wsdl" />
+    <None Include="Service References\PrescriptionService\PrescriptionService5.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\PrescriptionService\PrescriptionService51.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\PrescriptionService\PrescriptionService52.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\PrescriptionService\PrescriptionService53.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\PrescriptionService\PrescriptionService54.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\RendezvousService\HealthMonitoringSystem.WinApp.RendezvousService.ProcessResult.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\RendezvousService\HealthMonitoringSystem.WinApp.RendezvousService.Rendezvous.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\RendezvousService\HealthMonitoringSystem.WinApp.RendezvousService.RendezvousInfo.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\RendezvousService\RendezvousManager1.wsdl" />
+    <None Include="Service References\RendezvousService\RendezvousService5.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\RendezvousService\RendezvousService51.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\RendezvousService\RendezvousService52.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\RendezvousService\RendezvousService53.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\RendezvousService\RendezvousService54.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\RendezvousTimeService\HealthMonitoringSystem.WinApp.RendezvousTimeService.RendezvousTime.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\RendezvousTimeService\RendezvousTimeManager.wsdl" />
+    <None Include="Service References\RendezvousTimeService\RendezvousTimeService.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\RendezvousTimeService\RendezvousTimeService1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\RendezvousTimeService\RendezvousTimeService2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\SystemService\HealthMonitoringSystem.WinApp.SystemService.Doctor.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SystemService\HealthMonitoringSystem.WinApp.SystemService.Patient.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SystemService\HealthMonitoringSystem.WinApp.SystemService.Personnel.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SystemService\SystemManager.wsdl" />
+    <None Include="Service References\SystemService\SystemService.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\SystemService\SystemService1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\SystemService\SystemService2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add_to_favorites.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\note.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add_link.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\edit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delete.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Service References\BloodGroupService\" />
+    <WCFMetadataStorage Include="Service References\CityService\" />
+    <WCFMetadataStorage Include="Service References\CounrtyService\" />
+    <WCFMetadataStorage Include="Service References\DegreeService\" />
+    <WCFMetadataStorage Include="Service References\DepartmentService\" />
+    <WCFMetadataStorage Include="Service References\DiagnosisService\" />
+    <WCFMetadataStorage Include="Service References\DoctorMailService\" />
+    <WCFMetadataStorage Include="Service References\DoctorPhoneService\" />
+    <WCFMetadataStorage Include="Service References\DoctorService\" />
+    <WCFMetadataStorage Include="Service References\ExaminationService\" />
+    <WCFMetadataStorage Include="Service References\HolidayService\" />
+    <WCFMetadataStorage Include="Service References\LaboratoryRequestItemService\" />
+    <WCFMetadataStorage Include="Service References\LaboratoryRequestService\" />
+    <WCFMetadataStorage Include="Service References\LaboratoryRequestTypeService\" />
+    <WCFMetadataStorage Include="Service References\MedicamentService\" />
+    <WCFMetadataStorage Include="Service References\MessageService\" />
+    <WCFMetadataStorage Include="Service References\PatientService\" />
+    <WCFMetadataStorage Include="Service References\PrescriptionItemService\" />
+    <WCFMetadataStorage Include="Service References\PrescriptionService\" />
+    <WCFMetadataStorage Include="Service References\RendezvousService\" />
+    <WCFMetadataStorage Include="Service References\RendezvousTimeService\" />
+    <WCFMetadataStorage Include="Service References\SystemService\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\DepartmentService\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\DepartmentService\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\DepartmentService\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\save.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delete1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\DegreeService\DegreeService.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\DegreeService\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\DegreeService\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\DegreeService\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\CityService\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\CityService\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\CityService\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\CounrtyService\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\CounrtyService\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\CounrtyService\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\globe_process.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\MedicamentService\MedicamentService.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\MedicamentService\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\MedicamentService\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\MedicamentService\MedicamentService3.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\MedicamentService\MedicamentService31.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\MedicamentService\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\DiagnosisService\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\DiagnosisService\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\DiagnosisService\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\BloodGroupService\BloodGroupService.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\BloodGroupService\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\BloodGroupService\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\BloodGroupService\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\DoctorMailService\DoctorMailService.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\DoctorMailService\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\DoctorMailService\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\DoctorMailService\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\DoctorService\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\DoctorService\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\DoctorService\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\DoctorPhoneService\DoctorPhoneService.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\DoctorPhoneService\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\DoctorPhoneService\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\DoctorPhoneService\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ExaminationService\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ExaminationService\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ExaminationService\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\CounrtyService\CountryService.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\RendezvousService\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\RendezvousService\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\RendezvousService\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\LaboratoryRequestItemService\LaboratoryRequestItemService.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\LaboratoryRequestItemService\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\LaboratoryRequestItemService\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\LaboratoryRequestItemService\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\MessageService\MessageService.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\MessageService\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\MessageService\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\MessageService\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\CityService\CityService.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\DiagnosisService\DiagnosisService.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\LaboratoryRequestService\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\LaboratoryRequestService\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\LaboratoryRequestService\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\LaboratoryRequestTypeService\LaboratoryRequestTypeService.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\LaboratoryRequestTypeService\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\LaboratoryRequestTypeService\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\LaboratoryRequestTypeService\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\DepartmentService\DepartmentService.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\LaboratoryRequestService\LaboratoryRequest.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="icon.ico" />
+    <None Include="Service References\HolidayService\HolidayService1.disco" />
+    <None Include="Resources\calendar_empty.png" />
+    <None Include="Service References\HolidayService\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\HolidayService\configuration.svcinfo" />
+    <None Include="Service References\HolidayService\configuration91.svcinfo" />
+    <None Include="Resources\printer.png" />
+    <None Include="Service References\RendezvousService\RendezvousService1.disco" />
+    <None Include="Resources\kalp.jpg" />
+    <None Include="Resources\bm1.JPG" />
+    <None Include="Service References\PrescriptionItemService\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\PrescriptionItemService\configuration.svcinfo" />
+    <None Include="Service References\PrescriptionItemService\configuration91.svcinfo" />
+    <None Include="Service References\PrescriptionItemService\PrescriptionItemService.disco" />
+    <None Include="Service References\ExaminationService\ExaminationService.disco" />
+    <None Include="Resources\clock1.png" />
+    <None Include="Resources\male_female_users1.png" />
+    <None Include="Resources\chalk_board1.png" />
+    <None Include="Resources\tablet1.png" />
+    <None Include="Resources\process1.png" />
+    <None Include="Resources\business_male_female_users.png" />
+    <None Include="Resources\red_heart1.png" />
+    <None Include="Resources\globe_process1.png" />
+    <None Include="Resources\add_link1.png" />
+    <None Include="Resources\add_to_favorites1.png" />
+    <None Include="Resources\add_link.ico" />
+    <None Include="Resources\refresh.png" />
+    <None Include="Service References\DoctorService\DoctorService.disco" />
+    <None Include="Resources\remove.png" />
+    <None Include="Resources\muayene.png" />
+    <None Include="Resources\clock.png" />
+    <None Include="Resources\male_female_users.png" />
+    <None Include="Resources\book_download.png" />
+    <None Include="Resources\chalk_board.png" />
+    <None Include="Resources\tablet.png" />
+    <None Include="Resources\user.png" />
+    <None Include="Resources\red_heart.png" />
+    <None Include="Resources\process.png" />
+    <None Include="Resources\doctor.png" />
+    <None Include="Resources\heart.png" />
+    <None Include="Service References\SystemService\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\SystemService\configuration.svcinfo" />
+    <None Include="Service References\SystemService\configuration91.svcinfo" />
+    <None Include="Service References\SystemService\SystemService.disco" />
+    <None Include="Service References\RendezvousTimeService\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\RendezvousTimeService\configuration.svcinfo" />
+    <None Include="Service References\RendezvousTimeService\configuration91.svcinfo" />
+    <None Include="Service References\RendezvousTimeService\RendezvousTimeService.disco" />
+    <None Include="Service References\PatientService\PatientService.disco" />
+    <None Include="Service References\PatientService\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\PatientService\configuration.svcinfo" />
+    <None Include="Service References\PatientService\configuration91.svcinfo" />
+    <None Include="Service References\PrescriptionService\PrescriptionService.disco" />
+    <None Include="Resources\add_comment.png" />
+    <None Include="Service References\PrescriptionService\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\PrescriptionService\configuration.svcinfo" />
+    <None Include="Service References\PrescriptionService\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <PublishFile Include="DevExpress.RichEdit.v15.2.Core">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.XtraTreeList.v15.2">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0,Profile=Client">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 Client Profile %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.4.5">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 4.5</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

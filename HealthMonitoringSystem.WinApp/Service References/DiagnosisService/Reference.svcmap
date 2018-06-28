@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="a6cfb4c6-b69e-4d87-9085-bffd4818d137" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:81/diagnosisservice.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="DiagnosisService.xsd" MetadataType="Schema" ID="d5ff485b-9421-41c9-a62d-839b68544ee2" SourceId="1" SourceUrl="http://localhost:81/DiagnosisService.svc?xsd=xsd3" />
+    <MetadataFile FileName="DiagnosisService1.xsd" MetadataType="Schema" ID="18f0b5cd-ca48-49af-b74c-ded466d189a9" SourceId="1" SourceUrl="http://localhost:81/DiagnosisService.svc?xsd=xsd2" />
+    <MetadataFile FileName="DiagnosisService2.xsd" MetadataType="Schema" ID="a9e9d2fa-650a-4b4d-9958-fa27c58c1783" SourceId="1" SourceUrl="http://localhost:81/DiagnosisService.svc?xsd=xsd4" />
+    <MetadataFile FileName="DiagnosisService.disco" MetadataType="Disco" ID="b6b36383-fb18-422d-9094-5fb3c56dc37a" SourceId="1" SourceUrl="http://localhost:81/DiagnosisService.svc?disco" />
+    <MetadataFile FileName="DiagnosisManager.wsdl" MetadataType="Wsdl" ID="664c7bc3-595c-402b-86cf-727f494850c0" SourceId="1" SourceUrl="http://localhost:81/DiagnosisService.svc?wsdl" />
+    <MetadataFile FileName="DiagnosisService3.xsd" MetadataType="Schema" ID="979a8fae-3faf-43d1-97d3-82e268bdbeb0" SourceId="1" SourceUrl="http://localhost:81/DiagnosisService.svc?xsd=xsd1" />
+    <MetadataFile FileName="DiagnosisService4.xsd" MetadataType="Schema" ID="1092cfcc-8a61-4065-9965-0637f0df3d5f" SourceId="1" SourceUrl="http://localhost:81/DiagnosisService.svc?xsd=xsd0" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

@@ -1,0 +1,12 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="HealthMonitoringSystem.WinApp.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="Thema" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Visual Studio 2013 Blue</Value>
+    </Setting>
+    <Setting Name="ServiceRoot" Type="System.String" Scope="User">
+      <Value Profile="(Default)">http://SAFER:81</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

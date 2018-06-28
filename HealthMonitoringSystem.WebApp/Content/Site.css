@@ -1,0 +1,813 @@
+﻿html, body {
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+.headerPane 
+{
+    background-color: #EDEDED;
+    background-position: left top;
+    background-repeat: no-repeat;
+    font-family: Tahoma;
+}
+.headerPane .headerTop
+{
+    height: 45px;
+}
+.templateTitle 
+{
+    float:left;
+    margin-left: 15px;
+    margin-top: 11px;
+}
+.templateTitle a 
+{
+    text-decoration: none;
+    font-size: x-large;
+    color: black;
+}
+.loginControl 
+{
+    float: right;
+    margin-top: 17px;
+    margin-right: 25px;
+    font-size: 12px;
+}
+.loginControl a 
+{
+    color: black;
+    text-decoration: none;
+    border-bottom: dashed 1px black;
+    display: inline-block;
+}
+.headerMenu 
+{
+    margin-top: 11px;
+}
+
+
+/* Footer */
+.footerPane 
+{
+    background-color: #EDEDED;
+    height:100%;
+}
+.footerMenu {
+    float: right;
+    padding-top: 7px;
+}
+.copyright 
+{
+    float: left;
+    margin-left: 15px;
+    margin-top: 100px;
+}
+
+.content 
+{
+    padding: 5px;
+}
+
+
+/* Account */
+.accountHeader h2 
+{
+    margin: 10px 0 7px 0;
+    font-size: 16px;
+}
+.accountHeader p 
+{
+    font-size: 12px;
+    margin: 0;
+    padding: 0;
+}
+.accountHeader 
+{
+    margin-bottom: 20px;
+}
+.form-field
+{
+    margin-bottom: 8px;
+}
+
+
+/* iOS */
+.dxsplVSeparator_iOS,
+.dxsplHSeparator_iOS
+{
+    border-width: 0px !important;
+}
+.dxsplPane_iOS.leftPane,
+.dxsplPane_iOS.rightPane,
+.dxsplPane_iOS.contentPane
+{
+    border-width: 1px !important;
+}
+.dxsplControl_iOS .templateTitle
+{
+    margin-top: 3px;    
+}
+.dxsplControl_iOS .templateTitle a
+{
+    color: #303030;
+    font-size: 26px;
+    line-height: 1em;
+    font-weight: bold;
+}
+.dxsplControl_iOS .headerTop,
+.dxsplControl_iOS .content
+{
+    font-family: HelveticaNeue,Helvetica,Verdana,sans-serif;
+}
+.dxsplControl_iOS .loginControl
+{
+    margin-top: 4px;    
+}
+.dxsplControl_iOS .loginControl a
+{
+    color: #0160E7;
+    text-decoration: underline;
+    font-size: 20px;
+    font-weight: bold;
+}
+.dxsplControl_iOS .headerTop
+{
+    height: 33px;
+}
+.dxsplControl_iOS .headerMenu
+{
+    margin-top: 0px;   
+}
+.dxsplPane_iOS.mainContentPane
+{
+    border-width: 0px !important;
+    box-shadow: initial;
+    -webkit-box-shadow: initial;
+    -moz-box-shadow: initial;
+}
+.dxsplPane_iOS.footerPane
+{
+    border-width: 1px !important;
+}
+.dxsplControl_iOS .accountHeader p
+{
+    color: #303030;
+    font-size: 18px;
+}
+.dxsplControl_iOS .accountHeader h2
+{
+    color: #303030;
+    font-size: 26px;
+    margin-bottom: 10px;
+}
+
+
+/* Aqua */
+.dxsplControl_Aqua 
+{
+    font-family: Tahoma;
+}
+.dxsplControl_Aqua .headerPane,
+.dxsplControl_Aqua .footerPane,
+.dxsplControl_Aqua .footerMenu li
+{
+    background-color: #BFDBFF;
+}
+.dxsplControl_Aqua .headerPane
+{
+    background-image: url('images/AquaHeader.jpg');
+}
+.dxsplControl_Aqua .accountHeader h2
+{
+    color: #5689C5;
+}
+.dxsplControl_Aqua .loginControl a,
+.dxsplControl_Aqua .templateTitle a
+{
+    color: White;
+    border-color: White;
+}
+
+
+/* DevEx */
+.dxsplControl_DevEx 
+{
+    font-family: Verdana;
+    color: #201F35;
+}
+.dxsplControl_DevEx .headerPane,
+.dxsplControl_DevEx .footerPane,
+.dxsplControl_DevEx .footerMenu li
+{
+    background-color: #F2F3F4;
+}
+.dxsplControl_DevEx .templateTitle a,
+.dxsplControl_DevEx .loginControl,
+.dxsplControl_DevEx .loginControl a
+{
+    color: #4B4B57;
+}
+.dxsplControl_DevEx .loginControl a 
+{
+    border-bottom-color: #4B4B57;
+}
+.dxsplControl_DevEx .headerMenu 
+{
+    margin-top: 13px;
+}
+.dxsplControl_DevEx .accountHeader p
+{
+    font-size: 11px;
+}
+
+
+/* BlackGlass */
+.dxsplControl_BlackGlass 
+{
+    font-family: Tahoma;
+}
+.dxsplControl_BlackGlass .headerPane,
+.dxsplControl_BlackGlass .footerPane,
+.dxsplControl_BlackGlass .footerMenu li
+{
+    background-color: #2A2A2A;
+    color: white;
+}
+.dxsplControl_BlackGlass .headerPane
+{
+    background-image: url('images/BlackGlassHeader.jpg');
+}
+.dxsplControl_BlackGlass .leftPanel li[class$="dxnb-last"] ul
+{
+    border-bottom: 1px solid black;
+}
+.dxsplControl_BlackGlass .accountHeader p
+{
+    color: #585858;
+}
+.dxsplControl_BlackGlass .loginControl a,
+.dxsplControl_BlackGlass .templateTitle a
+{
+    color: White;
+    border-color: White;
+}
+
+
+/* Glass */
+.dxsplControl_Glass 
+{
+    font-family: Tahoma;
+}
+.dxsplControl_Glass .headerPane,
+.dxsplControl_Glass .footerPane,
+.dxsplControl_Glass .footerMenu li
+{
+    background-color: #CFE0E7;
+}
+.dxsplControl_Glass .headerPane
+{
+    background-image: url('images/GlassHeader.jpg');
+}
+.dxsplControl_Glass .footerMenu *
+{
+    background-image: none !important;
+}
+.dxsplControl_Glass .templateTitle a,
+.dxsplControl_Glass .loginControl,
+.dxsplControl_Glass .loginControl a
+{
+    color: #4B4B57;
+}
+.dxsplControl_Glass .loginControl a 
+{
+    border-bottom-color: #4B4B57;
+}
+.dxsplControl_Glass .accountHeader h2
+{
+    color: #387FA4;
+}
+.dxsplControl_Glass .accountHeader p
+{
+    color: #575757;
+}
+
+
+
+/* Office2003Blue */
+.dxsplControl_Office2003Blue 
+{
+    font-family: Tahoma;
+}
+.dxsplControl_Office2003Blue .headerPane,
+.dxsplControl_Office2003Blue .footerPane,
+.dxsplControl_Office2003Blue .footerMenu li
+{
+    background-color: #BCD4F6;
+}
+.dxsplControl_Office2003Blue .footerMenu div
+{
+    background: transparent none;
+}
+.dxsplControl_Office2003Blue .leftPanel > ul
+{
+    background: transparent none;
+}
+.dxsplControl_Office2003Blue .templateTitle a,
+.dxsplControl_Office2003Blue .loginControl,
+.dxsplControl_Office2003Blue .loginControl a
+{
+    color: #4B4B57;
+}
+.dxsplControl_Office2003Blue .loginControl a 
+{
+    border-bottom-color: #4B4B57;
+}
+.dxsplControl_Office2003Blue .accountHeader p
+{
+    color: #424242;
+}
+.dxsplControl_Office2003Blue .headerMenu 
+{
+    margin-top: 5px;
+}
+
+
+/* Office2003Olive */
+.dxsplControl_Office2003Olive 
+{
+    font-family: Tahoma;
+}
+.dxsplControl_Office2003Olive .headerPane,
+.dxsplControl_Office2003Olive .footerPane,
+.dxsplControl_Office2003Olive .footerMenu li
+{
+    background-color: #D6DCBB;
+}
+.dxsplControl_Office2003Olive .footerMenu div
+{
+    background: transparent none;
+}
+.dxsplControl_Office2003Olive .leftPanel > ul
+{
+    background: transparent none;
+}
+.dxsplControl_Office2003Olive .templateTitle a,
+.dxsplControl_Office2003Olive .loginControl,
+.dxsplControl_Office2003Olive .loginControl a
+{
+    color: #4B4B57;
+}
+.dxsplControl_Office2003Olive .loginControl a 
+{
+    border-bottom-color: #4B4B57;
+}
+.dxsplControl_Office2003Olive .accountHeader p
+{
+    color: #424242;
+}
+.dxsplControl_Office2003Olive .headerMenu 
+{
+    margin-top: 5px;
+}
+
+/* Office2003Silver */
+.dxsplControl_Office2003Silver 
+{
+    font-family: Tahoma;
+}
+.dxsplControl_Office2003Silver .headerPane,
+.dxsplControl_Office2003Silver .footerPane,
+.dxsplControl_Office2003Silver .footerMenu li
+{
+    background-color: #D0D0DE;
+}
+.dxsplControl_Office2003Silver .footerMenu div
+{
+    background: transparent none;
+}
+.dxsplControl_Office2003Silver .leftPanel > ul
+{
+    background: transparent none;
+}
+.dxsplControl_Office2003Silver .templateTitle a,
+.dxsplControl_Office2003Silver .loginControl,
+.dxsplControl_Office2003Silver .loginControl a
+{
+    color: #4B4B57;
+}
+.dxsplControl_Office2003Silver .loginControl a
+{
+    border-bottom-color: #4B4B57;
+}
+.dxsplControl_Office2003Silver .accountHeader p
+{
+    color: #424242;
+}
+.dxsplControl_Office2003Silver .headerMenu 
+{
+    margin-top: 5px;
+}
+
+
+/* Office2010Black */
+.dxsplControl_Office2010Black 
+{
+    font-family: Verdana;
+}
+.dxsplControl_Office2010Black .headerPane,
+.dxsplControl_Office2010Black .footerPane,
+.dxsplControl_Office2010Black .footerMenu li
+{
+    background-color: #393939;
+    color: white;
+}
+.dxsplControl_Office2010Black .footerMenu a
+{
+    color: white !important;
+}
+.dxsplControl_Office2010Black .accountHeader h2
+{
+    color: #3C3C3C;
+}
+.dxsplControl_Office2010Black .accountHeader p
+{
+    font-size: 11px;
+}
+.dxsplControl_Office2010Black .headerMenu 
+{
+    margin-top: 13px;
+}
+.dxsplControl_Office2010Black .loginControl a,
+.dxsplControl_Office2010Black .templateTitle a
+{
+    color: White;
+    border-color: White;
+}
+
+
+/* Office2010Blue */
+.dxsplControl_Office2010Blue 
+{
+    font-family: Verdana;
+}
+.dxsplControl_Office2010Blue .headerPane,
+.dxsplControl_Office2010Blue .footerPane,
+.dxsplControl_Office2010Blue .footerMenu li
+{
+    background-color: #D3E4F6;
+}
+.dxsplControl_Office2010Blue .templateTitle a,
+.dxsplControl_Office2010Blue .loginControl,
+.dxsplControl_Office2010Blue .loginControl a
+{
+    color: Black;
+}
+.dxsplControl_Office2010Blue .loginControl a 
+{
+    border-bottom-color: Black;
+}
+.dxsplControl_Office2010Blue .accountHeader h2
+{
+    color: #498BC2;
+}
+.dxsplControl_Office2010Blue .accountHeader p
+{
+    font-size: 11px;
+}
+.dxsplControl_Office2010Blue .headerMenu 
+{
+    margin-top: 13px;
+}
+
+
+/* Office2010Silver */
+.dxsplControl_Office2010Silver 
+{
+    font-family: Verdana;
+}
+.dxsplControl_Office2010Silver .headerPane,
+.dxsplControl_Office2010Silver .footerPane,
+.dxsplControl_Office2010Silver .footerMenu li
+{
+    background-color: #A9ACB4;
+    color: white;
+}
+.dxsplControl_Office2010Silver .accountHeader h2
+{
+    color: #3B3B3B;
+}
+.dxsplControl_Office2010Silver .accountHeader p
+{
+    font-size: 11px;
+}
+.dxsplControl_Office2010Silver .headerMenu 
+{
+    margin-top: 13px;
+}
+.dxsplControl_Office2010Silver .loginControl a,
+.dxsplControl_Office2010Silver .templateTitle a
+{
+    color: White;
+    border-color: White;
+}
+
+
+
+/* PlasticBlue */
+.dxsplControl_PlasticBlue 
+{
+    font-family: Tahoma;
+}
+.dxsplControl_PlasticBlue .headerPane,
+.dxsplControl_PlasticBlue .footerPane,
+.dxsplControl_PlasticBlue .footerMenu li
+{
+    background-color :#3C4F8F;
+    color: white;
+}
+.dxsplControl_PlasticBlue .headerPane
+{
+    background-image: url('images/PlasticBlueHeader.jpg');
+}
+.dxsplControl_PlasticBlue .accountHeader h2
+{
+    color: #5A83D0;
+}
+.dxsplControl_PlasticBlue .accountHeader p
+{
+    color: #575757;
+}
+.dxsplControl_PlasticBlue .headerMenu 
+{
+    margin-top: 12px;
+}
+.dxsplControl_PlasticBlue .loginControl a,
+.dxsplControl_PlasticBlue .templateTitle a
+{
+    color: White;
+    border-color: White;
+}
+
+
+/* RedWine */
+.dxsplControl_RedWine 
+{
+    font-family: Tahoma;
+}
+.dxsplControl_RedWine .headerPane,
+.dxsplControl_RedWine .footerPane,
+.dxsplControl_RedWine .footerMenu li
+{
+    background-color: #78002B;
+    color: white;
+}
+.dxsplControl_RedWine .headerPane
+{
+    background-image: url('images/RedWineHeader.jpg');
+    background-position: top right;
+}
+.dxsplControl_RedWine .footerMenu div 
+{
+    background: transparent none;
+}
+.dxsplControl_RedWine .accountHeader h2
+{
+    color: #8A0A37;
+}
+.dxsplControl_RedWine .headerMenu 
+{
+    margin-top: 9px;
+}
+.dxsplControl_RedWine .loginControl a,
+.dxsplControl_RedWine .templateTitle a
+{
+    color: White;
+    border-color: White;
+}
+
+
+/* SoftOrange */
+.dxsplControl_SoftOrange 
+{
+    font-family: Tahoma;
+}
+.dxsplControl_SoftOrange .headerPane,
+.dxsplControl_SoftOrange .footerPane,
+.dxsplControl_SoftOrange .footerMenu li
+{
+    background-color: #F9F9F9 !important;
+    background-image: none !important;
+}
+.dxsplControl_SoftOrange .templateTitle a,
+.dxsplControl_SoftOrange .loginControl,
+.dxsplControl_SoftOrange .loginControl a
+{
+    color: Black;
+}
+.dxsplControl_SoftOrange .loginControl a 
+{
+    border-bottom-color: Black;
+}
+.dxsplControl_SoftOrange .accountHeader h2
+{
+    color: Black;
+}
+.dxsplControl_SoftOrange .accountHeader p
+{
+    color: #707070;
+}
+.dxsplControl_SoftOrange .headerMenu 
+{
+    margin-top: 8px;
+}
+
+
+/* Youthful */
+.dxsplControl_Youthful 
+{
+    font-family: Tahoma;
+}
+.dxsplControl_Youthful .headerPane,
+.dxsplControl_Youthful .footerPane,
+.dxsplControl_Youthful .footerMenu li
+{
+    background-color: #8AA150;
+    color: white !important;
+}
+.dxsplControl_Youthful .accountHeader h2
+{
+    color: #80A70E;
+}
+.dxsplControl_Youthful .headerMenu 
+{
+    margin-top: 1px;
+}
+.dxsplControl_Youthful .loginControl a,
+.dxsplControl_Youthful .templateTitle a
+{
+    color: White;
+    border-color: White;
+}
+
+/* Metropolis */
+.dxsplControl_Metropolis 
+{
+    font-family: Segoe UI;
+}
+.dxsplControl_Metropolis .headerPane,
+.dxsplControl_Metropolis .footerMenu li
+{
+    background-color: White;
+    color: Black;
+}
+.dxsplControl_Metropolis .accountHeader h2
+{
+    color: #3B3B3B;
+}
+.dxsplControl_Metropolis .accountHeader p
+{
+    font-size: 11px;
+}
+.dxsplControl_Metropolis .headerMenu 
+{
+    margin-top: 13px;
+}
+.dxsplControl_Metropolis .loginControl a,
+.dxsplControl_Metropolis .templateTitle a
+{
+    color: Black;
+    border-color: Black;
+}
+.dxsplControl_Metropolis .templateTitle a 
+{
+	font-size: 28px;
+}
+.dxsplControl_Metropolis .dxsplVSeparator_Metropolis 
+{
+    border-bottom: 0!important;
+}
+
+/* MetropolisBlue */
+.dxsplControl_MetropolisBlue
+{
+    font-family: Segoe UI;
+}
+.dxsplControl_MetropolisBlue .headerPane,
+.dxsplControl_MetropolisBlue .footerMenu li
+{
+    background-color: White;
+    color: Black;
+}
+.dxsplControl_MetropolisBlue .accountHeader h2
+{
+    color: #3B3B3B;
+}
+.dxsplControl_MetropolisBlue .accountHeader p
+{
+    font-size: 11px;
+}
+.dxsplControl_MetropolisBlue .headerMenu 
+{
+    margin-top: 13px;
+}
+.dxsplControl_MetropolisBlue .loginControl a,
+.dxsplControl_MetropolisBlue .templateTitle a
+{
+    color: Black;
+    border-color: Black;
+}
+.dxsplControl_MetropolisBlue .templateTitle a 
+{
+	font-size: 28px;
+}
+.dxsplControl_MetropolisBlue .dxsplVSeparator_MetropolisBlue 
+{
+    border-bottom: 0!important;
+}
+
+/* Moderno */
+.dxsplControl_Moderno 
+{
+    font-family: Segoe UI;
+}
+.dxsplControl_Moderno .headerPane,
+.dxsplControl_Moderno .footerMenu li
+{
+    background-color: White;
+    color: Black;
+}
+.dxsplControl_Moderno .accountHeader h2
+{
+    color: #3B3B3B;
+}
+.dxsplControl_Moderno .accountHeader p
+{
+    font-size: 11px;
+}
+.dxsplControl_Moderno .headerMenu 
+{
+    margin-top: 13px;
+}
+.dxsplControl_Moderno .loginControl a,
+.dxsplControl_Moderno .templateTitle a
+{
+    color: #0072c6;
+    border-color: #0072c6;
+}
+.dxsplControl_Moderno .templateTitle a 
+{
+	font-size: 28px;
+}
+.dxsplControl_Moderno .dxsplVSeparator_Moderno 
+{
+	border-bottom: 0!important;
+    border-left: 1px solid #d1d1d1;
+    border-right: 1px solid #d1d1d1;
+}
+.dxsplControl_Moderno .footerPane 
+{
+	background: #EDEDED;
+}
+
+/* Mulberry */
+.dxsplControl_Mulberry
+{
+    font-family: Segoe UI;
+}
+.dxsplControl_Mulberry .footerMenu li
+{
+    background-color: White;
+    color: Black;
+}
+.dxsplControl_Mulberry .accountHeader h2
+{
+    color: #3B3B3B;
+}
+.dxsplControl_Mulberry .accountHeader p
+{
+    font-size: 11px;
+}
+.dxsplControl_Mulberry .headerMenu 
+{
+    margin-top: 10px;
+}
+.dxsplControl_Mulberry .loginControl a,
+.dxsplControl_Mulberry .templateTitle a
+{
+    color: #BF4E6A;
+    border-color: #BF4E6A;
+}
+.dxsplControl_Mulberry .templateTitle a 
+{
+    font-size: 28px;
+}
+.dxsplControl_Mulberry .dxsplVSeparator_Mulberry
+{
+    border-width: 0px !important;
+}
+.dxsplControl_Mulberry .headerPane,
+.dxsplControl_Mulberry .footerPane
+{
+    background: #F1F2F5;
+}

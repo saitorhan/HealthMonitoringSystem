@@ -1,0 +1,109 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B97383F0-5785-4CCA-99BF-1A7A2288BA85}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>HealthMonitoringSystem.BLL</RootNamespace>
+    <AssemblyName>HealthMonitoringSystem.BLL</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Ninject, Version=3.2.0.0, Culture=neutral, PublicKeyToken=c7192dc5380945e7, processorArchitecture=MSIL">
+      <HintPath>..\packages\Ninject.3.2.2.0\lib\net45-full\Ninject.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BloodGroupManager.cs" />
+    <Compile Include="CityManager.cs" />
+    <Compile Include="CountryManager.cs" />
+    <Compile Include="DegreeManager.cs" />
+    <Compile Include="DepartmentManager.cs" />
+    <Compile Include="DiagnosisManager.cs" />
+    <Compile Include="DoctorMailManager.cs" />
+    <Compile Include="DoctorManager.cs" />
+    <Compile Include="DoctorPhoneManager.cs" />
+    <Compile Include="ExaminationManager.cs" />
+    <Compile Include="HolidayManager.cs" />
+    <Compile Include="LaboratoryItemUnitManager.cs" />
+    <Compile Include="LaboratoryRequestItemManager.cs" />
+    <Compile Include="LaboratoryRequestManager.cs" />
+    <Compile Include="LaboratoryRequestTypeManager.cs" />
+    <Compile Include="MedicamentManager.cs" />
+    <Compile Include="MessageManager.cs" />
+    <Compile Include="NinjectManager.cs" />
+    <Compile Include="PatientManager.cs" />
+    <Compile Include="PersonnelManager.cs" />
+    <Compile Include="PrescriptionItemManager.cs" />
+    <Compile Include="PrescriptionManager.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RendezvousManager.cs" />
+    <Compile Include="RendezvousTimeManager.cs" />
+    <Compile Include="SystemManager.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\HealthMonitoringSystem.DAL\HealthMonitoringSystem.DAL.csproj">
+      <Project>{FCBC2789-818D-4AE2-97E9-0C442DA08FAA}</Project>
+      <Name>HealthMonitoringSystem.DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\HealthMonitoringSystem.Entity\HealthMonitoringSystem.Entity.csproj">
+      <Project>{BCEAA130-0DC1-4A3D-8E3A-7541D83FA95A}</Project>
+      <Name>HealthMonitoringSystem.Entity</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\HealthMonitoringSystem.Interfaces\HealthMonitoringSystem.Interfaces.csproj">
+      <Project>{F5178C00-81CA-4059-B837-BC3E87FEF700}</Project>
+      <Name>HealthMonitoringSystem.Interfaces</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

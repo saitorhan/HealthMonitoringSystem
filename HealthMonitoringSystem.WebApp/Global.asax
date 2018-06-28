@@ -1,0 +1,1 @@
+<%@ Application Codebehind="Global.asax.cs" Inherits="HealthMonitoringSystem_WebApp.Global_asax" Language="C#" %>

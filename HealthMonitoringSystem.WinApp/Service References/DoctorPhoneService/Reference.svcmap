@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="3d2d3bb0-d2d8-42f4-a94c-baaf47f9fb11" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:81/DoctorPhoneService.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="DoctorPhoneService3.xsd" MetadataType="Schema" ID="97aad7f1-f929-4c0d-9288-9abc1bb11a73" SourceId="1" SourceUrl="http://localhost:81/DoctorPhoneService.svc?xsd=xsd3" />
+    <MetadataFile FileName="DoctorPhoneService31.xsd" MetadataType="Schema" ID="d0703108-be6b-4223-88fa-6c818132d7fe" SourceId="1" SourceUrl="http://localhost:81/DoctorPhoneService.svc?xsd=xsd4" />
+    <MetadataFile FileName="DoctorPhoneService.disco" MetadataType="Disco" ID="cea38f67-74a4-41fd-9a78-e2ea362052b2" SourceId="1" SourceUrl="http://localhost:81/DoctorPhoneService.svc?disco" />
+    <MetadataFile FileName="DoctorPhoneService1.xsd" MetadataType="Schema" ID="a89ff385-22ab-43c3-a35e-24ba420f2c15" SourceId="1" SourceUrl="http://localhost:81/DoctorPhoneService.svc?xsd=xsd2" />
+    <MetadataFile FileName="DoctorPhoneManager.wsdl" MetadataType="Wsdl" ID="9ec20f6d-7bf8-40ee-8f7e-3e9fccf78259" SourceId="1" SourceUrl="http://localhost:81/DoctorPhoneService.svc?wsdl" />
+    <MetadataFile FileName="DoctorPhoneService2.xsd" MetadataType="Schema" ID="f1fd356f-5c71-44f3-9f74-7d6327773e2a" SourceId="1" SourceUrl="http://localhost:81/DoctorPhoneService.svc?xsd=xsd0" />
+    <MetadataFile FileName="DoctorPhoneService.xsd" MetadataType="Schema" ID="24ef0489-288b-4fd4-a41b-2607461fde28" SourceId="1" SourceUrl="http://localhost:81/DoctorPhoneService.svc?xsd=xsd1" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

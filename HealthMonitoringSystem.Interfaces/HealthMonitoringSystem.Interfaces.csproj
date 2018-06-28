@@ -1,0 +1,97 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F5178C00-81CA-4059-B837-BC3E87FEF700}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>HealthMonitoringSystem.Interfaces</RootNamespace>
+    <AssemblyName>HealthMonitoringSystem.Interfaces</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="HealthMonitoringSystem.BLL">
+      <HintPath>..\HealthMonitoringSystem.WCFService\Bin\HealthMonitoringSystem.BLL.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Extensions.cs" />
+    <Compile Include="IBloodGroupSol.cs" />
+    <Compile Include="ICitySol.cs" />
+    <Compile Include="ICountrySol.cs" />
+    <Compile Include="IDegreeSol.cs" />
+    <Compile Include="IDepartmentSol.cs" />
+    <Compile Include="IDiagnosisSol.cs" />
+    <Compile Include="IDoctorMailSol.cs" />
+    <Compile Include="IDoctorPhoneSol.cs" />
+    <Compile Include="IDoctorSol.cs" />
+    <Compile Include="IExaminationSol.cs" />
+    <Compile Include="IHolidaySol.cs" />
+    <Compile Include="ILaboratoryItemUnitSol.cs" />
+    <Compile Include="ILaboratoryRequestItemSol.cs" />
+    <Compile Include="ILaboratoryRequestSol.cs" />
+    <Compile Include="ILaboratoryRequestTypeSol.cs" />
+    <Compile Include="IMedicamentSol.cs" />
+    <Compile Include="IMessageSol.cs" />
+    <Compile Include="IPatientSol.cs" />
+    <Compile Include="IPersonnelSol.cs" />
+    <Compile Include="IPrescriptionItemSol.cs" />
+    <Compile Include="IPrescriptionSol.cs" />
+    <Compile Include="IRendezvousSol.cs" />
+    <Compile Include="IRendezvousTimeSol.cs" />
+    <Compile Include="ISystemSol.cs" />
+    <Compile Include="ProcessResult.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\HealthMonitoringSystem.DAL\HealthMonitoringSystem.DAL.csproj">
+      <Project>{FCBC2789-818D-4AE2-97E9-0C442DA08FAA}</Project>
+      <Name>HealthMonitoringSystem.DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\HealthMonitoringSystem.Entity\HealthMonitoringSystem.Entity.csproj">
+      <Project>{BCEAA130-0DC1-4A3D-8E3A-7541D83FA95A}</Project>
+      <Name>HealthMonitoringSystem.Entity</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

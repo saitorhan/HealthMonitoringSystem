@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="9b4aa1a8-f7d2-4391-ab28-8f43a33e4699" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:81/prescriptionservice.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="PrescriptionService5.xsd" MetadataType="Schema" ID="cf869a38-e1cf-4764-984a-ad6dba0a6159" SourceId="1" SourceUrl="http://localhost:81/PrescriptionService.svc?xsd=xsd3" />
+    <MetadataFile FileName="PrescriptionService.disco" MetadataType="Disco" ID="01569a15-5300-487d-aa1f-ada481379cbf" SourceId="1" SourceUrl="http://localhost:81/PrescriptionService.svc?disco" />
+    <MetadataFile FileName="PrescriptionService51.xsd" MetadataType="Schema" ID="8ec92768-9aee-4e19-875c-dbca64b53060" SourceId="1" SourceUrl="http://localhost:81/PrescriptionService.svc?xsd=xsd1" />
+    <MetadataFile FileName="PrescriptionService52.xsd" MetadataType="Schema" ID="c192f456-613a-4031-8b9d-e911ee54f6a0" SourceId="1" SourceUrl="http://localhost:81/PrescriptionService.svc?xsd=xsd4" />
+    <MetadataFile FileName="PrescriptionManager.wsdl" MetadataType="Wsdl" ID="709a94dc-3775-4d5d-9a5f-4b857b4c5a32" SourceId="1" SourceUrl="http://localhost:81/PrescriptionService.svc?wsdl" />
+    <MetadataFile FileName="PrescriptionService53.xsd" MetadataType="Schema" ID="e2f68703-f121-4888-afec-e77b7b3d113d" SourceId="1" SourceUrl="http://localhost:81/PrescriptionService.svc?xsd=xsd2" />
+    <MetadataFile FileName="PrescriptionService54.xsd" MetadataType="Schema" ID="606afc86-0ced-465f-9cc7-a6374741b5a1" SourceId="1" SourceUrl="http://localhost:81/PrescriptionService.svc?xsd=xsd0" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

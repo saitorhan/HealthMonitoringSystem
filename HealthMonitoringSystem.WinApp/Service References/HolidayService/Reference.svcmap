@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="20cbb15a-cb71-4e27-8fb7-32f9179be57e" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:6868/holidayservice.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="HolidayService5.xsd" MetadataType="Schema" ID="961475a9-5783-417b-9f47-8830155eedf0" SourceId="1" SourceUrl="http://localhost:6868/HolidayService.svc?xsd=xsd3" />
+    <MetadataFile FileName="HolidayService51.xsd" MetadataType="Schema" ID="92b09e84-714c-4d52-8be2-014f2644137a" SourceId="1" SourceUrl="http://localhost:6868/HolidayService.svc?xsd=xsd1" />
+    <MetadataFile FileName="HolidayService52.xsd" MetadataType="Schema" ID="fa0b8155-773a-47ef-a969-eef6c892ae06" SourceId="1" SourceUrl="http://localhost:6868/HolidayService.svc?xsd=xsd0" />
+    <MetadataFile FileName="HolidayService1.disco" MetadataType="Disco" ID="1a404304-9660-49de-a202-41dbf84e49f7" SourceId="1" SourceUrl="http://localhost:6868/HolidayService.svc?disco" />
+    <MetadataFile FileName="HolidayService53.xsd" MetadataType="Schema" ID="a997694b-7fa7-4138-b6bb-a34c384f8360" SourceId="1" SourceUrl="http://localhost:6868/HolidayService.svc?xsd=xsd2" />
+    <MetadataFile FileName="HolidayService54.xsd" MetadataType="Schema" ID="c64c3663-5b4a-4bc2-88b7-35ec7e3e3743" SourceId="1" SourceUrl="http://localhost:6868/HolidayService.svc?xsd=xsd4" />
+    <MetadataFile FileName="HolidayManager1.wsdl" MetadataType="Wsdl" ID="417dfa88-9c24-4355-b350-cd8cf12f4738" SourceId="1" SourceUrl="http://localhost:6868/HolidayService.svc?wsdl" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

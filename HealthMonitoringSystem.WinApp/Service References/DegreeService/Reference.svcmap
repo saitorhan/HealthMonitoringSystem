@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="66b4b7a0-5e09-4c79-a847-5a1542f5fb0f" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:81/DegreeService.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="DegreeService3.xsd" MetadataType="Schema" ID="488bb8e1-68bb-41e2-a2a8-9f482143710f" SourceId="1" SourceUrl="http://localhost:81/DegreeService.svc?xsd=xsd3" />
+    <MetadataFile FileName="DegreeService2.xsd" MetadataType="Schema" ID="20c30499-2d5f-4e31-a437-4303c9099819" SourceId="1" SourceUrl="http://localhost:81/DegreeService.svc?xsd=xsd2" />
+    <MetadataFile FileName="DegreeService.xsd" MetadataType="Schema" ID="0e1456da-a620-4499-8211-fc57a4259300" SourceId="1" SourceUrl="http://localhost:81/DegreeService.svc?xsd=xsd1" />
+    <MetadataFile FileName="DegreeService1.xsd" MetadataType="Schema" ID="b55215b5-98c0-41fa-a85f-1ddd9701c04c" SourceId="1" SourceUrl="http://localhost:81/DegreeService.svc?xsd=xsd0" />
+    <MetadataFile FileName="DegreeManager.wsdl" MetadataType="Wsdl" ID="f0613cc4-2b91-44ef-ad9d-27005b2d7f17" SourceId="1" SourceUrl="http://localhost:81/DegreeService.svc?wsdl" />
+    <MetadataFile FileName="DegreeService31.xsd" MetadataType="Schema" ID="5a5b53c8-c33e-4bb9-8dd0-8360c52a476f" SourceId="1" SourceUrl="http://localhost:81/DegreeService.svc?xsd=xsd4" />
+    <MetadataFile FileName="DegreeService.disco" MetadataType="Disco" ID="1b4dafe8-1734-442f-a74d-eb3e28b10326" SourceId="1" SourceUrl="http://localhost:81/DegreeService.svc?disco" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>
