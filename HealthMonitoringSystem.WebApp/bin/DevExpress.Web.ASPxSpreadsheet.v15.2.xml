@@ -1,0 +1,3730 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>DevExpress.Web.ASPxSpreadsheet.v15.2</name>
+    </assembly>
+    <members>
+        <member name="T:DevExpress.Web.ASPxSpreadsheet.SpreadsheetInsertPictureDialogSettings">
+
+            <summary>
+                <para>Contains customization settings for the Insert Picture dialog's form elements.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.Web.ASPxSpreadsheet.SpreadsheetInsertPictureDialogSettings.#ctor(DevExpress.Web.IPropertiesOwner)">
+            <summary>
+                <para>Initializes a new instance of the SpreadsheetInsertPictureDialogSettings class with the specified owner.
+</para>
+            </summary>
+            <param name="owner">
+		An object that implements the <see cref="T:DevExpress.Web.IPropertiesOwner"/> interface.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.Web.ASPxSpreadsheet.SpreadsheetInsertPictureDialogSettings.Assign(DevExpress.Web.PropertiesBase)">
+            <summary>
+                <para>Copies the settings from the specified <see cref="T:DevExpress.Web.PropertiesBase"/> object to the current object.
+</para>
+            </summary>
+            <param name="source">
+		A <see cref="T:DevExpress.Web.PropertiesBase"/> object whose settings are assigned to the current object.
+
+
+            </param>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxSpreadsheet.SpreadsheetInsertPictureDialogSettings.ShowFileUploadSection">
+            <summary>
+                <para>Gets or sets a value that specifies whether a section that allows end-users to upload their local files is displayed within the Insert Picture dialog form.
+</para>
+            </summary>
+            <value><b>true</b>, to display the form section, otherwise, <b>false</b>.
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.Web.ASPxSpreadsheet.Localization.ASPxSpreadsheetResourcesLocalizer">
+
+            <summary>
+                <para>An object providing a means to localize the <see cref="T:DevExpress.Web.ASPxSpreadsheet.ASPxSpreadsheet"/>'s user interface elements at runtime.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.Web.ASPxSpreadsheet.Localization.ASPxSpreadsheetResourcesLocalizer.#ctor">
+            <summary>
+                <para>Initializes a new instance of the ASPxSpreadsheetResourcesLocalizer class.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="T:DevExpress.Web.ASPxSpreadsheet.SaveFileDialogDisplaySectionMode">
+
+            <summary>
+                <para>Lists values that specify the visibility of a section within the Save File dialog.
+</para>
+            </summary>
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxSpreadsheet.SaveFileDialogDisplaySectionMode.ShowAllSections">
+            <summary>
+                <para>All dialog sections should be displayed.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxSpreadsheet.SaveFileDialogDisplaySectionMode.ShowDownloadSection">
+            <summary>
+                <para>Only the 'Download a copy' section should be displayed in the dialog.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxSpreadsheet.SaveFileDialogDisplaySectionMode.ShowServerSection">
+            <summary>
+                <para>Only the 'Save file to the server' section should be displayed within the dialog.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="T:DevExpress.Web.ASPxSpreadsheet.SpreadsheetDocumentSelectorCommonSettings">
+
+            <summary>
+                <para>Contains common settings of the ASPxSpreadsheet's built-in Document Selector.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.Web.ASPxSpreadsheet.SpreadsheetDocumentSelectorCommonSettings.#ctor(DevExpress.Web.IPropertiesOwner)">
+            <summary>
+                <para>Initializes a new instance of the SpreadsheetDocumentSelectorCommonSettings class with the specified owner.
+</para>
+            </summary>
+            <param name="owner">
+		An object that implements the <see cref="T:DevExpress.Web.IPropertiesOwner"/> interface.
+
+            </param>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxSpreadsheet.SpreadsheetDocumentSelectorCommonSettings.AllowedFileExtensions">
+            <summary>
+                <para>Gets or sets the file extensions allowed for display in the FileManager used within certain built-in dialogs.
+</para>
+            </summary>
+            <value>An array of <see cref="T:System.String"/> values that contains the file extensions allowed.
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.Web.Office.SpreadsheetDocumentInfo">
+
+            <summary>
+                <para>Contains settings of a Spreadsheet document opened on the server and provides the means to operate the document (close or save a copy).
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.Web.Office.SpreadsheetDocumentInfo.#ctor(DevExpress.Web.ASPxSpreadsheet.Internal.SpreadsheetWorkSession)">
+            <summary>
+                <para>Initializes a new instance of the SpreadsheetDocumentInfo class.
+</para>
+            </summary>
+            <param name="workSession">
+		A RichEditWorkSession object representing the session to which the created object belongs.
+
+            </param>
+
+
+        </member>
+        <member name="P:DevExpress.Web.Office.SpreadsheetDocumentInfo.DocumentFormat">
+            <summary>
+                <para>Gets the document format.
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.Spreadsheet.DocumentFormat"/> object specifying the document format. 
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Web.Office.SpreadsheetDocumentInfo.LastModifyTime">
+            <summary>
+                <para>Gets the last modify time for the document.
+</para>
+            </summary>
+            <value>A nullable <see cref="T:System.DateTime"/> value that is the last modify time.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Web.Office.SpreadsheetDocumentInfo.Modified">
+            <summary>
+                <para>Gets a value indicating whether the current document was modified after it was opened.
+
+</para>
+            </summary>
+            <value><b>true</b>, if the document was modified; otherwise, <b>false</b>.
+</value>
+
+
+        </member>
+        <member name="M:DevExpress.Web.Office.SpreadsheetDocumentInfo.SaveCopy(System.String)">
+            <summary>
+                <para>Saves a document copy using the specified settings.
+</para>
+            </summary>
+            <param name="filePath">
+		A string value specifying the document path to save to. 
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.Web.Office.SpreadsheetDocumentInfo.SaveCopy">
+            <summary>
+                <para>Saves a document copy using the specified settings.
+</para>
+            </summary>
+            <returns>An array of bytes where the document is saved to.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.Web.Office.SpreadsheetDocumentInfo.SaveCopy(DevExpress.Spreadsheet.DocumentFormat)">
+            <summary>
+                <para>Saves a document copy using the specified settings.
+</para>
+            </summary>
+            <param name="documentFormat">
+		A DocumentFormat object specifying the document format.
+
+            </param>
+            <returns>An array of bytes where the document is saved to.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.Web.Office.SpreadsheetDocumentInfo.SaveCopy(System.IO.Stream)">
+            <summary>
+                <para>Saves a document copy using the specified settings. 
+</para>
+            </summary>
+            <param name="stream">
+		A stream object where to save the document. 
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.Web.Office.SpreadsheetDocumentInfo.SaveCopy(System.IO.Stream,DevExpress.Spreadsheet.DocumentFormat)">
+            <summary>
+                <para>Saves a document copy using the specified settings. 
+</para>
+            </summary>
+            <param name="stream">
+		A stream object where to save the document. 
+
+            </param>
+            <param name="documentFormat">
+		A <see cref="T:DevExpress.Spreadsheet.DocumentFormat"/> object specifying the document format. 
+
+
+            </param>
+
+
+        </member>
+        <member name="T:DevExpress.Web.ASPxSpreadsheet.SpreadsheetRibbonTabCollection">
+
+            <summary>
+                <para>A collection of Ribbon tabs related to the <see cref="T:DevExpress.Web.ASPxSpreadsheet.ASPxSpreadsheet"/>.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.Web.ASPxSpreadsheet.SpreadsheetRibbonTabCollection.#ctor(DevExpress.Web.Internal.IWebControlObject)">
+            <summary>
+                <para>Initializes a new instance of the SpreadsheetRibbonTabCollection class with the specified owner.
+</para>
+            </summary>
+            <param name="owner">
+		An object that implements the <b>IWebControlObject</b> interface.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.Web.ASPxSpreadsheet.SpreadsheetRibbonTabCollection.Add(System.String)">
+            <summary>
+                <para>Adds a new tab with the specified text to the collection.
+</para>
+            </summary>
+            <param name="text">
+		A <see cref="T:System.String"/> value that specifies the created tab's display text. Initializes the tab's <see cref="P:DevExpress.Web.RibbonTab.Text"/> property.
+
+            </param>
+            <returns>An <see cref="RibbonTab"/> object that is the newly created tab.
+</returns>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxSpreadsheet.SpreadsheetRibbonTabCollection.Spreadsheet">
+            <summary>
+                <para>Gets the <see cref="T:DevExpress.Web.ASPxSpreadsheet.ASPxSpreadsheet"/> object that owns the collection.
+</para>
+            </summary>
+            <value>An <see cref="ASPxSpreadsheet"/> object that owns the collection.
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.Web.ASPxSpreadsheet.SpreadsheetClientSideEvents">
+
+            <summary>
+                <para>Contains a list of the client-side events available for the ASPxSpreadsheet.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.Web.ASPxSpreadsheet.SpreadsheetClientSideEvents.#ctor">
+            <summary>
+                <para>Initializes a new instance of the SpreadsheetClientSideEvents class. For internal use only.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxSpreadsheet.SpreadsheetClientSideEvents.BeginSynchronization">
+            <summary>
+                <para>Gets or sets the name of the JavaScript function or the entire code which will handle the client <see cref="E:DevExpress.Web.ASPxSpreadsheet.Scripts.ASPxClientSpreadsheet.BeginSynchronization"/> event.
+</para>
+            </summary>
+            <value>A string that represents either the name of a JavaScript function or the entire JavaScript function code used to handle an event.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxSpreadsheet.SpreadsheetClientSideEvents.CustomCommandExecuted">
+            <summary>
+                <para>Gets or sets the name of the JavaScript function or the entire code which will handle the client <see cref="E:DevExpress.Web.ASPxSpreadsheet.Scripts.ASPxClientSpreadsheet.CustomCommandExecuted"/> event.
+</para>
+            </summary>
+            <value>A string that is either the name of a JavaScript function or the entire JavaScript function code used to handle an event.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxSpreadsheet.SpreadsheetClientSideEvents.DocumentChanged">
+            <summary>
+                <para>Gets or sets the name of the JavaScript function or the entire code which will handle the client <see cref="E:DevExpress.Web.ASPxSpreadsheet.Scripts.ASPxClientSpreadsheet.DocumentChanged"/> event.
+</para>
+            </summary>
+            <value>A string that represents either the name of a JavaScript function or the entire JavaScript function code used to handle an event.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxSpreadsheet.SpreadsheetClientSideEvents.EndSynchronization">
+            <summary>
+                <para>Gets or sets the name of the JavaScript function or the entire code which will handle the client <see cref="E:DevExpress.Web.ASPxSpreadsheet.Scripts.ASPxClientSpreadsheet.EndSynchronization"/> event.
+</para>
+            </summary>
+            <value>A string that represents either the name of a JavaScript function or the entire JavaScript function code used to handle an event.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxSpreadsheet.SpreadsheetClientSideEvents.HyperlinkClick">
+            <summary>
+                <para> </para>
+            </summary>
+            <value> </value>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxSpreadsheet.SpreadsheetClientSideEvents.SelectionChanged">
+            <summary>
+                <para>Gets or sets the name of the JavaScript function or the entire code which will handle the client <see cref="E:DevExpress.Web.ASPxSpreadsheet.Scripts.ASPxClientSpreadsheet.SelectionChanged"/> event.
+</para>
+            </summary>
+            <value>A string that represents either the name of a JavaScript function or the entire JavaScript function code used to handle an event.
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.Web.ASPxSpreadsheet.SpreadsheetRibbonContextTabCategoryCollection">
+
+            <summary>
+                <para> </para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.Web.ASPxSpreadsheet.SpreadsheetRibbonContextTabCategoryCollection.#ctor(DevExpress.Web.Internal.IWebControlObject)">
+            <summary>
+                <para> </para>
+            </summary>
+            <param name="owner">
+		 
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.Web.ASPxSpreadsheet.SpreadsheetRibbonContextTabCategoryCollection.Add(System.String)">
+            <summary>
+                <para> </para>
+            </summary>
+            <param name="name">
+		 
+            </param>
+            <returns> </returns>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxSpreadsheet.SpreadsheetRibbonContextTabCategoryCollection.Spreadsheet">
+            <summary>
+                <para> </para>
+            </summary>
+            <value> </value>
+
+
+        </member>
+        <member name="T:DevExpress.Web.ASPxSpreadsheet.SpreadsheetImages">
+
+            <summary>
+                <para> </para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.Web.ASPxSpreadsheet.SpreadsheetImages.#ctor(DevExpress.Web.Internal.ISkinOwner)">
+            <summary>
+                <para> </para>
+            </summary>
+            <param name="owner">
+		 
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.Web.ASPxSpreadsheet.SpreadsheetImages.CopyFrom(DevExpress.Web.ImagesBase)">
+            <summary>
+                <para> </para>
+            </summary>
+            <param name="source">
+		 
+            </param>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxSpreadsheet.SpreadsheetImages.FormulaBarCancelButtonImage">
+            <summary>
+                <para> </para>
+            </summary>
+            <value> </value>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxSpreadsheet.SpreadsheetImages.FormulaBarEnterButtonImage">
+            <summary>
+                <para> </para>
+            </summary>
+            <value> </value>
+
+
+        </member>
+        <member name="M:DevExpress.Web.ASPxSpreadsheet.SpreadsheetImages.GetImageProperties(System.Web.UI.Page,System.String,System.Boolean)">
+            <summary>
+                <para> </para>
+            </summary>
+            <param name="page">
+		 
+            </param>
+            <param name="imageName">
+		 
+            </param>
+            <param name="encode">
+		 
+            </param>
+            <returns> </returns>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxSpreadsheet.SpreadsheetImages.MenuIconSet">
+            <summary>
+                <para> </para>
+            </summary>
+            <value> </value>
+
+
+        </member>
+        <member name="M:DevExpress.Web.ASPxSpreadsheet.SpreadsheetImages.Reset">
+            <summary>
+                <para> </para>
+            </summary>
+
+
+        </member>
+        <member name="M:DevExpress.Web.ASPxSpreadsheet.SpreadsheetImages.ToString">
+            <summary>
+                <para> </para>
+            </summary>
+            <returns> </returns>
+
+
+        </member>
+        <member name="T:DevExpress.Web.ASPxSpreadsheet.SpreadsheetFileManagerUploadSettings">
+
+            <summary>
+                <para>Contains settings that relate to the file upload functionality of the FileManager embedded into certain built-in dialogs.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.Web.ASPxSpreadsheet.SpreadsheetFileManagerUploadSettings.#ctor(DevExpress.Web.IPropertiesOwner)">
+            <summary>
+                <para>Initializes a new instance of the SpreadsheetFileManagerUploadSettings class with the specified owner.
+</para>
+            </summary>
+            <param name="owner">
+		An object that implements the <see cref="T:DevExpress.Web.IPropertiesOwner"/> interface.
+
+            </param>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxSpreadsheet.SpreadsheetFileManagerUploadSettings.Enabled">
+            <summary>
+                <para>Gets or sets a value that indicates whether upload is enabled for the FileManager used within some built-in dialogs. 
+</para>
+            </summary>
+            <value><b>true</b>, if upload is enabled; otherwise, <b>false</b>.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxSpreadsheet.SpreadsheetFileManagerUploadSettings.ValidationSettings">
+            <summary>
+                <para>This property is not in effect for this class. It is overridden only for the purpose of preventing it from appearing in Microsoft Visual Studio designer tools. 
+
+
+</para>
+            </summary>
+            <value> 
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.Web.ASPxSpreadsheet.SpreadsheetInsertLinkDialogSettings">
+
+            <summary>
+                <para>Contains customization settings for the Insert Link dialog's form elements.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.Web.ASPxSpreadsheet.SpreadsheetInsertLinkDialogSettings.#ctor(DevExpress.Web.IPropertiesOwner)">
+            <summary>
+                <para>Initializes a new instance of the SpreadsheetInsertLinkDialogSettings class with the specified owner.
+</para>
+            </summary>
+            <param name="owner">
+		An object that implements the <see cref="T:DevExpress.Web.IPropertiesOwner"/> interface.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.Web.ASPxSpreadsheet.SpreadsheetInsertLinkDialogSettings.Assign(DevExpress.Web.PropertiesBase)">
+            <summary>
+                <para>Copies the settings from the specified <see cref="T:DevExpress.Web.PropertiesBase"/> object to the current object.
+</para>
+            </summary>
+            <param name="source">
+		A <see cref="T:DevExpress.Web.PropertiesBase"/> object whose settings are assigned to the current object.
+
+
+            </param>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxSpreadsheet.SpreadsheetInsertLinkDialogSettings.ShowEmailAddressSection">
+            <summary>
+                <para>Gets or sets a value that specifies whether a section that allows an e-mail address to be entered is displayed within the Insert Link dialog form.
+</para>
+            </summary>
+            <value><b>true</b>, to display the form element, otherwise, <b>false</b>.
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.Web.ASPxSpreadsheet.SpreadsheetSaveFileDialogSettings">
+
+            <summary>
+                <para>Contains customization settings for the Save File dialog's form elements.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.Web.ASPxSpreadsheet.SpreadsheetSaveFileDialogSettings.#ctor(DevExpress.Web.IPropertiesOwner)">
+            <summary>
+                <para>Initializes a new instance of the SpreadsheetSaveFileDialogSettings class with the specified owner.
+</para>
+            </summary>
+            <param name="owner">
+		An object that implements the <see cref="T:DevExpress.Web.IPropertiesOwner"/> interface.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.Web.ASPxSpreadsheet.SpreadsheetSaveFileDialogSettings.Assign(DevExpress.Web.PropertiesBase)">
+            <summary>
+                <para>Copies the settings from the specified <see cref="T:DevExpress.Web.PropertiesBase"/> object to the current object.
+</para>
+            </summary>
+            <param name="source">
+		A <see cref="T:DevExpress.Web.PropertiesBase"/> object whose settings are assigned to the current object.
+
+
+            </param>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxSpreadsheet.SpreadsheetSaveFileDialogSettings.DisplaySectionMode">
+            <summary>
+                <para>Gets or sets a value that specifies which sections are displayed within the Save File dialog form.
+</para>
+            </summary>
+            <value>One of the <see cref="SaveFileDialogDisplaySectionMode"/> enumeration values.
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.Web.ASPxSpreadsheet.SpreadsheetFileManagerValidationSettings">
+
+            <summary>
+                <para>This class is not in effect for the ASPxSpreadsheet control.
+Contains settings that relate to the validation of document files, uploaded using the ASPxSpreadsheet's Open File (Document Selector) dialog. 
+
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.Web.ASPxSpreadsheet.SpreadsheetFileManagerValidationSettings.#ctor(DevExpress.Web.IPropertiesOwner)">
+            <summary>
+                <para>Initializes a new instance of the SpreadsheetFileManagerValidationSettings class with the specified owner.
+This member is not in effect.
+</para>
+            </summary>
+            <param name="owner">
+		An object that implements the <see cref="T:DevExpress.Web.IPropertiesOwner"/> interface.
+
+
+            </param>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxSpreadsheet.SpreadsheetFileManagerValidationSettings.MaxFileSize">
+            <summary>
+                <para>Gets or sets the maximum size of an uploaded file.
+</para>
+            </summary>
+            <value>An <see cref="Int64"/> value that specifies the maximum file size, in bytes.
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.Web.ASPxSpreadsheet.SpreadsheetDialogSettings">
+
+            <summary>
+                <para>Contains settings concerning customization of dialog form elements. 
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.Web.ASPxSpreadsheet.SpreadsheetDialogSettings.#ctor(DevExpress.Web.IPropertiesOwner)">
+            <summary>
+                <para>Initializes a new instance of the SpreadsheetDialogSettings class with the specified owner.
+</para>
+            </summary>
+            <param name="owner">
+		An object that implements the <see cref="T:DevExpress.Web.IPropertiesOwner"/> interface.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.Web.ASPxSpreadsheet.SpreadsheetDialogSettings.Assign(DevExpress.Web.PropertiesBase)">
+            <summary>
+                <para>Copies the settings from the specified object to the current one.
+</para>
+            </summary>
+            <param name="source">
+		A <see cref="T:DevExpress.Web.PropertiesBase"/> object whose settings are assigned to the current object.
+
+            </param>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxSpreadsheet.SpreadsheetDialogSettings.InsertLinkDialog">
+            <summary>
+                <para>Provides access to customization settings for the Insert Link dialog's form elements.
+</para>
+            </summary>
+            <value>An <see cref="SpreadsheetInsertLinkDialogSettings"/> object that contains customization settings for form elements. 
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxSpreadsheet.SpreadsheetDialogSettings.InsertPictureDialog">
+            <summary>
+                <para>Provides access to customization settings for the Insert Picture dialog's form elements.
+</para>
+            </summary>
+            <value>An <see cref="SpreadsheetInsertPictureDialogSettings"/> object that contains customization settings for form elements. 
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxSpreadsheet.SpreadsheetDialogSettings.SaveFileDialog">
+            <summary>
+                <para>Provides access to customization settings for the Save File dialog's form elements.
+</para>
+            </summary>
+            <value>An <see cref="SpreadsheetSaveFileDialogSettings"/> object that contains customization settings for form elements. 
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.Web.ASPxSpreadsheet.ASPxSpreadsheetSettingsBase">
+
+            <summary>
+                <para>Serves as a base for classes that define different settings of the <see cref="T:DevExpress.Web.ASPxSpreadsheet.ASPxSpreadsheet"/>.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.Web.ASPxSpreadsheet.ASPxSpreadsheetSettingsBase.#ctor(DevExpress.Web.IPropertiesOwner)">
+            <summary>
+                <para>Initializes a new instance of the ASPxSpreadsheetSettingsBase class with the specified owner.
+</para>
+            </summary>
+            <param name="owner">
+		An object that implements the <see cref="T:DevExpress.Web.IPropertiesOwner"/> interface.
+
+            </param>
+
+
+        </member>
+        <member name="T:DevExpress.Web.ASPxSpreadsheet.Localization.ASPxSpreadsheetLocalizer">
+
+            <summary>
+                <para>An object providing a means to localize the <see cref="T:DevExpress.Web.ASPxSpreadsheet.ASPxSpreadsheet"/>'s user interface elements at runtime.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.Web.ASPxSpreadsheet.Localization.ASPxSpreadsheetLocalizer.#ctor">
+            <summary>
+                <para>Initializes a new instance of the ASPxSpreadsheetLocalizer class.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="M:DevExpress.Web.ASPxSpreadsheet.Localization.ASPxSpreadsheetLocalizer.CreateResXLocalizer">
+            <summary>
+                <para>Returns an object comprising resources based on the thread's language and regional settings (culture).
+</para>
+            </summary>
+            <returns>A <see cref="T:DevExpress.Utils.Localization.XtraLocalizer`1"/> object comprising resources based on the thread's culture.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.Web.ASPxSpreadsheet.Localization.ASPxSpreadsheetLocalizer.GetString(DevExpress.Web.ASPxSpreadsheet.Localization.ASPxSpreadsheetStringId)">
+            <summary>
+                <para>Returns a localized string for the specified string identifier.
+</para>
+            </summary>
+            <param name="id">
+		A <see cref="T:DevExpress.Web.ASPxSpreadsheet.Localization.ASPxSpreadsheetStringId"/> enumeration value identifying the string to localize.
+
+            </param>
+            <returns>A <see cref="String"/> corresponding to the specified identifier.
+</returns>
+
+
+        </member>
+        <member name="T:DevExpress.Web.ASPxSpreadsheet.Localization.ASPxSpreadsheetStringId">
+
+            <summary>
+                <para>Contains values corresponding to strings that can be localized for the <see cref="T:DevExpress.Web.ASPxSpreadsheet.ASPxSpreadsheet"/>.
+</para>
+            </summary>
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxSpreadsheet.Localization.ASPxSpreadsheetStringId.BorderLineStyle_Dashed">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxSpreadsheet.Localization.ASPxSpreadsheetStringId.BorderLineStyle_Dotted">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+ 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxSpreadsheet.Localization.ASPxSpreadsheetStringId.BorderLineStyle_Double">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxSpreadsheet.Localization.ASPxSpreadsheetStringId.BorderLineStyle_Medium">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+ 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxSpreadsheet.Localization.ASPxSpreadsheetStringId.BorderLineStyle_MediumDashed">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxSpreadsheet.Localization.ASPxSpreadsheetStringId.BorderLineStyle_MediumDotted">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxSpreadsheet.Localization.ASPxSpreadsheetStringId.BorderLineStyle_Thick">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxSpreadsheet.Localization.ASPxSpreadsheetStringId.BorderLineStyle_Thin">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxSpreadsheet.Localization.ASPxSpreadsheetStringId.ButtonCancel">
+            <summary>
+                <para>A text displayed in a cancel button within a Dialog Form.
+
+<para>
+<b>Default Value</b>: "Cancel"
+</para>
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxSpreadsheet.Localization.ASPxSpreadsheetStringId.ButtonChange">
+            <summary>
+                <para>A text displayed in a change button within the Change Image and Change Link dialogs.
+
+<para>
+<b>Default Value</b>: "Change"
+</para>
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxSpreadsheet.Localization.ASPxSpreadsheetStringId.ButtonDownload">
+            <summary>
+                <para>A text displayed in a download button within the Save File dialog.
+
+<para>
+<b>Default Value</b>: "Download"
+</para>
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxSpreadsheet.Localization.ASPxSpreadsheetStringId.ButtonFindAll">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxSpreadsheet.Localization.ASPxSpreadsheetStringId.ButtonInsert">
+            <summary>
+                <para>A text displayed in an insert button within an Insert Image dialog.
+<para>
+<b>Default Value</b>: "Insert"
+</para>
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxSpreadsheet.Localization.ASPxSpreadsheetStringId.ButtonOK">
+            <summary>
+                <para>A text displayed in an OK button within dialog forms.
+
+<para>
+<b>Default Value</b>: "OK"
+</para>
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxSpreadsheet.Localization.ASPxSpreadsheetStringId.ButtonOpen">
+            <summary>
+                <para>A localizable text displayed in an open button within a dialog forms.
+
+<para>
+<b>Default Value</b>: "Open"
+</para>
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxSpreadsheet.Localization.ASPxSpreadsheetStringId.ButtonSaveAs">
+            <summary>
+                <para>A text displayed in a save button within the Save File dialog.
+
+<para>
+<b>Default Value</b>: "Save as"
+</para>
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxSpreadsheet.Localization.ASPxSpreadsheetStringId.ButtonSelect">
+            <summary>
+                <para>A text displayed in a select button within the Open File dialog.
+
+<para>
+<b>Default Value</b>: "Select"
+</para>
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxSpreadsheet.Localization.ASPxSpreadsheetStringId.Caption_DarkTableStyleCategory">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxSpreadsheet.Localization.ASPxSpreadsheetStringId.Caption_DarkTableStyleNamePart">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxSpreadsheet.Localization.ASPxSpreadsheetStringId.Caption_LightTableStyleCategory">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxSpreadsheet.Localization.ASPxSpreadsheetStringId.Caption_LightTableStyleNamePart">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxSpreadsheet.Localization.ASPxSpreadsheetStringId.Caption_MediumTableStyleCategory">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxSpreadsheet.Localization.ASPxSpreadsheetStringId.Caption_MediumTableStyleNamePart">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxSpreadsheet.Localization.ASPxSpreadsheetStringId.Caption_PrefixTableStyleNamePart">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxSpreadsheet.Localization.ASPxSpreadsheetStringId.ChangeChartType">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxSpreadsheet.Localization.ASPxSpreadsheetStringId.ChangeLink">
+            <summary>
+                <para>A text displayed in a title bar of the Change Link dialog.
+
+<para>
+<b>Default Value</b>: "Change hyperlink"
+</para>
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxSpreadsheet.Localization.ASPxSpreadsheetStringId.ChartChangeHorizontalAxisTitle">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxSpreadsheet.Localization.ASPxSpreadsheetStringId.ChartChangeHorizontalAxisTitle_Caption">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxSpreadsheet.Localization.ASPxSpreadsheetStringId.ChartChangeTitle">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxSpreadsheet.Localization.ASPxSpreadsheetStringId.ChartChangeTitle_Caption">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxSpreadsheet.Localization.ASPxSpreadsheetStringId.ChartChangeVerticalAxisTitle">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxSpreadsheet.Localization.ASPxSpreadsheetStringId.ChartChangeVerticalAxisTitle_Caption">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxSpreadsheet.Localization.ASPxSpreadsheetStringId.ChartSelectData">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxSpreadsheet.Localization.ASPxSpreadsheetStringId.ChartSelectData_Caption">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxSpreadsheet.Localization.ASPxSpreadsheetStringId.ColumnWidth">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxSpreadsheet.Localization.ASPxSpreadsheetStringId.ColumnWidth_Caption">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxSpreadsheet.Localization.ASPxSpreadsheetStringId.ConfirmOnLosingChanges">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxSpreadsheet.Localization.ASPxSpreadsheetStringId.CustomFilter_OperatorAnd">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxSpreadsheet.Localization.ASPxSpreadsheetStringId.CustomFilter_OperatorOr">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxSpreadsheet.Localization.ASPxSpreadsheetStringId.CustomFilter_QuestionSignDescription">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxSpreadsheet.Localization.ASPxSpreadsheetStringId.CustomFilter_ShowRows">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxSpreadsheet.Localization.ASPxSpreadsheetStringId.CustomFilter_StarSignDescription">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxSpreadsheet.Localization.ASPxSpreadsheetStringId.DataFilterSimple">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxSpreadsheet.Localization.ASPxSpreadsheetStringId.DataValidation">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxSpreadsheet.Localization.ASPxSpreadsheetStringId.DefaultColumnWidth">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxSpreadsheet.Localization.ASPxSpreadsheetStringId.DefaultColumnWidth_Caption">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxSpreadsheet.Localization.ASPxSpreadsheetStringId.ExternalRibbonControl_NotFound">
+            <summary>
+                <para>A localizable text displayed when the specified external Ribbon control has not been found.
+
+<para>
+<b>Default Value</b>: "The external ribbon control '{0}' is not found."
+</para>
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxSpreadsheet.Localization.ASPxSpreadsheetStringId.FileManager_OpenedFileDeleteErrorText">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxSpreadsheet.Localization.ASPxSpreadsheetStringId.FilterSimple_CheckAll">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxSpreadsheet.Localization.ASPxSpreadsheetStringId.FilterSimple_UncheckAll">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxSpreadsheet.Localization.ASPxSpreadsheetStringId.FilterTop10_Show">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxSpreadsheet.Localization.ASPxSpreadsheetStringId.FindAndReplace">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxSpreadsheet.Localization.ASPxSpreadsheetStringId.FindAndReplace_FindTab_Caption">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxSpreadsheet.Localization.ASPxSpreadsheetStringId.FindAndReplace_FindWhat">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxSpreadsheet.Localization.ASPxSpreadsheetStringId.FindAndReplace_LookIn">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxSpreadsheet.Localization.ASPxSpreadsheetStringId.FindAndReplace_LookIn_Formulas">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxSpreadsheet.Localization.ASPxSpreadsheetStringId.FindAndReplace_LookIn_Values">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxSpreadsheet.Localization.ASPxSpreadsheetStringId.FindAndReplace_MatchCase">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxSpreadsheet.Localization.ASPxSpreadsheetStringId.FindAndReplace_MatchCellContent">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxSpreadsheet.Localization.ASPxSpreadsheetStringId.FindAndReplace_Search">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxSpreadsheet.Localization.ASPxSpreadsheetStringId.FindAndReplace_Search_ByColumns">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxSpreadsheet.Localization.ASPxSpreadsheetStringId.FindAndReplace_Search_ByRows">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxSpreadsheet.Localization.ASPxSpreadsheetStringId.FindAndReplace_SearchResults">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxSpreadsheet.Localization.ASPxSpreadsheetStringId.FindAndReplace_SearchResults_CellHeader">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxSpreadsheet.Localization.ASPxSpreadsheetStringId.FindAndReplace_SearchResults_ValueHeader">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxSpreadsheet.Localization.ASPxSpreadsheetStringId.FormulaBar_CancelButtonTooltip">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxSpreadsheet.Localization.ASPxSpreadsheetStringId.FormulaBar_EnterButtonTooltip">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxSpreadsheet.Localization.ASPxSpreadsheetStringId.FullScreenCommand_Description">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxSpreadsheet.Localization.ASPxSpreadsheetStringId.FullScreenCommand_Text">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxSpreadsheet.Localization.ASPxSpreadsheetStringId.InsertImage">
+            <summary>
+                <para>A text displayed in a title bar of an Insert Image dialog.
+
+<para>
+<b>Default Value</b>: "Insert image"
+</para>
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxSpreadsheet.Localization.ASPxSpreadsheetStringId.InsertImage_EnterUrl">
+            <summary>
+                <para>The label of a text box that allows specifying an image web address in Image Dialogs.
+
+<para>
+<b>Default Value</b>: "Enter image web address"
+</para>
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxSpreadsheet.Localization.ASPxSpreadsheetStringId.InsertImage_FromLocal">
+            <summary>
+                <para>The label of a radio button (in Image Dialogs) specifying that an image is located in your computer.
+
+<para>
+<b>Default Value</b>: "From your computer"
+</para>
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxSpreadsheet.Localization.ASPxSpreadsheetStringId.InsertImage_FromWeb">
+            <summary>
+                <para>The label of a radio button (in Image Dialogs) specifying that an image is located in the web.
+
+<para>
+<b>Default Value</b>: "From the web (URL)"
+</para>
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxSpreadsheet.Localization.ASPxSpreadsheetStringId.InsertImage_ImageManager_Header">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxSpreadsheet.Localization.ASPxSpreadsheetStringId.InsertImage_ImagePreview">
+            <summary>
+                <para>The text of a label displayed in the Insert Image dialog as an image placeholder.
+
+<para>
+<b>Default Value</b>: "Image preview"
+</para>
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxSpreadsheet.Localization.ASPxSpreadsheetStringId.InsertImage_UploadInstructions">
+            <summary>
+                <para>The label of a text box that allows specifying a path to an image on your computer in Image Dialogs.
+
+<para>
+<b>Default Value</b>: "Browse your computer for the image file to upload"
+</para>
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxSpreadsheet.Localization.ASPxSpreadsheetStringId.InsertLink">
+            <summary>
+                <para>A text displayed in a title bar of an Insert Link dialog.
+
+<para>
+<b>Default Value</b>: "Insert hyperlink"
+</para>
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxSpreadsheet.Localization.ASPxSpreadsheetStringId.InsertLink_Email">
+            <summary>
+                <para>The label of a radio button (in Link Dialogs) specifying that a link sends a message when is clicked.
+
+<para>
+<b>Default Value</b>: "E-mail address"
+</para>
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxSpreadsheet.Localization.ASPxSpreadsheetStringId.InsertLink_EmailTo">
+            <summary>
+                <para>The label of a text box (in Link Dialogs) that allows specifying a recipient e-mail address.
+
+<para>
+<b>Default Value</b>: "E-mail to"
+</para>
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxSpreadsheet.Localization.ASPxSpreadsheetStringId.InsertLink_Subject">
+            <summary>
+                <para>The label of a text box (in Link Dialogs) that allows specifying the subject of an email.
+
+<para>
+<b>Default Value</b>: "Subject"
+</para>
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxSpreadsheet.Localization.ASPxSpreadsheetStringId.InsertLink_Text">
+            <summary>
+                <para>The label of a text box that allows specifying a link text in Link Dialogs.
+
+<para>
+<b>Default Value</b>: "Text"
+</para>
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxSpreadsheet.Localization.ASPxSpreadsheetStringId.InsertLink_ToolTip">
+            <summary>
+                <para>The label of a text box that allows specifying a link tooltip in Link Dialogs.
+
+<para>
+<b>Default Value</b>: "ToolTip"
+</para>
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxSpreadsheet.Localization.ASPxSpreadsheetStringId.InsertLink_URL">
+            <summary>
+                <para>The label of a radio button (in Link Dialogs) specifying that a link targets to a site when it is clicked; and a label of a text box that allows specifying a site or document URL.
+
+<para>
+<b>Default Value</b>: "URL"
+</para>
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxSpreadsheet.Localization.ASPxSpreadsheetStringId.InsertLink_WebPage">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxSpreadsheet.Localization.ASPxSpreadsheetStringId.Invalid_EMail">
+            <summary>
+                <para>Contains localizable text displayed when a wrong e-mail has been entered into a dialog. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxSpreadsheet.Localization.ASPxSpreadsheetStringId.Invalid_FileName">
+            <summary>
+                <para>Contains localizable text displayed when a wrong file name has been entered into a dialog. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxSpreadsheet.Localization.ASPxSpreadsheetStringId.Invalid_URL">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxSpreadsheet.Localization.ASPxSpreadsheetStringId.ModifyChartLayout">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxSpreadsheet.Localization.ASPxSpreadsheetStringId.ModifyChartStyle">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxSpreadsheet.Localization.ASPxSpreadsheetStringId.ModifyTableStyle">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxSpreadsheet.Localization.ASPxSpreadsheetStringId.MoveOrCopySheet">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxSpreadsheet.Localization.ASPxSpreadsheetStringId.MoveOrCopySheet_CreateCopy">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxSpreadsheet.Localization.ASPxSpreadsheetStringId.MoveOrCopySheet_MoveSheetsCaption">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxSpreadsheet.Localization.ASPxSpreadsheetStringId.OpenFile">
+            <summary>
+                <para> Contains localizable text of the corresponding UI element. 
+
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxSpreadsheet.Localization.ASPxSpreadsheetStringId.OpenFile_ChooseInstruction">
+            <summary>
+                <para> Contains localizable text of the corresponding UI element. 
+
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxSpreadsheet.Localization.ASPxSpreadsheetStringId.OpenFile_FileManager_Header">
+            <summary>
+                <para> Contains localizable text of the corresponding UI element. 
+
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxSpreadsheet.Localization.ASPxSpreadsheetStringId.OpenFile_FromComputer">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxSpreadsheet.Localization.ASPxSpreadsheetStringId.OpenFile_FromServer">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxSpreadsheet.Localization.ASPxSpreadsheetStringId.OpenFile_UploadInstruction">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxSpreadsheet.Localization.ASPxSpreadsheetStringId.PageSetup">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxSpreadsheet.Localization.ASPxSpreadsheetStringId.PageSetup_HeaderFooterTab_AlignWithMargins">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxSpreadsheet.Localization.ASPxSpreadsheetStringId.PageSetup_HeaderFooterTab_Caption">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxSpreadsheet.Localization.ASPxSpreadsheetStringId.PageSetup_HeaderFooterTab_DifferentFirst">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxSpreadsheet.Localization.ASPxSpreadsheetStringId.PageSetup_HeaderFooterTab_DifferentOddEven">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxSpreadsheet.Localization.ASPxSpreadsheetStringId.PageSetup_HeaderFooterTab_Footer">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxSpreadsheet.Localization.ASPxSpreadsheetStringId.PageSetup_HeaderFooterTab_Header">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxSpreadsheet.Localization.ASPxSpreadsheetStringId.PageSetup_HeaderFooterTab_ScaleWithDoc">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxSpreadsheet.Localization.ASPxSpreadsheetStringId.PageSetup_MarginsTab_Bottom">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxSpreadsheet.Localization.ASPxSpreadsheetStringId.PageSetup_MarginsTab_Caption">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxSpreadsheet.Localization.ASPxSpreadsheetStringId.PageSetup_MarginsTab_CenterHorizontally">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxSpreadsheet.Localization.ASPxSpreadsheetStringId.PageSetup_MarginsTab_CenterOnPageGroup">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxSpreadsheet.Localization.ASPxSpreadsheetStringId.PageSetup_MarginsTab_CenterVertically">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxSpreadsheet.Localization.ASPxSpreadsheetStringId.PageSetup_MarginsTab_Footer">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxSpreadsheet.Localization.ASPxSpreadsheetStringId.PageSetup_MarginsTab_Header">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxSpreadsheet.Localization.ASPxSpreadsheetStringId.PageSetup_MarginsTab_Left">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxSpreadsheet.Localization.ASPxSpreadsheetStringId.PageSetup_MarginsTab_Right">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxSpreadsheet.Localization.ASPxSpreadsheetStringId.PageSetup_MarginsTab_Top">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxSpreadsheet.Localization.ASPxSpreadsheetStringId.PageSetup_PageTab_AdjustTo">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxSpreadsheet.Localization.ASPxSpreadsheetStringId.PageSetup_PageTab_Caption">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxSpreadsheet.Localization.ASPxSpreadsheetStringId.PageSetup_PageTab_FirstPageNumber">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxSpreadsheet.Localization.ASPxSpreadsheetStringId.PageSetup_PageTab_FitTo">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxSpreadsheet.Localization.ASPxSpreadsheetStringId.PageSetup_PageTab_FitToHeight">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxSpreadsheet.Localization.ASPxSpreadsheetStringId.PageSetup_PageTab_FitToWidth">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxSpreadsheet.Localization.ASPxSpreadsheetStringId.PageSetup_PageTab_OrientationGroup">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxSpreadsheet.Localization.ASPxSpreadsheetStringId.PageSetup_PageTab_OrientationLandscape">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxSpreadsheet.Localization.ASPxSpreadsheetStringId.PageSetup_PageTab_OrientationPortrait">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxSpreadsheet.Localization.ASPxSpreadsheetStringId.PageSetup_PageTab_PaperSize">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxSpreadsheet.Localization.ASPxSpreadsheetStringId.PageSetup_PageTab_PrintQuality">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxSpreadsheet.Localization.ASPxSpreadsheetStringId.PageSetup_PageTab_Scale">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxSpreadsheet.Localization.ASPxSpreadsheetStringId.PageSetup_PageTab_ScalingGroup">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxSpreadsheet.Localization.ASPxSpreadsheetStringId.PageSetup_Print">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxSpreadsheet.Localization.ASPxSpreadsheetStringId.PageSetup_SheetTab_Caption">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxSpreadsheet.Localization.ASPxSpreadsheetStringId.PageSetup_SheetTab_CellErrorAs">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxSpreadsheet.Localization.ASPxSpreadsheetStringId.PageSetup_SheetTab_Comments">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxSpreadsheet.Localization.ASPxSpreadsheetStringId.PageSetup_SheetTab_Draft">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxSpreadsheet.Localization.ASPxSpreadsheetStringId.PageSetup_SheetTab_Gridlines">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxSpreadsheet.Localization.ASPxSpreadsheetStringId.PageSetup_SheetTab_PageOrder_DownThenOver">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxSpreadsheet.Localization.ASPxSpreadsheetStringId.PageSetup_SheetTab_PageOrder_OverThenDown">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxSpreadsheet.Localization.ASPxSpreadsheetStringId.PageSetup_SheetTab_PageOrderGroup">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxSpreadsheet.Localization.ASPxSpreadsheetStringId.PageSetup_SheetTab_PrintArea">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxSpreadsheet.Localization.ASPxSpreadsheetStringId.PageSetup_SheetTab_PrintAreaErrorText">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxSpreadsheet.Localization.ASPxSpreadsheetStringId.PageSetup_SheetTab_PrintGroup">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxSpreadsheet.Localization.ASPxSpreadsheetStringId.PageSetup_SheetTab_PrintHeadings">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxSpreadsheet.Localization.ASPxSpreadsheetStringId.RenameSheet">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxSpreadsheet.Localization.ASPxSpreadsheetStringId.RenameSheet_SheetName">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxSpreadsheet.Localization.ASPxSpreadsheetStringId.RequiredFieldError">
+            <summary>
+                <para>The error text to be displayed within the Spreadsheet's error frame in Built-in Dialogs, if the required field is empty.
+
+<para>
+<b>Default Value</b>: "This field is required"
+</para>
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxSpreadsheet.Localization.ASPxSpreadsheetStringId.RowHeight">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxSpreadsheet.Localization.ASPxSpreadsheetStringId.RowHeight_Caption">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxSpreadsheet.Localization.ASPxSpreadsheetStringId.SaveFile">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxSpreadsheet.Localization.ASPxSpreadsheetStringId.SaveFile_DownloadCopy">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxSpreadsheet.Localization.ASPxSpreadsheetStringId.SaveFile_DownloadInstruction">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxSpreadsheet.Localization.ASPxSpreadsheetStringId.SaveFile_FileAlreadyExists">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxSpreadsheet.Localization.ASPxSpreadsheetStringId.SaveFile_FileName">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxSpreadsheet.Localization.ASPxSpreadsheetStringId.SaveFile_FileType">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxSpreadsheet.Localization.ASPxSpreadsheetStringId.SaveFile_FolderManager_Header">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxSpreadsheet.Localization.ASPxSpreadsheetStringId.SaveFile_FolderPath">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxSpreadsheet.Localization.ASPxSpreadsheetStringId.SaveFile_SaveFileToServer">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxSpreadsheet.Localization.ASPxSpreadsheetStringId.TableSelectData">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxSpreadsheet.Localization.ASPxSpreadsheetStringId.TableSelectData_Caption">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxSpreadsheet.Localization.ASPxSpreadsheetStringId.TableSelectData_TableHasHeaders">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxSpreadsheet.Localization.ASPxSpreadsheetStringId.UnhideSheet">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxSpreadsheet.Localization.ASPxSpreadsheetStringId.UnhideSheet_Caption">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxSpreadsheet.Localization.ASPxSpreadsheetStringId.ViewGroup_Title">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="T:DevExpress.Web.ASPxSpreadsheet.SpreadsheetDocumentSelectorSettings">
+
+            <summary>
+                <para>Contains settings that are related to the Document Selector used within the Save File dialog. 
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.Web.ASPxSpreadsheet.SpreadsheetDocumentSelectorSettings.#ctor(DevExpress.Web.IPropertiesOwner)">
+            <summary>
+                <para>Initializes a new instance of the SpreadsheetDocumentSelectorSettings class with the specified owner.
+</para>
+            </summary>
+            <param name="owner">
+		An object that implements the <see cref="T:DevExpress.Web.IPropertiesOwner"/> interface.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.Web.ASPxSpreadsheet.SpreadsheetDocumentSelectorSettings.Assign(DevExpress.Web.PropertiesBase)">
+            <summary>
+                <para>Copies the settings from the specified object to the current one.
+</para>
+            </summary>
+            <param name="source">
+		A <see cref="T:DevExpress.Web.PropertiesBase"/> object whose settings are assigned to the current object.
+
+            </param>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxSpreadsheet.SpreadsheetDocumentSelectorSettings.CommonSettings">
+            <summary>
+                <para>Provides access to the main settings of the FileManager embedded into built-in file dialogs.
+</para>
+            </summary>
+            <value>A <see cref="SpreadsheetFileManagerCommonSettings"/> object that contains common settings of the embedded FileManager.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxSpreadsheet.SpreadsheetDocumentSelectorSettings.CustomCommand">
+            <summary>
+                <para> </para>
+            </summary>
+            <value> </value>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxSpreadsheet.SpreadsheetDocumentSelectorSettings.EditingSettings">
+            <summary>
+                <para>Provides access to the editing settings of the FileManager embedded into built-in file dialogs.
+
+</para>
+            </summary>
+            <value>An <see cref="SpreadsheetFileManagerEditingSettings"/> object that contains the editing options.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxSpreadsheet.SpreadsheetDocumentSelectorSettings.FileListSettings">
+            <summary>
+                <para>Provides access to the file list's settings of the FileManager embedded into built-in file dialogs.
+
+</para>
+            </summary>
+            <value>An <see cref="FileManagerSettingsFileList"/> object that contains the file list's settings. 
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxSpreadsheet.SpreadsheetDocumentSelectorSettings.FoldersSettings">
+            <summary>
+                <para>Provides access to the folder container's settings of the FileManager embedded into built-in file dialogs.
+
+
+
+</para>
+            </summary>
+            <value>A <see cref="SpreadsheetFileManagerFoldersSettings"/> object that contains the folder container's settings.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxSpreadsheet.SpreadsheetDocumentSelectorSettings.PermissionSettings">
+            <summary>
+                <para>Provides access to permission settings that relate to the FileManager used within some built-in dialogs dialog.
+</para>
+            </summary>
+            <value>An <see cref="FileManagerSettingsPermissions"/> object containing settings.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxSpreadsheet.SpreadsheetDocumentSelectorSettings.RootFolderUrlPath">
+            <summary>
+                <para>Gets or sets a value that specifies the correct relative URL path to a root folder whose physical path is defined via the FileManagerSettings.RootFolder property of the Document Selector. 
+</para>
+            </summary>
+            <value>A string value that defines the relative URL path to the specified root folder. 
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxSpreadsheet.SpreadsheetDocumentSelectorSettings.ToolbarSettings">
+            <summary>
+                <para>Provides access to the toolbar item visibility settings of the FileManager embedded into built-in file dialogs.
+
+
+</para>
+            </summary>
+            <value>An <see cref="FileManagerSettingsToolbar"/> object that contains the visibility options.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxSpreadsheet.SpreadsheetDocumentSelectorSettings.UploadSettings">
+            <summary>
+                <para>Provides access to the upload panel's settings of the FileManager embedded into built-in file dialogs.
+</para>
+            </summary>
+            <value>An <see cref="SpreadsheetFileManagerUploadSettings"/> object that holds settings for an upload panel.
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.Web.ASPxSpreadsheet.SpreadsheetFileManagerEditingSettings">
+
+            <summary>
+                <para>Contains settings that relate to the editing functionality of the embedded FileManager which is used within certain built-in dialogs.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.Web.ASPxSpreadsheet.SpreadsheetFileManagerEditingSettings.#ctor(DevExpress.Web.IPropertiesOwner)">
+            <summary>
+                <para>Initializes a new instance of the SpreadsheetFileManagerEditingSettings class with the specified owner.
+</para>
+            </summary>
+            <param name="owner">
+		An object that implements the <see cref="T:DevExpress.Web.IPropertiesOwner"/> interface.
+
+            </param>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxSpreadsheet.SpreadsheetFileManagerEditingSettings.AllowDownload">
+            <summary>
+                <para>This property is not in effect for this class. It is overridden only for the purpose of preventing it from appearing in Microsoft Visual Studio designer tools. 
+
+
+</para>
+            </summary>
+            <value> 
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.Web.ASPxSpreadsheet.SpreadsheetDialogFormSettings">
+
+            <summary>
+                <para>Contains settings concerning customization of dialog form elements.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.Web.ASPxSpreadsheet.SpreadsheetDialogFormSettings.#ctor(DevExpress.Web.IPropertiesOwner)">
+            <summary>
+                <para>Initializes a new instance of the SpreadsheetDialogFormSettings class with the specified owner.
+</para>
+            </summary>
+            <param name="owner">
+		An object that implements the <see cref="T:DevExpress.Web.IPropertiesOwner"/> interface.
+
+            </param>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxSpreadsheet.SpreadsheetDialogFormSettings.InsertLinkDialog">
+            <summary>
+                <para>Provides access to customization settings for the Insert Link dialog's form elements.
+</para>
+            </summary>
+            <value>An <see cref="SpreadsheetInsertLinkDialogSettings"/> object that contains customization settings for form elements. 
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxSpreadsheet.SpreadsheetDialogFormSettings.InsertPictureDialog">
+            <summary>
+                <para>Provides access to customization settings for the Insert Picture dialog's form elements.
+</para>
+            </summary>
+            <value>An <see cref="SpreadsheetInsertPictureDialogSettings"/> object that contains customization settings for form elements. 
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxSpreadsheet.SpreadsheetDialogFormSettings.SaveFileDialog">
+            <summary>
+                <para>Provides access to customization settings for the Save File dialog's form elements.
+</para>
+            </summary>
+            <value>An <see cref="SpreadsheetSaveFileDialogSettings"/> object that contains customization settings for form elements. 
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.Web.ASPxSpreadsheet.ASPxSpreadsheetLoadingPanelSettings">
+
+            <summary>
+                <para>Contains settings that relate to the Loading Panel's functionality. 
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.Web.ASPxSpreadsheet.ASPxSpreadsheetLoadingPanelSettings.#ctor(DevExpress.Web.ASPxSpreadsheet.ASPxSpreadsheet)">
+            <summary>
+                <para>Initializes a new instance of the ASPxSpreadsheetLoadingPanelSettings class with the specified owner.
+</para>
+            </summary>
+            <param name="spreadsheet">
+		An  <see cref="T:DevExpress.Web.ASPxSpreadsheet.ASPxSpreadsheet"/> object that represents the object's owner.
+
+            </param>
+
+
+        </member>
+        <member name="T:DevExpress.Web.ASPxSpreadsheet.SpreadsheetRibbonMode">
+
+            <summary>
+                <para>Lists values that specify the type of the ribbon navigation element used by the <see cref="T:DevExpress.Web.ASPxSpreadsheet.ASPxSpreadsheet"/> control.
+</para>
+            </summary>
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxSpreadsheet.SpreadsheetRibbonMode.Auto">
+            <summary>
+                <para>The value is determined automatically, based on the type of the end-user's device: touch or non-touch. Corresponds to <b>Ribbon</b> under non-touch device browsers. Corresponds to <b>OneLineRibbon</b> under touch device browsers.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxSpreadsheet.SpreadsheetRibbonMode.ExternalRibbon">
+            <summary>
+                <para>An external ribbon is used by the Spreadsheet as a toolbar. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxSpreadsheet.SpreadsheetRibbonMode.None">
+            <summary>
+                <para>The Spreadsheet has no toolbars. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxSpreadsheet.SpreadsheetRibbonMode.OneLineRibbon">
+            <summary>
+                <para>The built-in ribbon displays all items in an active tab on one line.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxSpreadsheet.SpreadsheetRibbonMode.Ribbon">
+            <summary>
+                <para>The toolbar for the Spreadsheet is rendered as a built-in ribbon. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="T:DevExpress.Web.ASPxSpreadsheet.SpreadsheetFormsSettings">
+
+            <summary>
+                <para>Contains settings that are specific to customizable versions of the <b>ASPxSpreadsheet</b>'s built-in dialogs.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.Web.ASPxSpreadsheet.SpreadsheetFormsSettings.#ctor(DevExpress.Web.IPropertiesOwner)">
+            <summary>
+                <para>Initializes a new instance of the SpreadsheetFormsSettings class with the specified owner.
+</para>
+            </summary>
+            <param name="owner">
+		An object that implements the <see cref="T:DevExpress.Web.IPropertiesOwner"/> interface.
+
+            </param>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxSpreadsheet.SpreadsheetFormsSettings.ChangeChartTypeFormPath">
+            <summary>
+                <para>Gets or sets the path to a UserControl (an <b>.ascx</b> file) that is a customizable version of the built-in Change chart type dialog.
+</para>
+            </summary>
+            <value> A <see cref="T:System.String"/> value specifying the file name and path to a UserControl file.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxSpreadsheet.SpreadsheetFormsSettings.ChartChangeHorizontalAxisTitleFormPath">
+            <summary>
+                <para>Gets or sets the path to a UserControl (an <b>.ascx</b> file) that is a customizable version of the built-in Change horizontal axis title dialog.
+</para>
+            </summary>
+            <value> A <see cref="T:System.String"/> value specifying the file name and path to a UserControl file.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxSpreadsheet.SpreadsheetFormsSettings.ChartChangeTitleFormPath">
+            <summary>
+                <para>Gets or sets the path to a UserControl (an <b>.ascx</b> file) that is a customizable version of the built-in Change chart title dialog.
+</para>
+            </summary>
+            <value> A <see cref="T:System.String"/> value specifying the file name and path to a UserControl file.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxSpreadsheet.SpreadsheetFormsSettings.ChartChangeVerticalAxisTitleFormPath">
+            <summary>
+                <para>Gets or sets the path to a UserControl (an <b>.ascx</b> file) that is a customizable version of the built-in Change vertical axis title dialog.
+</para>
+            </summary>
+            <value> A <see cref="T:System.String"/> value specifying the file name and path to a UserControl file.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxSpreadsheet.SpreadsheetFormsSettings.ChartSelectDataFormPath">
+            <summary>
+                <para>Gets or sets the path to a UserControl (an <b>.ascx</b> file) that is a customizable version of the built-in Select data source dialog.
+</para>
+            </summary>
+            <value> A <see cref="T:System.String"/> value specifying the file name and path to a UserControl file.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxSpreadsheet.SpreadsheetFormsSettings.ColumnWidthFormPath">
+            <summary>
+                <para>Gets or sets the path to a UserControl (an <b>.ascx</b> file) that is a customizable version of the built-in Column width dialog.
+</para>
+            </summary>
+            <value> A <see cref="T:System.String"/> value specifying the file name and path to a UserControl file.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxSpreadsheet.SpreadsheetFormsSettings.DefaultColumnWidthFormPath">
+            <summary>
+                <para>Gets or sets the path to a UserControl (an <b>.ascx</b> file) that is a customizable version of the built-in Standard column width dialog.
+</para>
+            </summary>
+            <value> A <see cref="T:System.String"/> value specifying the file name and path to a UserControl file.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxSpreadsheet.SpreadsheetFormsSettings.FindAndReplaceFormPath">
+            <summary>
+                <para>Gets or sets the path to a UserControl (an <b>.ascx</b> file) that is a customizable version of the built-in Find dialog.
+</para>
+            </summary>
+            <value> A <see cref="T:System.String"/> value specifying the file name and path to a UserControl file.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxSpreadsheet.SpreadsheetFormsSettings.InsertLinkFormPath">
+            <summary>
+                <para>Gets or sets the path to a UserControl (an <b>.ascx</b> file) that is a customizable version of the built-in Insert Link dialog.
+</para>
+            </summary>
+            <value> A <see cref="T:System.String"/> value specifying the file name and path to a UserControl file that is a customizable Insert Link dialog.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxSpreadsheet.SpreadsheetFormsSettings.InsertPictureFormPath">
+            <summary>
+                <para>Gets or sets the path to a UserControl (an <b>.ascx</b> file) that is the customizable version of the built-in Insert Picture dialog.
+</para>
+            </summary>
+            <value>A <see cref="T:System.String"/> value specifying the file name and path to a UserControl file that is a customizable Insert Picture dialog.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxSpreadsheet.SpreadsheetFormsSettings.ModifyChartLayoutFormPath">
+            <summary>
+                <para>Gets or sets the path to a UserControl (an <b>.ascx</b> file) that is a customizable version of the built-in Chart layouts dialog.
+</para>
+            </summary>
+            <value> A <see cref="T:System.String"/> value specifying the file name and path to a UserControl file.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxSpreadsheet.SpreadsheetFormsSettings.ModifyChartStyleFormPath">
+            <summary>
+                <para>Gets or sets the path to a UserControl (an <b>.ascx</b> file) that is a customizable version of the built-in Chart styles dialog.
+</para>
+            </summary>
+            <value> A <see cref="T:System.String"/> value specifying the file name and path to a UserControl file.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxSpreadsheet.SpreadsheetFormsSettings.OpenFileFormPath">
+            <summary>
+                <para>Gets or sets the path to a UserControl (an <b>.ascx</b> file) that is the customizable version of the built-in Open File dialog.
+</para>
+            </summary>
+            <value>A <see cref="T:System.String"/> value specifying the file name and path to a UserControl file that is a customizable Open File dialog.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxSpreadsheet.SpreadsheetFormsSettings.RenameSheetFormPath">
+            <summary>
+                <para>Gets or sets the path to a UserControl (an <b>.ascx</b> file) that is the customizable version of the built-in Rename Sheet dialog.
+</para>
+            </summary>
+            <value>A <see cref="T:System.String"/> value specifying the file name and path to a UserControl file that is a customizable Rename Sheet dialog.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxSpreadsheet.SpreadsheetFormsSettings.RowHeightFormPath">
+            <summary>
+                <para>Gets or sets the path to a UserControl (an <b>.ascx</b> file) that is a customizable version of the built-in Row height dialog.
+</para>
+            </summary>
+            <value> A <see cref="T:System.String"/> value specifying the file name and path to a UserControl file.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxSpreadsheet.SpreadsheetFormsSettings.SaveFileFormPath">
+            <summary>
+                <para>Gets or sets the path to a UserControl (an <b>.ascx</b> file) that is the customizable version of the built-in Save File dialog.
+</para>
+            </summary>
+            <value>A <see cref="T:System.String"/> value specifying the file name and path to a UserControl file that is a customizable Save File dialog.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxSpreadsheet.SpreadsheetFormsSettings.UnhideSheetFormPath">
+            <summary>
+                <para>Gets or sets the path to a UserControl (an <b>.ascx</b> file) that is a customizable version of the built-in Unhide sheet dialog.
+</para>
+            </summary>
+            <value> A <see cref="T:System.String"/> value specifying the file name and path to a UserControl file.
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.Web.ASPxSpreadsheet.ASPxSpreadsheet">
+
+            <summary>
+                <para>A spreadsheet control.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.Web.ASPxSpreadsheet.ASPxSpreadsheet.#ctor">
+            <summary>
+                <para>Initializes a new instance of the ASPxSpreadsheet class. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxSpreadsheet.ASPxSpreadsheet.ActiveTabIndex">
+            <summary>
+                <para>Gets or sets the index of the active ribbon tab within the ASPxSpreadsheet control.
+</para>
+            </summary>
+            <value>An integer value specifying the index of an active ribbon tab.
+</value>
+
+
+        </member>
+        <member name="M:DevExpress.Web.ASPxSpreadsheet.ASPxSpreadsheet.AddImage(System.IO.Stream,System.String)">
+            <summary>
+                <para> 
+</para>
+            </summary>
+            <param name="stream">
+		 
+
+            </param>
+            <param name="fileName">
+		 
+
+            </param>
+            <returns> 
+</returns>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxSpreadsheet.ASPxSpreadsheet.AssociatedRibbonID">
+            <summary>
+                <para>Specifies the ID of an <see cref="T:DevExpress.Web.ASPxRibbon"/> control, used as an external toolbar.
+</para>
+            </summary>
+            <value>A string value specifying the ribbon ID.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxSpreadsheet.ASPxSpreadsheet.AutoSaveMode">
+            <summary>
+                <para> </para>
+            </summary>
+            <value> </value>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxSpreadsheet.ASPxSpreadsheet.AutoSaveTimeout">
+            <summary>
+                <para> </para>
+            </summary>
+            <value> </value>
+
+
+        </member>
+        <member name="E:DevExpress.Web.ASPxSpreadsheet.ASPxSpreadsheet.Callback">
+            <summary>
+                <para>Fires when a round trip to the server has been initiated either manually (by a call to the client <see cref="M:DevExpress.Web.ASPxSpreadsheet.Scripts.ASPxClientSpreadsheet.PerformCallback"/> method) or automatically by the ASPxSpreadsheet (an internal service callback).
+</para>
+            </summary>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxSpreadsheet.ASPxSpreadsheet.ClientInstanceName">
+            <summary>
+                <para>Gets or sets the ASPxSpreadsheet's client programmatic identifier.
+</para>
+            </summary>
+            <value>A string value that specifies the ASPxSpreadsheet's client identifier.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxSpreadsheet.ASPxSpreadsheet.ClientSideEvents">
+            <summary>
+                <para>Gets an object that lists the client-side events specific to the ASPxSpreadsheet.
+</para>
+            </summary>
+            <value>A <see cref="SpreadsheetClientSideEvents"/> object which allows assigning handlers to the client-side events available to the ASPxSpreadsheet.
+</value>
+
+
+        </member>
+        <member name="M:DevExpress.Web.ASPxSpreadsheet.ASPxSpreadsheet.Close">
+            <summary>
+                <para>Closes the workbook currently loaded into ASPxSpreadsheet and accessed via the <see cref="P:DevExpress.Web.ASPxSpreadsheet.ASPxSpreadsheet.Document"/> property.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxSpreadsheet.ASPxSpreadsheet.ConfirmOnLosingChanges">
+            <summary>
+                <para>Gets or sets the text of the confirmation message that is displayed when any unsaved data changes are going to be lost.
+</para>
+            </summary>
+            <value>A string specifying the confirmation message text.
+</value>
+
+
+        </member>
+        <member name="M:DevExpress.Web.ASPxSpreadsheet.ASPxSpreadsheet.CreateDefaultRibbonTabs(System.Boolean)">
+            <summary>
+                <para>Creates a collection of default Ribbon tabs, specifying what to do with tabs that already exist within the <see cref="P:DevExpress.Web.ASPxSpreadsheet.ASPxSpreadsheet.RibbonTabs"/> collection.
+</para>
+            </summary>
+            <param name="clearExistingTabs">
+		<b>true</b> to delete existing tabs; <b>false</b> to add the default tabs to the collection.
+
+            </param>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxSpreadsheet.ASPxSpreadsheet.Document">
+            <summary>
+                <para>Provides access to a workbook loaded in the control.
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.Spreadsheet.IWorkbook"/> interface specifying a document loaded in the control.
+</value>
+
+
+        </member>
+        <member name="E:DevExpress.Web.ASPxSpreadsheet.ASPxSpreadsheet.DocumentCallback">
+            <summary>
+                <para>Fires when a round trip to the server has been initiated by the loaded document.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxSpreadsheet.ASPxSpreadsheet.DocumentId">
+            <summary>
+                <para>Gets or sets the document's unique identifier.
+</para>
+            </summary>
+            <value>A string value that uniquely identifies the document.
+</value>
+
+
+        </member>
+        <member name="E:DevExpress.Web.ASPxSpreadsheet.ASPxSpreadsheet.DocumentSelectorCloudProviderRequest">
+            <summary>
+                <para>Fires when a cloud provider used in the Document Selector sends a request to a cloud service.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="E:DevExpress.Web.ASPxSpreadsheet.ASPxSpreadsheet.DocumentSelectorFileUploading">
+            <summary>
+                <para>Fires before a file is uploaded to the Document Selector and allows you to cancel the action.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="E:DevExpress.Web.ASPxSpreadsheet.ASPxSpreadsheet.DocumentSelectorFolderCreating">
+            <summary>
+                <para>Fires on the server side before a folder is created within the FileManager embedded into built-in dialogs, and allows you to cancel the action.
+ 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="E:DevExpress.Web.ASPxSpreadsheet.ASPxSpreadsheet.DocumentSelectorItemCopying">
+            <summary>
+                <para>Fires before an item is copied within the Document Selector, and allows you to cancel the action.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="E:DevExpress.Web.ASPxSpreadsheet.ASPxSpreadsheet.DocumentSelectorItemDeleting">
+            <summary>
+                <para>Fires before an item is deleted within the FileManager embedded into built-in dialogs, and allows you to cancel the action.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="E:DevExpress.Web.ASPxSpreadsheet.ASPxSpreadsheet.DocumentSelectorItemMoving">
+            <summary>
+                <para>Fires before an item is moved within the FileManager embedded into built-in dialogs, and allows you to cancel the action.
+
+</para>
+            </summary>
+
+
+        </member>
+        <member name="E:DevExpress.Web.ASPxSpreadsheet.ASPxSpreadsheet.DocumentSelectorItemRenaming">
+            <summary>
+                <para>Fires before an item is renamed within the FileManager embedded into built-in dialogs, and allows you to cancel the action.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxSpreadsheet.ASPxSpreadsheet.EnableClientSideAPI">
+            <summary>
+                <para>Gets or sets a value that specifies whether the ASPxSpreadsheet can be manipulated on the client side in code.
+
+</para>
+            </summary>
+            <value><b>true</b>, if the control's client object model is fully available; <b>false</b> if no programmatic interface is available for the ASPxSpreadsheet on the client side.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxSpreadsheet.ASPxSpreadsheet.Enabled">
+            <summary>
+                <para>This property is not in effect for this class. It is overridden only for the purpose of preventing it from appearing in Microsoft Visual Studio designer tools. 
+
+
+</para>
+            </summary>
+            <value> 
+</value>
+
+
+        </member>
+        <member name="M:DevExpress.Web.ASPxSpreadsheet.ASPxSpreadsheet.GetCurrentDocumentPath">
+            <summary>
+                <para>Gets the path of the currently opened document.
+</para>
+            </summary>
+            <returns>A string value specifying the document path.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.Web.ASPxSpreadsheet.ASPxSpreadsheet.GetImageDirectory">
+            <summary>
+                <para>Gets or sets the image directory path.
+</para>
+            </summary>
+            <returns>A string value specifying the path to the image directory.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.Web.ASPxSpreadsheet.ASPxSpreadsheet.GetWorkDirectory">
+            <summary>
+                <para>Returns the path to the working directory.
+</para>
+            </summary>
+            <returns>A string representing the working directory path.
+</returns>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxSpreadsheet.ASPxSpreadsheet.Images">
+            <summary>
+                <para>Provides access to the settings that define images displayed within the ASPxSpreadsheet.
+</para>
+            </summary>
+            <value>An <see cref="SpreadsheetImages"/> object that contains image settings.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxSpreadsheet.ASPxSpreadsheet.ImagesFileManager">
+            <summary>
+                <para>Provides access to the settings that define images displayed within the FileManager used within some built-in dialogs.
+</para>
+            </summary>
+            <value>A <see cref="SpreadsheetFileManagerImages"/> object that contains image settings.
+</value>
+
+
+        </member>
+        <member name="M:DevExpress.Web.ASPxSpreadsheet.ASPxSpreadsheet.IsInternalServiceCallback">
+            <summary>
+                <para>Gets a value indicating whether an internal service callback is being currently processed. 
+</para>
+            </summary>
+            <returns><b>true</b>, if the processed callback is an internal service callback of the ASPxSpreadsheet; otherwise, <b>false</b>.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.Web.ASPxSpreadsheet.ASPxSpreadsheet.New">
+            <summary>
+                <para>Creates a new empty document within the ASPxSpreadsheet.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="M:DevExpress.Web.ASPxSpreadsheet.ASPxSpreadsheet.Open(System.String)">
+            <summary>
+                <para>Opens a document by the specified path.
+</para>
+            </summary>
+            <param name="pathToDocument">
+		A string representing the path to a document to open.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.Web.ASPxSpreadsheet.ASPxSpreadsheet.Open(System.String,DevExpress.Spreadsheet.DocumentFormat)">
+            <summary>
+                <para>Opens the specified document.
+</para>
+            </summary>
+            <param name="pathToDocument">
+		A string value specifying the path to the document to open.
+
+            </param>
+            <param name="format">
+		A DocumentFormat object specifying the document format.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.Web.ASPxSpreadsheet.ASPxSpreadsheet.Open(DevExpress.Web.Office.SpreadsheetDocumentInfo)">
+            <summary>
+                <para>Opens the specified document.
+</para>
+            </summary>
+            <param name="documentInfo">
+		A <see cref="T:DevExpress.Web.Office.SpreadsheetDocumentInfo"/> object that contains information about the document to open.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.Web.ASPxSpreadsheet.ASPxSpreadsheet.Open(System.String,DevExpress.Spreadsheet.DocumentFormat,System.Func`1)">
+            <summary>
+                <para>Opens the specified document.
+</para>
+            </summary>
+            <param name="documentId">
+		A string value that uniquely identifies the document to open.
+
+            </param>
+            <param name="format">
+		A DocumentFormat object specifying the document format. 
+
+            </param>
+            <param name="contentAccessor">
+		A method delegate to obtain a stream from which to open the document.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.Web.ASPxSpreadsheet.ASPxSpreadsheet.Open(System.String,DevExpress.Spreadsheet.DocumentFormat,System.Func`1)">
+            <summary>
+                <para>Opens the specified document.
+</para>
+            </summary>
+            <param name="documentId">
+		A string value that uniquely identifies the document to open.
+
+            </param>
+            <param name="format">
+		A DocumentFormat object specifying the document format. 
+
+            </param>
+            <param name="contentAccessor">
+		A method delegate to obtain a stream from which to open the document.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.Web.ASPxSpreadsheet.ASPxSpreadsheet.RaiseDocumentSelectorCloudProviderRequest(DevExpress.Web.FileManagerCloudProviderRequestEventArgs)">
+            <summary>
+                <para> </para>
+            </summary>
+            <param name="args">
+		 
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.Web.ASPxSpreadsheet.ASPxSpreadsheet.RaiseDocumentSelectorFileUploading(DevExpress.Web.FileManagerFileUploadEventArgs)">
+            <summary>
+                <para>This member supports the internal infrastructure and is not intended to be used directly from your code.
+</para>
+            </summary>
+            <param name="args">
+		 
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.Web.ASPxSpreadsheet.ASPxSpreadsheet.RaiseDocumentSelectorFolderCreating(DevExpress.Web.FileManagerFolderCreateEventArgs)">
+            <summary>
+                <para>This member supports the internal infrastructure and is not intended to be used directly from your code.
+</para>
+            </summary>
+            <param name="args">
+		 
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.Web.ASPxSpreadsheet.ASPxSpreadsheet.RaiseDocumentSelectorItemCopying(DevExpress.Web.FileManagerItemCopyEventArgs)">
+            <summary>
+                <para> </para>
+            </summary>
+            <param name="args">
+		 
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.Web.ASPxSpreadsheet.ASPxSpreadsheet.RaiseDocumentSelectorItemDeleting(DevExpress.Web.FileManagerItemDeleteEventArgs)">
+            <summary>
+                <para>This member supports the internal infrastructure and is not intended to be used directly from your code.
+</para>
+            </summary>
+            <param name="args">
+		 
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.Web.ASPxSpreadsheet.ASPxSpreadsheet.RaiseDocumentSelectorItemMoving(DevExpress.Web.FileManagerItemMoveEventArgs)">
+            <summary>
+                <para>This member supports the internal infrastructure and is not intended to be used directly from your code.
+</para>
+            </summary>
+            <param name="args">
+		 
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.Web.ASPxSpreadsheet.ASPxSpreadsheet.RaiseDocumentSelectorItemRenaming(DevExpress.Web.FileManagerItemRenameEventArgs)">
+            <summary>
+                <para>This member supports the internal infrastructure and is not intended to be used directly from your code.
+</para>
+            </summary>
+            <param name="args">
+		 
+
+            </param>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxSpreadsheet.ASPxSpreadsheet.ReadOnly">
+            <summary>
+                <para>This member supports the internal infrastructure and is not intended to be used directly from your code.
+</para>
+            </summary>
+            <value> 
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxSpreadsheet.ASPxSpreadsheet.RibbonContextTabCategories">
+            <summary>
+                <para> </para>
+            </summary>
+            <value> </value>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxSpreadsheet.ASPxSpreadsheet.RibbonMode">
+            <summary>
+                <para>Specifies the type of the ASPxSpreadsheet toolbar.
+</para>
+            </summary>
+            <value>One of the <see cref="SpreadsheetRibbonMode"/> enumeration values.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxSpreadsheet.ASPxSpreadsheet.RibbonTabs">
+            <summary>
+                <para>Provides access to the collection of Ribbon tabs.
+</para>
+            </summary>
+            <value>A <see cref="SpreadsheetRibbonTabCollection"/> object that is the collection of the Ribbon's tabs. 
+</value>
+
+
+        </member>
+        <member name="M:DevExpress.Web.ASPxSpreadsheet.ASPxSpreadsheet.Save">
+            <summary>
+                <para>Saves a document in its original format at its original location. 
+
+</para>
+            </summary>
+
+
+        </member>
+        <member name="M:DevExpress.Web.ASPxSpreadsheet.ASPxSpreadsheet.SaveCopy(System.String)">
+            <summary>
+                <para>Saves a document copy using the specified settings.
+</para>
+            </summary>
+            <param name="documentPath">
+		A string value specifying the document path to save to. 
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.Web.ASPxSpreadsheet.ASPxSpreadsheet.SaveCopy(System.IO.Stream,DevExpress.Spreadsheet.DocumentFormat)">
+            <summary>
+                <para>Saves a document copy using the specified settings. 
+</para>
+            </summary>
+            <param name="stream">
+		A stream object specifying where to save the document. 
+
+
+            </param>
+            <param name="format">
+		A DocumentFormat object specifying the document format. 
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.Web.ASPxSpreadsheet.ASPxSpreadsheet.SaveCopy(DevExpress.Spreadsheet.DocumentFormat)">
+            <summary>
+                <para>Saves a document copy using the specified settings.
+</para>
+            </summary>
+            <param name="format">
+		A DocumentFormat object specifying the document's format.
+
+            </param>
+            <returns>An array of bytes where the document is saved.
+
+</returns>
+
+
+        </member>
+        <member name="E:DevExpress.Web.ASPxSpreadsheet.ASPxSpreadsheet.Saving">
+            <summary>
+                <para>Allows the current spreadsheet document to be processed before it is saved to the server.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxSpreadsheet.ASPxSpreadsheet.SettingsDialogForm">
+            <summary>
+                <para>Provides access to the settings that relate to customization of dialog form elements.
+</para>
+            </summary>
+            <value><see cref="SpreadsheetDialogFormSettings"/>
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxSpreadsheet.ASPxSpreadsheet.SettingsDialogs">
+            <summary>
+                <para>Gets settings concerning customization of dialog form elements. 
+
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.Web.ASPxSpreadsheet.SpreadsheetDialogSettings"/> object containing settings to customize dialog form elements.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxSpreadsheet.ASPxSpreadsheet.SettingsDocumentSelector">
+            <summary>
+                <para>Provides access to settings that are related to the FileManager used within some built-in dialogs dialog.
+</para>
+            </summary>
+            <value>An <see cref="SpreadsheetDocumentSelectorSettings"/> object that contains the Document Selector dialog's settings.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxSpreadsheet.ASPxSpreadsheet.SettingsForms">
+            <summary>
+                <para>Gets the settings allowing you to specify paths to dialog forms (UserControls) stored within a web site.
+</para>
+            </summary>
+            <value>A <see cref="SpreadsheetFormsSettings"/> object containing properties which point to individual dialog forms.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxSpreadsheet.ASPxSpreadsheet.SettingsLoadingPanel">
+            <summary>
+                <para>Provides access to the loading panel's settings.
+</para>
+            </summary>
+            <value>An <see cref="ASPxSpreadsheetLoadingPanelSettings"/> object that contains the loading panel's settings.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxSpreadsheet.ASPxSpreadsheet.ShowConfirmOnLosingChanges">
+            <summary>
+                <para>Gets or sets a value that specifies whether a confirmation alert should be displayed when any unsaved changes are going to be lost due to an end-user action.
+</para>
+            </summary>
+            <value><b>true</b>, to display the confirmation alert; otherwise, <b>false</b>.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxSpreadsheet.ASPxSpreadsheet.ShowFormulaBar">
+            <summary>
+                <para> </para>
+            </summary>
+            <value> </value>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxSpreadsheet.ASPxSpreadsheet.Styles">
+            <summary>
+                <para>Provides access to the style settings that control the appearance of the ASPxSpreadsheet elements.
+</para>
+            </summary>
+            <value>A <see cref="SpreadsheetStyles"/> object that provides style settings for view elements.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxSpreadsheet.ASPxSpreadsheet.StylesButton">
+            <summary>
+                <para>Provides access to the style settings that define the appearance of button elements used by the ASPxSpreadsheet control (within dialog forms, for instance). 
+</para>
+            </summary>
+            <value>A <see cref="SpreadsheetButtonStyles"/> object that contains style settings.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxSpreadsheet.ASPxSpreadsheet.StylesEditors">
+            <summary>
+                <para>Provides access to the style settings that define the appearance of editor elements used by the ASPxSpreadsheet control (for instance, within dialog forms). 
+</para>
+            </summary>
+            <value>A <see cref="SpreadsheetEditorsStyles"/> object that contains style settings.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxSpreadsheet.ASPxSpreadsheet.StylesFileManager">
+            <summary>
+                <para>Provides access to the style settings that define the appearance of File Manager elements used by the ASPxSpreadsheet control (for instance, within the File Open dialog). 
+</para>
+            </summary>
+            <value>A <see cref="SpreadsheetFileManagerStyles"/> object that provides style settings. 
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxSpreadsheet.ASPxSpreadsheet.StylesFormulaAutoCompete">
+            <summary>
+                <para> </para>
+            </summary>
+            <value> </value>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxSpreadsheet.ASPxSpreadsheet.StylesFormulaBar">
+            <summary>
+                <para> </para>
+            </summary>
+            <value> </value>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxSpreadsheet.ASPxSpreadsheet.StylesPopupMenu">
+            <summary>
+                <para>Provides access to the style settings that define the appearance of the ASPxSpreadsheet's context menu. 
+</para>
+            </summary>
+            <value>A <see cref="SpreadsheetMenuStyles"/> object that contains style settings.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxSpreadsheet.ASPxSpreadsheet.StylesRibbon">
+            <summary>
+                <para>Provides access to the style settings that define the appearance of the ASPxSpreadsheet's ribbon toolbar elements. 
+</para>
+            </summary>
+            <value>A <see cref="SpreadsheetRibbonStyles"/> object that contains style settings.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxSpreadsheet.ASPxSpreadsheet.StylesTabControl">
+            <summary>
+                <para>Provides access to the style settings defining the appearance of tab control elements used in the ASPxSpreadsheet.
+</para>
+            </summary>
+            <value>A <see cref="SpreadsheetTabControlStyles"/> object that contains style settings.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxSpreadsheet.ASPxSpreadsheet.TemporaryFolder">
+            <summary>
+                <para>Gets or sets the temporary folder path.
+</para>
+            </summary>
+            <value>A string specifying the temporary folder path.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxSpreadsheet.ASPxSpreadsheet.WorkDirectory">
+            <summary>
+                <para>Gets or sets the working directory path.
+</para>
+            </summary>
+            <value>A string specifying the working directory path.
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.Web.ASPxSpreadsheet.SpreadsheetFormulaBarStyles">
+
+            <summary>
+                <para> </para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.Web.ASPxSpreadsheet.SpreadsheetFormulaBarStyles.#ctor(DevExpress.Web.Internal.ISkinOwner)">
+            <summary>
+                <para>Initializes a new instance of the SpreadsheetFormulaBarStyles class with the specified owner.
+</para>
+            </summary>
+            <param name="owner">
+		An object that implements the <b>ISkinOwner</b> interface.
+
+            </param>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxSpreadsheet.SpreadsheetFormulaBarStyles.ButtonSection">
+            <summary>
+                <para> </para>
+            </summary>
+            <value> </value>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxSpreadsheet.SpreadsheetFormulaBarStyles.CancelButton">
+            <summary>
+                <para> </para>
+            </summary>
+            <value> </value>
+
+
+        </member>
+        <member name="M:DevExpress.Web.ASPxSpreadsheet.SpreadsheetFormulaBarStyles.CopyFrom(DevExpress.Web.StylesBase)">
+            <summary>
+                <para> </para>
+            </summary>
+            <param name="source">
+		 
+            </param>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxSpreadsheet.SpreadsheetFormulaBarStyles.EnterButton">
+            <summary>
+                <para> </para>
+            </summary>
+            <value> </value>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxSpreadsheet.SpreadsheetFormulaBarStyles.MainElement">
+            <summary>
+                <para> </para>
+            </summary>
+            <value> </value>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxSpreadsheet.SpreadsheetFormulaBarStyles.TextBox">
+            <summary>
+                <para> </para>
+            </summary>
+            <value> </value>
+
+
+        </member>
+        <member name="T:DevExpress.Web.ASPxSpreadsheet.SpreadsheetFormulaBarButtonSectionStyles">
+
+            <summary>
+                <para> </para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.Web.ASPxSpreadsheet.SpreadsheetFormulaBarButtonSectionStyles.#ctor(DevExpress.Web.Internal.ISkinOwner)">
+            <summary>
+                <para>Initializes a new instance of the SpreadsheetFormulaBarButtonSectionStyles class with the specified owner.
+</para>
+            </summary>
+            <param name="owner">
+		An object that implements the <b>ISkinOwner</b> interface.
+
+            </param>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxSpreadsheet.SpreadsheetFormulaBarButtonSectionStyles.Button">
+            <summary>
+                <para> </para>
+            </summary>
+            <value> </value>
+
+
+        </member>
+        <member name="M:DevExpress.Web.ASPxSpreadsheet.SpreadsheetFormulaBarButtonSectionStyles.CopyFrom(DevExpress.Web.StylesBase)">
+            <summary>
+                <para> </para>
+            </summary>
+            <param name="source">
+		 
+            </param>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxSpreadsheet.SpreadsheetFormulaBarButtonSectionStyles.Item">
+            <summary>
+                <para> </para>
+            </summary>
+            <value> </value>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxSpreadsheet.SpreadsheetFormulaBarButtonSectionStyles.Link">
+            <summary>
+                <para> </para>
+            </summary>
+            <value> </value>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxSpreadsheet.SpreadsheetFormulaBarButtonSectionStyles.MainElement">
+            <summary>
+                <para> </para>
+            </summary>
+            <value> </value>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxSpreadsheet.SpreadsheetFormulaBarButtonSectionStyles.ScrollButton">
+            <summary>
+                <para> </para>
+            </summary>
+            <value> </value>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxSpreadsheet.SpreadsheetFormulaBarButtonSectionStyles.Style">
+            <summary>
+                <para> </para>
+            </summary>
+            <value> </value>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxSpreadsheet.SpreadsheetFormulaBarButtonSectionStyles.SubMenu">
+            <summary>
+                <para> </para>
+            </summary>
+            <value> </value>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxSpreadsheet.SpreadsheetFormulaBarButtonSectionStyles.SubMenuItem">
+            <summary>
+                <para> </para>
+            </summary>
+            <value> </value>
+
+
+        </member>
+        <member name="T:DevExpress.Web.ASPxSpreadsheet.SpreadsheetFormulaBarButtonImageProperties">
+
+            <summary>
+                <para> </para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.Web.ASPxSpreadsheet.SpreadsheetFormulaBarButtonImageProperties.#ctor">
+            <summary>
+                <para>Initializes a new instance of the SpreadsheetFormulaBarButtonImageProperties class with default settings.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="M:DevExpress.Web.ASPxSpreadsheet.SpreadsheetFormulaBarButtonImageProperties.#ctor(DevExpress.Web.IPropertiesOwner)">
+            <summary>
+                <para>Initializes a new instance of the SpreadsheetFormulaBarButtonImageProperties class with the specified owner. 
+</para>
+            </summary>
+            <param name="owner">
+		An <see cref="T:DevExpress.Web.IPropertiesOwner"/>-implemented object that owns the created object. 
+
+            </param>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxSpreadsheet.SpreadsheetFormulaBarButtonImageProperties.SpriteProperties">
+            <summary>
+                <para> </para>
+            </summary>
+            <value> </value>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxSpreadsheet.SpreadsheetFormulaBarButtonImageProperties.UrlChecked">
+            <summary>
+                <para> </para>
+            </summary>
+            <value> </value>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxSpreadsheet.SpreadsheetFormulaBarButtonImageProperties.UrlSelected">
+            <summary>
+                <para> </para>
+            </summary>
+            <value> </value>
+
+
+        </member>
+        <member name="T:DevExpress.Web.ASPxSpreadsheet.SpreadsheetFormulaAutoCompeteStyles">
+
+            <summary>
+                <para> </para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.Web.ASPxSpreadsheet.SpreadsheetFormulaAutoCompeteStyles.#ctor(DevExpress.Web.Internal.ISkinOwner)">
+            <summary>
+                <para>Initializes a new instance of the SpreadsheetFormulaAutoCompeteStyles class with the specified owner.
+</para>
+            </summary>
+            <param name="owner">
+		An object that implements the <b>ISkinOwner</b> interface.
+
+            </param>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxSpreadsheet.SpreadsheetFormulaAutoCompeteStyles.FunctionArgumentInfo">
+            <summary>
+                <para> </para>
+            </summary>
+            <value> </value>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxSpreadsheet.SpreadsheetFormulaAutoCompeteStyles.FunctionInfo">
+            <summary>
+                <para> </para>
+            </summary>
+            <value> </value>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxSpreadsheet.SpreadsheetFormulaAutoCompeteStyles.ListBox">
+            <summary>
+                <para> </para>
+            </summary>
+            <value> </value>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxSpreadsheet.SpreadsheetFormulaAutoCompeteStyles.ListBoxItem">
+            <summary>
+                <para> </para>
+            </summary>
+            <value> </value>
+
+
+        </member>
+        <member name="T:DevExpress.Web.ASPxSpreadsheet.SpreadsheetFileManagerFoldersSettings">
+
+            <summary>
+                <para>Contains settings that relate to the folder functionality of the embedded FileManager used within certain built-in dialogs.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.Web.ASPxSpreadsheet.SpreadsheetFileManagerFoldersSettings.#ctor(DevExpress.Web.IPropertiesOwner)">
+            <summary>
+                <para>Initializes a new instance of the SpreadsheetFileManagerFoldersSettings class with the specified owner.
+</para>
+            </summary>
+            <param name="owner">
+		An object that implements the <see cref="T:DevExpress.Web.IPropertiesOwner"/> interface.
+
+            </param>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxSpreadsheet.SpreadsheetFileManagerFoldersSettings.ShowLockedFolderIcons">
+            <summary>
+                <para>Gets or sets a value specifying whether the FileManager embedded into some built-in dialogs displays a special icon for folders that are locked for upload.
+</para>
+            </summary>
+            <value><b>true</b> if a special icon is displayed; <b>false</b> if a default folder icon is displayed. 
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.Web.ASPxSpreadsheet.SpreadsheetFileManagerCommonSettings">
+
+            <summary>
+                <para>Contains the base settings of the embedded FileManager used within certain built-in dialogs. 
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.Web.ASPxSpreadsheet.SpreadsheetFileManagerCommonSettings.#ctor(DevExpress.Web.IPropertiesOwner)">
+            <summary>
+                <para>Initializes a new instance of the SpreadsheetFileManagerCommonSettings class with the specified owner.
+</para>
+            </summary>
+            <param name="owner">
+		An object that implements the <see cref="T:DevExpress.Web.IPropertiesOwner"/> interface.
+
+            </param>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxSpreadsheet.SpreadsheetFileManagerCommonSettings.AllowedFileExtensions">
+            <summary>
+                <para>Gets or sets the file extensions allowed for display in the FileManager used within certain built-in dialogs.
+</para>
+            </summary>
+            <value>An array of <see cref="T:System.String"/> values that contains the file extensions allowed.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxSpreadsheet.SpreadsheetFileManagerCommonSettings.EnableMultiSelect">
+            <summary>
+                <para>Gets or sets a value specifying whether multiple file selection is enabled in the FileManager used within certain built-in dialogs. 
+</para>
+            </summary>
+            <value><b>true</b>, if multiple file selection is enabled; otherwise, <b>false</b>.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxSpreadsheet.SpreadsheetFileManagerCommonSettings.RootFolder">
+            <summary>
+                <para>This property is not in effect for this class. It is overridden only for the purpose of preventing it from appearing in Microsoft Visual Studio designer tools. 
+
+
+</para>
+            </summary>
+            <value> 
+</value>
+
+
+        </member>
+    </members>
+</doc>

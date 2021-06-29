@@ -1,0 +1,14 @@
+C:\Users\saito\Downloads\HealthMonitoringSystem\HealthMonitoringSystem.DAL\bin\Debug\HealthMonitoringSystem.DAL.dll.config
+C:\Users\saito\Downloads\HealthMonitoringSystem\HealthMonitoringSystem.DAL\bin\Debug\HealthMonitoringSystem.DAL.dll
+C:\Users\saito\Downloads\HealthMonitoringSystem\HealthMonitoringSystem.DAL\bin\Debug\HealthMonitoringSystem.DAL.pdb
+C:\Users\saito\Downloads\HealthMonitoringSystem\HealthMonitoringSystem.DAL\bin\Debug\EntityFramework.dll
+C:\Users\saito\Downloads\HealthMonitoringSystem\HealthMonitoringSystem.DAL\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\saito\Downloads\HealthMonitoringSystem\HealthMonitoringSystem.DAL\bin\Debug\HealthMonitoringSystem.Entity.dll
+C:\Users\saito\Downloads\HealthMonitoringSystem\HealthMonitoringSystem.DAL\bin\Debug\MySql.Data.dll
+C:\Users\saito\Downloads\HealthMonitoringSystem\HealthMonitoringSystem.DAL\bin\Debug\MySql.Data.Entity.EF6.dll
+C:\Users\saito\Downloads\HealthMonitoringSystem\HealthMonitoringSystem.DAL\bin\Debug\HealthMonitoringSystem.Entity.pdb
+C:\Users\saito\Downloads\HealthMonitoringSystem\HealthMonitoringSystem.DAL\bin\Debug\EntityFramework.xml
+C:\Users\saito\Downloads\HealthMonitoringSystem\HealthMonitoringSystem.DAL\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\saito\Downloads\HealthMonitoringSystem\HealthMonitoringSystem.DAL\obj\Debug\HealthMonitoringSystem.DAL.csprojResolveAssemblyReference.cache
+C:\Users\saito\Downloads\HealthMonitoringSystem\HealthMonitoringSystem.DAL\obj\Debug\HealthMonitoringSystem.DAL.dll
+C:\Users\saito\Downloads\HealthMonitoringSystem\HealthMonitoringSystem.DAL\obj\Debug\HealthMonitoringSystem.DAL.pdb

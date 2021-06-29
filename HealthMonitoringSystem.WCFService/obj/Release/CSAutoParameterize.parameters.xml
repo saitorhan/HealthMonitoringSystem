@@ -1,9 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <parameters>
-  <parameter name="MsSqlHealthContext-Web.config Connection String" description="MsSqlHealthContext Connection String used in web.config by the application to access the database." defaultValue="Data Source=.;Initial Catalog=HealthSystem;Integrated Security=True" tags="SqlConnectionString">
-    <parameterEntry kind="XmlFile" scope="C:\\Users\\sorhan\\Source\\Workspaces\\Health\ Monitoring\ System\\HealthMonitoringSystem\\HealthMonitoringSystem\.WCFService\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='MsSqlHealthContext']/@connectionString" />
+  <parameter name="MsSqlHealthContext-Web.config Connection String" description="MsSqlHealthContext Connection String used in web.config by the application to access the database." defaultValue="Data Source=.\Egitim;Initial Catalog=HealthSystem;Integrated Security=True" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\saito\\Downloads\\HealthMonitoringSystem\\HealthMonitoringSystem\.WCFService\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='MsSqlHealthContext']/@connectionString" />
   </parameter>
   <parameter name="MySqlHealthContext-Web.config Connection String" description="MySqlHealthContext Connection String used in web.config by the application to access the database." defaultValue="server=localhost;port=3306;database=HealthSystem;uid=root;password=123456qaz" tags="SqlConnectionString">
-    <parameterEntry kind="XmlFile" scope="C:\\Users\\sorhan\\Source\\Workspaces\\Health\ Monitoring\ System\\HealthMonitoringSystem\\HealthMonitoringSystem\.WCFService\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='MySqlHealthContext']/@connectionString" />
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\saito\\Downloads\\HealthMonitoringSystem\\HealthMonitoringSystem\.WCFService\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='MySqlHealthContext']/@connectionString" />
   </parameter>
 </parameters>

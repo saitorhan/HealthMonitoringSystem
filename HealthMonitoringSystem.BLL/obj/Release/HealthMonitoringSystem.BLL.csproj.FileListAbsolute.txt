@@ -17,3 +17,22 @@ C:\Users\sorhan\Source\Workspaces\Health Monitoring System\HealthMonitoringSyste
 C:\Users\sorhan\Source\Workspaces\Health Monitoring System\HealthMonitoringSystem\HealthMonitoringSystem.BLL\obj\Release\HealthMonitoringSystem.BLL.csprojResolveAssemblyReference.cache
 C:\Users\sorhan\Source\Workspaces\Health Monitoring System\HealthMonitoringSystem\HealthMonitoringSystem.BLL\obj\Release\HealthMonitoringSystem.BLL.dll
 C:\Users\sorhan\Source\Workspaces\Health Monitoring System\HealthMonitoringSystem\HealthMonitoringSystem.BLL\obj\Release\HealthMonitoringSystem.BLL.pdb
+C:\Users\saito\Downloads\HealthMonitoringSystem\HealthMonitoringSystem.BLL\bin\Release\App.config
+C:\Users\saito\Downloads\HealthMonitoringSystem\HealthMonitoringSystem.BLL\bin\Release\HealthMonitoringSystem.BLL.dll.config
+C:\Users\saito\Downloads\HealthMonitoringSystem\HealthMonitoringSystem.BLL\bin\Release\HealthMonitoringSystem.BLL.dll
+C:\Users\saito\Downloads\HealthMonitoringSystem\HealthMonitoringSystem.BLL\bin\Release\HealthMonitoringSystem.BLL.pdb
+C:\Users\saito\Downloads\HealthMonitoringSystem\HealthMonitoringSystem.BLL\bin\Release\HealthMonitoringSystem.DAL.dll
+C:\Users\saito\Downloads\HealthMonitoringSystem\HealthMonitoringSystem.BLL\bin\Release\HealthMonitoringSystem.Entity.dll
+C:\Users\saito\Downloads\HealthMonitoringSystem\HealthMonitoringSystem.BLL\bin\Release\HealthMonitoringSystem.Interfaces.dll
+C:\Users\saito\Downloads\HealthMonitoringSystem\HealthMonitoringSystem.BLL\bin\Release\Ninject.dll
+C:\Users\saito\Downloads\HealthMonitoringSystem\HealthMonitoringSystem.BLL\bin\Release\EntityFramework.dll
+C:\Users\saito\Downloads\HealthMonitoringSystem\HealthMonitoringSystem.BLL\bin\Release\MySql.Data.Entity.EF6.dll
+C:\Users\saito\Downloads\HealthMonitoringSystem\HealthMonitoringSystem.BLL\bin\Release\MySql.Data.dll
+C:\Users\saito\Downloads\HealthMonitoringSystem\HealthMonitoringSystem.BLL\bin\Release\HealthMonitoringSystem.DAL.pdb
+C:\Users\saito\Downloads\HealthMonitoringSystem\HealthMonitoringSystem.BLL\bin\Release\HealthMonitoringSystem.Entity.pdb
+C:\Users\saito\Downloads\HealthMonitoringSystem\HealthMonitoringSystem.BLL\bin\Release\HealthMonitoringSystem.Interfaces.pdb
+C:\Users\saito\Downloads\HealthMonitoringSystem\HealthMonitoringSystem.BLL\bin\Release\Ninject.xml
+C:\Users\saito\Downloads\HealthMonitoringSystem\HealthMonitoringSystem.BLL\bin\Release\EntityFramework.xml
+C:\Users\saito\Downloads\HealthMonitoringSystem\HealthMonitoringSystem.BLL\obj\Release\HealthMonitoringSystem.BLL.csprojResolveAssemblyReference.cache
+C:\Users\saito\Downloads\HealthMonitoringSystem\HealthMonitoringSystem.BLL\obj\Release\HealthMonitoringSystem.BLL.dll
+C:\Users\saito\Downloads\HealthMonitoringSystem\HealthMonitoringSystem.BLL\obj\Release\HealthMonitoringSystem.BLL.pdb

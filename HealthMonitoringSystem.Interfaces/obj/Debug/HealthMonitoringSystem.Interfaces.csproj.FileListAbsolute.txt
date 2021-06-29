@@ -1,0 +1,17 @@
+C:\Users\saito\Downloads\HealthMonitoringSystem\HealthMonitoringSystem.Interfaces\bin\Debug\HealthMonitoringSystem.Interfaces.dll
+C:\Users\saito\Downloads\HealthMonitoringSystem\HealthMonitoringSystem.Interfaces\bin\Debug\HealthMonitoringSystem.Interfaces.pdb
+C:\Users\saito\Downloads\HealthMonitoringSystem\HealthMonitoringSystem.Interfaces\bin\Debug\HealthMonitoringSystem.BLL.dll
+C:\Users\saito\Downloads\HealthMonitoringSystem\HealthMonitoringSystem.Interfaces\bin\Debug\HealthMonitoringSystem.DAL.dll
+C:\Users\saito\Downloads\HealthMonitoringSystem\HealthMonitoringSystem.Interfaces\bin\Debug\HealthMonitoringSystem.Entity.dll
+C:\Users\saito\Downloads\HealthMonitoringSystem\HealthMonitoringSystem.Interfaces\bin\Debug\EntityFramework.dll
+C:\Users\saito\Downloads\HealthMonitoringSystem\HealthMonitoringSystem.Interfaces\bin\Debug\MySql.Data.Entity.EF6.dll
+C:\Users\saito\Downloads\HealthMonitoringSystem\HealthMonitoringSystem.Interfaces\bin\Debug\Ninject.dll
+C:\Users\saito\Downloads\HealthMonitoringSystem\HealthMonitoringSystem.Interfaces\bin\Debug\MySql.Data.dll
+C:\Users\saito\Downloads\HealthMonitoringSystem\HealthMonitoringSystem.Interfaces\bin\Debug\HealthMonitoringSystem.DAL.pdb
+C:\Users\saito\Downloads\HealthMonitoringSystem\HealthMonitoringSystem.Interfaces\bin\Debug\HealthMonitoringSystem.Entity.pdb
+C:\Users\saito\Downloads\HealthMonitoringSystem\HealthMonitoringSystem.Interfaces\bin\Debug\HealthMonitoringSystem.BLL.pdb
+C:\Users\saito\Downloads\HealthMonitoringSystem\HealthMonitoringSystem.Interfaces\bin\Debug\EntityFramework.xml
+C:\Users\saito\Downloads\HealthMonitoringSystem\HealthMonitoringSystem.Interfaces\bin\Debug\Ninject.xml
+C:\Users\saito\Downloads\HealthMonitoringSystem\HealthMonitoringSystem.Interfaces\obj\Debug\HealthMonitoringSystem.Interfaces.csprojResolveAssemblyReference.cache
+C:\Users\saito\Downloads\HealthMonitoringSystem\HealthMonitoringSystem.Interfaces\obj\Debug\HealthMonitoringSystem.Interfaces.dll
+C:\Users\saito\Downloads\HealthMonitoringSystem\HealthMonitoringSystem.Interfaces\obj\Debug\HealthMonitoringSystem.Interfaces.pdb

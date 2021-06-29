@@ -12,3 +12,17 @@ C:\Users\sorhan\Source\Workspaces\Health Monitoring System\HealthMonitoringSyste
 C:\Users\sorhan\Source\Workspaces\Health Monitoring System\HealthMonitoringSystem\HealthMonitoringSystem.DAL\obj\Release\HealthMonitoringSystem.DAL.csprojResolveAssemblyReference.cache
 C:\Users\sorhan\Source\Workspaces\Health Monitoring System\HealthMonitoringSystem\HealthMonitoringSystem.DAL\obj\Release\HealthMonitoringSystem.DAL.dll
 C:\Users\sorhan\Source\Workspaces\Health Monitoring System\HealthMonitoringSystem\HealthMonitoringSystem.DAL\obj\Release\HealthMonitoringSystem.DAL.pdb
+C:\Users\saito\Downloads\HealthMonitoringSystem\HealthMonitoringSystem.DAL\bin\Release\HealthMonitoringSystem.DAL.dll.config
+C:\Users\saito\Downloads\HealthMonitoringSystem\HealthMonitoringSystem.DAL\bin\Release\HealthMonitoringSystem.DAL.dll
+C:\Users\saito\Downloads\HealthMonitoringSystem\HealthMonitoringSystem.DAL\bin\Release\HealthMonitoringSystem.DAL.pdb
+C:\Users\saito\Downloads\HealthMonitoringSystem\HealthMonitoringSystem.DAL\bin\Release\EntityFramework.dll
+C:\Users\saito\Downloads\HealthMonitoringSystem\HealthMonitoringSystem.DAL\bin\Release\EntityFramework.SqlServer.dll
+C:\Users\saito\Downloads\HealthMonitoringSystem\HealthMonitoringSystem.DAL\bin\Release\HealthMonitoringSystem.Entity.dll
+C:\Users\saito\Downloads\HealthMonitoringSystem\HealthMonitoringSystem.DAL\bin\Release\MySql.Data.dll
+C:\Users\saito\Downloads\HealthMonitoringSystem\HealthMonitoringSystem.DAL\bin\Release\MySql.Data.Entity.EF6.dll
+C:\Users\saito\Downloads\HealthMonitoringSystem\HealthMonitoringSystem.DAL\bin\Release\HealthMonitoringSystem.Entity.pdb
+C:\Users\saito\Downloads\HealthMonitoringSystem\HealthMonitoringSystem.DAL\bin\Release\EntityFramework.xml
+C:\Users\saito\Downloads\HealthMonitoringSystem\HealthMonitoringSystem.DAL\bin\Release\EntityFramework.SqlServer.xml
+C:\Users\saito\Downloads\HealthMonitoringSystem\HealthMonitoringSystem.DAL\obj\Release\HealthMonitoringSystem.DAL.csprojResolveAssemblyReference.cache
+C:\Users\saito\Downloads\HealthMonitoringSystem\HealthMonitoringSystem.DAL\obj\Release\HealthMonitoringSystem.DAL.dll
+C:\Users\saito\Downloads\HealthMonitoringSystem\HealthMonitoringSystem.DAL\obj\Release\HealthMonitoringSystem.DAL.pdb

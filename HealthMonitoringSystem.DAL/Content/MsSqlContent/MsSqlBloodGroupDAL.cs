@@ -17,7 +17,7 @@ namespace HealthMonitoringSystem.DAL.Content.MsSqlContent
         {
             using (MsSqlHealthContext ctx = new MsSqlHealthContext())
             {
-                return ctx.BloodGroups.Include("Patient").FirstOrDefault(d => d.Id == id);
+                return ctx.BloodGroups.Include("Patients").FirstOrDefault(d => d.Id == id);
             }
         }
 

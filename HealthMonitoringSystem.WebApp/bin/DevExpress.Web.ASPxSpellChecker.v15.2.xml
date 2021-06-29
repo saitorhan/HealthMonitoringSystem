@@ -1,0 +1,2016 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>DevExpress.Web.ASPxSpellChecker.v15.2</name>
+    </assembly>
+    <members>
+        <member name="T:DevExpress.Web.ASPxSpellChecker.SpellCheckerFormsSettings">
+
+            <summary>
+                <para>Contains dialog form settings.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.Web.ASPxSpellChecker.SpellCheckerFormsSettings.#ctor(DevExpress.Web.IPropertiesOwner)">
+            <summary>
+                <para>Initializes a new instance of the SpellCheckerFormsSettings class with the specified owner.
+</para>
+            </summary>
+            <param name="owner">
+		An object that implements the <see cref="T:DevExpress.Web.IPropertiesOwner"/> interface.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.Web.ASPxSpellChecker.SpellCheckerFormsSettings.Assign(DevExpress.Web.PropertiesBase)">
+            <summary>
+                <para>Copies the settings from the specified <see cref="T:DevExpress.Web.PropertiesBase"/> object to the current object.
+</para>
+            </summary>
+            <param name="source">
+		A <see cref="T:DevExpress.Web.PropertiesBase"/> object, whose settings are assigned to the current object.
+
+            </param>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxSpellChecker.SpellCheckerFormsSettings.SpellCheckFormPath">
+            <summary>
+                <para>Gets or sets the path to a UserControl (an <b>.ascx</b> file) that is the customized version of the built-in Check Spelling dialog form.
+</para>
+            </summary>
+            <value>A <see cref="T:System.String"/> value specifying the file name and path to a UserControl file that is a customized Check Spelling dialog form.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxSpellChecker.SpellCheckerFormsSettings.SpellCheckOptionsFormPath">
+            <summary>
+                <para>Gets or sets the path to a UserControl (an <b>.ascx</b> file) that is the customized version of the built-in Spelling Options dialog form.
+</para>
+            </summary>
+            <value>A <see cref="T:System.String"/> value specifying the file name and path to a UserControl file that is a customized Spelling Options dialog form.
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.Web.ASPxSpellChecker.CustomDictionaryLoadingEventArgs">
+
+            <summary>
+                <para>Provides data for the <see cref="E:DevExpress.Web.ASPxSpellChecker.ASPxSpellChecker.CustomDictionaryLoading"/> event.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.Web.ASPxSpellChecker.CustomDictionaryLoadingEventArgs.#ctor(DevExpress.Web.ASPxSpellChecker.ASPxSpellCheckerCustomDictionary)">
+            <summary>
+                <para>Initializes a new instance of the CustomDictionaryLoadingEventArgs class with the specified custom dictionary.
+</para>
+            </summary>
+            <param name="customDictionary">
+		An <see cref="T:DevExpress.Web.ASPxSpellChecker.ASPxSpellCheckerDictionary"/> value representing the custom dictionary. This value is assigned to the <see cref="P:DevExpress.Web.ASPxSpellChecker.CustomDictionaryLoadingEventArgs.CustomDictionary"/> property.
+
+            </param>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxSpellChecker.CustomDictionaryLoadingEventArgs.CustomDictionary">
+            <summary>
+                <para>Gets the custom dictionary to be loaded.
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.Web.ASPxSpellChecker.ASPxSpellCheckerCustomDictionary"/> object representing the custom dictionary.
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.Web.ASPxSpellChecker.CustomDictionaryLoadingEventHandler">
+
+            <summary>
+                <para>A method that will handle the <see cref="E:DevExpress.Web.ASPxSpellChecker.ASPxSpellChecker.CustomDictionaryLoading"/> event.
+
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.Web.ASPxSpellChecker.CustomDictionaryLoadingEventHandler.Invoke(System.Object,DevExpress.Web.ASPxSpellChecker.CustomDictionaryLoadingEventArgs)">
+            <summary>
+                <para>A method that will handle the <see cref="E:DevExpress.Web.ASPxSpellChecker.ASPxSpellChecker.CustomDictionaryLoading"/> event.
+</para>
+            </summary>
+            <param name="sender">
+		The event source. This parameter identifies the <see cref="T:DevExpress.Web.ASPxSpellChecker.ASPxSpellChecker"/> which raised the event.
+
+            </param>
+            <param name="e">
+		A <see cref="T:DevExpress.Web.ASPxSpellChecker.CustomDictionaryLoadingEventArgs"/> object which contains event data.
+
+            </param>
+
+
+        </member>
+        <member name="T:DevExpress.Web.ASPxSpellChecker.SpellCheckerEditorImages">
+
+            <summary>
+                <para>Contains settings that allow images to be defined for specific elements of editors used within the <see cref="T:DevExpress.Web.ASPxSpellChecker.ASPxSpellChecker"/>.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.Web.ASPxSpellChecker.SpellCheckerEditorImages.#ctor(DevExpress.Web.Internal.ISkinOwner)">
+            <summary>
+                <para>Initializes a new instance of the SpellCheckerEditorImages class with the specified owner.
+</para>
+            </summary>
+            <param name="skinOwner">
+		An object that implements the <b>ISkinOwner</b> interface.
+
+            </param>
+
+
+        </member>
+        <member name="T:DevExpress.Web.ASPxSpellChecker.SpellCheckerStyles">
+
+            <summary>
+                <para>Contains settings that define the appearance of certain spellchecker elements.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.Web.ASPxSpellChecker.SpellCheckerStyles.#ctor(DevExpress.Web.Internal.ISkinOwner)">
+            <summary>
+                <para>Initializes a new instance of the SpellCheckerStyles class with the specified owner.
+</para>
+            </summary>
+            <param name="skinOwner">
+		An object that implements the <b>ISkinOwner</b> interface.
+
+            </param>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxSpellChecker.SpellCheckerStyles.CheckedTextContainer">
+            <summary>
+                <para>Provides access to the appearance style object for the Checked Text Container style.
+</para>
+            </summary>
+            <value>A <b>DevExpress.Web.ASPxSpellChecker.CheckedTextContainerStyle</b> object, containing apperance settings for the Checked Text Container style.
+</value>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxSpellChecker.SpellCheckerStyles.CheckedTextContainerStyleName">
+            <summary>
+                <para>Returns the name of the Checked Text Container style.
+</para>
+            </summary>
+            <returns>A string, representing the style name. Currently it is the "CheckedTextContainer".
+</returns>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxSpellChecker.SpellCheckerStyles.CssClassPrefix">
+            <summary>
+                <para>For internal use only.
+</para>
+            </summary>
+            <returns> </returns>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxSpellChecker.SpellCheckerStyles.ErrorWord">
+            <summary>
+                <para>Provides access to the appearance style object of the Error Word style.
+</para>
+            </summary>
+            <value>A <b>DevExpress.Web.ASPxSpellChecker.ErrorWordStyle</b> object, containing apperance settings for the Error Word style.
+</value>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxSpellChecker.SpellCheckerStyles.ErrorWordStyleName">
+            <summary>
+                <para>Returns the name of the Error Word style.
+</para>
+            </summary>
+            <returns>A string, representing the style name. Currently it is  "ErrorWord".
+</returns>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxSpellChecker.SpellCheckerStyles.LoadingPanel">
+            <summary>
+                <para>Provides style settings that define the appearance of a loading panel.
+</para>
+            </summary>
+            <value>A <see cref="LoadingPanelStyle"/> object that contains the style settings.
+</value>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxSpellChecker.SpellCheckerStyles.MainElementCssClass">
+            <summary>
+                <para>For internal use only. Returns "dxwsc-main".
+</para>
+            </summary>
+            <returns> </returns>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxSpellChecker.SpellCheckerStyles.RightToLeftCssClass">
+            <summary>
+                <para>For internal use only.
+</para>
+            </summary>
+            <returns> </returns>
+
+
+        </member>
+        <member name="T:DevExpress.Web.ASPxSpellChecker.SpellCheckerDialogFormStyles">
+
+            <summary>
+                <para>Contains settings that allow the appearance of dialog form elements within the <see cref="T:DevExpress.Web.ASPxSpellChecker.ASPxSpellChecker"/> control to be defined. 
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.Web.ASPxSpellChecker.SpellCheckerDialogFormStyles.#ctor(DevExpress.Web.Internal.ISkinOwner)">
+            <summary>
+                <para>Initializes a new instance of the SpellCheckerDialogFormStyles class with the specified owner.
+</para>
+            </summary>
+            <param name="owner">
+		An object that implements the <b>ISkinOwner</b> interface.
+
+            </param>
+
+
+        </member>
+        <member name="T:DevExpress.Web.ASPxSpellChecker.SpellCheckerButtonStyles">
+
+            <summary>
+                <para>Contains settings that allow the appearance of button elements within the <see cref="T:DevExpress.Web.ASPxSpellChecker.ASPxSpellChecker"/> control to be defined. 
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.Web.ASPxSpellChecker.SpellCheckerButtonStyles.#ctor(DevExpress.Web.Internal.ISkinOwner)">
+            <summary>
+                <para>Initializes a new instance of the SpellCheckerButtonStyles class with the specified owner.
+</para>
+            </summary>
+            <param name="skinOwner">
+		An object that implements the <b>ISkinOwner</b> interface.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.Web.ASPxSpellChecker.SpellCheckerButtonStyles.ToString">
+            <summary>
+                <para>This property is not in effect for the SpellCheckerButtonStyles class.
+</para>
+            </summary>
+            <returns> 
+</returns>
+
+
+        </member>
+        <member name="T:DevExpress.Web.ASPxSpellChecker.ASPxSpellCheckerTextSettings">
+
+            <summary>
+                <para>Represents a container of strings, which are used in the ASPxSpellChecker's dialogs.
+
+
+
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.Web.ASPxSpellChecker.ASPxSpellCheckerTextSettings.#ctor(DevExpress.Web.IPropertiesOwner)">
+            <summary>
+                <para>Initializes a new instance of the ASPxSpellCheckerTextSettings class with the specified owner.
+</para>
+            </summary>
+            <param name="owner">
+		An object that implements the <see cref="T:DevExpress.Web.IPropertiesOwner"/> interface.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.Web.ASPxSpellChecker.ASPxSpellCheckerTextSettings.Assign(DevExpress.Web.PropertiesBase)">
+            <summary>
+                <para>Copies public properties from the specified <see cref="T:DevExpress.Web.CollectionItem"/> object to the current object.
+</para>
+            </summary>
+            <param name="source">
+		A <see cref="T:DevExpress.Web.CollectionItem"/> object or descendant whose properties are copied to the current object.
+
+            </param>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxSpellChecker.ASPxSpellCheckerTextSettings.FinishSpellChecking">
+            <summary>
+                <para>Gets or sets the text which informs the user that the spell check is finished.
+</para>
+            </summary>
+            <value>A string, containing a text message indicating that the spell check process is complete.
+
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxSpellChecker.ASPxSpellCheckerTextSettings.NoSuggestionsText">
+            <summary>
+                <para>Gets or sets the text message informing the user that no words are found for replacement.
+</para>
+            </summary>
+            <value>A string, containing the message's text.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxSpellChecker.ASPxSpellCheckerTextSettings.OptionsFormCaption">
+            <summary>
+                <para>Get or sets the title of the Options dialog form.
+</para>
+            </summary>
+            <value>A string containing the text used as a caption of the Options form.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxSpellChecker.ASPxSpellCheckerTextSettings.SpellCheckFormCaption">
+            <summary>
+                <para>Get or sets the title of the spelling form.
+</para>
+            </summary>
+            <value>A string containing the text used as a caption of the spelling form.
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.Web.ASPxSpellChecker.ASPxSpellCheckerBaseSettings">
+
+            <summary>
+                <para>Represents the base for the <see cref="T:DevExpress.Web.ASPxSpellChecker.ASPxSpellCheckerSpellingSettings"/> and <see cref="T:DevExpress.Web.ASPxSpellChecker.ASPxSpellCheckerTextSettings"/> classes.
+
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.Web.ASPxSpellChecker.ASPxSpellCheckerBaseSettings.#ctor(DevExpress.Web.IPropertiesOwner)">
+            <summary>
+                <para>Initializes a new instance of the ASPxSpellCheckerBaseSettings class with the specified owner.
+</para>
+            </summary>
+            <param name="owner">
+		An object that implements the <see cref="T:DevExpress.Web.IPropertiesOwner"/> interface.
+
+            </param>
+
+
+        </member>
+        <member name="T:DevExpress.Web.ASPxSpellChecker.SpellCheckerClientSideEvents">
+
+            <summary>
+                <para>Contains a client-side ASPxSpellChecker's event list.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.Web.ASPxSpellChecker.SpellCheckerClientSideEvents.#ctor">
+            <summary>
+                <para>Initializes a new instance of the SpellCheckerClientSideEvents class with default settings.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxSpellChecker.SpellCheckerClientSideEvents.AfterCheck">
+            <summary>
+                <para>Gets or sets the name of the JavaScript function or the entire code which will handle the client <see cref="E:DevExpress.Web.ASPxSpellChecker.Scripts.ASPxClientSpellChecker.AfterCheck"/> event.
+</para>
+            </summary>
+            <value>A string that represents either the name of a JavaScript function or the entire JavaScript function code used to handle an event.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxSpellChecker.SpellCheckerClientSideEvents.BeforeCheck">
+            <summary>
+                <para>Gets or sets the name of the JavaScript function or the entire code which will handle the client <see cref="E:DevExpress.Web.ASPxSpellChecker.Scripts.ASPxClientSpellChecker.BeforeCheck"/> event.
+</para>
+            </summary>
+            <value>A string that represents either the name of a JavaScript function or the entire JavaScript function code used to handle an event.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxSpellChecker.SpellCheckerClientSideEvents.CheckCompleteFormShowing">
+            <summary>
+                <para>Gets or sets the name of the JavaScript function or the entire code which will handle the client <see cref="E:DevExpress.Web.ASPxSpellChecker.Scripts.ASPxClientSpellChecker.CheckCompleteFormShowing"/> event.
+</para>
+            </summary>
+            <value>A string that represents either the name of a JavaScript function or the entire JavaScript function code used to handle an event.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxSpellChecker.SpellCheckerClientSideEvents.WordChanged">
+            <summary>
+                <para>Gets or sets the name of the JavaScript function or the entire code which will handle the client-side <see cref="E:DevExpress.Web.ASPxSpellChecker.Scripts.ASPxClientSpellChecker.WordChanged"/> event.
+</para>
+            </summary>
+            <value>A string that represents either the name of a JavaScript function or the entire JavaScript function code used to handle an event.
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.Web.ASPxSpellChecker.SpellCheckerDictionaryCollection">
+
+            <summary>
+                <para>Represents a collection of ASPxSpellChecker dictionaries.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.Web.ASPxSpellChecker.SpellCheckerDictionaryCollection.#ctor(DevExpress.Web.Internal.IWebControlObject)">
+            <summary>
+                <para>Initializes a new instance of the SpellCheckerDictionaryCollection class with the specified owner.
+</para>
+            </summary>
+            <param name="webControlObject">
+		An object that implements the <b>IWebControlObject</b> interface.
+
+            </param>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxSpellChecker.SpellCheckerDictionaryCollection.SpellChecker">
+            <summary>
+                <para>Returns the owner of the dictionary.
+</para>
+            </summary>
+            <value>An <see cref="T:DevExpress.Web.ASPxSpellChecker.ASPxSpellChecker"/> object.
+</value>
+
+
+        </member>
+        <member name="M:DevExpress.Web.ASPxSpellChecker.SpellCheckerDictionaryCollection.ToString">
+            <summary>
+                <para>Overrides the corresponding property of the base class.
+</para>
+            </summary>
+            <returns>Always returns <see cref="T:System.String.Empty"/> value.
+</returns>
+
+
+        </member>
+        <member name="T:DevExpress.Web.ASPxSpellChecker.ASPxSpellCheckerSpellingSettings">
+
+            <summary>
+                <para>Represents a container of settings that affect spell checking.
+
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.Web.ASPxSpellChecker.ASPxSpellCheckerSpellingSettings.#ctor(DevExpress.Web.IPropertiesOwner)">
+            <summary>
+                <para>Initializes a new instance of the ASPxSpellCheckerSpellingSettings class with the specified owner.
+</para>
+            </summary>
+            <param name="owner">
+		An object that implements the <see cref="T:DevExpress.Web.IPropertiesOwner"/> interface.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.Web.ASPxSpellChecker.ASPxSpellCheckerSpellingSettings.Assign(DevExpress.Web.PropertiesBase)">
+            <summary>
+                <para>Copies public properties from the specified <see cref="T:DevExpress.Web.CollectionItem"/> object to the current object.
+</para>
+            </summary>
+            <param name="source">
+		A <see cref="T:DevExpress.Web.CollectionItem"/> object or descendant whose properties are copied to the current object.
+
+            </param>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxSpellChecker.ASPxSpellCheckerSpellingSettings.IgnoreEmails">
+            <summary>
+                <para>Gets or sets whether email addresses should be skipped during checking.
+
+</para>
+            </summary>
+            <value><b>true</b> to exclude email addresses from spell check; otherwise, <b>false</b>.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxSpellChecker.ASPxSpellCheckerSpellingSettings.IgnoreMarkupTags">
+            <summary>
+                <para>Gets or sets whether the text enclosed with specific markup tags should be checked.
+</para>
+            </summary>
+            <value><b>true</b> to exclude the text within tags from the check; otherwise, <b>false</b>.
+
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxSpellChecker.ASPxSpellCheckerSpellingSettings.IgnoreMixedCaseWords">
+            <summary>
+                <para>Gets or sets whether the spellchecker ignores words containing different case letters in positions other than the first.
+</para>
+            </summary>
+            <value><b>true</b> to skip mixed case words while checking; otherwise, <b>false</b>.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxSpellChecker.ASPxSpellCheckerSpellingSettings.IgnoreUpperCaseWords">
+            <summary>
+                <para>Gets or sets whether words in which all letters are uppercase should be skipped during checking. 
+
+</para>
+            </summary>
+            <value><b>true</b> to ignore words in uppercase; otherwise, <b>false</b>.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxSpellChecker.ASPxSpellCheckerSpellingSettings.IgnoreUrls">
+            <summary>
+                <para>Gets or sets whether URLs in text are skipped during checking.
+
+</para>
+            </summary>
+            <value><b>true</b> to ignore URLs in text; otherwise, <b>false</b>.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxSpellChecker.ASPxSpellCheckerSpellingSettings.IgnoreWordsWithNumber">
+            <summary>
+                <para>Gets or sets whether the spell checker skips words that contain numbers during checking.
+
+</para>
+            </summary>
+            <value><b>true</b> to ignore words with numbers; otherwise, <b>false</b>.
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.Web.ASPxSpellChecker.ASPxSpellCheckerDictionary">
+
+            <summary>
+                <para>Represents a dictionary used by the ASPxSpellChecker engine. 
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.Web.ASPxSpellChecker.ASPxSpellCheckerDictionary.#ctor">
+            <summary>
+                <para>Initializes a new instance of the ASPxSpellCheckerDictionary class with default settings.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxSpellChecker.ASPxSpellCheckerDictionary.AlphabetPath">
+            <summary>
+                <para>Gets or sets the path to a file that defines the alphabet associated with a dictionary.
+</para>
+            </summary>
+            <value>A <see cref="T:System.String"/> value that specifies the path to the alphabet file.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxSpellChecker.ASPxSpellCheckerDictionary.Dictionary">
+            <summary>
+                <para>Gets an internal representation of a spellchecker dictionary.
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.XtraSpellChecker.SpellCheckerDictionary"/> class instance.
+
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.Web.ASPxSpellChecker.ASPxSpellCheckerOpenOfficeDictionary">
+
+            <summary>
+                <para>Represents an ASPxSpellChecker dictionary originated from a dictionary and affix files of the OpenOffice.org project format.
+
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.Web.ASPxSpellChecker.ASPxSpellCheckerOpenOfficeDictionary.#ctor">
+            <summary>
+                <para>Initializes a new instance of the ASPxSpellCheckerOpenOfficeDictionary class with default settings.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxSpellChecker.ASPxSpellCheckerOpenOfficeDictionary.AlphabetPath">
+            <summary>
+                <para>This property is not in effect for <b>ASPxSpellCheckerOpenOfficeDictionary</b> class.
+</para>
+            </summary>
+            <value> 
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxSpellChecker.ASPxSpellCheckerOpenOfficeDictionary.Dictionary">
+            <summary>
+                <para>Gets an internal representation of a spellchecker dictionary.
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.XtraSpellChecker.SpellCheckerOpenOfficeDictionary"/> class instance.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxSpellChecker.ASPxSpellCheckerOpenOfficeDictionary.Encoding">
+            <summary>
+                <para>Gets or sets the character encoding used by a dictionary.
+</para>
+            </summary>
+            <value>A <see cref="T:System.Text.Encoding"/> value, specifying the character encoding.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxSpellChecker.ASPxSpellCheckerOpenOfficeDictionary.EncodingName">
+            <summary>
+                <para>Gets or sets the human-readable description of the dictionary's encoding.
+</para>
+            </summary>
+            <value>A string, specifying the encoding's human-readable name.
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.Web.ASPxSpellChecker.ASPxSpellCheckerISpellDictionary">
+
+            <summary>
+                <para>Represents an ASPxSpellChecker dictionary originated from a dictionary in the ISpell format.
+
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.Web.ASPxSpellChecker.ASPxSpellCheckerISpellDictionary.#ctor">
+            <summary>
+                <para>Initializes a new instance of the ASPxSpellCheckerISpellDictionary class with default settings.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxSpellChecker.ASPxSpellCheckerISpellDictionary.AlphabetPath">
+            <summary>
+                <para>Gets or sets the path to a file that defines the alphabet associated with a dictionary.
+</para>
+            </summary>
+            <value>A <see cref="T:System.String"/> value that specifies the path to the alphabet file.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxSpellChecker.ASPxSpellCheckerISpellDictionary.Dictionary">
+            <summary>
+                <para>Gets an internal representation of a spellchecker dictionary.
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.XtraSpellChecker.SpellCheckerISpellDictionary"/> class instance.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxSpellChecker.ASPxSpellCheckerISpellDictionary.GrammarPath">
+            <summary>
+                <para>Get or sets a location of the affix file for the ASPxSpellCheckerISpellDictionary
+</para>
+            </summary>
+            <value>A <see cref="T:System.String"/> value, specifying the path to the affix file.
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.Web.ASPxSpellChecker.ASPxSpellCheckerCustomDictionary">
+
+            <summary>
+                <para>Represents a custom dictionary of the spell checker.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.Web.ASPxSpellChecker.ASPxSpellCheckerCustomDictionary.#ctor">
+            <summary>
+                <para>Initializes a new instance of the ASPxSpellCheckerCustomDictionary class with default settings.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="M:DevExpress.Web.ASPxSpellChecker.ASPxSpellCheckerCustomDictionary.AddWord(System.String)">
+            <summary>
+                <para>Appends a word to a custom dictionary.
+</para>
+            </summary>
+            <param name="word">
+		A string, representing a word to add.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.Web.ASPxSpellChecker.ASPxSpellCheckerCustomDictionary.AddWords(System.String[])">
+            <summary>
+                <para>Appends several words to a custom dictionary.
+</para>
+            </summary>
+            <param name="words">
+		A string array of words to add to a dictionary.
+
+            </param>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxSpellChecker.ASPxSpellCheckerCustomDictionary.Dictionary">
+            <summary>
+                <para>Gets a custom spellchecker dictionary.
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.XtraSpellChecker.SpellCheckerCustomDictionary"/> class instance.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxSpellChecker.ASPxSpellCheckerCustomDictionary.IsCustomDictionary">
+            <summary>
+                <para>Indicates that the current dictionary is a custom dictionary.
+</para>
+            </summary>
+            <value>Always returns <b>true</b>.
+</value>
+
+
+        </member>
+        <member name="M:DevExpress.Web.ASPxSpellChecker.ASPxSpellCheckerCustomDictionary.LoadFromStream(System.IO.Stream,System.IO.Stream)">
+            <summary>
+                <para>Loads a dictionary and alphabet from the specified streams into the current ASPxSpellCheckerCustomDictionary object, and initializes it.
+</para>
+            </summary>
+            <param name="dictionaryStream">
+		A <see cref="T:System.IO.Stream"/> object which stores the word list.
+
+            </param>
+            <param name="alphabetStream">
+		A <see cref="T:System.IO.Stream"/> object which stores the language's alphabet. 
+
+            </param>
+
+
+        </member>
+        <member name="T:DevExpress.Web.ASPxSpellChecker.ASPxSpellCheckerDictionaryBase">
+
+            <summary>
+                <para>Defines the base class for ASPxSpellChecker dictionaries.
+</para>
+            </summary>
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxSpellChecker.ASPxSpellCheckerDictionaryBase.Encoding">
+            <summary>
+                <para>Gets or sets code page settings of the dictionary text characters.
+</para>
+            </summary>
+            <value>A <see cref="T:System.Text.Encoding"/> object, representing a character encoding.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxSpellChecker.ASPxSpellCheckerDictionaryBase.EncodingName">
+            <summary>
+                <para>Gets or sets the human-readable description of the dictionary's encoding.
+</para>
+            </summary>
+            <value>A string, specifying the encoding's human-readable name.
+</value>
+
+
+        </member>
+        <member name="M:DevExpress.Web.ASPxSpellChecker.ASPxSpellCheckerDictionaryBase.GetEncoding">
+            <summary>
+                <para>Returns a character encoding used by the dictionary.
+</para>
+            </summary>
+            <returns>A <see cref="T:System.Text.Encoding"/> object, representing a character encoding.
+</returns>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxSpellChecker.ASPxSpellCheckerDictionaryBase.Item(System.Int32)">
+            <summary>
+                <para>Provides indexed access to words contained within the dictionary.
+</para>
+            </summary>
+            <param name="index">
+		An integer value specifying the zero-based index of the returned word.
+
+            </param>
+            <value>A <see cref="T:System.String"/> value.
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.Web.ASPxSpellChecker.ASPxSpellChecker">
+
+            <summary>
+                <para>The base component of the <b>ASPxSpellChecker Suite</b>.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.Web.ASPxSpellChecker.ASPxSpellChecker.#ctor">
+            <summary>
+                <para>Initializes a new instance of the ASPxSpellChecker class with default settings.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxSpellChecker.ASPxSpellChecker.AccessKey">
+            <summary>
+                <para>Overrides the <see cref="P:DevExpress.Web.ASPxWebComponent.AccessKey"/> property, to hide it. 
+ 
+</para>
+            </summary>
+            <value> 
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxSpellChecker.ASPxSpellChecker.BackColor">
+            <summary>
+                <para>Overrides the <see cref="P:DevExpress.Web.ASPxWebComponent.BackColor"/> property to hide it.
+</para>
+            </summary>
+            <value>A <see cref="T:System.Drawing.Color"/> object that represents the background color of the control. The default is <see cref="F:System.Drawing.Color.Empty"/>.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxSpellChecker.ASPxSpellChecker.BackgroundImage">
+            <summary>
+                <para>Overrides the <see cref="P:DevExpress.Web.ASPxWebControl.BackgroundImage"/> to hide it.
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.Web.BackgroundImage"/> class instance that is the background image of the web control.
+
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxSpellChecker.ASPxSpellChecker.Border">
+            <summary>
+                <para>Overrides the <see cref="P:DevExpress.Web.ASPxWebControl.Border"/> property to hide it.
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.Web.BorderWrapper"/> object that is the border settings of a control.
+
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxSpellChecker.ASPxSpellChecker.BorderBottom">
+            <summary>
+                <para>Overrides the <see cref="P:DevExpress.Web.ASPxWebControl.BorderBottom"/> property to hide it.
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.Web.Border"/> class instance, specifying the border settings.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxSpellChecker.ASPxSpellChecker.BorderLeft">
+            <summary>
+                <para>Overrides the <see cref="P:DevExpress.Web.ASPxWebControl.BorderLeft"/> property to hide it.
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.Web.Border"/> class instance, specifying the border settings.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxSpellChecker.ASPxSpellChecker.BorderRight">
+            <summary>
+                <para>Overrides the <see cref="P:DevExpress.Web.ASPxWebControl.BorderRight"/> property to hide it.
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.Web.Border"/> class instance, specifying the border settings.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxSpellChecker.ASPxSpellChecker.BorderTop">
+            <summary>
+                <para>Overrides the <see cref="P:DevExpress.Web.ASPxWebControl.BorderTop"/> property to hide it.
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.Web.Border"/> class instance, specifying the border settings.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxSpellChecker.ASPxSpellChecker.CheckedElementID">
+            <summary>
+                <para>Gets or sets the identifier of the web control to be checked.
+</para>
+            </summary>
+            <value>A string that identifies the element on a page.
+</value>
+
+
+        </member>
+        <member name="E:DevExpress.Web.ASPxSpellChecker.ASPxSpellChecker.CheckedElementResolve">
+            <summary>
+                <para>Occurs when client-side scripts are created and the identifier of a control to be checked is queried.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxSpellChecker.ASPxSpellChecker.CheckedTextContainerStyle">
+            <summary>
+                <para>Provides access to an object specifying style settings for the element that contains text to be checked.
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.Web.ASPxSpellChecker.CheckedTextContainerStyle"/> class instance that holds style settings.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxSpellChecker.ASPxSpellChecker.ClientInstanceName">
+            <summary>
+                <para>Gets or sets the ASPxSpellChecker's client programmatic identifier.
+</para>
+            </summary>
+            <value>A string value that specifies the ASPxSpellChecker's client identifier.
+</value>
+
+
+        </member>
+        <member name="E:DevExpress.Web.ASPxSpellChecker.ASPxSpellChecker.ClientLayout">
+            <summary>
+                <para>Enables you to save and restore the previously saved layout of the ASPxSpellChecker.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxSpellChecker.ASPxSpellChecker.ClientSideEvents">
+            <summary>
+                <para>Gets an object that lists the client-side events specific to the ASPxSpellChecker.
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.Web.ASPxSpellChecker.SpellCheckerClientSideEvents"/> object which allows assigning handlers to the  client-side events available to the ASPxSpellChecker.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxSpellChecker.ASPxSpellChecker.CssClass">
+            <summary>
+                <para>Overrides the <see cref="P:DevExpress.Web.ASPxWebComponent.CssClass"/> property of the base class to hide it.
+</para>
+            </summary>
+            <value>The Cascading Style Sheet class rendered by the Web server control on the client.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxSpellChecker.ASPxSpellChecker.Culture">
+            <summary>
+                <para>Gets or sets the culture-specific settings of the spellchecker. 
+</para>
+            </summary>
+            <value>A <see cref="T:System.Globalization.CultureInfo"/> object that specifies culture settings (language and phonetic specifics). 
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxSpellChecker.ASPxSpellChecker.Cursor">
+            <summary>
+                <para>Overrides the  corresponding <see cref="P:DevExpress.Web.ASPxWebControl.Cursor"/> property of the base class.
+</para>
+            </summary>
+            <value>A string that is the type of cursor to display when the mouse pointer is over the web control.
+</value>
+
+
+        </member>
+        <member name="E:DevExpress.Web.ASPxSpellChecker.ASPxSpellChecker.CustomDictionaryLoading">
+            <summary>
+                <para>Fires when a custom dictionary is loading into a session.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="E:DevExpress.Web.ASPxSpellChecker.ASPxSpellChecker.CustomJSProperties">
+            <summary>
+                <para>Enables you to supply any server data that can then be parsed on the client.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxSpellChecker.ASPxSpellChecker.DialogFormCloseButtonImage">
+            <summary>
+                <para>Gets the settings of an image displayed within the check spelling form close button.
+</para>
+            </summary>
+            <value>A <see cref="HeaderButtonImageProperties"/> object that contains image settings.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxSpellChecker.ASPxSpellChecker.Dictionaries">
+            <summary>
+                <para>Provides access to a collection of dictionaries maintained by the ASPxSpellChecker instance.
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.Web.ASPxSpellChecker.SpellCheckerDictionaryCollection"/> object, representing a collection of dictionaries.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxSpellChecker.ASPxSpellChecker.DisabledStyle">
+            <summary>
+                <para>This property is not in effect for the ASPxSpellChecker class. 
+</para>
+            </summary>
+            <value> 
+</value>
+
+
+        </member>
+        <member name="M:DevExpress.Web.ASPxSpellChecker.ASPxSpellChecker.Dispose">
+            <summary>
+                <para>Releases all resources used by the ASPxSpellChecker.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxSpellChecker.ASPxSpellChecker.EnableCallbackCompression">
+            <summary>
+                <para>Gets or sets whether the callback result data compression is enabled.
+</para>
+            </summary>
+            <value><b>true</b> to compress data stream; otherwise, <b>false</b>.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxSpellChecker.ASPxSpellChecker.EncodeHtml">
+            <summary>
+                <para>This property is not in effect for the ASPxSpellChecker class.
+</para>
+            </summary>
+            <value> 
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxSpellChecker.ASPxSpellChecker.ErrorWordStyle">
+            <summary>
+                <para>Provides access to an object specifying style settings for the misspelled word in a text.
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.Web.ASPxSpellChecker.ErrorWordStyle"/> class instance that holds style settings.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxSpellChecker.ASPxSpellChecker.Font">
+            <summary>
+                <para>Overrides the <see cref="P:System.Web.UI.WebControls.WebControl.Font"/> property to hide it.
+</para>
+            </summary>
+            <value>A <see cref="T:System.Web.UI.WebControls.FontInfo"/> that represents the font properties of the control.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxSpellChecker.ASPxSpellChecker.ForeColor">
+            <summary>
+                <para>Overrides the <see cref="P:System.Web.UI.WebControls.WebControl.ForeColor"/> property to hide it.
+
+</para>
+            </summary>
+            <value>A <see cref="P:System.Drawing.Color"/> that represents the foreground color of the control
+</value>
+
+
+        </member>
+        <member name="M:DevExpress.Web.ASPxSpellChecker.ASPxSpellChecker.GetCheckedTextContainerStyle">
+            <summary>
+                <para>Returns an object containing style settings of the control which holds the text being checked in the spelling form.
+</para>
+            </summary>
+            <returns>A <see cref="T:DevExpress.Web.ASPxSpellChecker.CheckedTextContainerStyle"/> object containing style settings.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.Web.ASPxSpellChecker.ASPxSpellChecker.GetCulture">
+            <summary>
+                <para>Gets the culture setting of the spellchecker.
+</para>
+            </summary>
+            <returns>A <see cref="T:System.Globalization.CultureInfo"/> object, containing information about specific culture. 
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.Web.ASPxSpellChecker.ASPxSpellChecker.GetCustomDictionary">
+            <summary>
+                <para>Returns a custom dictionary of the spell checker.
+</para>
+            </summary>
+            <returns>A <see cref="T:DevExpress.XtraSpellChecker.SpellCheckerCustomDictionary"/> object representing a custom dictionary.
+</returns>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxSpellChecker.ASPxSpellChecker.Height">
+            <summary>
+                <para>Overrides the <see cref="P:System.Web.UI.WebControls.WebControl.Height"/> property to hide it.
+</para>
+            </summary>
+            <value>A <see cref="P:System.Web.UI.WebControls.Unit"/>  object, representing the contol's height.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxSpellChecker.ASPxSpellChecker.ImageFolder">
+            <summary>
+                <para>Gets or sets the path to the folder that contains images used by the control.
+</para>
+            </summary>
+            <value>A string value specifying the root path of all the images used by the control.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxSpellChecker.ASPxSpellChecker.ImagesEditors">
+            <summary>
+                <para>Provides access to image settings for specific elements of editors on the ASPxSpellChecker forms. 
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.Web.ASPxSpellChecker.SpellCheckerEditorImages"/> object that contains image settings.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxSpellChecker.ASPxSpellChecker.JSProperties">
+            <summary>
+                <para>Gets a collection of temporary client properties and its values. 
+</para>
+            </summary>
+            <value>A System.Collections.Generic.Dictionary object that represents the collection of properties and its values.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxSpellChecker.ASPxSpellChecker.LevenshteinDistance">
+            <summary>
+                <para>Gets or sets the parameter used to measure the proximity of words.
+</para>
+            </summary>
+            <value>An integer value that is the maximum number of steps used to convert the misspelled word into the suggested one. 
+
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxSpellChecker.ASPxSpellChecker.LoadingPanelDelay">
+            <summary>
+                <para>Gets or sets the delay before displaying the loading panel.
+</para>
+            </summary>
+            <value>An <see cref="Int32"/> value that specifies the time interval between when a callback is sent to the server and a loading panel is displayed, in milliseconds.
+
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxSpellChecker.ASPxSpellChecker.LoadingPanelImage">
+            <summary>
+                <para>Gets the settings of an image to be displayed within a <b>loading panel</b> while waiting for a callback response.
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.Web.ImageProperties"/> object that contains the image's settings. 
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxSpellChecker.ASPxSpellChecker.LoadingPanelImagePosition">
+            <summary>
+                <para>Gets or sets the position of an image displayed within a <b>loading panel</b>. 
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.Web.ImagePosition"/> enumeration value.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxSpellChecker.ASPxSpellChecker.LoadingPanelStyle">
+            <summary>
+                <para>Gets the style settings of a <b>loading panel</b> displayed while waiting for a callback response. 
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.Web.LoadingPanelStyle"/> object that contains style settings.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxSpellChecker.ASPxSpellChecker.LoadingPanelText">
+            <summary>
+                <para>Gets or sets the text to be displayed within a <b>loading panel</b> while waiting for a callback response. 
+
+</para>
+            </summary>
+            <value>A string that specifies the text displayed within a loading panel. 
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxSpellChecker.ASPxSpellChecker.MaximumErrorCountInResponse">
+            <summary>
+                <para>Specifies the maximum number of spelling errors found before the server sends a response to the client.
+</para>
+            </summary>
+            <value>An <see cref="Int32"/> value specifying the number of errors.
+</value>
+
+
+        </member>
+        <member name="E:DevExpress.Web.ASPxSpellChecker.ASPxSpellChecker.NotInDictionaryWordFound">
+            <summary>
+                <para>Occurs when a word being checked is not found in a dictionary. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="E:DevExpress.Web.ASPxSpellChecker.ASPxSpellChecker.PrepareSuggestions">
+            <summary>
+                <para>Occurs when a misspelled word is found and a list of suggested replacements is created and sorted. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxSpellChecker.ASPxSpellChecker.RightToLeft">
+            <summary>
+                <para>Gets or sets a value specifying whether or not the current control supports right-to-left representation.
+</para>
+            </summary>
+            <value>One of the <see cref="T:DevExpress.Utils.DefaultBoolean"/> enumeration values.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxSpellChecker.ASPxSpellChecker.SaveStateToCookies">
+            <summary>
+                <para>Gets or sets a value that specifies whether cookies are used to persist information about the control. 
+</para>
+            </summary>
+            <value><b>true</b> if information is persisted in cookies; otherwise, <b>false</b>.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxSpellChecker.ASPxSpellChecker.SaveStateToCookiesID">
+            <summary>
+                <para>Gets or sets the identifier of the cookie in which the control's state is persisted. 
+</para>
+            </summary>
+            <value>A string value specifying a cookie's name.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxSpellChecker.ASPxSpellChecker.SettingsDialogFormElements">
+            <summary>
+                <para>Provides access to settings related to the customization of dialog form elements.
+ 
+</para>
+            </summary>
+            <value>An <see cref="SpellCheckerDialogSettings"/> object that contains customization settings for form elements of built-in dialogs.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxSpellChecker.ASPxSpellChecker.SettingsForms">
+            <summary>
+                <para>Gets the settings allowing you to specify paths to dialog forms (UserControls) stored within a web site.
+</para>
+            </summary>
+            <value>A <see cref="SpellCheckerFormsSettings"/> object containing properties which point to individual dialog forms. 
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxSpellChecker.ASPxSpellChecker.SettingsLoadingPanel">
+            <summary>
+                <para>Provides access to the loading panel's settings.
+</para>
+            </summary>
+            <value>A <see cref="SettingsLoadingPanel"/> object that contains the loading panel's settings.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxSpellChecker.ASPxSpellChecker.SettingsSpelling">
+            <summary>
+                <para>Provides access to basic spelling settings.
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.Web.ASPxSpellChecker.ASPxSpellCheckerSpellingSettings"/> object that holds spelling options.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxSpellChecker.ASPxSpellChecker.SettingsText">
+            <summary>
+                <para>Provides access to texts displayed in different elements of the control.
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.Web.ASPxSpellChecker.ASPxSpellCheckerTextSettings"/> class instance that holds texts for use in control layout and related forms
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxSpellChecker.ASPxSpellChecker.ShowLoadingPanel">
+            <summary>
+                <para>Gets or sets whether the loading panel can be displayed. 
+</para>
+            </summary>
+            <value><b>true</b> if a loading panel is allowed to be displayed; otherwise, <b>false</b>.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxSpellChecker.ASPxSpellChecker.ShowLoadingPanelImage">
+            <summary>
+                <para>Gets or sets a value that specifies the visibility of an image within a <b>loading panel</b> displayed while waiting for a callback response. 
+
+</para>
+            </summary>
+            <value><b>true</b> if an image is displayed within a loading panel; otherwise, <b>false</b>.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxSpellChecker.ASPxSpellChecker.SpriteCssFilePath">
+            <summary>
+                <para>Gets or sets the path to a CSS file that defines the control's sprite image settings.
+</para>
+            </summary>
+            <value>A <see cref="T:System.String"/> value that specifies the path to the required CSS file.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxSpellChecker.ASPxSpellChecker.SpriteImageUrl">
+            <summary>
+                <para>Gets or sets the path to a sprite image.
+</para>
+            </summary>
+            <value>A <see cref="T:System.String"/> value that specifies the path to the sprite image.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxSpellChecker.ASPxSpellChecker.StylesButton">
+            <summary>
+                <para>Provides access to an object which specifies the appearance of buttons on the spelling form.
+
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.Web.ASPxSpellChecker.SpellCheckerButtonStyles"/> object, containing the button style settings.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxSpellChecker.ASPxSpellChecker.StylesDialogForm">
+            <summary>
+                <para>Provides access to style settings for the spellchecker forms.
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.Web.ASPxSpellChecker.SpellCheckerDialogFormStyles"/> object that contains style settings.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxSpellChecker.ASPxSpellChecker.StylesEditors">
+            <summary>
+                <para>Provides access to style settings for editor elements in the spellchecker forms.
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.Web.ASPxSpellChecker.SpellCheckerEditorStyles"/> object that contains style settings.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxSpellChecker.ASPxSpellChecker.SuggestionCount">
+            <summary>
+                <para>Gets or sets the number of suggested words displayed in the spelling form.
+</para>
+            </summary>
+            <value>An integer, representing the number of suggestions displayed.
+
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxSpellChecker.ASPxSpellChecker.TabIndex">
+            <summary>
+                <para>Overrides the <see cref="P:System.Web.UI.WebControls.WebControl.TabIndex"/> property to hide it.
+
+</para>
+            </summary>
+            <value>A tab index of the control.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxSpellChecker.ASPxSpellChecker.ToolTip">
+            <summary>
+                <para>Overrides the <see cref="P:System.Web.UI.WebControls.WebControl.ToolTip"/> property to hide it.
+</para>
+            </summary>
+            <value>A text displayed when the mouse pointer hovers over the control.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxSpellChecker.ASPxSpellChecker.Visible">
+            <summary>
+                <para>Overrides the <see cref="P:System.Web.UI.WebControls.WebControl.Visible"/> property to hide it.
+</para>
+            </summary>
+            <value><b>true</b> if a control is rendered as a UI on a page; otherwise, <b>false</b>.
+
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxSpellChecker.ASPxSpellChecker.Width">
+            <summary>
+                <para>Overrides the <see cref="P:System.Web.UI.WebControls.WebControl.Width"/> property to hide it.
+</para>
+            </summary>
+            <value>A <see cref="P:System.Web.UI.WebControls.Unit"/>  object, representing the contol's width.
+</value>
+
+
+        </member>
+        <member name="E:DevExpress.Web.ASPxSpellChecker.ASPxSpellChecker.WordAdded">
+            <summary>
+                <para>Fires when a word is added to the custom dictionary.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="T:DevExpress.Web.ASPxSpellChecker.ASPxHunspellDictionary">
+
+            <summary>
+                <para>A dictionary for the Hunspell spell checking algorithm.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.Web.ASPxSpellChecker.ASPxHunspellDictionary.#ctor">
+            <summary>
+                <para>Initializes a new instance of the ASPxHunspellDictionary class with default settings.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxSpellChecker.ASPxHunspellDictionary.Dictionary">
+            <summary>
+                <para>Indicates the dictionary for the Hunspell spell checking algorithm. 
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.XtraSpellChecker.HunspellDictionary"/> object.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxSpellChecker.ASPxHunspellDictionary.GrammarPath">
+            <summary>
+                <para>Specifies the filename of the affix file (.<b>aff</b>) to be loaded.
+
+</para>
+            </summary>
+            <value>A <see cref="T:System.String"/> value, specifying the path to the affix file.
+
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.Web.ASPxSpellChecker.SpellCheckerDialogSettings">
+
+            <summary>
+                <para>Contains customization settings for form elements of built-in dialogs.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.Web.ASPxSpellChecker.SpellCheckerDialogSettings.#ctor(DevExpress.Web.IPropertiesOwner)">
+            <summary>
+                <para>Initializes a new instance of the SpellCheckerDialogSettings class with the specified owner.
+</para>
+            </summary>
+            <param name="owner">
+		An object that implements the <see cref="T:DevExpress.Web.IPropertiesOwner"/> interface.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.Web.ASPxSpellChecker.SpellCheckerDialogSettings.Assign(DevExpress.Web.PropertiesBase)">
+            <summary>
+                <para>Copies the settings of the specified object to the current one.
+</para>
+            </summary>
+            <param name="source">
+		A <see cref="T:DevExpress.Web.PropertiesBase"/> object whose settings are assigned to the current object.
+
+            </param>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxSpellChecker.SpellCheckerDialogSettings.ShowAddToDictionaryButton">
+            <summary>
+                <para>Gets or sets a value that specifies whether to display the "Add to Dictionary" button within the Check Spelling Form dialog.
+</para>
+            </summary>
+            <value><b>true</b>, to display the related form element; otherwise, <b>false</b>.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxSpellChecker.SpellCheckerDialogSettings.ShowOptionsButton">
+            <summary>
+                <para>Gets or sets a value that specifies whether to display the "Options..." button within the Check Spelling Form dialog.
+</para>
+            </summary>
+            <value><b>true</b>, to display the related form element; otherwise, <b>false</b>.
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.Web.ASPxSpellChecker.Localization.ASPxSpellCheckerResLocalizer">
+
+            <summary>
+                <para>An object providing a means to localize the <see cref="T:DevExpress.Web.ASPxSpellChecker.ASPxSpellChecker"/>'s user interface elements at runtime.
+
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.Web.ASPxSpellChecker.Localization.ASPxSpellCheckerResLocalizer.#ctor">
+            <summary>
+                <para>Initializes a new instance of the ASPxSpellCheckerResLocalizer class with default settings.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="T:DevExpress.Web.ASPxSpellChecker.Localization.ASPxSpellCheckerLocalizer">
+
+            <summary>
+                <para>An object providing a means to localize the <see cref="T:DevExpress.Web.ASPxSpellChecker.ASPxSpellChecker"/>'s user interface elements at runtime.
+
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.Web.ASPxSpellChecker.Localization.ASPxSpellCheckerLocalizer.#ctor">
+            <summary>
+                <para>Initializes a new instance of the ASPxSpellCheckerLocalizer class with default settings.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="M:DevExpress.Web.ASPxSpellChecker.Localization.ASPxSpellCheckerLocalizer.CreateResXLocalizer">
+            <summary>
+                <para>Returns an object comprising resources based on the thread's language and regional settings (culture).
+</para>
+            </summary>
+            <returns>A <see cref="XtraLocalizer"/> object comprising resources based on the thread's culture.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.Web.ASPxSpellChecker.Localization.ASPxSpellCheckerLocalizer.GetString(DevExpress.Web.ASPxSpellChecker.Localization.ASPxSpellCheckerStringId)">
+            <summary>
+                <para>Returns a localized string for the specified string identifier.
+</para>
+            </summary>
+            <param name="id">
+		An <see cref="T:DevExpress.Web.ASPxSpellChecker.Localization.ASPxSpellCheckerStringId"/> enumeration value identifying the string to localize.
+
+            </param>
+            <returns>A <see cref="String"/> corresponding to the specified identifier.
+</returns>
+
+
+        </member>
+        <member name="T:DevExpress.Web.ASPxSpellChecker.Localization.ASPxSpellCheckerStringId">
+
+            <summary>
+                <para>Contains values corresponding to strings that can be localized for the <see cref="T:DevExpress.Web.ASPxSpellChecker.ASPxSpellChecker"/>.
+</para>
+            </summary>
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxSpellChecker.Localization.ASPxSpellCheckerStringId.AddToDictionaryButton">
+            <summary>
+                <para><para>Defines the caption of the <b>Add to Dictionary</b> button on the Check Spelling Form of the Spell Checker.</para>
+<para><b>Default value</b>: "Add to Dictionary"</para>
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxSpellChecker.Localization.ASPxSpellCheckerStringId.CancelButton">
+            <summary>
+                <para><para>Defines the caption of the <b>Cancel</b> button on the Spelling Options Form of the Spell Checker.</para>
+<para><b>Default value</b>: "Cancel"</para>
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxSpellChecker.Localization.ASPxSpellCheckerStringId.ChangeAllButton">
+            <summary>
+                <para><para>Defines the caption of the <b>Change All</b> button on the Check Spelling Form of the Spell Checker.</para>
+<para><b>Default value</b>: "Change All"</para>
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxSpellChecker.Localization.ASPxSpellCheckerStringId.ChangeButton">
+            <summary>
+                <para><para>Defines the caption of the <b>Change</b> button on the Check Spelling Form of the Spell Checker.</para>
+<para><b>Default value</b>: "Change"</para>
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxSpellChecker.Localization.ASPxSpellCheckerStringId.ChangeTo">
+            <summary>
+                <para><para>Defines the Check Spelling Form's <b>Change To:</b> label caption.</para>
+<para><b>Default value:</b> "Change to:"</para>
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxSpellChecker.Localization.ASPxSpellCheckerStringId.ChooseDictionary">
+            <summary>
+                <para><para>Defines the text shown in the <b>International dictionaries</b> block of the Spelling Options Form.</para>
+<para><b>Default value</b>: "Choose which dictionary to use when checking your spelling."</para>
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxSpellChecker.Localization.ASPxSpellCheckerStringId.CloseButton">
+            <summary>
+                <para><para>Defines the caption of the <b>Close</b> button on the Check Spelling Form of the Spell Checker.</para>
+<para><b>Default value</b>: "Close"</para>
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxSpellChecker.Localization.ASPxSpellCheckerStringId.FinishSpellChecking">
+            <summary>
+                <para><para>Defines the text displayed within the message box invoked if the spelling check is complete and the <see cref="P:DevExpress.Web.ASPxSpellChecker.ASPxSpellCheckerTextSettings.FinishSpellChecking"/> property value is not customized.</para>
+<para><b>Default value</b>: "The spelling check is complete."</para>
+
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxSpellChecker.Localization.ASPxSpellCheckerStringId.GeneralOptions">
+            <summary>
+                <para><para>Defines the caption of the <b>General options</b> block in the Spelling Options Form.</para>
+<para><b>Default value</b>: "General options"</para>
+
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxSpellChecker.Localization.ASPxSpellCheckerStringId.IgnoreAllButton">
+            <summary>
+                <para><para>Defines the caption of the <b>Ignore All</b> button on the Check Spelling Form of the Spell Checker.</para>
+<para><b>Default value</b>: "Ignore All"</para>
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxSpellChecker.Localization.ASPxSpellCheckerStringId.IgnoreEmails">
+            <summary>
+                <para><para>Defines the caption of the <b>Ignore e-mails</b> option in the Spelling Options Form.</para>
+<para><b>Default value</b>: "Ignore e-mails"</para>
+
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxSpellChecker.Localization.ASPxSpellCheckerStringId.IgnoreMixedCase">
+            <summary>
+                <para><para>Defines the caption of the <b>Ignore words in MiXeDcAsE</b> option in the Spelling Options Form.</para>
+<para><b>Default value</b>: "Ignore words in MiXeDcAsE"</para>
+
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxSpellChecker.Localization.ASPxSpellCheckerStringId.IgnoreNumbers">
+            <summary>
+                <para><para>Defines the caption of the <b>Ignore words with numbers</b> option in the Spelling Options Form.</para>
+<para><b>Default value</b>: "Ignore words with numbers"</para>
+
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxSpellChecker.Localization.ASPxSpellCheckerStringId.IgnoreOnceButton">
+            <summary>
+                <para><para>Defines the caption of the <b>Ignore Once</b> button on the Check Spelling Form of the Spell Checker.</para>
+<para><b>Default value</b>: "Ignore Once"</para>
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxSpellChecker.Localization.ASPxSpellCheckerStringId.IgnoreTags">
+            <summary>
+                <para><para>Defines the caption of the <b>Ignore markup tags</b> option in the Spelling Options Form.</para>
+<para><b>Default value</b>: "Ignore markup tags"</para>
+
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxSpellChecker.Localization.ASPxSpellCheckerStringId.IgnoreUppercase">
+            <summary>
+                <para><para>Defines the caption of the <b>Ignore words in UPPERCASE</b> option in the Spelling Options Form.</para>
+<para><b>Default value</b>: "Ignore words in UPPERCASE"</para>
+
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxSpellChecker.Localization.ASPxSpellCheckerStringId.IgnoreUrls">
+            <summary>
+                <para><para>Defines the caption of the <b>Ignore URLs</b> option in the Spelling Options Form.</para>
+<para><b>Default value</b>: "Ignore URLs"</para>
+
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxSpellChecker.Localization.ASPxSpellCheckerStringId.InternationalDictionaries">
+            <summary>
+                <para><para>Defines the caption of the <b>International dictionaries</b> block in the Spelling Options Form.</para>
+<para><b>Default value</b>: "International dictionaries"</para>
+
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxSpellChecker.Localization.ASPxSpellCheckerStringId.Language">
+            <summary>
+                <para><para>Defines the <b>Language:</b> label caption shown in the <b>International dictionaries</b> block of the Spelling Options Form.</para>
+<para><b>Default value</b>: "Language:"</para>  
+
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxSpellChecker.Localization.ASPxSpellCheckerStringId.NoSuggestionsText">
+            <summary>
+                <para><para>Defines the text shown in a Check Spelling Form suggestion box if no suggestion was found.</para>
+<para><b>Default value</b>: "(No Suggestions)"</para>
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxSpellChecker.Localization.ASPxSpellCheckerStringId.NotInDictionary">
+            <summary>
+                <para><para>Defines the Check Spelling Form's <b>Not in Dictionary</b> label caption.</para>
+<para><b>Default value</b>: "Not in Dictionary:"</para>
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxSpellChecker.Localization.ASPxSpellCheckerStringId.OkButton">
+            <summary>
+                <para><para>Defines the caption of the <b>OK</b> button on the Spelling Options Form of the Spell Checker.</para>
+<para><b>Default value</b>: "OK"</para>
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxSpellChecker.Localization.ASPxSpellCheckerStringId.OptionsButton">
+            <summary>
+                <para><para>Defines the caption of the <b>Options</b> button on the Check Spelling Form of the Spell Checker.</para>
+<para><b>Default value</b>: "Options..."</para>
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxSpellChecker.Localization.ASPxSpellCheckerStringId.OptionsFormCaption">
+            <summary>
+                <para><para>Defines the Spelling Options Form's caption.</para>
+<para><b>Default value</b>: "Spelling Options"</para>
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxSpellChecker.Localization.ASPxSpellCheckerStringId.SpellCheckFormCaption">
+            <summary>
+                <para><para>Defines the Check Spelling Form's caption.</para>
+<para><b>Default value</b>: "Check Spelling"</para>
+</para>
+            </summary>
+
+
+        </member>
+        <member name="T:DevExpress.Web.ASPxSpellChecker.WebDictionary">
+
+            <summary>
+                <para>The base class for ASPxSpellChecker dictionaries. 
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.Web.ASPxSpellChecker.WebDictionary.Assign(DevExpress.Web.CollectionItem)">
+            <summary>
+                <para>Copies public properties from the specified <see cref="T:DevExpress.Web.CollectionItem"/> object to the current object.
+</para>
+            </summary>
+            <param name="source">
+		A <see cref="T:DevExpress.Web.CollectionItem"/> object or descendant whose properties are copied to the current object. 
+
+            </param>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxSpellChecker.WebDictionary.CacheKey">
+            <summary>
+                <para>Gets or sets a unique identifier of a dictionary instance for caching purposes.
+</para>
+            </summary>
+            <value>A string, which is the cache key under which a dictionary is stored in the cache.
+
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxSpellChecker.WebDictionary.CanCacheDictionary">
+            <summary>
+                <para>Indicates whether a dictionary can be placed in the cache.
+</para>
+            </summary>
+            <value><b>true</b> if a dictionary can be cached; otherwise, <b>false</b>. 
+
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxSpellChecker.WebDictionary.Culture">
+            <summary>
+                <para>Gets or sets the language and culture settings of the current dictionary.
+</para>
+            </summary>
+            <value>A <see cref="T:System.Globalization.CultureInfo"/> object, contaning language and culture info.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxSpellChecker.WebDictionary.DictionaryPath">
+            <summary>
+                <para>Gets or sets a path to the dictionary file used to create spellchecker dictionaries.
+</para>
+            </summary>
+            <value>A <see cref="T:System.String"/> value that specifies the path to the dictionary file.
+</value>
+
+
+        </member>
+        <member name="M:DevExpress.Web.ASPxSpellChecker.WebDictionary.GetCachedDictionary">
+            <summary>
+                <para>Provides access to a dictionary located in a cache.
+</para>
+            </summary>
+            <returns>A dictionary that exposes  the <see cref="T:DevExpress.XtraSpellChecker.ISpellCheckerDictionary"/> interface.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.Web.ASPxSpellChecker.WebDictionary.GetCacheKey">
+            <summary>
+                <para>Returns the unique key that can be used to identify dictionaries in cache storage.
+</para>
+            </summary>
+            <returns>A string that is a cache key.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.Web.ASPxSpellChecker.WebDictionary.GetCulture">
+            <summary>
+                <para>Returns the information on language and culture associated with the current dictionary.
+</para>
+            </summary>
+            <returns>A <see cref="T:System.Globalization.CultureInfo"/> object, containing information about specific culture.
+</returns>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxSpellChecker.WebDictionary.IsCustomDictionary">
+            <summary>
+                <para>Indicates whether the current dictionary is a custom one.
+</para>
+            </summary>
+            <value><b>true</b> if the current dictionary type is Custom; otherwise, <b>false</b>. 
+</value>
+
+
+        </member>
+        <member name="M:DevExpress.Web.ASPxSpellChecker.WebDictionary.RemoveFromCache">
+            <summary>
+                <para>Removes a cached dictionary from application's <see cref="T:System.Web.Caching.Cache"/>.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxSpellChecker.WebDictionary.WordCount">
+            <summary>
+                <para>Gets the number of words contained within the dictionary.
+</para>
+            </summary>
+            <value>An integer value representing the total number of words within the dictionary.
+</value>
+
+
+        </member>
+    </members>
+</doc>

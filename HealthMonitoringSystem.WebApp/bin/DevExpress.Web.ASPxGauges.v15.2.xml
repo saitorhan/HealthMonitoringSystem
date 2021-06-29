@@ -1,0 +1,1100 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>DevExpress.Web.ASPxGauges.v15.2</name>
+    </assembly>
+    <members>
+        <member name="T:DevExpress.Web.ASPxGauges.CustomCallbackClientSideEvents">
+
+            <summary>
+                <para>Contains a list of client-side events available for the <see cref="T:DevExpress.Web.ASPxGauges.ASPxGaugeControl"/>.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.Web.ASPxGauges.CustomCallbackClientSideEvents.#ctor">
+            <summary>
+                <para>Initializes a new instance of the CustomCallbackClientSideEvents class.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxGauges.CustomCallbackClientSideEvents.BeginCallback">
+            <summary>
+                <para>Gets or sets the name of the JavaScript function or the entire code which will handle a web control's client <b>BeginCallback</b> event. 
+</para>
+            </summary>
+            <value>A string that represents either the name of a JavaScript function or the entire JavaScript function code used to handle an event.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxGauges.CustomCallbackClientSideEvents.CallbackError">
+            <summary>
+                <para>Gets or sets the name of the JavaScript function or the entire code which will handle a web control's client <b>CallbackError</b> event.
+</para>
+            </summary>
+            <value>A string that represents either the name of a JavaScript function or the entire JavaScript function code used to handle an event.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxGauges.CustomCallbackClientSideEvents.EndCallback">
+            <summary>
+                <para>Gets or sets the name of the JavaScript function or the entire code which will handle a web control's client <b>EndCallback</b> event.
+</para>
+            </summary>
+            <value>A string that represents either the name of a JavaScript function or the entire JavaScript function code used to handle an event.
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.Web.ASPxGauges.Base.ImageType">
+
+            <summary>
+                <para>Lists the values that specify the image type used to render the ASPxGaugeControl.
+</para>
+            </summary>
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxGauges.Base.ImageType.Bmp">
+            <summary>
+                <para>The ASPxGaugeControl is rendered like a BMP image.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxGauges.Base.ImageType.Default">
+            <summary>
+                <para>The ASPxGaugeControl is rendered like a PNG image.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxGauges.Base.ImageType.Gif">
+            <summary>
+                <para>The ASPxGaugeControl is rendered like a GIF image.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxGauges.Base.ImageType.Jpeg">
+            <summary>
+                <para>The ASPxGaugeControl is rendered like a JPEG image.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxGauges.Base.ImageType.Png">
+            <summary>
+                <para>The ASPxGaugeControl is rendered like a PNG image.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="T:DevExpress.Web.ASPxGauges.ASPxGaugeControl">
+
+            <summary>
+                <para>Represents an ASPxGaugeControl.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.Web.ASPxGauges.ASPxGaugeControl.#ctor">
+            <summary>
+                <para>Initializes a new instance of the ASPxGaugeControl class with default settings.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="M:DevExpress.Web.ASPxGauges.ASPxGaugeControl.AddGauge(DevExpress.XtraGauges.Base.GaugeType)">
+            <summary>
+                <para>Adds an empty gauge to the ASPxGaugeControl.
+</para>
+            </summary>
+            <param name="type">
+		A <see cref="T:DevExpress.XtraGauges.Base.GaugeType"/> enumeration value that specifies the new gauge's type.
+
+            </param>
+            <returns>An object that implements the <see cref="T:DevExpress.XtraGauges.Base.IGauge"/> interface.
+</returns>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxGauges.ASPxGaugeControl.AlternateText">
+            <summary>
+                <para>Gets or sets the alternate text displayed in the ASPxGaugeControl when the image is unavailable.
+</para>
+            </summary>
+            <value>A <see cref="T:System.String"/> value that specifies the alternate text displayed in the ASPxGaugeControl when the image is unavailable.
+</value>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxGauges.ASPxGaugeControl.ASPxGaugeControlScriptResourceName">
+            <summary>
+                <para>Returns the 'DevExpress.Web.ASPxGauges.Scripts.ASPxGaugeControl.js' string.
+</para>
+            </summary>
+            <returns> </returns>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxGauges.ASPxGaugeControl.AutoLayout">
+            <summary>
+                <para>Gets or sets whether gauges are automatically arranged within the ASPxGaugeControl to avoid overlapping.
+</para>
+            </summary>
+            <value><b>true</b> if gauges are automatically aligned within the ASPxGaugeControl without overlapping; <b>false</b>, if gauges can be freely arranged within the ASPxGaugeControl.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxGauges.ASPxGaugeControl.BackgroundImage">
+            <summary>
+                <para>Overrides the base class property to hide it.
+</para>
+            </summary>
+            <value> 
+</value>
+
+
+        </member>
+        <member name="M:DevExpress.Web.ASPxGauges.ASPxGaugeControl.BeginInit">
+            <summary>
+                <para>Starts the runtime initialization of a component.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="M:DevExpress.Web.ASPxGauges.ASPxGaugeControl.BeginUpdate">
+            <summary>
+                <para>Prevents the ASPxGaugeControl from being rendered until the <see cref="M:DevExpress.Web.ASPxGauges.ASPxGaugeControl.EndUpdate"/> or <see cref="M:DevExpress.Web.ASPxGauges.ASPxGaugeControl.CancelUpdate"/>ASPxGaugeControl method is called. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxGauges.ASPxGaugeControl.BinaryStorageMode">
+            <summary>
+                <para>Gets or sets a value indicating the mode in which the control's images are stored on the server.
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.Web.BinaryStorageMode"/> enumeration value indicating the storage mode.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxGauges.ASPxGaugeControl.Border">
+            <summary>
+                <para>Overrides the base class property to hide it.
+</para>
+            </summary>
+            <value> 
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxGauges.ASPxGaugeControl.BorderBottom">
+            <summary>
+                <para>Overrides the base class property to hide it.
+</para>
+            </summary>
+            <value> 
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxGauges.ASPxGaugeControl.BorderLeft">
+            <summary>
+                <para>Overrides the base class property to hide it.
+</para>
+            </summary>
+            <value> 
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxGauges.ASPxGaugeControl.BorderRight">
+            <summary>
+                <para>Overrides the base class property to hide it.
+</para>
+            </summary>
+            <value> 
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxGauges.ASPxGaugeControl.BorderTop">
+            <summary>
+                <para>Overrides the base class property to hide it.
+</para>
+            </summary>
+            <value> 
+</value>
+
+
+        </member>
+        <member name="M:DevExpress.Web.ASPxGauges.ASPxGaugeControl.CancelUpdate">
+            <summary>
+                <para>Re-enables render operations after a call to the <see cref="M:DevExpress.Web.ASPxGauges.ASPxGaugeControl.BeginUpdate"/> method without an immediate re-rendering.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxGauges.ASPxGaugeControl.ClientInstanceName">
+            <summary>
+                <para>Gets or sets the ASPxGaugeControl's client programmatic identifier.
+</para>
+            </summary>
+            <value>A string value that specifies the control's client identifier.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxGauges.ASPxGaugeControl.ClientSideEvents">
+            <summary>
+                <para>Gets an object that lists the client-side events specific to the ASPxGaugeControl.
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.Web.ASPxGauges.CustomCallbackClientSideEvents"/> object that allows assigning handlers to the client-side events available to the ASPxGaugeControl.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxGauges.ASPxGaugeControl.ColorScheme">
+            <summary>
+                <para> </para>
+            </summary>
+            <value> </value>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxGauges.ASPxGaugeControl.CssClass">
+            <summary>
+                <para>Overrides the base class property to hide it.
+</para>
+            </summary>
+            <value> 
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxGauges.ASPxGaugeControl.CssFilePath">
+            <summary>
+                <para>Overrides the base class property to hide it.
+</para>
+            </summary>
+            <value> 
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxGauges.ASPxGaugeControl.CssPostfix">
+            <summary>
+                <para>Overrides the base class property to hide it.
+</para>
+            </summary>
+            <value> 
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxGauges.ASPxGaugeControl.Cursor">
+            <summary>
+                <para>Overrides the base class property to hide it.
+</para>
+            </summary>
+            <value> 
+</value>
+
+
+        </member>
+        <member name="E:DevExpress.Web.ASPxGauges.ASPxGaugeControl.CustomCallback">
+            <summary>
+                <para>Fires when a round trip to the server has been initiated by a call to the client <see cref="M:DevExpress.Web.ASPxGauges.Scripts.ASPxClientGaugeControl.PerformCallback"/> method.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="E:DevExpress.Web.ASPxGauges.ASPxGaugeControl.CustomJSProperties">
+            <summary>
+                <para>Enables you to supply any server data that can then be parsed on the client.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxGauges.ASPxGaugeControl.DefaultValue">
+            <summary>
+                <para>Gets or sets the ASPxGaugeControl's default value.
+</para>
+            </summary>
+            <value>A string value that specifies the control's default value.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxGauges.ASPxGaugeControl.DescriptionUrl">
+            <summary>
+                <para>Gets or sets the location to the ASPxGaugeControl's detailed description.
+</para>
+            </summary>
+            <value>The URL for the file that contains a detailed description for the ASPxGaugeControl.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxGauges.ASPxGaugeControl.DisabledStyle">
+            <summary>
+                <para>Overrides the base class property to hide it.
+</para>
+            </summary>
+            <value> 
+</value>
+
+
+        </member>
+        <member name="M:DevExpress.Web.ASPxGauges.ASPxGaugeControl.Dispose">
+            <summary>
+                <para>Enables a server control to perform final clean up before it is released from memory.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxGauges.ASPxGaugeControl.EnableCallbackAnimation">
+            <summary>
+                <para>Gets or sets a value that specifies whether a specific animation effect is used when a ASPxGaugeControl's content is updated via a callback.
+</para>
+            </summary>
+            <value><b>true</b>, if a specific animation effect is used; otherwise, <b>false</b>.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxGauges.ASPxGaugeControl.EnableCallbackCompression">
+            <summary>
+                <para>Gets or sets whether callback compression is enabled.
+</para>
+            </summary>
+            <value><b>true</b>, to enable callback compression; otherwise, <b>false</b>.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxGauges.ASPxGaugeControl.EnableClientSideAPI">
+            <summary>
+                <para>Gets or sets a value that specifies whether the ASPxGaugeControl can be manipulated on the client-side via code.
+</para>
+            </summary>
+            <value><b>true</b> if the control's client object model is fully available; <b>false</b> if no programmatic interface is available for the control on the client side.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxGauges.ASPxGaugeControl.EnableTheming">
+            <summary>
+                <para>Overrides the base class property to hide it.
+</para>
+            </summary>
+            <value> 
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxGauges.ASPxGaugeControl.EncodeHtml">
+            <summary>
+                <para>Overrides the base class property to hide it.
+</para>
+            </summary>
+            <value> 
+</value>
+
+
+        </member>
+        <member name="M:DevExpress.Web.ASPxGauges.ASPxGaugeControl.EndInit">
+            <summary>
+                <para>Finishes the runtime initialization of the component.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="M:DevExpress.Web.ASPxGauges.ASPxGaugeControl.EndUpdate">
+            <summary>
+                <para>Re-enables render operations after a call to the <see cref="M:DevExpress.Web.ASPxGauges.ASPxGaugeControl.BeginUpdate"/> method and forces an immediate re-rendering.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="M:DevExpress.Web.ASPxGauges.ASPxGaugeControl.ExportToHtml(System.IO.Stream)">
+            <summary>
+                <para>Exports the ASPxGaugeControl to the specified stream in HTML format.
+</para>
+            </summary>
+            <param name="stream">
+		A <see cref="T:System.IO.Stream"/> object, to which the ASPxGaugeControl is exported.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.Web.ASPxGauges.ASPxGaugeControl.ExportToHtml(System.IO.Stream,DevExpress.XtraPrinting.HtmlExportOptions)">
+            <summary>
+                <para>Exports the ASPxGaugeControl to the specified stream in HTML format using the specified options.
+</para>
+            </summary>
+            <param name="stream">
+		A <see cref="T:System.IO.Stream"/> object, to which the ASPxGaugeControl is exported.
+
+            </param>
+            <param name="options">
+		A <see cref="T:DevExpress.XtraPrinting.HtmlExportOptions"/> object which specifies the export options to be applied when the control is exported.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.Web.ASPxGauges.ASPxGaugeControl.ExportToHtml(System.String)">
+            <summary>
+                <para>Exports the ASPxGaugeControl to the specified file in HTML format.
+</para>
+            </summary>
+            <param name="filePath">
+		A <see cref="T:System.String"/> that specifies the path to the file, to which the ASPxGaugeControl is exported.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.Web.ASPxGauges.ASPxGaugeControl.ExportToHtml(System.String,DevExpress.XtraPrinting.HtmlExportOptions)">
+            <summary>
+                <para>Exports the ASPxGaugeControl to the specified file in HTML format using the specified options.
+</para>
+            </summary>
+            <param name="filePath">
+		A <see cref="T:System.String"/> that specifies the path to the file, to which the ASPxGaugeControl is exported.
+
+            </param>
+            <param name="options">
+		A <see cref="T:DevExpress.XtraPrinting.HtmlExportOptions"/> object which specifies the export options to be applied when the control is exported.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.Web.ASPxGauges.ASPxGaugeControl.ExportToImage(System.String,System.Drawing.Imaging.ImageFormat)">
+            <summary>
+                <para>Exports the ASPxGaugeControl to the specified file in Image format.
+</para>
+            </summary>
+            <param name="filePath">
+		A <see cref="T:System.String"/> that specifies the path (including the full path) for the created Image file.
+
+            </param>
+            <param name="format">
+		A <see cref="T:System.Drawing.Imaging.ImageFormat"/> object which specifies the image format.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.Web.ASPxGauges.ASPxGaugeControl.ExportToImage(System.IO.Stream,System.Drawing.Imaging.ImageFormat)">
+            <summary>
+                <para>Exports the ASPxGaugeControl to the specified stream in Image format.
+</para>
+            </summary>
+            <param name="stream">
+		A <see cref="T:System.IO.Stream"/> object, to which the ASPxGaugeControl is exported.
+
+            </param>
+            <param name="format">
+		A <see cref="T:System.Drawing.Imaging.ImageFormat"/> object which specifies the image format.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.Web.ASPxGauges.ASPxGaugeControl.ExportToMht(System.String)">
+            <summary>
+                <para>Exports the ASPxGaugeControl to the specified file in MHT format.
+</para>
+            </summary>
+            <param name="filePath">
+		A <see cref="T:System.String"/> that specifies the path to the file, to which the ASPxGaugeControl is exported.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.Web.ASPxGauges.ASPxGaugeControl.ExportToMht(System.String,DevExpress.XtraPrinting.MhtExportOptions)">
+            <summary>
+                <para>Exports the ASPxGaugeControl to the specified file in MHT format using the specified options.
+</para>
+            </summary>
+            <param name="filePath">
+		A <see cref="T:System.String"/> that specifies the path to the file, to which the ASPxGaugeControl is exported.
+
+            </param>
+            <param name="options">
+		A <see cref="T:DevExpress.XtraPrinting.MhtExportOptions"/> object which specifies the export options to be applied when the control is exported.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.Web.ASPxGauges.ASPxGaugeControl.ExportToMht(System.IO.Stream,DevExpress.XtraPrinting.MhtExportOptions)">
+            <summary>
+                <para>Exports the ASPxGaugeControl to the specified stream in MHT format using the specified options.
+</para>
+            </summary>
+            <param name="stream">
+		A <see cref="T:System.IO.Stream"/> object, to which the ASPxGaugeControl is exported.
+
+            </param>
+            <param name="options">
+		A <see cref="T:DevExpress.XtraPrinting.MhtExportOptions"/> object which specifies the export options to be applied when the control is exported.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.Web.ASPxGauges.ASPxGaugeControl.ExportToMht(System.IO.Stream)">
+            <summary>
+                <para>Exports the ASPxGaugeControl to the specified stream in MHT format. 
+</para>
+            </summary>
+            <param name="stream">
+		A <see cref="T:System.IO.Stream"/> object, to which the created document is exported.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.Web.ASPxGauges.ASPxGaugeControl.ExportToPdf(System.IO.Stream)">
+            <summary>
+                <para>Exports the ASPxGaugeControl to the specified stream in PDF format.
+</para>
+            </summary>
+            <param name="stream">
+		A <see cref="T:System.IO.Stream"/> object, to which the ASPxGaugeControl is exported.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.Web.ASPxGauges.ASPxGaugeControl.ExportToPdf(System.String)">
+            <summary>
+                <para>Exports the ASPxGaugeControl to the specified file in PDF format.
+</para>
+            </summary>
+            <param name="filePath">
+		A <see cref="T:System.String"/> that specifies the path to the file, to which the ASPxGaugeControl is exported.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.Web.ASPxGauges.ASPxGaugeControl.ExportToPdf(System.IO.Stream,DevExpress.XtraPrinting.PdfExportOptions)">
+            <summary>
+                <para>Exports the ASPxGaugeControl to the specified stream in PDF format using the specified options.
+</para>
+            </summary>
+            <param name="stream">
+		A <see cref="T:System.IO.Stream"/> object, to which the ASPxGaugeControl is exported.
+
+            </param>
+            <param name="options">
+		A <see cref="T:DevExpress.XtraPrinting.PdfExportOptions"/> object which specifies the export options to be applied when the control is exported.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.Web.ASPxGauges.ASPxGaugeControl.ExportToPdf(System.String,DevExpress.XtraPrinting.PdfExportOptions)">
+            <summary>
+                <para>Exports the ASPxGaugeControl to the specified file in PDF format. 
+</para>
+            </summary>
+            <param name="filePath">
+		A <see cref="T:System.String"/> which specifies the name (including the full path) of the file to which the control is exported.
+
+            </param>
+            <param name="options">
+		A <see cref="T:DevExpress.XtraPrinting.PdfExportOptions"/> object which specifies the export options to be applied when the control is exported.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.Web.ASPxGauges.ASPxGaugeControl.ExportToXls(System.String)">
+            <summary>
+                <para>Exports the ASPxGaugeControl to the specified file in XLS format.
+</para>
+            </summary>
+            <param name="filePath">
+		A <see cref="T:System.String"/> that specifies the path to the file, to which the ASPxGaugeControl is exported.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.Web.ASPxGauges.ASPxGaugeControl.ExportToXls(System.IO.Stream)">
+            <summary>
+                <para>Exports the ASPxGaugeControl to the specified stream in XLS format.
+</para>
+            </summary>
+            <param name="stream">
+		A <see cref="T:System.IO.Stream"/> object, to which the ASPxGaugeControl is exported.
+
+            </param>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxGauges.ASPxGaugeControl.Font">
+            <summary>
+                <para>Overrides the base class property to hide it.
+</para>
+            </summary>
+            <value> 
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxGauges.ASPxGaugeControl.ForeColor">
+            <summary>
+                <para>Overrides the base class property to hide it.
+</para>
+            </summary>
+            <value> 
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxGauges.ASPxGaugeControl.Gauges">
+            <summary>
+                <para>Provides access to the collection of gauges displayed by the ASPxGaugeControl.
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.Web.ASPxGauges.Base.GaugeCollectionWeb"/> object that represents the collection of gauges.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxGauges.ASPxGaugeControl.GraphicsProperties">
+            <summary>
+                <para> </para>
+            </summary>
+            <value> </value>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxGauges.ASPxGaugeControl.Height">
+            <summary>
+                <para>Gets or sets the ASPxGaugeControl's height.
+</para>
+            </summary>
+            <value>A <see cref="T:System.Web.UI.WebControls.Unit"/> value that represents the control's height.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxGauges.ASPxGaugeControl.ImageType">
+            <summary>
+                <para>Gets or sets an image type used to render the ASPxGaugeControl.
+</para>
+            </summary>
+            <value>An <see cref="T:DevExpress.Web.ASPxGauges.Base.ImageType"/> enumeration value that specifies the image type used to render the ASPxGaugeControl.
+</value>
+
+
+        </member>
+        <member name="M:DevExpress.Web.ASPxGauges.ASPxGaugeControl.InitializeDefault(System.Object)">
+            <summary>
+                <para>This member supports the internal infrastructure, and is not intended to be used directly from your code. 
+</para>
+            </summary>
+            <param name="parameter">
+		 
+
+            </param>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxGauges.ASPxGaugeControl.IsPrintingAvailable">
+            <summary>
+                <para>Indicates whether the ASPxGaugeControl can be printed.
+</para>
+            </summary>
+            <value><b>true</b> if the ASPxGaugeControl can be printed; otherwise, <b>false</b>.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxGauges.ASPxGaugeControl.Items">
+            <summary>
+                <para>Provides access to a list of gauges and their elements. This property supports the internal infrastructure, and is not intended to be used directly from your code.
+</para>
+            </summary>
+            <value>A List object.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxGauges.ASPxGaugeControl.JSProperties">
+            <summary>
+                <para>Enables you to supply any server data that can then be parsed on the client.
+</para>
+            </summary>
+            <value>The collection of property names and their values.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxGauges.ASPxGaugeControl.LayoutInterval">
+            <summary>
+                <para>Gets or sets an interval between two neighboring gauges in the <see cref="P:DevExpress.Web.ASPxGauges.ASPxGaugeControl.AutoLayout"/> mode.
+</para>
+            </summary>
+            <value> An integer value specifying the interval between gauges.
+
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxGauges.ASPxGaugeControl.LayoutPadding">
+            <summary>
+                <para>Gets or sets a padding around all gauges in the <see cref="P:DevExpress.Web.ASPxGauges.ASPxGaugeControl.AutoLayout"/> mode.
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.Web.ASPxGauges.Base.ThicknessWeb"/> value.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxGauges.ASPxGaugeControl.LoadingPanelDelay">
+            <summary>
+                <para>Gets or sets the delay before displaying the loading panel.
+</para>
+            </summary>
+            <value>An <see cref="Int32"/> value that specifies the interval from the time a callback is sent to the server and a loading panel is displayed, in milliseconds.
+
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxGauges.ASPxGaugeControl.LoadingPanelImage">
+            <summary>
+                <para>Gets the settings of an image displayed within a Loading Panel.
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.Web.ImageProperties"/> object that contains image settings.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxGauges.ASPxGaugeControl.LoadingPanelImagePosition">
+            <summary>
+                <para>Gets or sets the position of an image displayed within a Loading Panel with respect to the panel's text content.
+</para>
+            </summary>
+            <value>One of the <see cref="T:DevExpress.Web.ImagePosition"/> enumeration values.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxGauges.ASPxGaugeControl.LoadingPanelStyle">
+            <summary>
+                <para>Gets the style settings used to paint the Loading Panel.
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.Web.LoadingPanelStyle"/> object that contains style settings.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxGauges.ASPxGaugeControl.LoadingPanelText">
+            <summary>
+                <para>Gets or sets the text displayed within a Loading Panel.
+</para>
+            </summary>
+            <value>A string value that specifies the panel's text.
+</value>
+
+
+        </member>
+        <member name="M:DevExpress.Web.ASPxGauges.ASPxGaugeControl.Print">
+            <summary>
+                <para>Prints the ASPxGaugeControl.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="M:DevExpress.Web.ASPxGauges.ASPxGaugeControl.Print(DevExpress.XtraGauges.Core.Printing.PrintSizeMode)">
+            <summary>
+                <para>Prints the ASPxGaugeControl using the specified settings.
+</para>
+            </summary>
+            <param name="sizeMode">
+		One of the DevExpress.XtraGauges.Core.Printing.PrintSizeMode enumeration values.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.Web.ASPxGauges.ASPxGaugeControl.ResetGraphicsProperties">
+            <summary>
+                <para> </para>
+            </summary>
+
+
+        </member>
+        <member name="M:DevExpress.Web.ASPxGauges.ASPxGaugeControl.RestoreLayoutFromRegistry(System.String)">
+            <summary>
+                <para>Restores a layout of gauges and their elements from the system registry.
+</para>
+            </summary>
+            <param name="path">
+		A string value specifying the system registry path, where a layout is stored.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.Web.ASPxGauges.ASPxGaugeControl.RestoreLayoutFromStream(System.IO.Stream)">
+            <summary>
+                <para>Restores a layout of gauges and their elements from the specified stream.
+</para>
+            </summary>
+            <param name="stream">
+		A <see cref="T:System.IO.Stream"/> object that stores the ASPxGaugeControl's layout.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.Web.ASPxGauges.ASPxGaugeControl.RestoreLayoutFromXml(System.String)">
+            <summary>
+                <para>Restores the layout from the specified XML file.
+</para>
+            </summary>
+            <param name="xmlFile">
+		A <see cref="T:System.String"/> value which specifies the path to the XML file that contains the layout to be loaded. If the specified file doesn't exist, an exception is raised.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.Web.ASPxGauges.ASPxGaugeControl.RestoreStyleFromStream(System.IO.Stream)">
+            <summary>
+                <para>Restores a style of gauges and their elements from the specified stream.
+</para>
+            </summary>
+            <param name="stream">
+		A <see cref="T:System.IO.Stream"/> object that stores the ASPxGaugeControl's style.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.Web.ASPxGauges.ASPxGaugeControl.RestoreStyleFromXml(System.String)">
+            <summary>
+                <para>Restores the style from the specified XML file.
+</para>
+            </summary>
+            <param name="path">
+		A <see cref="T:System.String"/> value which specifies the path to the XML file that contains the style to be loaded. If the specified file doesn't exist, an exception is raised.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.Web.ASPxGauges.ASPxGaugeControl.SaveLayoutToRegistry(System.String)">
+            <summary>
+                <para>Saves the ASPxGaugeControl's current layout to a system registry path.
+</para>
+            </summary>
+            <param name="path">
+		A string value that specifies the system registry path to which the layout is saved.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.Web.ASPxGauges.ASPxGaugeControl.SaveLayoutToStream(System.IO.Stream)">
+            <summary>
+                <para>Saves the ASPxGaugeControl's current layout to the specified stream.
+</para>
+            </summary>
+            <param name="stream">
+		A <see cref="T:System.IO.Stream"/> descendant to which the layout is written.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.Web.ASPxGauges.ASPxGaugeControl.SaveLayoutToXml(System.String)">
+            <summary>
+                <para>Saves the ASPxGaugeControl's current layout to a file in XML format.
+</para>
+            </summary>
+            <param name="xmlFile">
+		A <see cref="T:System.String"/> value that specifies the path to the file where the layout should be stored. If an empty string is specified, an exception is raised.
+
+            </param>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxGauges.ASPxGaugeControl.SaveStateOnCallbacks">
+            <summary>
+                <para>Gets or sets a value indicating whether a gauge's state should be saved between callbacks. 
+</para>
+            </summary>
+            <value><b>true</b> to save a gauge's  state between callbacks; otherwise, <b>false</b>.  
+</value>
+
+
+        </member>
+        <member name="M:DevExpress.Web.ASPxGauges.ASPxGaugeControl.SaveStyleToStream(System.IO.Stream)">
+            <summary>
+                <para>Saves the ASPxGaugeControl's current style to the specified stream.
+</para>
+            </summary>
+            <param name="stream">
+		A <see cref="T:System.IO.Stream"/> descendant to which the style is written.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.Web.ASPxGauges.ASPxGaugeControl.SaveStyleToXml(System.String)">
+            <summary>
+                <para>Saves the ASPxGaugeControl's current style to a file in XML format.
+</para>
+            </summary>
+            <param name="path">
+		A <see cref="T:System.String"/> value that specifies the path to the file where the style should be stored. If an empty string is specified, an exception is raised.
+
+            </param>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxGauges.ASPxGaugeControl.SettingsLoadingPanel">
+            <summary>
+                <para>Provides access to the loading panel settings.
+</para>
+            </summary>
+            <value>A <see cref="SettingsLoadingPanel"/> object that contains the loading panel's settings.
+</value>
+
+
+        </member>
+        <member name="M:DevExpress.Web.ASPxGauges.ASPxGaugeControl.ShouldSerializeGraphicsProperties">
+            <summary>
+                <para> </para>
+            </summary>
+            <returns> </returns>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxGauges.ASPxGaugeControl.ShowLoadingPanel">
+            <summary>
+                <para>Gets or sets a value that specifies whether a Loading Panel is displayed while waiting for a callback response.
+</para>
+            </summary>
+            <value><b>true</b> if the loading panel functionality is enabled; otherwise, <b>false</b>.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxGauges.ASPxGaugeControl.ShowLoadingPanelImage">
+            <summary>
+                <para>Gets or sets whether an image can be displayed within the Loading Panel.
+</para>
+            </summary>
+            <value><b>true</b> if an image is allowed to be displayed within the loading panel; otherwise, <b>false</b>.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxGauges.ASPxGaugeControl.SizeEx">
+            <summary>
+                <para>Gets or sets the ASPxGaugeControl's size.
+</para>
+            </summary>
+            <value>The <see cref="T:System.Drawing.Size"/> structure.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxGauges.ASPxGaugeControl.SkinID">
+            <summary>
+                <para>Overrides the base class property to hide it.
+</para>
+            </summary>
+            <value> 
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxGauges.ASPxGaugeControl.TabIndex">
+            <summary>
+                <para>Overrides the base class property to hide it.
+</para>
+            </summary>
+            <value> 
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxGauges.ASPxGaugeControl.Value">
+            <summary>
+                <para>Gets or sets the ASPxGaugeControl's value.
+</para>
+            </summary>
+            <value>A string value that specifies the control's value.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxGauges.ASPxGaugeControl.Width">
+            <summary>
+                <para>Gets or sets the ASPxGaugeControl's width.
+</para>
+            </summary>
+            <value>A <see cref="T:System.Web.UI.WebControls.Unit"/> value that represents the control's width.
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.Web.ASPxGauges.Base.GaugeCollectionWeb">
+
+            <summary>
+                <para>The base class for many collections used in ASPxGauges.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.Web.ASPxGauges.Base.GaugeCollectionWeb.#ctor">
+            <summary>
+                <para>Initializes a new instance of the GaugeCollectionWeb class with default settings.
+</para>
+            </summary>
+
+
+        </member>
+    </members>
+</doc>

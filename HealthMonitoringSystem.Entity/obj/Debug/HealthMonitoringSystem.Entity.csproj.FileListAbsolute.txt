@@ -1,0 +1,10 @@
+C:\Users\saito\Downloads\HealthMonitoringSystem\HealthMonitoringSystem.Entity\bin\Debug\HealthMonitoringSystem.Entity.dll.config
+C:\Users\saito\Downloads\HealthMonitoringSystem\HealthMonitoringSystem.Entity\bin\Debug\HealthMonitoringSystem.Entity.dll
+C:\Users\saito\Downloads\HealthMonitoringSystem\HealthMonitoringSystem.Entity\bin\Debug\HealthMonitoringSystem.Entity.pdb
+C:\Users\saito\Downloads\HealthMonitoringSystem\HealthMonitoringSystem.Entity\bin\Debug\EntityFramework.dll
+C:\Users\saito\Downloads\HealthMonitoringSystem\HealthMonitoringSystem.Entity\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\saito\Downloads\HealthMonitoringSystem\HealthMonitoringSystem.Entity\bin\Debug\EntityFramework.xml
+C:\Users\saito\Downloads\HealthMonitoringSystem\HealthMonitoringSystem.Entity\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\saito\Downloads\HealthMonitoringSystem\HealthMonitoringSystem.Entity\obj\Debug\HealthMonitoringSystem.Entity.csprojResolveAssemblyReference.cache
+C:\Users\saito\Downloads\HealthMonitoringSystem\HealthMonitoringSystem.Entity\obj\Debug\HealthMonitoringSystem.Entity.dll
+C:\Users\saito\Downloads\HealthMonitoringSystem\HealthMonitoringSystem.Entity\obj\Debug\HealthMonitoringSystem.Entity.pdb
