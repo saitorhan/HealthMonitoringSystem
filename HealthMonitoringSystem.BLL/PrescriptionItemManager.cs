@@ -4,8 +4,8 @@
 
 using System.Collections.Generic;
 using HealthMonitoringSystem.DAL.Abstract;
+using HealthMonitoringSystem.DAL.Content.MsSqlContent;
 using HealthMonitoringSystem.Entity;
-using Ninject;
 
 #endregion
 
@@ -17,7 +17,7 @@ namespace HealthMonitoringSystem.BLL
 
         public PrescriptionItemManager()
         {
-            _prescriptionItemDal = new NinjectManager().CoreKernel.Get<IPrescriptionItemDAL>();
+            _prescriptionItemDal = new MsSqlPrescriptionItemDal();
         }
 
         public PrescriptionItem Select(int id)

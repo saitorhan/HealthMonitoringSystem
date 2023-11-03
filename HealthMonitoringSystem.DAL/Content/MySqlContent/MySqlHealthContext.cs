@@ -9,7 +9,7 @@ using System.IO;
 using System.Runtime.Serialization.Formatters.Binary;
 using HealthMonitoringSystem.DAL.Migrations;
 using HealthMonitoringSystem.Entity;
-using MySql.Data.Entity;
+using MySql.Data.EntityFramework;
 
 #endregion
 

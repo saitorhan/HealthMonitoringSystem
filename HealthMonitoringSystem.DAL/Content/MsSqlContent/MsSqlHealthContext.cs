@@ -3,6 +3,7 @@
 #region usings
 
 using System;
+using System.Configuration;
 using System.Data.Entity;
 using System.Data.Entity.Validation;
 using System.Data.SqlClient;

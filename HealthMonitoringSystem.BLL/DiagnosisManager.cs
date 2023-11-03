@@ -5,9 +5,9 @@
 using System;
 using System.Collections.Generic;
 using HealthMonitoringSystem.DAL.Abstract;
+using HealthMonitoringSystem.DAL.Content.MsSqlContent;
 using HealthMonitoringSystem.Entity;
 using HealthMonitoringSystem.Entity.Classes;
-using Ninject;
 
 #endregion
 
@@ -19,7 +19,7 @@ namespace HealthMonitoringSystem.BLL
 
         public DiagnosisManager()
         {
-            _diagnosisDal = new NinjectManager().CoreKernel.Get<IDiagnosisDAL>();
+            _diagnosisDal = new MsSqlDiagnosisDal();
         }
 
         public Diagnosis Select(int id)

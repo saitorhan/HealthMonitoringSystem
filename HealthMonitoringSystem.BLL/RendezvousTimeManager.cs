@@ -6,8 +6,8 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using HealthMonitoringSystem.DAL.Abstract;
+using HealthMonitoringSystem.DAL.Content.MsSqlContent;
 using HealthMonitoringSystem.Entity;
-using Ninject;
 
 #endregion
 
@@ -19,7 +19,7 @@ namespace HealthMonitoringSystem.BLL
 
         public RendezvousTimeManager()
         {
-            _rendezvousTimeDal = new NinjectManager().CoreKernel.Get<IRendezvousTimeDAL>();
+            _rendezvousTimeDal = new MsSqlRendezvousTimeDal();
         }
 
         public RendezvousTime Select(int id)

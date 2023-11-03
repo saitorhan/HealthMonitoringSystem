@@ -4,8 +4,8 @@
 
 using System.Collections.Generic;
 using HealthMonitoringSystem.DAL.Abstract;
+using HealthMonitoringSystem.DAL.Content.MsSqlContent;
 using HealthMonitoringSystem.Entity;
-using Ninject;
 
 #endregion
 
@@ -17,7 +17,7 @@ namespace HealthMonitoringSystem.BLL
 
         public BloodGroupManager()
         {
-            _bloodGroupDal = new NinjectManager().CoreKernel.Get<IBloodGroupDAL>();
+            _bloodGroupDal = new MsSqlBloodGroupDal();
         }
 
         public BloodGroup Select(int id)
