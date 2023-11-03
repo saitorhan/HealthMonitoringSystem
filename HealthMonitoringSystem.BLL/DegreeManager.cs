@@ -7,7 +7,7 @@ using System.Collections.Generic;
 using System.Linq;
 using HealthMonitoringSystem.DAL.Abstract;
 using HealthMonitoringSystem.Entity;
-using HealthMonitoringSystem.Interfaces;
+using HealthMonitoringSystem.Entity.Classes;
 
 #endregion
 
@@ -42,29 +42,29 @@ namespace HealthMonitoringSystem.BLL
 
             result.Errors.Clear();
 
-            DAL.Extensions.DataBaseResult insert = _degreeDal.Insert(newDegree);
+            Extensions.DataBaseResult insert = _degreeDal.Insert(newDegree);
 
             switch (insert)
             {
-                case DAL.Extensions.DataBaseResult.Success:
+                case Extensions.DataBaseResult.Success:
                     result.Result = Extensions.BLLResult.Success;
                     result.Errors.Add(Extensions.SuccessProcess);
                     break;
-                case DAL.Extensions.DataBaseResult.AlreadyFound:
+                case Extensions.DataBaseResult.AlreadyFound:
                     result.Result = Extensions.BLLResult.AlreadyFound;
                     result.Errors.Add(Extensions.AlreadyFoundString(newDegree.Name));
                     break;
-                case DAL.Extensions.DataBaseResult.Error:
+                case Extensions.DataBaseResult.Error:
                     result.Result = Extensions.BLLResult.InnerException;
                     result.Errors.Add(Extensions.InnerException);
                     break;
-                case DAL.Extensions.DataBaseResult.ServerDisable:
+                case Extensions.DataBaseResult.ServerDisable:
                     result.Result = Extensions.BLLResult.ServerDisable;
                     result.Errors.Add(Extensions.ServerDisable);
                     break;
-                case DAL.Extensions.DataBaseResult.Referanced:
+                case Extensions.DataBaseResult.Referanced:
                     break;
-                case DAL.Extensions.DataBaseResult.NotFound:
+                case Extensions.DataBaseResult.NotFound:
                     break;
                 default:
                     throw new ArgumentOutOfRangeException();
@@ -82,29 +82,29 @@ namespace HealthMonitoringSystem.BLL
                 return result;
             }
 
-            DAL.Extensions.DataBaseResult insert = _degreeDal.Update(newInfoDegree);
+            Extensions.DataBaseResult insert = _degreeDal.Update(newInfoDegree);
 
             switch (insert)
             {
-                case DAL.Extensions.DataBaseResult.AlreadyFound:
+                case Extensions.DataBaseResult.AlreadyFound:
                     result.Result = Extensions.BLLResult.AlreadyFound;
                     result.Errors.Add(Extensions.AlreadyFoundString(newInfoDegree.Name));
                     break;
-                case DAL.Extensions.DataBaseResult.Error:
+                case Extensions.DataBaseResult.Error:
                     result.Result = Extensions.BLLResult.InnerException;
                     result.Errors.Add(Extensions.InnerException);
                     break;
-                case DAL.Extensions.DataBaseResult.Success:
+                case Extensions.DataBaseResult.Success:
                     result.Result = Extensions.BLLResult.Success;
                     result.Errors.Add(Extensions.SuccessProcess);
                     break;
-                case DAL.Extensions.DataBaseResult.ServerDisable:
+                case Extensions.DataBaseResult.ServerDisable:
                     result.Result = Extensions.BLLResult.ServerDisable;
                     result.Errors.Add(Extensions.ServerDisable);
                     break;
-                case DAL.Extensions.DataBaseResult.Referanced:
+                case Extensions.DataBaseResult.Referanced:
                     break;
-                case DAL.Extensions.DataBaseResult.NotFound:
+                case Extensions.DataBaseResult.NotFound:
                     break;
                 default:
                     throw new ArgumentOutOfRangeException();
@@ -116,30 +116,30 @@ namespace HealthMonitoringSystem.BLL
         public ProcessResult Delete(int id)
         {
             ProcessResult result = new ProcessResult();
-            DAL.Extensions.DataBaseResult delete = _degreeDal.Delete(id);
+            Extensions.DataBaseResult delete = _degreeDal.Delete(id);
             switch (delete)
             {
-                case DAL.Extensions.DataBaseResult.Success:
+                case Extensions.DataBaseResult.Success:
                     result.Result = Extensions.BLLResult.Success;
                     result.Errors.Add(Extensions.SuccessProcess);
                     break;
-                case DAL.Extensions.DataBaseResult.Referanced:
+                case Extensions.DataBaseResult.Referanced:
                     result.Result = Extensions.BLLResult.Referanced;
                     result.Errors.Add("Ünvan başka tablolar üzerinde refere edildiğinden silinemedi");
                     break;
-                case DAL.Extensions.DataBaseResult.NotFound:
+                case Extensions.DataBaseResult.NotFound:
                     result.Result = Extensions.BLLResult.NotFound;
                     result.Errors.Add(Extensions.NotFound);
                     break;
-                case DAL.Extensions.DataBaseResult.Error:
+                case Extensions.DataBaseResult.Error:
                     result.Result = Extensions.BLLResult.InnerException;
                     result.Errors.Add(Extensions.InnerException);
                     break;
-                case DAL.Extensions.DataBaseResult.ServerDisable:
+                case Extensions.DataBaseResult.ServerDisable:
                     result.Result = Extensions.BLLResult.ServerDisable;
                     result.Errors.Add(Extensions.ServerDisable);
                     break;
-                case DAL.Extensions.DataBaseResult.AlreadyFound:
+                case Extensions.DataBaseResult.AlreadyFound:
                     break;
                 default:
                     throw new ArgumentOutOfRangeException();
