@@ -6,7 +6,7 @@ using System;
 using System.Collections.Generic;
 using HealthMonitoringSystem.DAL.Abstract;
 using HealthMonitoringSystem.Entity;
-using HealthMonitoringSystem.Interfaces;
+using HealthMonitoringSystem.Entity.Classes;
 using Ninject;
 
 #endregion

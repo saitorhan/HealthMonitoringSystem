@@ -4,7 +4,6 @@
 
 using System;
 using HealthMonitoringSystem.Entity;
-using HealthMonitoringSystem.Interfaces;
 
 #endregion
 

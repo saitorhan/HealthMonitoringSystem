@@ -5,7 +5,6 @@
 using System.Collections.Generic;
 using HealthMonitoringSystem.DAL.Abstract;
 using HealthMonitoringSystem.Entity;
-using HealthMonitoringSystem.Interfaces;
 using Ninject;
 
 #endregion

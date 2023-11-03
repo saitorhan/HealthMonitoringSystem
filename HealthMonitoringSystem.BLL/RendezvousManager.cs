@@ -7,7 +7,7 @@ using System.Collections.Generic;
 using System.Linq;
 using HealthMonitoringSystem.DAL.Abstract;
 using HealthMonitoringSystem.Entity;
-using HealthMonitoringSystem.Interfaces;
+using HealthMonitoringSystem.Entity.Classes;
 using Ninject;
 
 #endregion
@@ -48,25 +48,25 @@ namespace HealthMonitoringSystem.BLL
             result = IsExistOtherRendezvous(newRendezvous);
             if (result.Result == Extensions.BLLResult.AlreadyFound) return result;
 
-            DAL.Extensions.DataBaseResult baseResult = _rendezvousDal.Insert(ref newRendezvous);
+            Extensions.DataBaseResult baseResult = _rendezvousDal.Insert(ref newRendezvous);
 
             switch (baseResult)
             {
-                case DAL.Extensions.DataBaseResult.Error:
+                case Extensions.DataBaseResult.Error:
                     result.Errors.Add(Extensions.InnerException);
                     result.Result = Extensions.BLLResult.InnerException;
                     break;
-                case DAL.Extensions.DataBaseResult.ServerDisable:
+                case Extensions.DataBaseResult.ServerDisable:
                     result.Result = Extensions.BLLResult.ServerDisable;
                     result.Errors.Add(Extensions.ServerDisable);
                     break;
-                case DAL.Extensions.DataBaseResult.Success:
+                case Extensions.DataBaseResult.Success:
                     break;
-                case DAL.Extensions.DataBaseResult.AlreadyFound:
+                case Extensions.DataBaseResult.AlreadyFound:
                     break;
-                case DAL.Extensions.DataBaseResult.Referanced:
+                case Extensions.DataBaseResult.Referanced:
                     break;
-                case DAL.Extensions.DataBaseResult.NotFound:
+                case Extensions.DataBaseResult.NotFound:
                     break;
                 default:
                     throw new ArgumentOutOfRangeException();
@@ -129,27 +129,27 @@ namespace HealthMonitoringSystem.BLL
 
             switch (_rendezvousDal.Delete(id))
             {
-                case DAL.Extensions.DataBaseResult.Success:
+                case Extensions.DataBaseResult.Success:
                     result.Errors.Add("Randevu silindi");
                     result.Result = Extensions.BLLResult.Success;
                     break;
-                case DAL.Extensions.DataBaseResult.Referanced:
+                case Extensions.DataBaseResult.Referanced:
                     result.Errors.Add("Silinmeye çalışılan randevu muayene olduğundan randevu silinemedi.");
                     result.Result = Extensions.BLLResult.Referanced;
                     break;
-                case DAL.Extensions.DataBaseResult.NotFound:
+                case Extensions.DataBaseResult.NotFound:
                     result.Errors.Add("Randevu bulunamadı");
                     result.Result = Extensions.BLLResult.NotFound;
                     break;
-                case DAL.Extensions.DataBaseResult.Error:
+                case Extensions.DataBaseResult.Error:
                     result.Errors.Add("Randevu silinirken bir hata ile karşılaşıldı");
                     result.Result = Extensions.BLLResult.Error;
                     break;
-                case DAL.Extensions.DataBaseResult.ServerDisable:
+                case Extensions.DataBaseResult.ServerDisable:
                     result.Result = Extensions.BLLResult.ServerDisable;
                     result.Errors.Add(Extensions.ServerDisable);
                     break;
-                case DAL.Extensions.DataBaseResult.AlreadyFound:
+                case Extensions.DataBaseResult.AlreadyFound:
                     break;
                 default:
                     throw new ArgumentOutOfRangeException();
