@@ -8,7 +8,6 @@ using DevExpress.XtraSplashScreen;
 using HealthMonitoringSystem.BLL;
 using HealthMonitoringSystem.Entity;
 using HealthMonitoringSystem.WinApp.Extensions;
-using HealthMonitoringSystem.WinApp.PrescriptionService;
 
 #endregion
 

@@ -5,6 +5,7 @@ using DevExpress.XtraEditors;
 using DevExpress.XtraGrid;
 using DevExpress.XtraGrid.Columns;
 using DevExpress.XtraGrid.Views.Grid;
+using HealthMonitoringSystem.Entity;
 
 namespace HealthMonitoringSystem.WinApp.GUI
 {
@@ -201,7 +202,7 @@ namespace HealthMonitoringSystem.WinApp.GUI
             // 
             // bindingSourceLabResult
             // 
-            this.bindingSourceLabResult.DataSource = typeof(HealthMonitoringSystem.WinApp.ExaminationService.LaboratoryRequest);
+            this.bindingSourceLabResult.DataSource = typeof(LaboratoryRequest);
             this.bindingSourceLabResult.CurrentChanged += new System.EventHandler(this.bindingSourceLabResult_CurrentChanged);
             // 
             // tableLayoutPanel1
@@ -439,7 +440,7 @@ namespace HealthMonitoringSystem.WinApp.GUI
             // 
             // bindingSourceDiagnosis
             // 
-            this.bindingSourceDiagnosis.DataSource = typeof(HealthMonitoringSystem.WinApp.DiagnosisService.Diagnosis);
+            this.bindingSourceDiagnosis.DataSource = typeof(Diagnosis);
             // 
             // labelControl1
             // 
@@ -473,7 +474,7 @@ namespace HealthMonitoringSystem.WinApp.GUI
             // 
             // bindingSourceItems
             // 
-            this.bindingSourceItems.DataSource = typeof(HealthMonitoringSystem.WinApp.LaboratoryRequestItemService.LaboratoryRequestItem);
+            this.bindingSourceItems.DataSource = typeof(LaboratoryRequestItem);
             // 
             // gridView1
             // 
@@ -607,7 +608,7 @@ namespace HealthMonitoringSystem.WinApp.GUI
             // 
             // bindingSourcePastExaminations
             // 
-            this.bindingSourcePastExaminations.DataSource = typeof(HealthMonitoringSystem.WinApp.ExaminationService.Examination);
+            this.bindingSourcePastExaminations.DataSource = typeof(Examination);
             // 
             // gridViewPastExams
             // 

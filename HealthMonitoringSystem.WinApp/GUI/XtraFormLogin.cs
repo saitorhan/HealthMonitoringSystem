@@ -6,9 +6,10 @@ using System;
 using System.Windows.Forms;
 using DevExpress.XtraEditors;
 using DevExpress.XtraSplashScreen;
+using HealthMonitoringSystem.BLL;
+using HealthMonitoringSystem.Entity;
 using HealthMonitoringSystem.WinApp.Extensions;
 using HealthMonitoringSystem.WinApp.Resources;
-using HealthMonitoringSystem.WinApp.SystemService;
 
 #endregion
 
@@ -45,7 +46,7 @@ namespace HealthMonitoringSystem.WinApp.GUI
 
         private void LoginPersonnel(string tc, string pass, bool isAdmin)
         {
-            SystemSolClient client = Extensions.Extensions.GetSystemManager();
+            SystemManager client = new SystemManager();
             Personnel personnel = client.LoginPersonnel(tc, pass);
             if (personnel.IsNull())
             {
@@ -70,7 +71,7 @@ namespace HealthMonitoringSystem.WinApp.GUI
 
         private void LoginDoctor(string tc, string pass)
         {
-            SystemSolClient client = Extensions.Extensions.GetSystemManager();
+            SystemManager client = new SystemManager();
             Doctor doctor = client.LoginDoctor(tc, pass);
             if (doctor.IsNull())
             {

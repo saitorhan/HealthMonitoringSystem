@@ -5,6 +5,7 @@
 using System;
 using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Runtime.Serialization;
 
 #endregion
@@ -51,5 +52,33 @@ namespace HealthMonitoringSystem.Entity
 
         [DataMember]
         public Patient Patient { get; set; }
+
+        [NotMapped]
+        public string From
+        {
+            get
+            {
+                return String.Format("{0} {1}",
+                    FromDoctor ? Doctor.Name : Patient.Name,
+                    FromDoctor ? Doctor.Surname : Patient.Surname);
+            }
+        }
+
+        [NotMapped]
+        public string To
+        {
+            get
+            {
+                return String.Format("{0} {1}",
+                    FromDoctor ? Patient.Name : Doctor.Name,
+                    FromDoctor ? Patient.Surname : Doctor.Surname);
+            }
+        }
+
+        [NotMapped]
+        public string SReaded
+        {
+            get { return Readed ? "OKUNDU" : "OKUNMADI"; }
+        }
     }
 }

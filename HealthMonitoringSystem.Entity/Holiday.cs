@@ -2,8 +2,10 @@
 
 #region usings
 
+using System.Collections.Generic;
 using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Runtime.Serialization;
 
 #endregion
@@ -33,5 +35,32 @@ namespace HealthMonitoringSystem.Entity
 
         [DataMember]
         public int? Year { get; set; }
+
+        [NotMapped]
+        public string MonthS
+        {
+            get
+            {
+                List<string> months = new List<string>
+                {
+                    "Ocak",
+                    "Şubat",
+                    "Mart",
+                    "Nisan",
+                    "Mayıs",
+                    "Haziran",
+                    "Temmuz",
+                    "Ağustos",
+                    "Eylül",
+                    "Ekim",
+                    "Kasım",
+                    "Aralık"
+                };
+                return months[Month - 1];
+            }
+        }
+
+        [NotMapped]
+        public string YearS => Year == null ? "Her Yıl" : Year.Value.ToString();
     }
 }

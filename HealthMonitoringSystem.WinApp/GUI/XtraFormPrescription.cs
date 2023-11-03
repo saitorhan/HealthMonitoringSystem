@@ -9,16 +9,11 @@ using System.Windows.Forms;
 using DevExpress.XtraBars;
 using DevExpress.XtraEditors;
 using DevExpress.XtraSplashScreen;
+using HealthMonitoringSystem.BLL;
+using HealthMonitoringSystem.Entity;
+using HealthMonitoringSystem.Entity.Classes;
 using HealthMonitoringSystem.WinApp.Extensions;
-using HealthMonitoringSystem.WinApp.MedicamentService;
-using HealthMonitoringSystem.WinApp.PrescriptionService;
 using HealthMonitoringSystem.WinApp.Resources;
-using Examination = HealthMonitoringSystem.WinApp.ExaminationService.Examination;
-using ExtensionsBLLResult = HealthMonitoringSystem.WinApp.PrescriptionService.ExtensionsBLLResult;
-using Medicament = HealthMonitoringSystem.WinApp.MedicamentService.Medicament;
-using Prescription = HealthMonitoringSystem.WinApp.PrescriptionService.Prescription;
-using PrescriptionItem = HealthMonitoringSystem.WinApp.PrescriptionService.PrescriptionItem;
-using ProcessResult = HealthMonitoringSystem.WinApp.PrescriptionService.ProcessResult;
 
 #endregion
 
@@ -35,7 +30,7 @@ namespace HealthMonitoringSystem.WinApp.GUI
         {
             _examination = examination;
             prescription.ExaminationId = _examination.Id;
-            prescription.Examination = new PrescriptionService.Examination
+            prescription.Examination = new Examination
             {
                 Id = _examination.Id,
                 PatientId = _examination.PatientId,
@@ -53,9 +48,8 @@ namespace HealthMonitoringSystem.WinApp.GUI
             Text = String.Format("Reçete Yaz: {0}", _examination.Patient.NameSurname);
             if (GlobalVariables.Medicaments.IsNull())
             {
-                MedicamentSolClient client = Extensions.Extensions.GetMedicamentSolClient();
+                MedicamentManager client = new MedicamentManager();
                 GlobalVariables.Medicaments = client.Medicaments(true).ToList();
-                client.Close();
                 SplashScreenManager.CloseForm(false);
             }
             bindingSourceAllMedicaments.DataSource = GlobalVariables.Medicaments;
@@ -93,7 +87,7 @@ namespace HealthMonitoringSystem.WinApp.GUI
                         prescriptionItems.Add(new PrescriptionItem
                         {
                             Medicament =
-                                new PrescriptionService.Medicament
+                                new Medicament
                                 {
                                     Id = medicament.Id,
                                     Name = medicament.Name,
@@ -125,7 +119,7 @@ namespace HealthMonitoringSystem.WinApp.GUI
 
             Extensions.Extensions.ShowWaitForm(description: "Reçeye sisteme kaydediliyor...");
 
-            PrescriptionSolClient client = Extensions.Extensions.GetPrescriptionService();
+            PrescriptionManager client = new PrescriptionManager();
             if (client.IsNull())
             {
                 return;
@@ -135,7 +129,7 @@ namespace HealthMonitoringSystem.WinApp.GUI
             SplashScreenManager.CloseForm(false);
 
             Extensions.Extensions.ProcessResultMessage(result.Errors, (int) result.Result);
-            if (result.Result == ExtensionsBLLResult.Success)
+            if (result.Result == Entity.Classes.Extensions.BLLResult.Success)
                 Close();
         }
 
@@ -153,7 +147,7 @@ namespace HealthMonitoringSystem.WinApp.GUI
             {
                 result = new ProcessResult
                 {
-                    Result = ExtensionsBLLResult.NotVerified
+                    Result = Entity.Classes.Extensions.BLLResult.NotVerified
                 };
             }
         }

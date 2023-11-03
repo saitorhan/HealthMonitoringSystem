@@ -4,6 +4,7 @@
 
 using System.Collections.Generic;
 using HealthMonitoringSystem.DAL.Abstract;
+using HealthMonitoringSystem.DAL.Content.MsSqlContent;
 using HealthMonitoringSystem.Entity;
 
 #endregion
@@ -14,9 +15,9 @@ namespace HealthMonitoringSystem.BLL
     {
         private IMessageDAL _messageDal;
 
-        public MessageManager(IMessageDAL messageDal)
+        public MessageManager()
         {
-            _messageDal = messageDal;
+            _messageDal = new MsSqlMessageDal();
         }
 
         public Message Select(int id)

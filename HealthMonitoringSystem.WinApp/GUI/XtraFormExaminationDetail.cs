@@ -110,9 +110,8 @@ namespace HealthMonitoringSystem.WinApp.GUI
             groupControlCurrentExamination.Text = String.Format("Şuanki Muayene Bilgisi ({0} Muayene)",
                 examination.IsActive ? "Açık" : "Kapalı");
 
-            LaboratoryRequestSolClient client = Extensions.Extensions.GetLaboratoryRequest();
+            LaboratoryRequestManager client = new LaboratoryRequestManager();
             bindingSourceLabResult.DataSource = client.LaboratoryRequests(examination.Id, true);
-            client.Close();
             if (open)
                 SplashScreenManager.CloseForm(false);
         }
@@ -126,17 +125,16 @@ namespace HealthMonitoringSystem.WinApp.GUI
                 bindingSourceItems.DataSource = null;
                 return;
             }
-            LaboratoryRequestItemSolClient client =
-                Extensions.Extensions.GetLaboratoryRequestItem();
+
+            LaboratoryRequestItemManager client = new LaboratoryRequestItemManager();
             bindingSourceItems.DataSource = client.LaboratoryRequestItems(laboratoryRequest.Id);
-            client.Close();
         }
 
         private void barButtonItemWithoutPres_ItemClick(object sender, ItemClickEventArgs e)
         {
             if (!SetExaminationForClosing()) return;
             Extensions.Extensions.ShowWaitForm(description: "Muayene kapatılıyor");
-            ExaminationSolClient client = Extensions.Extensions.GetExaminationService();
+            ExaminationManager client = new ExaminationManager();
 
             if (client.IsNull()) return;
 
@@ -214,7 +212,7 @@ namespace HealthMonitoringSystem.WinApp.GUI
             Extensions.Extensions.ShowWaitForm(description: "İlaç listesi alınıyor...");
             XtraFormPrescription form = new XtraFormPrescription(examination);
             form.ShowDialog();
-            if (form.result.Result != ExtensionsBLLResult.Success) return;
+            if (form.result.Result != Entity.Classes.Extensions.BLLResult.Success) return;
             GetPatients();
             RefreshPage();
         }
@@ -223,9 +221,9 @@ namespace HealthMonitoringSystem.WinApp.GUI
         {
             if (examination.IsNull()) return;
 
-            ExaminationSolClient client = Extensions.Extensions.GetExaminationService();
+            ExaminationManager client = new ExaminationManager();
             if (client.IsNull()) return;
-            MessageSolClient messageService = Extensions.Extensions.GetMessageService();
+            MessageManager messageService = new MessageManager();
 
             Extensions.Extensions.ShowWaitForm(description: "Geçmiş muayene bilgileri sorgulanıyor");
             bindingSourcePastExaminations.DataSource = client.Examinations(null, GlobalVariables.Doctor.Id,
@@ -286,10 +284,7 @@ namespace HealthMonitoringSystem.WinApp.ExaminationService
 {
     public partial class Diagnosis
     {
-        public string DisplayName
-        {
-            get { return Name == "DEFAULT" ? "TEŞHİS YOK" : Name; }
-        }
+        
     }
 }
 
@@ -297,29 +292,6 @@ namespace HealthMonitoringSystem.WinApp.MessageService
 {
     public partial class Message
     {
-        public string From
-        {
-            get
-            {
-                return String.Format("{0} {1}",
-                    FromDoctor ? GlobalVariables.Doctor.Name : XtraFormExaminationDetail.examination.Patient.Name,
-                    FromDoctor ? GlobalVariables.Doctor.Surname : XtraFormExaminationDetail.examination.Patient.Surname);
-            }
-        }
-
-        public string To
-        {
-            get
-            {
-                return String.Format("{0} {1}",
-                    FromDoctor ? XtraFormExaminationDetail.examination.Patient.Name : GlobalVariables.Doctor.Name,
-                    FromDoctor ? XtraFormExaminationDetail.examination.Patient.Surname : GlobalVariables.Doctor.Surname);
-            }
-        }
-
-        public string SReaded
-        {
-            get { return Readed ? "OKUNDU" : "OKUNMADI"; }
-        }
+        
     }
 }

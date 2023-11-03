@@ -5,8 +5,10 @@
 using System;
 using DevExpress.XtraEditors;
 using DevExpress.XtraSplashScreen;
+using HealthMonitoringSystem.BLL;
+using HealthMonitoringSystem.Entity;
+using HealthMonitoringSystem.Entity.Classes;
 using HealthMonitoringSystem.WinApp.Extensions;
-using HealthMonitoringSystem.WinApp.HolidayService;
 
 #endregion
 
@@ -21,7 +23,7 @@ namespace HealthMonitoringSystem.WinApp.GUI
             dateEditFirstDay.Properties.MinValue = DateTime.Today;
         }
 
-        public ProcessResult result = new ProcessResult {Result = ExtensionsBLLResult.Error};
+        public ProcessResult result = new ProcessResult {Result = Entity.Classes.Extensions.BLLResult.Error};
         private bool update;
         private Holiday holiday;
 
@@ -55,11 +57,11 @@ namespace HealthMonitoringSystem.WinApp.GUI
             holiday.Month = dateTime.Month;
             holiday.Day = dateTime.Day;
 
-            HolidaySolClient client = Extensions.Extensions.GetHolidaySolClient();
+            HolidayManager client = new HolidayManager();
             result = update ? client.Update(holiday) : client.Insert(holiday, lenght, checkEditEveryYear.Checked);
             Extensions.Extensions.ProcessResultMessage(result.Errors, (int) result.Result);
             SplashScreenManager.CloseForm(false);
-            if (result.Result == ExtensionsBLLResult.Success)
+            if (result.Result == Entity.Classes.Extensions.BLLResult.Success)
             {
                 Close();
             }

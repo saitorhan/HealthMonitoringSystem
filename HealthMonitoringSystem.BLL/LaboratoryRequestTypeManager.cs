@@ -4,6 +4,7 @@
 
 using System.Collections.Generic;
 using HealthMonitoringSystem.DAL.Abstract;
+using HealthMonitoringSystem.DAL.Content.MsSqlContent;
 using HealthMonitoringSystem.Entity;
 
 #endregion
@@ -14,9 +15,9 @@ namespace HealthMonitoringSystem.BLL
     {
         private ILaboratoryRequestTypeDAL _laboratoryRequestTypeDal;
 
-        public LaboratoryRequestTypeManager(ILaboratoryRequestTypeDAL laboratoryRequestTypeDal)
+        public LaboratoryRequestTypeManager()
         {
-            _laboratoryRequestTypeDal = laboratoryRequestTypeDal;
+            _laboratoryRequestTypeDal = new MsSqlLaboratoryRequestTypeDal();
         }
 
         public LaboratoryRequestType Select(int id)

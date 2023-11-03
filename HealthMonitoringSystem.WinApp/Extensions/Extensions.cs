@@ -13,7 +13,6 @@ using DevExpress.XtraSplashScreen;
 using HealthMonitoringSystem.WinApp.ExaminationService;
 using HealthMonitoringSystem.WinApp.GUI;
 using HealthMonitoringSystem.WinApp.MessageService;
-using HealthMonitoringSystem.WinApp.PrescriptionService;
 using HealthMonitoringSystem.WinApp.Resources;
 
 #endregion

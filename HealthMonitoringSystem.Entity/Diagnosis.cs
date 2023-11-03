@@ -40,8 +40,7 @@ namespace HealthMonitoringSystem.Entity
         [DataMember]
         public virtual ICollection<Examination> Examinations { get; set; }
 
-
         [NotMapped]
-        public string DisplayName => Name;
+        public string DisplayName => Name == "DEFAULT" ? "TEÞHÝS YOK" : Name;
     }
 }

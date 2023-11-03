@@ -7,6 +7,7 @@ using DevExpress.XtraEditors.Repository;
 using DevExpress.XtraGrid;
 using DevExpress.XtraGrid.Columns;
 using DevExpress.XtraGrid.Views.Grid;
+using HealthMonitoringSystem.Entity;
 
 namespace HealthMonitoringSystem.WinApp.GUI
 {
@@ -176,7 +177,7 @@ namespace HealthMonitoringSystem.WinApp.GUI
             // 
             // bindingSourceAllMedicaments
             // 
-            this.bindingSourceAllMedicaments.DataSource = typeof(HealthMonitoringSystem.WinApp.MedicamentService.Medicament);
+            this.bindingSourceAllMedicaments.DataSource = typeof(Medicament);
             // 
             // gridViewAllMedicament
             // 
@@ -239,7 +240,7 @@ namespace HealthMonitoringSystem.WinApp.GUI
             // 
             // bindingSourcePrescriptionItems
             // 
-            this.bindingSourcePrescriptionItems.DataSource = typeof(HealthMonitoringSystem.WinApp.PrescriptionService.PrescriptionItem);
+            this.bindingSourcePrescriptionItems.DataSource = typeof(PrescriptionItem);
             // 
             // gridViewPrescriptionItem
             // 

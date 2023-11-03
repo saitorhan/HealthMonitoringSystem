@@ -5,7 +5,8 @@
 using System;
 using System.Linq;
 using DevExpress.XtraEditors;
-using HealthMonitoringSystem.WinApp.RendezvousService;
+using HealthMonitoringSystem.BLL;
+using HealthMonitoringSystem.Entity;
 
 #endregion
 
@@ -34,7 +35,7 @@ namespace HealthMonitoringSystem.WinApp.GUI
         private void ShowInfos()
         {
             flowLayoutPanel1.Controls.Clear();
-            RendezvousSolClient client = Extensions.Extensions.GetRendezvousService();
+            RendezvousManager client = new RendezvousManager();
             RendezvousInfo[] infos = client.RendezvousInfos().OrderBy(r => r.Max - r.Value).ToArray();
 
             foreach (XtraUserControlDepInfo depInfo in infos.Select(info => new XtraUserControlDepInfo(info)))

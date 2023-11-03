@@ -6,8 +6,10 @@ using System.Collections.Generic;
 using System.Windows.Forms;
 using DevExpress.XtraEditors;
 using DevExpress.XtraSplashScreen;
+using HealthMonitoringSystem.BLL;
+using HealthMonitoringSystem.Entity;
+using HealthMonitoringSystem.Entity.Classes;
 using HealthMonitoringSystem.WinApp.Extensions;
-using HealthMonitoringSystem.WinApp.HolidayService;
 using HealthMonitoringSystem.WinApp.Resources;
 
 #endregion
@@ -27,7 +29,7 @@ namespace HealthMonitoringSystem.WinApp.GUI
         {
             XtraFormHoliday holiday = new XtraFormHoliday();
             holiday.ShowDialog();
-            if (holiday.result.Result != ExtensionsBLLResult.Success) return;
+            if (holiday.result.Result != Entity.Classes.Extensions.BLLResult.Success) return;
             RefreshData();
         }
 
@@ -44,7 +46,7 @@ namespace HealthMonitoringSystem.WinApp.GUI
             XtraFormHoliday formDoctorDetail = new XtraFormHoliday(selectedHoliday);
             formDoctorDetail.Text = "Tatil Düzenle";
             formDoctorDetail.ShowDialog();
-            if (formDoctorDetail.result.Result != ExtensionsBLLResult.Success) return;
+            if (formDoctorDetail.result.Result != Entity.Classes.Extensions.BLLResult.Success) return;
             RefreshData();
         }
 
@@ -60,12 +62,12 @@ namespace HealthMonitoringSystem.WinApp.GUI
             if (Extensions.Extensions.DeletingAlert(holiday.Name) != DialogResult.Yes)
                 return;
             Extensions.Extensions.ShowWaitForm(description: "Tatil siliniyor...");
-            HolidaySolClient client = Extensions.Extensions.GetHolidaySolClient();
+            HolidayManager client = new HolidayManager();
 
             ProcessResult processResult = client.Delete(holiday.Id);
             SplashScreenManager.CloseForm(false);
             Extensions.Extensions.ProcessResultMessage(processResult.Errors, (int) processResult.Result);
-            if (processResult.Result == ExtensionsBLLResult.Success)
+            if (processResult.Result == Entity.Classes.Extensions.BLLResult.Success)
                 RefreshData();
         }
 
@@ -81,40 +83,6 @@ namespace HealthMonitoringSystem.WinApp.GUI
             Extensions.Extensions.ShowWaitForm(description: "Tatil Listesi Yenileniyor...");
             RefreshData();
             SplashScreenManager.CloseForm(false);
-        }
-    }
-}
-
-namespace HealthMonitoringSystem.WinApp.HolidayService
-{
-    public partial class Holiday
-    {
-        public string MonthS
-        {
-            get
-            {
-                List<string> months = new List<string>
-                {
-                    "Ocak",
-                    "Şubat",
-                    "Mart",
-                    "Nisan",
-                    "Mayıs",
-                    "Haziran",
-                    "Temmuz",
-                    "Ağustos",
-                    "Eylül",
-                    "Ekim",
-                    "Kasım",
-                    "Aralık"
-                };
-                return months[Month - 1];
-            }
-        }
-
-        public string YearS
-        {
-            get { return Year == null ? "Her Yıl" : Year.Value.ToString(); }
         }
     }
 }

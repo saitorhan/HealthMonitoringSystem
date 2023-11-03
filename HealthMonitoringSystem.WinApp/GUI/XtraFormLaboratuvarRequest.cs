@@ -8,13 +8,10 @@ using System.Linq;
 using DevExpress.XtraBars;
 using DevExpress.XtraEditors;
 using DevExpress.XtraSplashScreen;
+using HealthMonitoringSystem.BLL;
+using HealthMonitoringSystem.Entity;
 using HealthMonitoringSystem.WinApp.Extensions;
-using HealthMonitoringSystem.WinApp.LaboratoryRequestService;
-using HealthMonitoringSystem.WinApp.LaboratoryRequestTypeService;
 using HealthMonitoringSystem.WinApp.Resources;
-using LaboratoryRequest = HealthMonitoringSystem.WinApp.LaboratoryRequestService.LaboratoryRequest;
-using LaboratoryRequestItem = HealthMonitoringSystem.WinApp.LaboratoryRequestService.LaboratoryRequestItem;
-using LaboratoryRequestType = HealthMonitoringSystem.WinApp.LaboratoryRequestTypeService.LaboratoryRequestType;
 
 #endregion
 
@@ -35,10 +32,8 @@ namespace HealthMonitoringSystem.WinApp.GUI
         {
             if (GlobalVariables.LaboratoryRequestTypes.IsNull())
             {
-                LaboratoryRequestTypeSolClient client =
-                    Extensions.Extensions.GetLaboratoryRequestType();
+                LaboratoryRequestTypeManager client = new LaboratoryRequestTypeManager();
                 GlobalVariables.LaboratoryRequestTypes = client.LaboratoryRequestTypes(true).ToList();
-                client.Close();
             }
 
 
@@ -61,7 +56,7 @@ namespace HealthMonitoringSystem.WinApp.GUI
 
             Extensions.Extensions.ShowWaitForm(description: "Laboratuvar isteği kaydediliyor...");
 
-            LaboratoryRequestSolClient client = Extensions.Extensions.GetLaboratoryRequest();
+            LaboratoryRequestManager client = new LaboratoryRequestManager();
             LaboratoryRequest request = new LaboratoryRequest
             {
                 ExaminationId = examinationId,

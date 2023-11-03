@@ -3,6 +3,7 @@
 #region usings
 
 using DevExpress.XtraEditors;
+using HealthMonitoringSystem.Entity;
 using HealthMonitoringSystem.WinApp.RendezvousService;
 
 #endregion
