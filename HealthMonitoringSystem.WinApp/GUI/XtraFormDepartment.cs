@@ -7,6 +7,9 @@ using System.Collections.Generic;
 using DevExpress.XtraBars;
 using DevExpress.XtraEditors;
 using DevExpress.XtraSplashScreen;
+using HealthMonitoringSystem.BLL;
+using HealthMonitoringSystem.Entity;
+using HealthMonitoringSystem.Entity.Classes;
 using HealthMonitoringSystem.WinApp.DepartmentService;
 using HealthMonitoringSystem.WinApp.Extensions;
 
@@ -38,12 +41,7 @@ namespace HealthMonitoringSystem.WinApp.GUI
         private void barButtonItemSave_ItemClick(object sender, ItemClickEventArgs e)
         {
             Extensions.Extensions.ShowWaitForm(description: "Departman kaydediliyor...");
-            DepartmentSolClient client = Extensions.Extensions.getDepartmentSolClient();
-
-            if (client == null)
-            {
-                return;
-            }
+            DepartmentManager client = new DepartmentManager();
 
             if (_department == null)
             {
@@ -68,7 +66,7 @@ namespace HealthMonitoringSystem.WinApp.GUI
             ProcessResult processResult = update ? client.Update(_department) : client.Insert(_department);
             SplashScreenManager.CloseForm(false);
             Extensions.Extensions.ProcessResultMessage(processResult.Errors, (int) processResult.Result);
-            if (processResult.Result == ExtensionsBLLResult.Success)
+            if (processResult.Result == Entity.Classes.Extensions.BLLResult.Success)
                 Close();
         }
 

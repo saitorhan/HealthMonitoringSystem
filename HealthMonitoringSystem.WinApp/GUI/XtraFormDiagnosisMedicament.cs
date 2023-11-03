@@ -8,13 +8,8 @@ using System.Windows.Forms;
 using DevExpress.XtraBars;
 using DevExpress.XtraEditors;
 using DevExpress.XtraSplashScreen;
-using HealthMonitoringSystem.WinApp.DiagnosisService;
+using HealthMonitoringSystem.BLL;
 using HealthMonitoringSystem.WinApp.Extensions;
-using HealthMonitoringSystem.WinApp.MedicamentService;
-using Diagnosis = HealthMonitoringSystem.WinApp.DiagnosisService.Diagnosis;
-using ExtensionsBLLResult = HealthMonitoringSystem.WinApp.DiagnosisService.ExtensionsBLLResult;
-using Medicament = HealthMonitoringSystem.WinApp.MedicamentService.Medicament;
-using ProcessResult = HealthMonitoringSystem.WinApp.DiagnosisService.ProcessResult;
 
 #endregion
 
@@ -31,17 +26,16 @@ namespace HealthMonitoringSystem.WinApp.GUI
         {
             if (i == 0 || i == 1)
             {
-                DiagnosisSolClient client = Extensions.Extensions.GetDiagnosisSolClient();
+                DiagnosisManager client = new DiagnosisManager();
                 bindingSourceDiagnosis.DataSource = client.Diagnoses(null, true).ToList();
-                client.Close();
+                
             }
 
             if (i == 0 || i == 2)
             {
-                MedicamentSolClient client1 = Extensions.Extensions.GetMedicamentSolClient();
+                MedicamentManager client1 = new MedicamentManager();
                 bindingSourceMedicament.DataSource = client1.Medicaments(true);
 
-                client1.Close();
             }
         }
 

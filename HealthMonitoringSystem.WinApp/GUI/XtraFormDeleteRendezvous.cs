@@ -7,8 +7,10 @@ using System.Windows.Forms;
 using DevExpress.XtraEditors;
 using DevExpress.XtraEditors.Controls;
 using DevExpress.XtraSplashScreen;
+using HealthMonitoringSystem.BLL;
 using HealthMonitoringSystem.WinApp.Extensions;
-using HealthMonitoringSystem.WinApp.RendezvousService;
+using HealthMonitoringSystem.Entity;
+using HealthMonitoringSystem.Entity.Classes;
 
 #endregion
 
@@ -30,10 +32,10 @@ namespace HealthMonitoringSystem.WinApp.GUI
                     rendezvous.Patient.Name, rendezvous.Patient.Surname, rendezvous.Id));
             if (alert != DialogResult.Yes) return;
 
-            RendezvousSolClient client = Extensions.Extensions.GetRendezvousService();
+            RendezvousManager client = new RendezvousManager();
             ProcessResult result = client.Delete(rendezvous.Id);
             Extensions.Extensions.ProcessResultMessage(result.Errors, (int) result.Result);
-            if (result.Result == ExtensionsBLLResult.Success) Close();
+            if (result.Result == Entity.Classes.Extensions.BLLResult.Success) Close();
         }
 
         private void buttonEditFindRendezvous_ButtonClick(object sender, ButtonPressedEventArgs e)
@@ -52,7 +54,7 @@ namespace HealthMonitoringSystem.WinApp.GUI
                 return;
             }
 
-            RendezvousSolClient client = Extensions.Extensions.GetRendezvousService();
+            RendezvousManager client = new RendezvousManager();
             rendezvous = client.Select(id);
             simpleButtonDelete.Enabled = rendezvous.IsNotNull();
             simpleButtonUpdate.Enabled = rendezvous.IsNotNull();

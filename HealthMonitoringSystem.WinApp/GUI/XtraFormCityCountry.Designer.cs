@@ -6,6 +6,7 @@ using DevExpress.XtraEditors;
 using DevExpress.XtraGrid;
 using DevExpress.XtraGrid.Columns;
 using DevExpress.XtraGrid.Views.Grid;
+using HealthMonitoringSystem.Entity;
 
 namespace HealthMonitoringSystem.WinApp.GUI
 {
@@ -223,7 +224,7 @@ namespace HealthMonitoringSystem.WinApp.GUI
             // 
             // bindingSourceCity
             // 
-            this.bindingSourceCity.DataSource = typeof(HealthMonitoringSystem.WinApp.CityService.City);
+            this.bindingSourceCity.DataSource = typeof(City);
             this.bindingSourceCity.CurrentChanged += new System.EventHandler(this.bindingSourceCity_CurrentChanged);
             // 
             // gridView1
@@ -280,7 +281,7 @@ namespace HealthMonitoringSystem.WinApp.GUI
             // 
             // bindingSourceCountry
             // 
-            this.bindingSourceCountry.DataSource = typeof(HealthMonitoringSystem.WinApp.CounrtyService.Country);
+            this.bindingSourceCountry.DataSource = typeof(Country);
             // 
             // gridView2
             // 

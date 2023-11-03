@@ -6,7 +6,9 @@ using System;
 using DevExpress.XtraBars;
 using DevExpress.XtraEditors;
 using DevExpress.XtraSplashScreen;
-using HealthMonitoringSystem.WinApp.DegreeService;
+using HealthMonitoringSystem.BLL;
+using HealthMonitoringSystem.Entity;
+using HealthMonitoringSystem.Entity.Classes;
 
 #endregion
 
@@ -36,12 +38,8 @@ namespace HealthMonitoringSystem.WinApp.GUI
         private void barButtonItemSave_ItemClick(object sender, ItemClickEventArgs e)
         {
             Extensions.Extensions.ShowWaitForm(description: "Ünvan kaydediliyor...");
-            DegreeSolClient client = Extensions.Extensions.GetDegreeSolClient();
+            DegreeManager client = new DegreeManager();
 
-            if (client == null)
-            {
-                return;
-            }
 
             if (_degree == null)
             {
@@ -65,9 +63,7 @@ namespace HealthMonitoringSystem.WinApp.GUI
             SplashScreenManager.CloseForm(false);
             Extensions.Extensions.ProcessResultMessage(result.Errors, (int) result.Result);
 
-
-            client.Close();
-            if (result.Result == ExtensionsBLLResult.Success)
+            if (result.Result == Entity.Classes.Extensions.BLLResult.Success)
                 Close();
         }
 

@@ -8,13 +8,10 @@ using DevExpress.Data;
 using DevExpress.XtraBars;
 using DevExpress.XtraEditors;
 using DevExpress.XtraSplashScreen;
-using HealthMonitoringSystem.WinApp.CityService;
-using HealthMonitoringSystem.WinApp.CounrtyService;
+using HealthMonitoringSystem.BLL;
+using HealthMonitoringSystem.Entity;
+using HealthMonitoringSystem.Entity.Classes;
 using HealthMonitoringSystem.WinApp.Extensions;
-using City = HealthMonitoringSystem.WinApp.CityService.City;
-using Country = HealthMonitoringSystem.WinApp.CounrtyService.Country;
-using ExtensionsBLLResult = HealthMonitoringSystem.WinApp.CityService.ExtensionsBLLResult;
-using ProcessResult = HealthMonitoringSystem.WinApp.CityService.ProcessResult;
 
 #endregion
 
@@ -34,9 +31,8 @@ namespace HealthMonitoringSystem.WinApp.GUI
 
         private void RefreshCity()
         {
-            CitySolClient citySolClient = Extensions.Extensions.GetCityServiceSol();
+            CityManager citySolClient = new CityManager();
             bindingSourceCity.DataSource = citySolClient.Cities(true);
-            citySolClient.Close();
         }
 
 
@@ -59,12 +55,12 @@ namespace HealthMonitoringSystem.WinApp.GUI
             if (Extensions.Extensions.DeletingAlert(city.Name) != DialogResult.Yes)
                 return;
             Extensions.Extensions.ShowWaitForm(description: "Şehir siliniyor...");
-            CitySolClient client = Extensions.Extensions.GetCityServiceSol();
+            CityManager client = new CityManager();
 
             ProcessResult processResult = client.Delete(city.Id);
             SplashScreenManager.CloseForm(false);
             Extensions.Extensions.ProcessResultMessage(processResult.Errors, (int) processResult.Result);
-            if (processResult.Result == ExtensionsBLLResult.Success)
+            if (processResult.Result == Entity.Classes.Extensions.BLLResult.Success)
                 RefreshCity();
         }
 
@@ -107,9 +103,8 @@ namespace HealthMonitoringSystem.WinApp.GUI
             City selectedCity = bindingSourceCity.Current as City;
             if (selectedCity.IsNull()) return;
 
-            CountrySolClient client1 = Extensions.Extensions.GetCountrySolService();
+            CountryManager client1 = new CountryManager();
             bindingSourceCountry.DataSource = client1.Countries(selectedCity.Id, selectedCity.IsActive);
-            client1.Close();
         }
 
         private void barButtonItemDeleteCountry_ItemClick(object sender, ItemClickEventArgs e)
@@ -124,9 +119,9 @@ namespace HealthMonitoringSystem.WinApp.GUI
                 return;
 
             Extensions.Extensions.ShowWaitForm(description: "İlçe siliniyor...");
-            CountrySolClient client = Extensions.Extensions.GetCountrySolService();
+            CountryManager client = new CountryManager();
 
-            CounrtyService.ProcessResult processResult = client.Delete(country.Id);
+            ProcessResult processResult = client.Delete(country.Id);
             SplashScreenManager.CloseForm(false);
             Extensions.Extensions.ProcessResultMessage(processResult.Errors, (int) processResult.Result);
             bindingSourceCity_CurrentChanged(null, null);
@@ -134,16 +129,14 @@ namespace HealthMonitoringSystem.WinApp.GUI
 
         private void bindingSourceCity_CurrentChanged(object sender, EventArgs e)
         {
-            CountrySolClient client = Extensions.Extensions.GetCountrySolService();
+            CountryManager client = new CountryManager();
 
-            if (client == null) return;
 
-            BloodGroupService.City city = bindingSourceCity.Current as BloodGroupService.City;
+            City city = bindingSourceCity.Current as City;
 
             if (city == null) return;
 
             bindingSourceCountry.DataSource = client.Countries(city.Id, true);
-            client.Close();
         }
 
         private void barButtonItemRefresh_ItemClick(object sender, ItemClickEventArgs e)

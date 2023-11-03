@@ -5,6 +5,7 @@
 using System;
 using System.Collections.Generic;
 using HealthMonitoringSystem.DAL.Abstract;
+using HealthMonitoringSystem.DAL.Content.MsSqlContent;
 using HealthMonitoringSystem.Entity;
 using HealthMonitoringSystem.Entity.Classes;
 
@@ -16,9 +17,9 @@ namespace HealthMonitoringSystem.BLL
     {
         private IMedicamentDAL _medicamentDal;
 
-        public MedicamentManager(IMedicamentDAL medicamentDal)
+        public MedicamentManager()
         {
-            _medicamentDal = medicamentDal;
+            _medicamentDal = new MsSqlMedicamentDal();
         }
 
         public Medicament Select(int id)

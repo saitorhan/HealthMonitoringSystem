@@ -4,6 +4,7 @@ using DevExpress.XtraBars;
 using DevExpress.XtraBars.Ribbon;
 using DevExpress.XtraEditors;
 using DevExpress.XtraEditors.DXErrorProvider;
+using HealthMonitoringSystem.Entity;
 
 namespace HealthMonitoringSystem.WinApp.GUI
 {
@@ -136,7 +137,7 @@ namespace HealthMonitoringSystem.WinApp.GUI
             // 
             // cityBindingSource
             // 
-            this.cityBindingSource.DataSource = typeof(HealthMonitoringSystem.WinApp.CityService.City);
+            this.cityBindingSource.DataSource = typeof(City);
             // 
             // countriesBindingSource
             // 

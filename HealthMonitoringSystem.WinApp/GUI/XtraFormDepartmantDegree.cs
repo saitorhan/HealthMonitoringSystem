@@ -9,12 +9,11 @@ using DevExpress.XtraBars;
 using DevExpress.XtraEditors;
 using DevExpress.XtraEditors.Controls;
 using DevExpress.XtraSplashScreen;
-using HealthMonitoringSystem.WinApp.DegreeService;
+using HealthMonitoringSystem.BLL;
+using HealthMonitoringSystem.Entity;
+using HealthMonitoringSystem.Entity.Classes;
 using HealthMonitoringSystem.WinApp.DepartmentService;
 using HealthMonitoringSystem.WinApp.Extensions;
-using Degree = HealthMonitoringSystem.WinApp.DegreeService.Degree;
-using ExtensionsBLLResult = HealthMonitoringSystem.WinApp.DepartmentService.ExtensionsBLLResult;
-using ProcessResult = HealthMonitoringSystem.WinApp.DepartmentService.ProcessResult;
 
 #endregion
 
@@ -31,17 +30,14 @@ namespace HealthMonitoringSystem.WinApp.GUI
         {
             if (i == 0 || i == 1)
             {
-                DepartmentSolClient client = Extensions.Extensions.getDepartmentSolClient();
+                DepartmentManager client = new DepartmentManager();
                 bindingSourceDepartment.DataSource = client.Departments(true, false).ToList();
-                client.Close();
             }
 
             if (i == 0 || i == 2)
             {
-                DegreeSolClient client1 = Extensions.Extensions.GetDegreeSolClient();
+                DegreeManager client1 = new DegreeManager();
                 bindingSourceDegree.DataSource = client1.Degrees(true);
-
-                client1.Close();
             }
         }
 

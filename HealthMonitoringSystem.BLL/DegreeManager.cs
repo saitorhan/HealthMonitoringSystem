@@ -6,6 +6,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using HealthMonitoringSystem.DAL.Abstract;
+using HealthMonitoringSystem.DAL.Content.MsSqlContent;
 using HealthMonitoringSystem.Entity;
 using HealthMonitoringSystem.Entity.Classes;
 
@@ -17,9 +18,9 @@ namespace HealthMonitoringSystem.BLL
     {
         private IDegreeDAL _degreeDal;
 
-        public DegreeManager(IDegreeDAL degreeDal)
+        public DegreeManager()
         {
-            _degreeDal = degreeDal;
+            _degreeDal = new MsSqlDegreeDal();
         }
 
         public Degree Select(int id)

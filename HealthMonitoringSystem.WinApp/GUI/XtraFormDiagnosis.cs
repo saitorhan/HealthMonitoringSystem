@@ -7,14 +7,12 @@ using System.Collections.Generic;
 using DevExpress.XtraBars;
 using DevExpress.XtraEditors;
 using DevExpress.XtraSplashScreen;
+using HealthMonitoringSystem.BLL;
+using HealthMonitoringSystem.Entity;
+using HealthMonitoringSystem.Entity.Classes;
 using HealthMonitoringSystem.WinApp.DepartmentService;
-using HealthMonitoringSystem.WinApp.DiagnosisService;
 using HealthMonitoringSystem.WinApp.Extensions;
 using HealthMonitoringSystem.WinApp.Resources;
-using Department = HealthMonitoringSystem.WinApp.DepartmentService.Department;
-using Diagnosis = HealthMonitoringSystem.WinApp.DiagnosisService.Diagnosis;
-using ExtensionsBLLResult = HealthMonitoringSystem.WinApp.DiagnosisService.ExtensionsBLLResult;
-using ProcessResult = HealthMonitoringSystem.WinApp.DiagnosisService.ProcessResult;
 
 #endregion
 
@@ -44,7 +42,7 @@ namespace HealthMonitoringSystem.WinApp.GUI
         {
             if (GlobalVariables.Departments.IsNull())
             {
-                DepartmentSolClient client = Extensions.Extensions.getDepartmentSolClient();
+                DepartmentManager client = new DepartmentManager();
                 GlobalVariables.Departments = new List<Department>(client.Departments(true, false));
             }
             departmentBindingSource.DataSource = GlobalVariables.Departments;
@@ -70,11 +68,11 @@ namespace HealthMonitoringSystem.WinApp.GUI
 
             Extensions.Extensions.ShowWaitForm(description: "Hastalık ismi kaydediliyor...");
 
-            DiagnosisSolClient client = Extensions.Extensions.GetDiagnosisSolClient();
+            DiagnosisManager client = new DiagnosisManager();
             ProcessResult processResult = update ? client.Update(_diagnosis) : client.Insert(_diagnosis);
             SplashScreenManager.CloseForm(false);
             Extensions.Extensions.ProcessResultMessage(processResult.Errors, (int) processResult.Result);
-            if (processResult.Result == ExtensionsBLLResult.Success)
+            if (processResult.Result == Entity.Classes.Extensions.BLLResult.Success)
                 Close();
         }
 

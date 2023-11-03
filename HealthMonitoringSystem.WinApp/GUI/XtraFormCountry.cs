@@ -7,13 +7,11 @@ using System.Collections.Generic;
 using DevExpress.XtraBars;
 using DevExpress.XtraEditors;
 using DevExpress.XtraSplashScreen;
-using HealthMonitoringSystem.WinApp.CityService;
-using HealthMonitoringSystem.WinApp.CounrtyService;
+using HealthMonitoringSystem.BLL;
+using HealthMonitoringSystem.Entity;
+using HealthMonitoringSystem.Entity.Classes;
 using HealthMonitoringSystem.WinApp.Extensions;
 using HealthMonitoringSystem.WinApp.Resources;
-using City = HealthMonitoringSystem.WinApp.CityService.City;
-using Country = HealthMonitoringSystem.WinApp.CounrtyService.Country;
-using ProcessResult = HealthMonitoringSystem.WinApp.CounrtyService.ProcessResult;
 
 #endregion
 
@@ -45,7 +43,7 @@ namespace HealthMonitoringSystem.WinApp.GUI
         {
             if (GlobalVariables.Cities.IsNull())
             {
-                CitySolClient client = Extensions.Extensions.GetCityServiceSol();
+                CityManager client = new CityManager();
                 GlobalVariables.Cities = client.IsNull() ? null : new List<City>(client.Cities(true));
             }
             cityBindingSource.DataSource = GlobalVariables.Cities;
@@ -60,11 +58,8 @@ namespace HealthMonitoringSystem.WinApp.GUI
         private void barButtonItemCountrySave_ItemClick(object sender, ItemClickEventArgs e)
         {
             Extensions.Extensions.ShowWaitForm(description: "İlçe kaydediliyor");
-            CountrySolClient client = Extensions.Extensions.GetCountrySolService();
-            if (client == null)
-            {
-                return;
-            }
+            CountryManager client = new CountryManager();
+            
 
             if (_country == null)
             {

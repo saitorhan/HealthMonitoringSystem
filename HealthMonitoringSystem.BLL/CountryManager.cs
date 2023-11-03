@@ -5,6 +5,7 @@
 using System;
 using System.Collections.Generic;
 using HealthMonitoringSystem.DAL.Abstract;
+using HealthMonitoringSystem.DAL.Content.MsSqlContent;
 using HealthMonitoringSystem.Entity;
 using HealthMonitoringSystem.Entity.Classes;
 
@@ -16,9 +17,9 @@ namespace HealthMonitoringSystem.BLL
     {
         private ICountryDAL _countryDal;
 
-        public CountryManager(ICountryDAL countryDal)
+        public CountryManager()
         {
-            _countryDal = countryDal;
+            _countryDal = new MsSqlCountryDal();
         }
 
         public Country Select(int id)
