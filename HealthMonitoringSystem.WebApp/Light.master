@@ -1,8 +1,0 @@
-<%@ Master AutoEventWireup="true" CodeBehind="Light.master.cs" Inherits="HealthMonitoringSystem_WebApp.LightMaster" Language="C#" MasterPageFile="~/Root.master" %>
-
-<%-- DXCOMMENT: Page Light.master is a master page for Account pages --%>
-<asp:Content ID="Content1" ContentPlaceHolderID="Content" runat="server">
-<div class="content">
-<asp:ContentPlaceHolder ID="MainContent" runat="server" />
-</div>
-</asp:Content>
