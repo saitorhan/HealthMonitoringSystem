@@ -13,7 +13,7 @@ using HealthMonitoringSystem.Interfaces;
 
 namespace HealthMonitoringSystem.BLL
 {
-    public class DegreeManager : IDegreeSol
+    public class DegreeManager
     {
         private IDegreeDAL _degreeDal;
 

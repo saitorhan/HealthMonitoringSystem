@@ -14,7 +14,7 @@ using Ninject;
 
 namespace HealthMonitoringSystem.BLL
 {
-    public class HolidayManager : IHolidaySol
+    public class HolidayManager 
     {
         private IHolidayDAL holidayDal;
 

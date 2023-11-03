@@ -3,8 +3,10 @@
 #region usings
 
 using System;
+using System.Collections.Generic;
 using System.ServiceModel;
 using System.Text;
+using System.Windows.Documents;
 using System.Windows.Forms;
 using DevExpress.XtraEditors;
 using DevExpress.XtraSplashScreen;
@@ -42,7 +44,7 @@ namespace HealthMonitoringSystem.WinApp.Extensions
             XtraMessageBox.Show(text, title, MessageBoxButtons.OK, icon);
         }
 
-        public static void ProcessResultMessage(string[] errorsList, int result)
+        public static void ProcessResultMessage(List<string> errorsList, int result)
         {
             StringBuilder builder = new StringBuilder();
             string title;
@@ -55,35 +57,35 @@ namespace HealthMonitoringSystem.WinApp.Extensions
 
             switch (result)
             {
-                case (int)Interfaces.Extensions.BLLResult.Success:
+                case (int)Entity.Classes.Extensions.BLLResult.Success:
                     icon = MessageBoxIcon.Information;
                     title = "Bilgi";
                     break;
-                case (int)Interfaces.Extensions.BLLResult.NotVerified:
+                case (int)Entity.Classes.Extensions.BLLResult.NotVerified:
                     icon = MessageBoxIcon.Warning;
                     title = "Eksik veya Hatalı Giriş";
                     break;
-                case (int)Interfaces.Extensions.BLLResult.InnerException:
+                case (int)Entity.Classes.Extensions.BLLResult.InnerException:
                     icon = MessageBoxIcon.Error;
                     title = "Hata";
                     break;
-                case (int)Interfaces.Extensions.BLLResult.Verified:
+                case (int)Entity.Classes.Extensions.BLLResult.Verified:
                     icon = MessageBoxIcon.Information;
                     title = "Bilgi";
                     break;
-                case (int)Interfaces.Extensions.BLLResult.AlreadyFound:
+                case (int)Entity.Classes.Extensions.BLLResult.AlreadyFound:
                     icon = MessageBoxIcon.Hand;
                     title = "Hata!";
                     break;
-                case (int)Interfaces.Extensions.BLLResult.Referanced:
+                case (int)Entity.Classes.Extensions.BLLResult.Referanced:
                     icon = MessageBoxIcon.Stop;
                     title = "Uyarı!";
                     break;
-                case (int)Interfaces.Extensions.BLLResult.NotFound:
+                case (int)Entity.Classes.Extensions.BLLResult.NotFound:
                     icon = MessageBoxIcon.None;
                     title = "Hata!";
                     break;
-                case (int)Interfaces.Extensions.BLLResult.ServerDisable:
+                case (int)Entity.Classes.Extensions.BLLResult.ServerDisable:
                     icon = MessageBoxIcon.Stop;
                     title = "Sistem Hatası!";
                     break;

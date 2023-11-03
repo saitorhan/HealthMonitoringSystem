@@ -552,6 +552,10 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\HealthMonitoringSystem.BLL\HealthMonitoringSystem.BLL.csproj">
+      <Project>{B97383F0-5785-4CCA-99BF-1A7A2288BA85}</Project>
+      <Name>HealthMonitoringSystem.BLL</Name>
+    </ProjectReference>
     <ProjectReference Include="..\HealthMonitoringSystem.Entity\HealthMonitoringSystem.Entity.csproj">
       <Project>{BCEAA130-0DC1-4A3D-8E3A-7541D83FA95A}</Project>
       <Name>HealthMonitoringSystem.Entity</Name>

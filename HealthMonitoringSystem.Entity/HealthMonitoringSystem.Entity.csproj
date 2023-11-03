@@ -56,6 +56,7 @@
   <ItemGroup>
     <Compile Include="BloodGroup.cs" />
     <Compile Include="City.cs" />
+    <Compile Include="Classes\DALExtensions.cs" />
     <Compile Include="Classes\Extensions.cs" />
     <Compile Include="Classes\ProcessResult.cs" />
     <Compile Include="Consultation.cs" />

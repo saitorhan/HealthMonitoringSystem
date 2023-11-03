@@ -10,7 +10,7 @@ using HealthMonitoringSystem.Interfaces;
 
 namespace HealthMonitoringSystem.BLL
 {
-    public class SystemManager : ISystemSol
+    public class SystemManager 
     {
         public Doctor LoginDoctor(string tc, string password)
         {

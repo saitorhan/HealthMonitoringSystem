@@ -12,7 +12,7 @@ using HealthMonitoringSystem.Interfaces;
 
 namespace HealthMonitoringSystem.BLL
 {
-    public class DoctorPhoneManager : IDoctorPhoneSol
+    public class DoctorPhoneManager 
     {
         private IDoctorPhoneDAL _doctorPhoneDal;
 

@@ -15,7 +15,7 @@ using Ninject;
 
 namespace HealthMonitoringSystem.BLL
 {
-    public class PersonnelManager : IPersonnelSol
+    public class PersonnelManager 
     {
         private IPersonnelDAL _personnelDal;
 

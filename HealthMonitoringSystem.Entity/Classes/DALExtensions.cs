@@ -6,9 +6,9 @@ using System;
 
 #endregion
 
-namespace HealthMonitoringSystem.DAL
+namespace HealthMonitoringSystem.Entity.Classes
 {
-    public class Extensions
+    public partial class Extensions
     {
         public enum DataBaseResult
         {

@@ -13,7 +13,7 @@ using Ninject;
 
 namespace HealthMonitoringSystem.BLL
 {
-    public class ExaminationManager : IExaminationSol
+    public class ExaminationManager 
     {
         private IExaminationDAL _examinationDal;
 

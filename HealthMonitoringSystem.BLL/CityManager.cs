@@ -5,20 +5,21 @@
 using System;
 using System.Collections.Generic;
 using HealthMonitoringSystem.DAL.Abstract;
+using HealthMonitoringSystem.DAL.Content.MsSqlContent;
 using HealthMonitoringSystem.Entity;
-using HealthMonitoringSystem.Interfaces;
+using HealthMonitoringSystem.Entity.Classes;
 
 #endregion
 
 namespace HealthMonitoringSystem.BLL
 {
-    public class CityManager : ICitySol
+    public class CityManager
     {
         private ICityDAL _cityDal;
 
-        public CityManager(ICityDAL cityDal)
+        public CityManager()
         {
-            _cityDal = cityDal;
+            _cityDal = new MsSqlCityDal();
         }
 
         public City Select(int id)
@@ -40,29 +41,29 @@ namespace HealthMonitoringSystem.BLL
                 return result;
             }
 
-            DAL.Extensions.DataBaseResult insert = _cityDal.Insert(newCity);
+            Extensions.DataBaseResult insert = _cityDal.Insert(newCity);
 
             switch (insert)
             {
-                case DAL.Extensions.DataBaseResult.AlreadyFound:
+                case Extensions.DataBaseResult.AlreadyFound:
                     result.Result = Extensions.BLLResult.AlreadyFound;
                     result.Errors.Add(Extensions.AlreadyFoundString(newCity.Name));
                     break;
-                case DAL.Extensions.DataBaseResult.Error:
+                case Extensions.DataBaseResult.Error:
                     result.Result = Extensions.BLLResult.InnerException;
                     result.Errors.Add(Extensions.InnerException);
                     break;
-                case DAL.Extensions.DataBaseResult.Success:
+                case Extensions.DataBaseResult.Success:
                     result.Result = Extensions.BLLResult.Success;
                     result.Errors.Add(Extensions.SuccessProcess);
                     break;
-                case DAL.Extensions.DataBaseResult.ServerDisable:
+                case Extensions.DataBaseResult.ServerDisable:
                     result.Result = Extensions.BLLResult.ServerDisable;
                     result.Errors.Add(Extensions.ServerDisable);
                     break;
-                case DAL.Extensions.DataBaseResult.Referanced:
+                case Extensions.DataBaseResult.Referanced:
                     break;
-                case DAL.Extensions.DataBaseResult.NotFound:
+                case Extensions.DataBaseResult.NotFound:
                     break;
                 default:
                     throw new ArgumentOutOfRangeException();
@@ -80,29 +81,29 @@ namespace HealthMonitoringSystem.BLL
                 return result;
             }
 
-            DAL.Extensions.DataBaseResult update = _cityDal.Update(newInfoCity);
+            Extensions.DataBaseResult update = _cityDal.Update(newInfoCity);
 
             switch (update)
             {
-                case DAL.Extensions.DataBaseResult.AlreadyFound:
+                case Extensions.DataBaseResult.AlreadyFound:
                     result.Result = Extensions.BLLResult.AlreadyFound;
                     result.Errors.Add(Extensions.AlreadyFoundString(newInfoCity.Name));
                     break;
-                case DAL.Extensions.DataBaseResult.Error:
+                case Extensions.DataBaseResult.Error:
                     result.Result = Extensions.BLLResult.InnerException;
                     result.Errors.Add(Extensions.InnerException);
                     break;
-                case DAL.Extensions.DataBaseResult.Success:
+                case Extensions.DataBaseResult.Success:
                     result.Result = Extensions.BLLResult.Success;
                     result.Errors.Add(Extensions.SuccessProcess);
                     break;
-                case DAL.Extensions.DataBaseResult.ServerDisable:
+                case Extensions.DataBaseResult.ServerDisable:
                     result.Result = Extensions.BLLResult.ServerDisable;
                     result.Errors.Add(Extensions.ServerDisable);
                     break;
-                case DAL.Extensions.DataBaseResult.Referanced:
+                case Extensions.DataBaseResult.Referanced:
                     break;
-                case DAL.Extensions.DataBaseResult.NotFound:
+                case Extensions.DataBaseResult.NotFound:
                     break;
                 default:
                     throw new ArgumentOutOfRangeException();
@@ -114,30 +115,30 @@ namespace HealthMonitoringSystem.BLL
         public ProcessResult Delete(int id)
         {
             ProcessResult result = new ProcessResult();
-            DAL.Extensions.DataBaseResult delete = _cityDal.Delete(id);
+            Extensions.DataBaseResult delete = _cityDal.Delete(id);
             switch (delete)
             {
-                case DAL.Extensions.DataBaseResult.Success:
+                case Extensions.DataBaseResult.Success:
                     result.Result = Extensions.BLLResult.Success;
                     result.Errors.Add(Extensions.SuccessProcess);
                     break;
-                case DAL.Extensions.DataBaseResult.Referanced:
+                case Extensions.DataBaseResult.Referanced:
                     result.Result = Extensions.BLLResult.Referanced;
                     result.Errors.Add("İl başka tablolar üzerinde refere edildiğinden silinemedi");
                     break;
-                case DAL.Extensions.DataBaseResult.NotFound:
+                case Extensions.DataBaseResult.NotFound:
                     result.Result = Extensions.BLLResult.NotFound;
                     result.Errors.Add(Extensions.NotFound);
                     break;
-                case DAL.Extensions.DataBaseResult.Error:
+                case Extensions.DataBaseResult.Error:
                     result.Result = Extensions.BLLResult.InnerException;
                     result.Errors.Add(Extensions.InnerException);
                     break;
-                case DAL.Extensions.DataBaseResult.ServerDisable:
+                case Extensions.DataBaseResult.ServerDisable:
                     result.Result = Extensions.BLLResult.ServerDisable;
                     result.Errors.Add(Extensions.ServerDisable);
                     break;
-                case DAL.Extensions.DataBaseResult.AlreadyFound:
+                case Extensions.DataBaseResult.AlreadyFound:
                     break;
                 default:
                     throw new ArgumentOutOfRangeException();

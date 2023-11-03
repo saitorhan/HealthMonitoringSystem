@@ -12,7 +12,7 @@ using HealthMonitoringSystem.Interfaces;
 
 namespace HealthMonitoringSystem.BLL
 {
-    public class PrescriptionManager : IPrescriptionSol
+    public class PrescriptionManager 
     {
         private IPrescriptionDAL _prescriptionDal;
 

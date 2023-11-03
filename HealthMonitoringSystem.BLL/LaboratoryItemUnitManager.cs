@@ -11,7 +11,7 @@ using HealthMonitoringSystem.Interfaces;
 
 namespace HealthMonitoringSystem.BLL
 {
-    public class LaboratoryItemUnitManager : ILaboratoryItemUnitSol
+    public class LaboratoryItemUnitManager 
     {
         private ILaboratoryItemUnitDAL _laboratoryItemUnitDal;
 

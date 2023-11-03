@@ -14,7 +14,7 @@ using Extensions = HealthMonitoringSystem.DAL.Extensions;
 
 namespace HealthMonitoringSystem.BLL
 {
-    public class DoctorManager : IDoctorSol
+    public class DoctorManager 
     {
         private IDoctorDAL _doctorDal;
 

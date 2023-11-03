@@ -12,7 +12,7 @@ using Ninject;
 
 namespace HealthMonitoringSystem.BLL
 {
-    public class PrescriptionItemManager : IPrescriptionItemSol
+    public class PrescriptionItemManager 
     {
         private IPrescriptionItemDAL _prescriptionItemDal;
 

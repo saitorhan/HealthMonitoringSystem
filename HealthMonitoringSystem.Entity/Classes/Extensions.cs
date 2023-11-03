@@ -7,9 +7,9 @@ using System.Runtime.Serialization;
 
 #endregion
 
-namespace HealthMonitoringSystem.Interfaces
+namespace HealthMonitoringSystem.Entity.Classes
 {
-    public class Extensions
+    public partial class Extensions
     {
         [DataContract]
         public enum BLLResult
@@ -110,27 +110,27 @@ namespace HealthMonitoringSystem.Interfaces
             return true;
         }
 
-        public static BLLResult DataBaseResultToBLLResult(DAL.Extensions.DataBaseResult dataBaseResult)
+        public static BLLResult DataBaseResultToBLLResult(DataBaseResult dataBaseResult)
         {
             BLLResult result = BLLResult.Error;
             switch (dataBaseResult)
             {
-                case DAL.Extensions.DataBaseResult.Success:
+                case DataBaseResult.Success:
                     result = BLLResult.Success;
                     break;
-                case DAL.Extensions.DataBaseResult.AlreadyFound:
+                case DataBaseResult.AlreadyFound:
                     result = BLLResult.AlreadyFound;
                     break;
-                case DAL.Extensions.DataBaseResult.Referanced:
+                case DataBaseResult.Referanced:
                     result = BLLResult.Referanced;
                     break;
-                case DAL.Extensions.DataBaseResult.NotFound:
+                case DataBaseResult.NotFound:
                     result = BLLResult.NotFound;
                     break;
-                case DAL.Extensions.DataBaseResult.Error:
+                case DataBaseResult.Error:
                     result = BLLResult.Error;
                     break;
-                case DAL.Extensions.DataBaseResult.ServerDisable:
+                case DataBaseResult.ServerDisable:
                     result = BLLResult.ServerDisable;
                     break;
                 default:

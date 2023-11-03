@@ -12,7 +12,7 @@ using Ninject;
 
 namespace HealthMonitoringSystem.BLL
 {
-    public class BloodGroupManager : IBloodGroupSol
+    public class BloodGroupManager
     {
         private IBloodGroupDAL _bloodGroupDal;
 

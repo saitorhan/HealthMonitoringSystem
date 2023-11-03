@@ -133,7 +133,6 @@
     <Compile Include="Content\MySqlContent\MySqlRendezvousDal.cs" />
     <Compile Include="Content\MySqlContent\MySqlRendezvousTimeDal.cs" />
     <Compile Include="Content\MySqlContent\MySqlHealthContext.cs" />
-    <Compile Include="Extensions.cs" />
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

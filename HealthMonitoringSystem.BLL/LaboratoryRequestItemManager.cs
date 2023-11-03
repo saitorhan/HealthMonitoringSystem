@@ -11,7 +11,7 @@ using HealthMonitoringSystem.Interfaces;
 
 namespace HealthMonitoringSystem.BLL
 {
-    public class LaboratoryRequestItemManager : ILaboratoryRequestItemSol
+    public class LaboratoryRequestItemManager 
     {
         private ILaboratoryRequestItemDAL _laboratoryRequestItemDal;
 

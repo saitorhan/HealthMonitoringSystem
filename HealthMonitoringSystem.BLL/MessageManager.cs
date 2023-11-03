@@ -11,7 +11,7 @@ using HealthMonitoringSystem.Interfaces;
 
 namespace HealthMonitoringSystem.BLL
 {
-    public class MessageManager : IMessageSol
+    public class MessageManager 
     {
         private IMessageDAL _messageDal;
 

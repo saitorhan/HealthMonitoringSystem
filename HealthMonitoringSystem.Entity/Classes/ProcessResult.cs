@@ -4,10 +4,11 @@
 
 using System.Collections.Generic;
 using System.Runtime.Serialization;
+using HealthMonitoringSystem.Entity.Classes;
 
 #endregion
 
-namespace HealthMonitoringSystem.Interfaces
+namespace HealthMonitoringSystem.Entity.Classes
 {
     [DataContract]
     public class ProcessResult

@@ -4,6 +4,7 @@
 
 using System.Collections.Generic;
 using HealthMonitoringSystem.Entity;
+using HealthMonitoringSystem.Entity.Classes;
 
 #endregion
 

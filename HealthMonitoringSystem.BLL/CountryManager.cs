@@ -12,7 +12,7 @@ using HealthMonitoringSystem.Interfaces;
 
 namespace HealthMonitoringSystem.BLL
 {
-    public class CountryManager : ICountrySol
+    public class CountryManager
     {
         private ICountryDAL _countryDal;
 

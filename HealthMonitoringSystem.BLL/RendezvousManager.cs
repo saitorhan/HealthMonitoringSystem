@@ -14,7 +14,7 @@ using Ninject;
 
 namespace HealthMonitoringSystem.BLL
 {
-    public class RendezvousManager : IRendezvousSol
+    public class RendezvousManager 
     {
         private IRendezvousDAL _rendezvousDal;
 

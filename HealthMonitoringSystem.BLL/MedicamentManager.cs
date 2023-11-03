@@ -12,7 +12,7 @@ using HealthMonitoringSystem.Interfaces;
 
 namespace HealthMonitoringSystem.BLL
 {
-    public class MedicamentManager : IMedicamentSol
+    public class MedicamentManager 
     {
         private IMedicamentDAL _medicamentDal;
 

@@ -12,7 +12,7 @@ using HealthMonitoringSystem.Interfaces;
 
 namespace HealthMonitoringSystem.BLL
 {
-    public class LaboratoryRequestManager : ILaboratoryRequestSol
+    public class LaboratoryRequestManager 
     {
         private ILaboratoryRequestDAL _laboratoryRequestDal;
 

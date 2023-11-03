@@ -12,7 +12,7 @@ using HealthMonitoringSystem.Interfaces;
 
 namespace HealthMonitoringSystem.BLL
 {
-    public class DoctorMailManager : IDoctorMailSol
+    public class DoctorMailManager 
     {
         private IDoctorMailDAL _doctorMailDal;
 
