@@ -2,9 +2,9 @@
 
 #region usings
 
+using System.Collections.Generic;
 using DevExpress.XtraEditors;
 using HealthMonitoringSystem.Entity;
-using HealthMonitoringSystem.WinApp.RendezvousService;
 
 #endregion
 
@@ -12,7 +12,7 @@ namespace HealthMonitoringSystem.WinApp.GUI
 {
     public partial class XtraUserControlDepInfo : XtraUserControl
     {
-        private DoctorRenInfo[] _Info;
+        private List<DoctorRenInfo> _Info;
         private int max;
         private int _value;
 
@@ -42,7 +42,7 @@ namespace HealthMonitoringSystem.WinApp.GUI
             }
         }
 
-        public DoctorRenInfo[] Info
+        public List<DoctorRenInfo> Info
         {
             get { return _Info; }
             set

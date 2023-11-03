@@ -95,7 +95,7 @@ namespace HealthMonitoringSystem.WinApp.GUI
             RendezvousManager client = new RendezvousManager();
             result = client.Insert(rendezvous, true);
             SplashScreenManager.CloseForm(false);
-            Extensions.Extensions.ProcessResultMessage(result.Errors.ToArray(), (int) result.Result);
+            Extensions.Extensions.ProcessResultMessage(result.Errors, (int) result.Result);
             if (result.Result == Entity.Classes.Extensions.BLLResult.Success) Close();
         }
 

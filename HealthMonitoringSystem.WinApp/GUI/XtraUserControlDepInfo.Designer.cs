@@ -6,6 +6,7 @@ using DevExpress.XtraGauges.Win.Gauges.Circular;
 using DevExpress.XtraGrid;
 using DevExpress.XtraGrid.Columns;
 using DevExpress.XtraGrid.Views.Grid;
+using HealthMonitoringSystem.Entity;
 
 namespace HealthMonitoringSystem.WinApp.GUI
 {
@@ -99,7 +100,7 @@ namespace HealthMonitoringSystem.WinApp.GUI
             // 
             // bindingSourceInfo
             // 
-            this.bindingSourceInfo.DataSource = typeof(HealthMonitoringSystem.WinApp.RendezvousService.RendezvousInfo);
+            this.bindingSourceInfo.DataSource = typeof(RendezvousInfo);
             // 
             // groupControl1
             // 

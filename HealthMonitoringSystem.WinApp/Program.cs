@@ -14,17 +14,12 @@ using DevExpress.Skins;
 using DevExpress.UserSkins;
 using DevExpress.XtraEditors;
 using DevExpress.XtraSplashScreen;
-using HealthMonitoringSystem.WinApp.BloodGroupService;
-using HealthMonitoringSystem.WinApp.CityService;
-using HealthMonitoringSystem.WinApp.CounrtyService;
-using HealthMonitoringSystem.WinApp.DepartmentService;
-using HealthMonitoringSystem.WinApp.DiagnosisService;
+using HealthMonitoringSystem.BLL;
+using HealthMonitoringSystem.Entity;
 using HealthMonitoringSystem.WinApp.Extensions;
 using HealthMonitoringSystem.WinApp.GUI;
-using HealthMonitoringSystem.WinApp.HolidayService;
 using HealthMonitoringSystem.WinApp.Properties;
 using HealthMonitoringSystem.WinApp.Resources;
-using City = HealthMonitoringSystem.WinApp.CityService.City;
 
 #endregion
 
@@ -73,8 +68,8 @@ namespace HealthMonitoringSystem.WinApp
         {
             if (GlobalVariables.Holidays.IsNotNull() && !refresh) return;
 
-            HolidaySolClient client = Extensions.Extensions.GetHolidaySolClient();
-            GlobalVariables.Holidays = client.Holidays().ToList();
+            HolidayManager client = new HolidayManager();
+            GlobalVariables.Holidays = client.Holidays();
         }
 
         private static bool Login()
@@ -91,7 +86,7 @@ namespace HealthMonitoringSystem.WinApp
         {
             if (GlobalVariables.Departments.IsNotNull() && !refresh) return;
 
-            DepartmentSolClient client = Extensions.Extensions.getDepartmentSolClient();
+            DepartmentManager client = new DepartmentManager();
             GlobalVariables.Departments = client.Departments(true, true).ToList();
         }
 
@@ -144,14 +139,14 @@ namespace HealthMonitoringSystem.WinApp
         public static void GetCountries()
         {
             if (GlobalVariables.Countries.IsNotNull()) return;
-            CountrySolClient client = Extensions.Extensions.GetCountrySolService();
-            GlobalVariables.Countries = client.IsNull() ? null : client.AllCountries(true).ToList();
+            CountryManager client = new CountryManager();
+            GlobalVariables.Countries = client.IsNull() ? null : client.Countries(true);
         }
 
         public static void GetCities()
         {
             if (GlobalVariables.Cities.IsNotNull()) return;
-            CitySolClient citySolClient = Extensions.Extensions.GetCityServiceSol();
+            CityManager citySolClient = new CityManager();
             GlobalVariables.Cities = citySolClient.IsNull() ? null : new List<City>(citySolClient.Cities(true));
         }
 
@@ -159,14 +154,14 @@ namespace HealthMonitoringSystem.WinApp
         {
             if (GlobalVariables.Doctor.IsNull() || GlobalVariables.Diagnoses.IsNotNull()) return;
             int departmentId = GlobalVariables.Doctor.DepartmentId;
-            DiagnosisSolClient client = Extensions.Extensions.GetDiagnosisSolClient();
+            DiagnosisManager client = new DiagnosisManager();
             GlobalVariables.Diagnoses = client.IsNull() ? null : client.Diagnoses(departmentId, true).ToList();
         }
 
         public static void GetBloodGroups()
         {
             if (GlobalVariables.BloodGroups.IsNotNull()) return;
-            BloodGroupSolClient client = Extensions.Extensions.GetBloodGroups();
+            BloodGroupManager client = new BloodGroupManager();
             GlobalVariables.BloodGroups = client.IsNull() ? null : client.BloodGroups(true).ToList();
         }
     }

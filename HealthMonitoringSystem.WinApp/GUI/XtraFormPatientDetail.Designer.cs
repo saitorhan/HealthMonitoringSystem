@@ -5,6 +5,7 @@ using DevExpress.XtraBars.Ribbon;
 using DevExpress.XtraGrid;
 using DevExpress.XtraGrid.Columns;
 using DevExpress.XtraGrid.Views.Grid;
+using HealthMonitoringSystem.Entity;
 
 namespace HealthMonitoringSystem.WinApp.GUI
 {
@@ -154,7 +155,7 @@ namespace HealthMonitoringSystem.WinApp.GUI
             // 
             // bindingSourcePatients
             // 
-            this.bindingSourcePatients.DataSource = typeof(HealthMonitoringSystem.WinApp.PatientService.Patient);
+            this.bindingSourcePatients.DataSource = typeof(Patient);
             // 
             // gridView1
             // 

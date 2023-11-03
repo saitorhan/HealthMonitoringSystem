@@ -18,7 +18,7 @@ namespace HealthMonitoringSystem.WinApp.Resources
         public static List<Diagnosis> Diagnoses { get; set; }
         public static List<BloodGroup> BloodGroups { get; set; }
         public static List<Department> Departments { get; set; }
-        public static List<HolidayService.Holiday> Holidays { get; set; }
+        public static List<Holiday> Holidays { get; set; }
         public static List<LaboratoryRequestType> LaboratoryRequestTypes { get; set; }
         public static string ServiceRoot { get; set; }
 

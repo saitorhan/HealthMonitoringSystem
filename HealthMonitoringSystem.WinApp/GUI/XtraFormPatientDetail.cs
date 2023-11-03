@@ -11,7 +11,6 @@ using DevExpress.XtraEditors;
 using DevExpress.XtraSplashScreen;
 using HealthMonitoringSystem.BLL;
 using HealthMonitoringSystem.WinApp.Extensions;
-using HealthMonitoringSystem.WinApp.PatientService;
 using HealthMonitoringSystem.Entity;
 using HealthMonitoringSystem.Entity.Classes;
 using Patient = HealthMonitoringSystem.Entity.Patient;

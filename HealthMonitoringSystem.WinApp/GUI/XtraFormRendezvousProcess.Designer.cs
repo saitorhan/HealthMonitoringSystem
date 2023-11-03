@@ -6,6 +6,7 @@ using DevExpress.XtraEditors;
 using DevExpress.XtraGrid;
 using DevExpress.XtraGrid.Columns;
 using DevExpress.XtraGrid.Views.Grid;
+using HealthMonitoringSystem.Entity;
 
 namespace HealthMonitoringSystem.WinApp.GUI
 {
@@ -125,7 +126,7 @@ namespace HealthMonitoringSystem.WinApp.GUI
             // 
             // bindingSourceDepartment
             // 
-            this.bindingSourceDepartment.DataSource = typeof(HealthMonitoringSystem.WinApp.DepartmentService.Department);
+            this.bindingSourceDepartment.DataSource = typeof(Department);
             // 
             // labelControl3
             // 
@@ -161,7 +162,7 @@ namespace HealthMonitoringSystem.WinApp.GUI
             // 
             // bindingSourceDoctor
             // 
-            this.bindingSourceDoctor.DataSource = typeof(HealthMonitoringSystem.WinApp.DepartmentService.Doctor);
+            this.bindingSourceDoctor.DataSource = typeof(Doctor);
             // 
             // gridControlTimes
             // 
@@ -176,7 +177,7 @@ namespace HealthMonitoringSystem.WinApp.GUI
             // 
             // bindingSourceTimes
             // 
-            this.bindingSourceTimes.DataSource = typeof(HealthMonitoringSystem.WinApp.RendezvousTimeService.RendezvousTime);
+            this.bindingSourceTimes.DataSource = typeof(RendezvousTime);
             // 
             // gridView1
             // 
