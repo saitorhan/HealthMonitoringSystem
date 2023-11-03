@@ -6,7 +6,7 @@ using System;
 using System.Collections.Generic;
 using HealthMonitoringSystem.DAL.Abstract;
 using HealthMonitoringSystem.Entity;
-using HealthMonitoringSystem.Interfaces;
+using HealthMonitoringSystem.Entity.Classes;
 
 #endregion
 
@@ -40,29 +40,29 @@ namespace HealthMonitoringSystem.BLL
                 return result;
             }
 
-            DAL.Extensions.DataBaseResult insert = _doctorMailDal.Insert(newDoctorMail);
+            Extensions.DataBaseResult insert = _doctorMailDal.Insert(newDoctorMail);
 
             switch (insert)
             {
-                case DAL.Extensions.DataBaseResult.AlreadyFound:
+                case Extensions.DataBaseResult.AlreadyFound:
                     result.Result = Extensions.BLLResult.AlreadyFound;
                     result.Errors.Add(Extensions.AlreadyFoundString(newDoctorMail.Mail));
                     break;
-                case DAL.Extensions.DataBaseResult.Error:
+                case Extensions.DataBaseResult.Error:
                     result.Result = Extensions.BLLResult.InnerException;
                     result.Errors.Add(Extensions.InnerException);
                     break;
-                case DAL.Extensions.DataBaseResult.Success:
+                case Extensions.DataBaseResult.Success:
                     result.Result = Extensions.BLLResult.Success;
                     result.Errors.Add(Extensions.SuccessProcess);
                     break;
-                case DAL.Extensions.DataBaseResult.ServerDisable:
+                case Extensions.DataBaseResult.ServerDisable:
                     result.Result = Extensions.BLLResult.ServerDisable;
                     result.Errors.Add(Extensions.ServerDisable);
                     break;
-                case DAL.Extensions.DataBaseResult.Referanced:
+                case Extensions.DataBaseResult.Referanced:
                     break;
-                case DAL.Extensions.DataBaseResult.NotFound:
+                case Extensions.DataBaseResult.NotFound:
                     break;
                 default:
                     throw new ArgumentOutOfRangeException();
@@ -80,29 +80,29 @@ namespace HealthMonitoringSystem.BLL
                 return result;
             }
 
-            DAL.Extensions.DataBaseResult insert = _doctorMailDal.Update(newInfoDoctorMail);
+            Extensions.DataBaseResult insert = _doctorMailDal.Update(newInfoDoctorMail);
 
             switch (insert)
             {
-                case DAL.Extensions.DataBaseResult.AlreadyFound:
+                case Extensions.DataBaseResult.AlreadyFound:
                     result.Result = Extensions.BLLResult.AlreadyFound;
                     result.Errors.Add(Extensions.AlreadyFoundString(newInfoDoctorMail.Mail));
                     break;
-                case DAL.Extensions.DataBaseResult.Error:
+                case Extensions.DataBaseResult.Error:
                     result.Result = Extensions.BLLResult.InnerException;
                     result.Errors.Add(Extensions.InnerException);
                     break;
-                case DAL.Extensions.DataBaseResult.Success:
+                case Extensions.DataBaseResult.Success:
                     result.Result = Extensions.BLLResult.Success;
                     result.Errors.Add(Extensions.SuccessProcess);
                     break;
-                case DAL.Extensions.DataBaseResult.ServerDisable:
+                case Extensions.DataBaseResult.ServerDisable:
                     result.Result = Extensions.BLLResult.ServerDisable;
                     result.Errors.Add(Extensions.ServerDisable);
                     break;
-                case DAL.Extensions.DataBaseResult.Referanced:
+                case Extensions.DataBaseResult.Referanced:
                     break;
-                case DAL.Extensions.DataBaseResult.NotFound:
+                case Extensions.DataBaseResult.NotFound:
                     break;
                 default:
                     throw new ArgumentOutOfRangeException();
@@ -115,30 +115,30 @@ namespace HealthMonitoringSystem.BLL
         {
             ProcessResult result = new ProcessResult();
 
-            DAL.Extensions.DataBaseResult delete = _doctorMailDal.Delete(id);
+            Extensions.DataBaseResult delete = _doctorMailDal.Delete(id);
             switch (delete)
             {
-                case DAL.Extensions.DataBaseResult.Success:
+                case Extensions.DataBaseResult.Success:
                     result.Result = Extensions.BLLResult.Success;
                     result.Errors.Add(Extensions.SuccessProcess);
                     break;
-                case DAL.Extensions.DataBaseResult.Referanced:
+                case Extensions.DataBaseResult.Referanced:
                     result.Result = Extensions.BLLResult.Referanced;
                     result.Errors.Add("DoktorMail başka tablolar üzerinde refere edildiğinden silinemedi");
                     break;
-                case DAL.Extensions.DataBaseResult.NotFound:
+                case Extensions.DataBaseResult.NotFound:
                     result.Result = Extensions.BLLResult.NotFound;
                     result.Errors.Add(Extensions.NotFound);
                     break;
-                case DAL.Extensions.DataBaseResult.Error:
+                case Extensions.DataBaseResult.Error:
                     result.Result = Extensions.BLLResult.InnerException;
                     result.Errors.Add(Extensions.InnerException);
                     break;
-                case DAL.Extensions.DataBaseResult.ServerDisable:
+                case Extensions.DataBaseResult.ServerDisable:
                     result.Result = Extensions.BLLResult.ServerDisable;
                     result.Errors.Add(Extensions.ServerDisable);
                     break;
-                case DAL.Extensions.DataBaseResult.AlreadyFound:
+                case Extensions.DataBaseResult.AlreadyFound:
                     break;
                 default:
                     throw new ArgumentOutOfRangeException();

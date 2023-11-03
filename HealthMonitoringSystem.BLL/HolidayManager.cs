@@ -7,7 +7,7 @@ using System.Collections.Generic;
 using System.Linq;
 using HealthMonitoringSystem.DAL.Abstract;
 using HealthMonitoringSystem.Entity;
-using HealthMonitoringSystem.Interfaces;
+using HealthMonitoringSystem.Entity.Classes;
 using Ninject;
 
 #endregion
@@ -42,7 +42,7 @@ namespace HealthMonitoringSystem.BLL
             {
                 return result;
             }
-            DAL.Extensions.DataBaseResult insert = DAL.Extensions.DataBaseResult.Error;
+            Extensions.DataBaseResult insert = Extensions.DataBaseResult.Error;
 
             if (holidayLenght == 1)
             {
@@ -65,25 +65,25 @@ namespace HealthMonitoringSystem.BLL
 
             switch (insert)
             {
-                case DAL.Extensions.DataBaseResult.AlreadyFound:
+                case Extensions.DataBaseResult.AlreadyFound:
                     result.Result = Extensions.BLLResult.AlreadyFound;
                     result.Errors.Add(Extensions.AlreadyFoundString(newHoliday.Name));
                     break;
-                case DAL.Extensions.DataBaseResult.Error:
+                case Extensions.DataBaseResult.Error:
                     result.Result = Extensions.BLLResult.InnerException;
                     result.Errors.Add(Extensions.InnerException);
                     break;
-                case DAL.Extensions.DataBaseResult.Success:
+                case Extensions.DataBaseResult.Success:
                     result.Result = Extensions.BLLResult.Success;
                     result.Errors.Add(Extensions.SuccessProcess);
                     break;
-                case DAL.Extensions.DataBaseResult.ServerDisable:
+                case Extensions.DataBaseResult.ServerDisable:
                     result.Result = Extensions.BLLResult.ServerDisable;
                     result.Errors.Add(Extensions.ServerDisable);
                     break;
-                case DAL.Extensions.DataBaseResult.Referanced:
+                case Extensions.DataBaseResult.Referanced:
                     break;
-                case DAL.Extensions.DataBaseResult.NotFound:
+                case Extensions.DataBaseResult.NotFound:
                     break;
                 default:
                     throw new ArgumentOutOfRangeException();
@@ -115,29 +115,29 @@ namespace HealthMonitoringSystem.BLL
         {
             newInfoHoliday.Name = newInfoHoliday.Name.Trim();
             ProcessResult result = new ProcessResult();
-            DAL.Extensions.DataBaseResult update = holidayDal.Update(newInfoHoliday);
+            Extensions.DataBaseResult update = holidayDal.Update(newInfoHoliday);
 
             switch (update)
             {
-                case DAL.Extensions.DataBaseResult.AlreadyFound:
+                case Extensions.DataBaseResult.AlreadyFound:
                     result.Result = Extensions.BLLResult.AlreadyFound;
                     result.Errors.Add(Extensions.AlreadyFoundString(newInfoHoliday.Name));
                     break;
-                case DAL.Extensions.DataBaseResult.Error:
+                case Extensions.DataBaseResult.Error:
                     result.Result = Extensions.BLLResult.InnerException;
                     result.Errors.Add(Extensions.InnerException);
                     break;
-                case DAL.Extensions.DataBaseResult.Success:
+                case Extensions.DataBaseResult.Success:
                     result.Result = Extensions.BLLResult.Success;
                     result.Errors.Add(Extensions.SuccessProcess);
                     break;
-                case DAL.Extensions.DataBaseResult.ServerDisable:
+                case Extensions.DataBaseResult.ServerDisable:
                     result.Result = Extensions.BLLResult.ServerDisable;
                     result.Errors.Add(Extensions.ServerDisable);
                     break;
-                case DAL.Extensions.DataBaseResult.Referanced:
+                case Extensions.DataBaseResult.Referanced:
                     break;
-                case DAL.Extensions.DataBaseResult.NotFound:
+                case Extensions.DataBaseResult.NotFound:
                     break;
                 default:
                     throw new ArgumentOutOfRangeException();
@@ -148,30 +148,30 @@ namespace HealthMonitoringSystem.BLL
 
         public ProcessResult Delete(int id)
         {
-            DAL.Extensions.DataBaseResult delete = holidayDal.Delete(id);
+            Extensions.DataBaseResult delete = holidayDal.Delete(id);
 
             ProcessResult result = new ProcessResult();
             switch (delete)
             {
-                case DAL.Extensions.DataBaseResult.Success:
+                case Extensions.DataBaseResult.Success:
                     result.Result = Extensions.BLLResult.Success;
                     result.Errors.Add(Extensions.SuccessProcess);
                     break;
-                case DAL.Extensions.DataBaseResult.NotFound:
+                case Extensions.DataBaseResult.NotFound:
                     result.Result = Extensions.BLLResult.NotFound;
                     result.Errors.Add(Extensions.NotFound);
                     break;
-                case DAL.Extensions.DataBaseResult.Error:
+                case Extensions.DataBaseResult.Error:
                     result.Result = Extensions.BLLResult.InnerException;
                     result.Errors.Add(Extensions.InnerException);
                     break;
-                case DAL.Extensions.DataBaseResult.ServerDisable:
+                case Extensions.DataBaseResult.ServerDisable:
                     result.Result = Extensions.BLLResult.ServerDisable;
                     result.Errors.Add(Extensions.ServerDisable);
                     break;
-                case DAL.Extensions.DataBaseResult.AlreadyFound:
+                case Extensions.DataBaseResult.AlreadyFound:
                     break;
-                case DAL.Extensions.DataBaseResult.Referanced:
+                case Extensions.DataBaseResult.Referanced:
                     break;
                 default:
                     throw new ArgumentOutOfRangeException();

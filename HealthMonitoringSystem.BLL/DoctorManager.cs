@@ -6,9 +6,8 @@ using System;
 using System.Collections.Generic;
 using HealthMonitoringSystem.DAL.Abstract;
 using HealthMonitoringSystem.Entity;
-using HealthMonitoringSystem.Interfaces;
+using HealthMonitoringSystem.Entity.Classes;
 using Ninject;
-using Extensions = HealthMonitoringSystem.DAL.Extensions;
 
 #endregion
 
@@ -46,24 +45,24 @@ namespace HealthMonitoringSystem.BLL
             switch (delete)
             {
                 case Extensions.DataBaseResult.Success:
-                    result.Result = Interfaces.Extensions.BLLResult.Success;
-                    result.Errors.Add(Interfaces.Extensions.SuccessProcess);
+                    result.Result = Extensions.BLLResult.Success;
+                    result.Errors.Add(Extensions.SuccessProcess);
                     break;
                 case Extensions.DataBaseResult.Referanced:
-                    result.Result = Interfaces.Extensions.BLLResult.Referanced;
+                    result.Result = Extensions.BLLResult.Referanced;
                     result.Errors.Add("Doktor başka tablolar üzerinde refere edildiğinden silinemedi");
                     break;
                 case Extensions.DataBaseResult.NotFound:
-                    result.Result = Interfaces.Extensions.BLLResult.NotFound;
-                    result.Errors.Add(Interfaces.Extensions.NotFound);
+                    result.Result = Extensions.BLLResult.NotFound;
+                    result.Errors.Add(Extensions.NotFound);
                     break;
                 case Extensions.DataBaseResult.Error:
-                    result.Result = Interfaces.Extensions.BLLResult.InnerException;
-                    result.Errors.Add(Interfaces.Extensions.InnerException);
+                    result.Result = Extensions.BLLResult.InnerException;
+                    result.Errors.Add(Extensions.InnerException);
                     break;
                 case Extensions.DataBaseResult.ServerDisable:
-                    result.Result = Interfaces.Extensions.BLLResult.ServerDisable;
-                    result.Errors.Add(Interfaces.Extensions.ServerDisable);
+                    result.Result = Extensions.BLLResult.ServerDisable;
+                    result.Errors.Add(Extensions.ServerDisable);
                     break;
                 case Extensions.DataBaseResult.AlreadyFound:
                     break;
@@ -78,7 +77,7 @@ namespace HealthMonitoringSystem.BLL
         {
             ProcessResult result = VerifeyModel(newInfoDoctor, true);
 
-            if (result.Result != Interfaces.Extensions.BLLResult.Verified)
+            if (result.Result != Extensions.BLLResult.Verified)
             {
                 return result;
             }
@@ -92,16 +91,16 @@ namespace HealthMonitoringSystem.BLL
                 //    result.Errors.Add(Extensions.AlreadyFoundString(newInfoDoctor.Name));
                 //    break;
                 case Extensions.DataBaseResult.Error:
-                    result.Result = Interfaces.Extensions.BLLResult.InnerException;
-                    result.Errors.Add(Interfaces.Extensions.InnerException);
+                    result.Result = Extensions.BLLResult.InnerException;
+                    result.Errors.Add(Extensions.InnerException);
                     break;
                 case Extensions.DataBaseResult.Success:
-                    result.Result = Interfaces.Extensions.BLLResult.Success;
-                    result.Errors.Add(Interfaces.Extensions.SuccessProcess);
+                    result.Result = Extensions.BLLResult.Success;
+                    result.Errors.Add(Extensions.SuccessProcess);
                     break;
                 case Extensions.DataBaseResult.ServerDisable:
-                    result.Result = Interfaces.Extensions.BLLResult.ServerDisable;
-                    result.Errors.Add(Interfaces.Extensions.ServerDisable);
+                    result.Result = Extensions.BLLResult.ServerDisable;
+                    result.Errors.Add(Extensions.ServerDisable);
                     break;
                 case Extensions.DataBaseResult.AlreadyFound:
                     break;
@@ -120,7 +119,7 @@ namespace HealthMonitoringSystem.BLL
         {
             ProcessResult result = VerifeyModel(newDoctor, false);
 
-            if (result.Result != Interfaces.Extensions.BLLResult.Verified)
+            if (result.Result != Extensions.BLLResult.Verified)
             {
                 return result;
             }
@@ -132,20 +131,20 @@ namespace HealthMonitoringSystem.BLL
             switch (insert)
             {
                 case Extensions.DataBaseResult.AlreadyFound:
-                    result.Result = Interfaces.Extensions.BLLResult.AlreadyFound;
-                    result.Errors.Add(Interfaces.Extensions.AlreadyFoundString(newDoctor.Name + newDoctor.Surname));
+                    result.Result = Extensions.BLLResult.AlreadyFound;
+                    result.Errors.Add(Extensions.AlreadyFoundString(newDoctor.Name + newDoctor.Surname));
                     break;
                 case Extensions.DataBaseResult.Error:
-                    result.Result = Interfaces.Extensions.BLLResult.InnerException;
-                    result.Errors.Add(Interfaces.Extensions.InnerException);
+                    result.Result = Extensions.BLLResult.InnerException;
+                    result.Errors.Add(Extensions.InnerException);
                     break;
                 case Extensions.DataBaseResult.Success:
-                    result.Result = Interfaces.Extensions.BLLResult.Success;
-                    result.Errors.Add(Interfaces.Extensions.SuccessProcess);
+                    result.Result = Extensions.BLLResult.Success;
+                    result.Errors.Add(Extensions.SuccessProcess);
                     break;
                 case Extensions.DataBaseResult.ServerDisable:
-                    result.Result = Interfaces.Extensions.BLLResult.ServerDisable;
-                    result.Errors.Add(Interfaces.Extensions.ServerDisable);
+                    result.Result = Extensions.BLLResult.ServerDisable;
+                    result.Errors.Add(Extensions.ServerDisable);
                     break;
                 case Extensions.DataBaseResult.Referanced:
                     break;
@@ -162,7 +161,7 @@ namespace HealthMonitoringSystem.BLL
         {
             ProcessResult result = new ProcessResult();
 
-            if (!Interfaces.Extensions.VerifyTC(d.TcNo))
+            if (!Extensions.VerifyTC(d.TcNo))
             {
                 result.Errors.Add("Kimlik numarası doğrulanmadı");
             }
@@ -206,7 +205,7 @@ namespace HealthMonitoringSystem.BLL
             {
                 result.Errors.Add("Şifre kısmı boş bırakılamaz");
             }
-            result.Result = result.Errors.Count == 0 ? Interfaces.Extensions.BLLResult.Verified : Interfaces.Extensions.BLLResult.NotVerified;
+            result.Result = result.Errors.Count == 0 ? Extensions.BLLResult.Verified : Extensions.BLLResult.NotVerified;
 
             return result;
         }
