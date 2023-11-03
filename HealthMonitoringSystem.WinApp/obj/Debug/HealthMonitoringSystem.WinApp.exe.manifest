@@ -367,14 +367,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="HealthMonitoringSystem.WinApp.exe" size="4917760">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="HealthMonitoringSystem.WinApp.exe" size="4919808">
       <assemblyIdentity name="HealthMonitoringSystem.WinApp" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>0zGsrSX9lzcI7PHBPOAYtt5vpoyRLnVR26MIoKrVsRw=</dsig:DigestValue>
+        <dsig:DigestValue>eP3lZ5D8zlJr/uUK3tcogZbBDk/N3JDt64KVLGMEMcU=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
