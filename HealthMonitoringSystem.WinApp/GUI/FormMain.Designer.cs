@@ -49,9 +49,7 @@ namespace HealthMonitoringSystem.WinApp.GUI
             this.navBarItemPatient = new DevExpress.XtraNavBar.NavBarItem();
             this.navBarItemRendezvous = new DevExpress.XtraNavBar.NavBarItem();
             this.navBarGroupPersonalize = new DevExpress.XtraNavBar.NavBarGroup();
-            this.navBarItemCoonection = new DevExpress.XtraNavBar.NavBarItem();
             this.navBarItemThema = new DevExpress.XtraNavBar.NavBarItem();
-            this.navBarItemLanguage = new DevExpress.XtraNavBar.NavBarItem();
             this.xtraTabbedMdiManager1 = new DevExpress.XtraTabbedMdi.XtraTabbedMdiManager(this.components);
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.navBarControl1)).BeginInit();
@@ -84,8 +82,6 @@ namespace HealthMonitoringSystem.WinApp.GUI
             this.navBarItemExamination,
             this.navBarItemThema,
             this.navBarItemPatient,
-            this.navBarItemLanguage,
-            this.navBarItemCoonection,
             this.navBarItemRendezvous,
             this.navBarItemHoliday});
             this.navBarControl1.Location = new System.Drawing.Point(0, 0);
@@ -102,9 +98,9 @@ namespace HealthMonitoringSystem.WinApp.GUI
             this.navBarGroupOffice.Appearance.Options.UseFont = true;
             this.navBarGroupOffice.Caption = "Muayene İşlemleri";
             this.navBarGroupOffice.Expanded = true;
+            this.navBarGroupOffice.ImageOptions.LargeImage = global::HealthMonitoringSystem.WinApp.Properties.Resources.note;
             this.navBarGroupOffice.ItemLinks.AddRange(new DevExpress.XtraNavBar.NavBarItemLink[] {
             new DevExpress.XtraNavBar.NavBarItemLink(this.navBarItemExamination)});
-            this.navBarGroupOffice.LargeImage = global::HealthMonitoringSystem.WinApp.Properties.Resources.note;
             this.navBarGroupOffice.Name = "navBarGroupOffice";
             // 
             // navBarItemExamination
@@ -120,8 +116,8 @@ namespace HealthMonitoringSystem.WinApp.GUI
             this.navBarItemExamination.AppearancePressed.Options.UseFont = true;
             this.navBarItemExamination.AppearancePressed.Options.UseForeColor = true;
             this.navBarItemExamination.Caption = "Muayene";
+            this.navBarItemExamination.ImageOptions.SmallImage = global::HealthMonitoringSystem.WinApp.Properties.Resources.add_to_favorites1;
             this.navBarItemExamination.Name = "navBarItemExamination";
-            this.navBarItemExamination.SmallImage = global::HealthMonitoringSystem.WinApp.Properties.Resources.add_to_favorites1;
             this.navBarItemExamination.LinkClicked += new DevExpress.XtraNavBar.NavBarLinkEventHandler(this.navBarItem4_LinkClicked);
             // 
             // navBarGroupManagament
@@ -130,6 +126,7 @@ namespace HealthMonitoringSystem.WinApp.GUI
             this.navBarGroupManagament.Appearance.Options.UseFont = true;
             this.navBarGroupManagament.Caption = "Yönetim Araçları";
             this.navBarGroupManagament.Expanded = true;
+            this.navBarGroupManagament.ImageOptions.SmallImage = ((System.Drawing.Image)(resources.GetObject("navBarGroupManagament.ImageOptions.SmallImage")));
             this.navBarGroupManagament.ItemLinks.AddRange(new DevExpress.XtraNavBar.NavBarItemLink[] {
             new DevExpress.XtraNavBar.NavBarItemLink(this.navBarItemDegreeDepartment),
             new DevExpress.XtraNavBar.NavBarItemLink(this.navBarItemCityCauntry),
@@ -137,7 +134,6 @@ namespace HealthMonitoringSystem.WinApp.GUI
             new DevExpress.XtraNavBar.NavBarItemLink(this.navBarItemDoctor),
             new DevExpress.XtraNavBar.NavBarItemLink(this.navBarItemHoliday)});
             this.navBarGroupManagament.Name = "navBarGroupManagament";
-            this.navBarGroupManagament.SmallImage = ((System.Drawing.Image)(resources.GetObject("navBarGroupManagament.SmallImage")));
             // 
             // navBarItemDegreeDepartment
             // 
@@ -152,9 +148,9 @@ namespace HealthMonitoringSystem.WinApp.GUI
             this.navBarItemDegreeDepartment.AppearancePressed.Options.UseFont = true;
             this.navBarItemDegreeDepartment.AppearancePressed.Options.UseForeColor = true;
             this.navBarItemDegreeDepartment.Caption = "Departman ve Ünvan";
+            this.navBarItemDegreeDepartment.ImageOptions.SmallImage = global::HealthMonitoringSystem.WinApp.Properties.Resources.add_link2;
+            this.navBarItemDegreeDepartment.ImageOptions.SmallImageSize = new System.Drawing.Size(30, 30);
             this.navBarItemDegreeDepartment.Name = "navBarItemDegreeDepartment";
-            this.navBarItemDegreeDepartment.SmallImage = global::HealthMonitoringSystem.WinApp.Properties.Resources.add_link2;
-            this.navBarItemDegreeDepartment.SmallImageSize = new System.Drawing.Size(30, 30);
             this.navBarItemDegreeDepartment.LinkClicked += new DevExpress.XtraNavBar.NavBarLinkEventHandler(this.navBarItemDegreeDepartment_LinkClicked);
             // 
             // navBarItemCityCauntry
@@ -170,9 +166,9 @@ namespace HealthMonitoringSystem.WinApp.GUI
             this.navBarItemCityCauntry.AppearancePressed.Options.UseFont = true;
             this.navBarItemCityCauntry.AppearancePressed.Options.UseForeColor = true;
             this.navBarItemCityCauntry.Caption = "Şehir ve İlçe";
+            this.navBarItemCityCauntry.ImageOptions.SmallImage = global::HealthMonitoringSystem.WinApp.Properties.Resources.globe_process1;
+            this.navBarItemCityCauntry.ImageOptions.SmallImageSize = new System.Drawing.Size(30, 30);
             this.navBarItemCityCauntry.Name = "navBarItemCityCauntry";
-            this.navBarItemCityCauntry.SmallImage = global::HealthMonitoringSystem.WinApp.Properties.Resources.globe_process1;
-            this.navBarItemCityCauntry.SmallImageSize = new System.Drawing.Size(30, 30);
             this.navBarItemCityCauntry.LinkClicked += new DevExpress.XtraNavBar.NavBarLinkEventHandler(this.navBarItem1_LinkClicked);
             // 
             // navBarItemDiagnosisMedicament
@@ -188,9 +184,9 @@ namespace HealthMonitoringSystem.WinApp.GUI
             this.navBarItemDiagnosisMedicament.AppearancePressed.Options.UseFont = true;
             this.navBarItemDiagnosisMedicament.AppearancePressed.Options.UseForeColor = true;
             this.navBarItemDiagnosisMedicament.Caption = "Hastalıklar ve İlaçlar";
+            this.navBarItemDiagnosisMedicament.ImageOptions.SmallImage = global::HealthMonitoringSystem.WinApp.Properties.Resources.red_heart1;
+            this.navBarItemDiagnosisMedicament.ImageOptions.SmallImageSize = new System.Drawing.Size(30, 30);
             this.navBarItemDiagnosisMedicament.Name = "navBarItemDiagnosisMedicament";
-            this.navBarItemDiagnosisMedicament.SmallImage = global::HealthMonitoringSystem.WinApp.Properties.Resources.red_heart1;
-            this.navBarItemDiagnosisMedicament.SmallImageSize = new System.Drawing.Size(30, 30);
             this.navBarItemDiagnosisMedicament.LinkClicked += new DevExpress.XtraNavBar.NavBarLinkEventHandler(this.navBarItemDiagnosisMedicament_LinkClicked);
             // 
             // navBarItemDoctor
@@ -206,9 +202,9 @@ namespace HealthMonitoringSystem.WinApp.GUI
             this.navBarItemDoctor.AppearancePressed.Options.UseFont = true;
             this.navBarItemDoctor.AppearancePressed.Options.UseForeColor = true;
             this.navBarItemDoctor.Caption = "Doktor";
+            this.navBarItemDoctor.ImageOptions.SmallImage = global::HealthMonitoringSystem.WinApp.Properties.Resources.business_male_female_users;
+            this.navBarItemDoctor.ImageOptions.SmallImageSize = new System.Drawing.Size(30, 30);
             this.navBarItemDoctor.Name = "navBarItemDoctor";
-            this.navBarItemDoctor.SmallImage = global::HealthMonitoringSystem.WinApp.Properties.Resources.business_male_female_users;
-            this.navBarItemDoctor.SmallImageSize = new System.Drawing.Size(30, 30);
             this.navBarItemDoctor.LinkClicked += new DevExpress.XtraNavBar.NavBarLinkEventHandler(this.navBarItem3_LinkClicked);
             // 
             // navBarItemHoliday
@@ -222,9 +218,9 @@ namespace HealthMonitoringSystem.WinApp.GUI
             this.navBarItemHoliday.AppearancePressed.Options.UseFont = true;
             this.navBarItemHoliday.AppearancePressed.Options.UseForeColor = true;
             this.navBarItemHoliday.Caption = "Tatiller";
-            this.navBarItemHoliday.LargeImage = global::HealthMonitoringSystem.WinApp.Properties.Resources.calendar_empty;
+            this.navBarItemHoliday.ImageOptions.LargeImage = global::HealthMonitoringSystem.WinApp.Properties.Resources.calendar_empty;
+            this.navBarItemHoliday.ImageOptions.SmallImage = global::HealthMonitoringSystem.WinApp.Properties.Resources.calendar_empty;
             this.navBarItemHoliday.Name = "navBarItemHoliday";
-            this.navBarItemHoliday.SmallImage = global::HealthMonitoringSystem.WinApp.Properties.Resources.calendar_empty;
             this.navBarItemHoliday.LinkClicked += new DevExpress.XtraNavBar.NavBarLinkEventHandler(this.navBarItemHoliday_LinkClicked);
             // 
             // navBarGroupRegistration
@@ -233,10 +229,10 @@ namespace HealthMonitoringSystem.WinApp.GUI
             this.navBarGroupRegistration.Appearance.Options.UseFont = true;
             this.navBarGroupRegistration.Caption = "Kayıt İşlemleri";
             this.navBarGroupRegistration.Expanded = true;
+            this.navBarGroupRegistration.ImageOptions.LargeImage = global::HealthMonitoringSystem.WinApp.Properties.Resources.book_download;
             this.navBarGroupRegistration.ItemLinks.AddRange(new DevExpress.XtraNavBar.NavBarItemLink[] {
             new DevExpress.XtraNavBar.NavBarItemLink(this.navBarItemPatient),
             new DevExpress.XtraNavBar.NavBarItemLink(this.navBarItemRendezvous)});
-            this.navBarGroupRegistration.LargeImage = global::HealthMonitoringSystem.WinApp.Properties.Resources.book_download;
             this.navBarGroupRegistration.Name = "navBarGroupRegistration";
             // 
             // navBarItemPatient
@@ -252,8 +248,8 @@ namespace HealthMonitoringSystem.WinApp.GUI
             this.navBarItemPatient.AppearancePressed.Options.UseFont = true;
             this.navBarItemPatient.AppearancePressed.Options.UseForeColor = true;
             this.navBarItemPatient.Caption = "Hasta İşlemleri";
+            this.navBarItemPatient.ImageOptions.SmallImage = global::HealthMonitoringSystem.WinApp.Properties.Resources.male_female_users1;
             this.navBarItemPatient.Name = "navBarItemPatient";
-            this.navBarItemPatient.SmallImage = global::HealthMonitoringSystem.WinApp.Properties.Resources.male_female_users1;
             this.navBarItemPatient.LinkClicked += new DevExpress.XtraNavBar.NavBarLinkEventHandler(this.navBarItemPatient_LinkClicked);
             // 
             // navBarItemRendezvous
@@ -269,8 +265,8 @@ namespace HealthMonitoringSystem.WinApp.GUI
             this.navBarItemRendezvous.AppearancePressed.Options.UseFont = true;
             this.navBarItemRendezvous.AppearancePressed.Options.UseForeColor = true;
             this.navBarItemRendezvous.Caption = "Randevu İşlemleri";
+            this.navBarItemRendezvous.ImageOptions.SmallImage = global::HealthMonitoringSystem.WinApp.Properties.Resources.clock1;
             this.navBarItemRendezvous.Name = "navBarItemRendezvous";
-            this.navBarItemRendezvous.SmallImage = global::HealthMonitoringSystem.WinApp.Properties.Resources.clock1;
             this.navBarItemRendezvous.LinkClicked += new DevExpress.XtraNavBar.NavBarLinkEventHandler(this.navBarItemRendezvous_LinkClicked);
             // 
             // navBarGroupPersonalize
@@ -279,30 +275,10 @@ namespace HealthMonitoringSystem.WinApp.GUI
             this.navBarGroupPersonalize.Appearance.Options.UseFont = true;
             this.navBarGroupPersonalize.Caption = "Kullanıcı Ayarları";
             this.navBarGroupPersonalize.Expanded = true;
+            this.navBarGroupPersonalize.ImageOptions.LargeImage = global::HealthMonitoringSystem.WinApp.Properties.Resources.user;
             this.navBarGroupPersonalize.ItemLinks.AddRange(new DevExpress.XtraNavBar.NavBarItemLink[] {
-            new DevExpress.XtraNavBar.NavBarItemLink(this.navBarItemCoonection),
-            new DevExpress.XtraNavBar.NavBarItemLink(this.navBarItemThema),
-            new DevExpress.XtraNavBar.NavBarItemLink(this.navBarItemLanguage)});
-            this.navBarGroupPersonalize.LargeImage = global::HealthMonitoringSystem.WinApp.Properties.Resources.user;
+            new DevExpress.XtraNavBar.NavBarItemLink(this.navBarItemThema)});
             this.navBarGroupPersonalize.Name = "navBarGroupPersonalize";
-            // 
-            // navBarItemCoonection
-            // 
-            this.navBarItemCoonection.Appearance.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.navBarItemCoonection.Appearance.Options.UseFont = true;
-            this.navBarItemCoonection.AppearanceHotTracked.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.navBarItemCoonection.AppearanceHotTracked.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.navBarItemCoonection.AppearanceHotTracked.Options.UseFont = true;
-            this.navBarItemCoonection.AppearanceHotTracked.Options.UseForeColor = true;
-            this.navBarItemCoonection.AppearancePressed.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.navBarItemCoonection.AppearancePressed.ForeColor = System.Drawing.Color.Red;
-            this.navBarItemCoonection.AppearancePressed.Options.UseFont = true;
-            this.navBarItemCoonection.AppearancePressed.Options.UseForeColor = true;
-            this.navBarItemCoonection.Caption = "Bağlantı Ayarları";
-            this.navBarItemCoonection.Name = "navBarItemCoonection";
-            this.navBarItemCoonection.SmallImage = global::HealthMonitoringSystem.WinApp.Properties.Resources.process1;
-            this.navBarItemCoonection.SmallImageSize = new System.Drawing.Size(30, 30);
-            this.navBarItemCoonection.LinkClicked += new DevExpress.XtraNavBar.NavBarLinkEventHandler(this.navBarItemCoonection_LinkClicked);
             // 
             // navBarItemThema
             // 
@@ -317,26 +293,9 @@ namespace HealthMonitoringSystem.WinApp.GUI
             this.navBarItemThema.AppearancePressed.Options.UseFont = true;
             this.navBarItemThema.AppearancePressed.Options.UseForeColor = true;
             this.navBarItemThema.Caption = "Tema Değiştir";
+            this.navBarItemThema.ImageOptions.SmallImage = global::HealthMonitoringSystem.WinApp.Properties.Resources.tablet1;
             this.navBarItemThema.Name = "navBarItemThema";
-            this.navBarItemThema.SmallImage = global::HealthMonitoringSystem.WinApp.Properties.Resources.tablet1;
             this.navBarItemThema.LinkClicked += new DevExpress.XtraNavBar.NavBarLinkEventHandler(this.navBarItem5_LinkClicked);
-            // 
-            // navBarItemLanguage
-            // 
-            this.navBarItemLanguage.Appearance.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.navBarItemLanguage.Appearance.Options.UseFont = true;
-            this.navBarItemLanguage.AppearanceHotTracked.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.navBarItemLanguage.AppearanceHotTracked.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.navBarItemLanguage.AppearanceHotTracked.Options.UseFont = true;
-            this.navBarItemLanguage.AppearanceHotTracked.Options.UseForeColor = true;
-            this.navBarItemLanguage.AppearancePressed.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.navBarItemLanguage.AppearancePressed.ForeColor = System.Drawing.Color.Red;
-            this.navBarItemLanguage.AppearancePressed.Options.UseFont = true;
-            this.navBarItemLanguage.AppearancePressed.Options.UseForeColor = true;
-            this.navBarItemLanguage.Caption = "Türkçe Dil Dosyaları İndir";
-            this.navBarItemLanguage.Name = "navBarItemLanguage";
-            this.navBarItemLanguage.SmallImage = global::HealthMonitoringSystem.WinApp.Properties.Resources.chalk_board1;
-            this.navBarItemLanguage.LinkClicked += new DevExpress.XtraNavBar.NavBarLinkEventHandler(this.LanguagenavBarItem_LinkClicked);
             // 
             // xtraTabbedMdiManager1
             // 
@@ -349,7 +308,7 @@ namespace HealthMonitoringSystem.WinApp.GUI
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1184, 661);
             this.Controls.Add(this.panel1);
-            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.IconOptions.Icon = ((System.Drawing.Icon)(resources.GetObject("FormMain.IconOptions.Icon")));
             this.IsMdiContainer = true;
             this.KeyPreview = true;
             this.Name = "FormMain";
@@ -381,8 +340,6 @@ namespace HealthMonitoringSystem.WinApp.GUI
         private NavBarItem navBarItemThema;
         private NavBarGroup navBarGroupRegistration;
         private NavBarItem navBarItemPatient;
-        private NavBarItem navBarItemLanguage;
-        private NavBarItem navBarItemCoonection;
         private NavBarItem navBarItemRendezvous;
         private NavBarItem navBarItemHoliday;
 

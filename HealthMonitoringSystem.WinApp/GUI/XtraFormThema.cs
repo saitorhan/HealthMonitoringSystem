@@ -40,7 +40,6 @@ namespace HealthMonitoringSystem.WinApp.GUI
                 return;
             }
             UserLookAndFeel.Default.SetSkinStyle(value);
-            Settings.Default.Thema = value;
             Settings.Default.Save();
             Close();
         }
@@ -57,7 +56,6 @@ namespace HealthMonitoringSystem.WinApp.GUI
 
         private void XtraFormThema_FormClosed(object sender, FormClosedEventArgs e)
         {
-            UserLookAndFeel.Default.SetSkinStyle(Settings.Default.Thema);
         }
 
         private void simpleButtonCancel_Click(object sender, EventArgs e)

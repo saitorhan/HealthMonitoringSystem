@@ -6,13 +6,11 @@ using System;
 using System.Collections.Generic;
 using System.Globalization;
 using System.Linq;
-using System.Net.Sockets;
 using System.Threading;
 using System.Windows.Forms;
 using DevExpress.LookAndFeel;
 using DevExpress.Skins;
 using DevExpress.UserSkins;
-using DevExpress.XtraEditors;
 using DevExpress.XtraSplashScreen;
 using HealthMonitoringSystem.BLL;
 using HealthMonitoringSystem.Entity;
@@ -40,8 +38,6 @@ namespace HealthMonitoringSystem.WinApp
 
             BonusSkins.Register();
             SkinManager.EnableFormSkins();
-            string thema = Settings.Default.Thema;
-            UserLookAndFeel.Default.SetSkinStyle(thema);
             Thread.CurrentThread.CurrentUICulture =
                 Thread.CurrentThread.CurrentCulture =
                     new CultureInfo("tr-TR") {NumberFormat = {NumberDecimalSeparator = ",", NumberGroupSeparator = "."}};
@@ -51,8 +47,6 @@ namespace HealthMonitoringSystem.WinApp
 
             SplashScreenManager.ShowForm(typeof (SplashScreenStarting));
 
-            bool service = TestService();
-            if (!service) return;
             GetDiagnosis();
             GetCities();
             GetCountries();
@@ -88,52 +82,6 @@ namespace HealthMonitoringSystem.WinApp
 
             DepartmentManager client = new DepartmentManager();
             GlobalVariables.Departments = client.Departments(true, true).ToList();
-        }
-
-        public static bool TestService()
-        {
-            if (firstRun)
-            {
-                GlobalVariables.ServiceRoot = Settings.Default.ServiceRoot;
-                firstRun = false;
-            }
-
-
-            bool result;
-            string adress = GlobalVariables.ServiceRoot;
-
-            string[] strings = adress.Split(new[] {"http://", ":"}, StringSplitOptions.RemoveEmptyEntries);
-            adress = strings[0];
-            int port = Convert.ToInt32(strings[1]);
-            try
-            {
-                // ReSharper disable once UnusedVariable
-                TcpClient client = new TcpClient(adress, port);
-                result = true;
-                GlobalVariables.ServiceRoot = String.Format("http://{0}:{1}", adress, port);
-            }
-            catch (Exception)
-            {
-                result = false;
-            }
-
-            if (result)
-            {
-                return true;
-            }
-
-            DialogResult dialogResult =
-                XtraMessageBox.Show(
-                    String.Format(
-                        "{0}:{1} adresine bağlantı sağlanamadı. Servis adresi ayarlanmadan sistem açılmayacaktır. Şimdi ayarlamak ister misiniz?",
-                        adress, port), "Hata",
-                    MessageBoxButtons.YesNo, MessageBoxIcon.Error);
-            if (dialogResult != DialogResult.Yes) return false;
-
-            XtraFormService service = new XtraFormService();
-            service.ShowDialog();
-            bool testService = TestService();
-            return testService;
         }
 
         public static void GetCountries()

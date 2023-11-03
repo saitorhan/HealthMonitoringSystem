@@ -225,12 +225,6 @@
     <Compile Include="GUI\XtraFormDoctorDetail.Designer.cs">
       <DependentUpon>XtraFormDoctorDetail.cs</DependentUpon>
     </Compile>
-    <Compile Include="GUI\XtraFormDownloadLanguages.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="GUI\XtraFormDownloadLanguages.Designer.cs">
-      <DependentUpon>XtraFormDownloadLanguages.cs</DependentUpon>
-    </Compile>
     <Compile Include="GUI\XtraFormExamDetails.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -303,12 +297,6 @@
     <Compile Include="GUI\XtraFormRendezvous.Designer.cs">
       <DependentUpon>XtraFormRendezvous.cs</DependentUpon>
     </Compile>
-    <Compile Include="GUI\XtraFormService.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="GUI\XtraFormService.Designer.cs">
-      <DependentUpon>XtraFormService.cs</DependentUpon>
-    </Compile>
     <Compile Include="GUI\XtraFormThema.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -372,9 +360,6 @@
     <EmbeddedResource Include="GUI\XtraFormDoctorDetail.resx">
       <DependentUpon>XtraFormDoctorDetail.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="GUI\XtraFormDownloadLanguages.resx">
-      <DependentUpon>XtraFormDownloadLanguages.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="GUI\XtraFormExamDetails.resx">
       <DependentUpon>XtraFormExamDetails.cs</DependentUpon>
     </EmbeddedResource>
@@ -410,9 +395,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\XtraFormRendezvousProcess.resx">
       <DependentUpon>XtraFormRendezvousProcess.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="GUI\XtraFormService.resx">
-      <DependentUpon>XtraFormService.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\XtraFormThema.resx">
       <DependentUpon>XtraFormThema.cs</DependentUpon>

@@ -11,18 +11,17 @@
     <deploymentProvider codebase="http://sait/installHMS/HealthMonitoringSystem.WinApp.application" />
   </deployment>
   <compatibleFrameworks xmlns="urn:schemas-microsoft-com:clickonce.v2">
-    <framework targetVersion="4.0" profile="Client" supportedRuntime="4.0.30319" />
-    <framework targetVersion="4.0" profile="Full" supportedRuntime="4.0.30319" />
+    <framework targetVersion="4.8" profile="Full" supportedRuntime="4.0.30319" />
   </compatibleFrameworks>
   <dependency>
-    <dependentAssembly dependencyType="install" codebase="HealthMonitoringSystem.WinApp.exe.manifest" size="58922">
+    <dependentAssembly dependencyType="install" codebase="HealthMonitoringSystem.WinApp.exe.manifest" size="27232">
       <assemblyIdentity name="HealthMonitoringSystem.WinApp.exe" version="6.6.0.15" publicKeyToken="0000000000000000" language="neutral" processorArchitecture="msil" type="win32" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
-        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>D6m0BjsL5HVpd3S2kAv4nnmEo54=</dsig:DigestValue>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>E72pdoVKUNSvnUy21+ESWMzMBqux3M4NjVot0j7dMNg=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

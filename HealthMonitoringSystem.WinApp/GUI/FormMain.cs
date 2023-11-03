@@ -5,7 +5,6 @@
 using System;
 using System.Deployment.Application;
 using System.Linq;
-using System.Windows.Forms;
 using DevExpress.XtraEditors;
 using DevExpress.XtraNavBar;
 using DevExpress.XtraSplashScreen;
@@ -112,48 +111,7 @@ namespace HealthMonitoringSystem.WinApp.GUI
 
         private void FormMain_Shown(object sender, EventArgs e)
         {
-            if (ApplicationDeployment.IsNetworkDeployed)
-            {
-                ApplicationDeployment deployment = ApplicationDeployment.CurrentDeployment;
-                if (deployment.IsFirstRun)
-                {
-                    DialogResult result = XtraMessageBox.Show(
-                        "Arayüz ileri özellikleri için Türkçe dil dosyaları mevcut. Şimdi indirmek ister misiniz?",
-                        "Dil Dosyası Yükle", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-                    if (result == DialogResult.Yes)
-                    {
-                        XtraFormDownloadLanguages languages = new XtraFormDownloadLanguages("Türkçe", "tr");
-                        languages.ShowDialog();
-                        result = Extensions.Extensions.AccepttoResetApp();
-                        if (result == DialogResult.Yes)
-                            Application.Restart();
-                    }
-                }
-            }
-        }
-
-        private void LanguagenavBarItem_LinkClicked(object sender, NavBarLinkEventArgs e)
-        {
-            XtraFormDownloadLanguages languages = new XtraFormDownloadLanguages("Türkçe", "tr");
-            languages.ShowDialog();
-            if (Extensions.Extensions.AccepttoResetApp() == DialogResult.Yes)
-            {
-                Extensions.Extensions.ResetApplication();
-            }
-        }
-
-        private void navBarItemCoonection_LinkClicked(object sender, NavBarLinkEventArgs e)
-        {
-            string old = GlobalVariables.ServiceRoot;
-            XtraFormService form = new XtraFormService();
-            form.ShowDialog();
-            if (String.CompareOrdinal(old, GlobalVariables.ServiceRoot) != 0)
-            {
-                if (Extensions.Extensions.AccepttoResetApp() == DialogResult.Yes)
-                {
-                    Application.Restart();
-                }
-            }
+           
         }
 
         private void navBarItemRendezvous_LinkClicked(object sender, NavBarLinkEventArgs e)

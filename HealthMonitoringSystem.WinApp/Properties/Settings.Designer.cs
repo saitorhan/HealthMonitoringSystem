@@ -22,29 +22,5 @@ namespace HealthMonitoringSystem.WinApp.Properties {
                 return defaultInstance;
             }
         }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("Visual Studio 2013 Blue")]
-        public string Thema {
-            get {
-                return ((string)(this["Thema"]));
-            }
-            set {
-                this["Thema"] = value;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("http://SAFER:81")]
-        public string ServiceRoot {
-            get {
-                return ((string)(this["ServiceRoot"]));
-            }
-            set {
-                this["ServiceRoot"] = value;
-            }
-        }
     }
 }
