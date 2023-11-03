@@ -85,10 +85,6 @@
       <Project>{BCEAA130-0DC1-4A3D-8E3A-7541D83FA95A}</Project>
       <Name>HealthMonitoringSystem.Entity</Name>
     </ProjectReference>
-    <ProjectReference Include="..\HealthMonitoringSystem.Interfaces\HealthMonitoringSystem.Interfaces.csproj">
-      <Project>{F5178C00-81CA-4059-B837-BC3E87FEF700}</Project>
-      <Name>HealthMonitoringSystem.Interfaces</Name>
-    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <WCFMetadata Include="Service References\" />

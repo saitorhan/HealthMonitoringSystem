@@ -133,5 +133,11 @@ namespace HealthMonitoringSystem.Entity
         {
             return (DateTime.Today - BirthDay).Days/30;
         }
+
+        [NotMapped]
+        public string NameSurname
+        {
+            get { return String.Format("{0} {1}", Name, Surname); }
+        }
     }
 }

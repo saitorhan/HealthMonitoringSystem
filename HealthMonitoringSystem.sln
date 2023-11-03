@@ -9,8 +9,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HealthMonitoringSystem.DAL"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HealthMonitoringSystem.BLL", "HealthMonitoringSystem.BLL\HealthMonitoringSystem.BLL.csproj", "{B97383F0-5785-4CCA-99BF-1A7A2288BA85}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HealthMonitoringSystem.Interfaces", "HealthMonitoringSystem.Interfaces\HealthMonitoringSystem.Interfaces.csproj", "{F5178C00-81CA-4059-B837-BC3E87FEF700}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HealthMonitoringSystem.WinService", "HealthMonitoringSystem.WinService\HealthMonitoringSystem.WinService.csproj", "{F1409041-9120-48D5-B520-0A0A8CEE5C83}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HealthMonitoringSystem.WinApp", "HealthMonitoringSystem.WinApp\HealthMonitoringSystem.WinApp.csproj", "{F1B290DC-D51A-4D88-824E-C0BDB7B469D5}"
@@ -49,14 +47,6 @@ Global
 		{B97383F0-5785-4CCA-99BF-1A7A2288BA85}.Release|Any CPU.Build.0 = Release|Any CPU
 		{B97383F0-5785-4CCA-99BF-1A7A2288BA85}.Release|ARM.ActiveCfg = Release|Any CPU
 		{B97383F0-5785-4CCA-99BF-1A7A2288BA85}.Release|x86.ActiveCfg = Release|Any CPU
-		{F5178C00-81CA-4059-B837-BC3E87FEF700}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{F5178C00-81CA-4059-B837-BC3E87FEF700}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{F5178C00-81CA-4059-B837-BC3E87FEF700}.Debug|ARM.ActiveCfg = Debug|Any CPU
-		{F5178C00-81CA-4059-B837-BC3E87FEF700}.Debug|x86.ActiveCfg = Debug|Any CPU
-		{F5178C00-81CA-4059-B837-BC3E87FEF700}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{F5178C00-81CA-4059-B837-BC3E87FEF700}.Release|Any CPU.Build.0 = Release|Any CPU
-		{F5178C00-81CA-4059-B837-BC3E87FEF700}.Release|ARM.ActiveCfg = Release|Any CPU
-		{F5178C00-81CA-4059-B837-BC3E87FEF700}.Release|x86.ActiveCfg = Release|Any CPU
 		{F1409041-9120-48D5-B520-0A0A8CEE5C83}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{F1409041-9120-48D5-B520-0A0A8CEE5C83}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F1409041-9120-48D5-B520-0A0A8CEE5C83}.Debug|ARM.ActiveCfg = Debug|Any CPU

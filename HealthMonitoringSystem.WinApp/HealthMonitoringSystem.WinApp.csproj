@@ -138,7 +138,6 @@
     <Compile Include="GUI\FormMain.Designer.cs">
       <DependentUpon>FormMain.cs</DependentUpon>
     </Compile>
-    <Compile Include="GUI\Patient.cs" />
     <Compile Include="GUI\SplashScreenStarting.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -551,6 +550,12 @@
       <ProductName>Windows Installer 4.5</ProductName>
       <Install>true</Install>
     </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\HealthMonitoringSystem.Entity\HealthMonitoringSystem.Entity.csproj">
+      <Project>{BCEAA130-0DC1-4A3D-8E3A-7541D83FA95A}</Project>
+      <Name>HealthMonitoringSystem.Entity</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.

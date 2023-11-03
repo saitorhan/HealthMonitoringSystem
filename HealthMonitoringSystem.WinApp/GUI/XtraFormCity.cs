@@ -6,7 +6,8 @@ using System;
 using DevExpress.XtraBars;
 using DevExpress.XtraEditors;
 using DevExpress.XtraSplashScreen;
-using HealthMonitoringSystem.WinApp.CityService;
+using HealthMonitoringSystem.Entity;
+using HealthMonitoringSystem.Interfaces;
 
 #endregion
 
@@ -48,7 +49,7 @@ namespace HealthMonitoringSystem.WinApp.GUI
         private void barButtonItemSave_ItemClick(object sender, ItemClickEventArgs e)
         {
             Extensions.Extensions.ShowWaitForm(description: "Şehir kaydediliyor");
-            CitySolClient client = Extensions.Extensions.GetCityServiceSol();
+            ICitySol client = Extensions.Extensions.GetCityServiceSol();
 
             if (client == null)
             {
