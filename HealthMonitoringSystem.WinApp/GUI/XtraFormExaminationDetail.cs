@@ -9,16 +9,13 @@ using System.Windows.Forms;
 using DevExpress.XtraBars;
 using DevExpress.XtraEditors;
 using DevExpress.XtraSplashScreen;
+using HealthMonitoringSystem.BLL;
+using HealthMonitoringSystem.Entity;
 using HealthMonitoringSystem.WinApp.ExaminationService;
 using HealthMonitoringSystem.WinApp.Extensions;
 using HealthMonitoringSystem.WinApp.GUI;
-using HealthMonitoringSystem.WinApp.LaboratoryRequestItemService;
-using HealthMonitoringSystem.WinApp.LaboratoryRequestService;
 using HealthMonitoringSystem.WinApp.MessageService;
-using HealthMonitoringSystem.WinApp.PrescriptionService;
 using HealthMonitoringSystem.WinApp.Resources;
-using Examination = HealthMonitoringSystem.WinApp.ExaminationService.Examination;
-using LaboratoryRequest = HealthMonitoringSystem.WinApp.LaboratoryRequestService.LaboratoryRequest;
 
 #endregion
 
@@ -46,11 +43,7 @@ namespace HealthMonitoringSystem.WinApp.GUI
 
         private void GetPatients()
         {
-            ExaminationSolClient client = Extensions.Extensions.GetExaminationService();
-            if (client == null)
-            {
-                return;
-            }
+            ExaminationManager client = new ExaminationManager();
 
             int doctorid = GlobalVariables.Doctor.Id;
 
@@ -59,8 +52,6 @@ namespace HealthMonitoringSystem.WinApp.GUI
                 .ThenBy(e => e.RendezvousId).ToList();
 
             ShowClosedOrHideClosed();
-
-            client.Close();
         }
 
         private void XtraFormExaminationDetail_Load(object sender, EventArgs e)

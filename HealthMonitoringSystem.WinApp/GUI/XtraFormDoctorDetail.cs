@@ -10,14 +10,10 @@ using DevExpress.XtraBars;
 using DevExpress.XtraEditors;
 using DevExpress.XtraGrid.Views.Grid;
 using DevExpress.XtraSplashScreen;
-using HealthMonitoringSystem.WinApp.DegreeService;
-using HealthMonitoringSystem.WinApp.DepartmentService;
-using HealthMonitoringSystem.WinApp.DoctorService;
+using HealthMonitoringSystem.BLL;
+using HealthMonitoringSystem.Entity;
+using HealthMonitoringSystem.Entity.Classes;
 using HealthMonitoringSystem.WinApp.Extensions;
-using Doctor = HealthMonitoringSystem.WinApp.DoctorService.Doctor;
-using DoctorMail = HealthMonitoringSystem.WinApp.DoctorService.DoctorMail;
-using DoctorPhone = HealthMonitoringSystem.WinApp.DoctorService.DoctorPhone;
-using ProcessResult = HealthMonitoringSystem.WinApp.DoctorService.ProcessResult;
 
 #endregion
 
@@ -76,12 +72,10 @@ namespace HealthMonitoringSystem.WinApp.GUI
 
         private void XtraFormDoctorDetail_Load(object sender, EventArgs e)
         {
-            DepartmentSolClient departmentSolClient = Extensions.Extensions.getDepartmentSolClient();
+            DepartmentManager departmentSolClient = new DepartmentManager();
             departmentBindingSource.DataSource = departmentSolClient.Departments(true, false);
-            departmentSolClient.Close();
-            DegreeSolClient degreeSolClient = Extensions.Extensions.GetDegreeSolClient();
+            DegreeManager degreeSolClient = new DegreeManager();
             degreeBindingSource.DataSource = degreeSolClient.Degrees(true);
-            degreeSolClient.Close();
             bindingSourceMail.DataSource = doctorMails;
             bindingSourcePhones.DataSource = doctorPhones;
 
@@ -101,12 +95,8 @@ namespace HealthMonitoringSystem.WinApp.GUI
         private void barButtonItemSaveNewDoctor_ItemClick(object sender, ItemClickEventArgs e)
         {
             Extensions.Extensions.ShowWaitForm(description: "Doktor kaydediliyor...");
-            DoctorSolClient clientDoctor = Extensions.Extensions.GetDoctorSolClient();
+            DoctorManager clientDoctor = new DoctorManager();
 
-            if (clientDoctor == null)
-            {
-                return;
-            }
 
             if (_doctor == null)
             {

@@ -7,13 +7,10 @@ using System.Windows.Forms;
 using DevExpress.XtraBars;
 using DevExpress.XtraEditors;
 using DevExpress.XtraSplashScreen;
-using HealthMonitoringSystem.WinApp.DoctorMailService;
-using HealthMonitoringSystem.WinApp.DoctorPhoneService;
-using HealthMonitoringSystem.WinApp.DoctorService;
+using HealthMonitoringSystem.BLL;
+using HealthMonitoringSystem.Entity;
+using HealthMonitoringSystem.Entity.Classes;
 using HealthMonitoringSystem.WinApp.Extensions;
-using Doctor = HealthMonitoringSystem.WinApp.DoctorService.Doctor;
-using ExtensionsBLLResult = HealthMonitoringSystem.WinApp.DoctorService.ExtensionsBLLResult;
-using ProcessResult = HealthMonitoringSystem.WinApp.DoctorService.ProcessResult;
 
 #endregion
 
@@ -29,19 +26,15 @@ namespace HealthMonitoringSystem.WinApp.GUI
 
         private void RefreshData()
         {
-            DoctorSolClient doctorSolClient = Extensions.Extensions.GetDoctorSolClient();
+            DoctorManager doctorSolClient = new DoctorManager();
             bindingSourceDoctor.DataSource = doctorSolClient.Doctors(true);
-            doctorSolClient.Close();
 
-            DoctorMailSolClient doctorMailSolClient = Extensions.Extensions.GetDoctorMailClient();
+            DoctorMailManager doctorMailSolClient = new DoctorMailManager();
             bindingSourceMail.DataSource = doctorMailSolClient.DoctorMails(true);
-            doctorMailSolClient.Close();
 
 
-            DoctorPhoneSolClient doctorPhoneSolClient = Extensions.Extensions.GetDoctorPhoneSolClient();
+            DoctorPhoneManager doctorPhoneSolClient = new DoctorPhoneManager();
             bindingSourcePhone.DataSource = doctorPhoneSolClient.DoctorPhones(true);
-
-            doctorPhoneSolClient.Close();
         }
 
         private void barButtonItemNewDoctor_ItemClick(object sender, ItemClickEventArgs e)
@@ -98,12 +91,12 @@ namespace HealthMonitoringSystem.WinApp.GUI
             if (Extensions.Extensions.DeletingAlert(doctor.Name + " " + doctor.Surname) != DialogResult.Yes)
                 return;
             Extensions.Extensions.ShowWaitForm(description: "Doktor siliniyor...");
-            DoctorSolClient client = Extensions.Extensions.GetDoctorSolClient();
+            DoctorManager client = new DoctorManager();
 
             ProcessResult processResult = client.Delete(doctor.Id);
             SplashScreenManager.CloseForm(false);
             Extensions.Extensions.ProcessResultMessage(processResult.Errors, (int) processResult.Result);
-            if (processResult.Result == ExtensionsBLLResult.Success)
+            if (processResult.Result == Entity.Classes.Extensions.BLLResult.Success)
                 RefreshData();
         }
 

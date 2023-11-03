@@ -6,6 +6,7 @@ using DevExpress.XtraEditors;
 using DevExpress.XtraGrid;
 using DevExpress.XtraGrid.Columns;
 using DevExpress.XtraGrid.Views.Grid;
+using HealthMonitoringSystem.Entity;
 using HScrollBar = System.Windows.Forms.HScrollBar;
 
 namespace HealthMonitoringSystem.WinApp.GUI
@@ -246,7 +247,7 @@ namespace HealthMonitoringSystem.WinApp.GUI
             // 
             // bindingSourceDiagnosis
             // 
-            this.bindingSourceDiagnosis.DataSource = typeof(HealthMonitoringSystem.WinApp.DiagnosisService.Diagnosis);
+            this.bindingSourceDiagnosis.DataSource = typeof(Diagnosis);
             // 
             // gridView1
             // 
@@ -326,7 +327,7 @@ namespace HealthMonitoringSystem.WinApp.GUI
             // 
             // bindingSourceMedicament
             // 
-            this.bindingSourceMedicament.DataSource = typeof(HealthMonitoringSystem.WinApp.MedicamentService.Medicament);
+            this.bindingSourceMedicament.DataSource = typeof(Medicament);
             // 
             // gridView2
             // 

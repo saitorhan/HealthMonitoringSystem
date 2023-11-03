@@ -10,11 +10,9 @@ using System.Windows.Documents;
 using System.Windows.Forms;
 using DevExpress.XtraEditors;
 using DevExpress.XtraSplashScreen;
-using HealthMonitoringSystem.WinApp.DepartmentService;
 using HealthMonitoringSystem.WinApp.ExaminationService;
 using HealthMonitoringSystem.WinApp.GUI;
 using HealthMonitoringSystem.WinApp.MessageService;
-using HealthMonitoringSystem.WinApp.PatientService;
 using HealthMonitoringSystem.WinApp.PrescriptionService;
 using HealthMonitoringSystem.WinApp.Resources;
 

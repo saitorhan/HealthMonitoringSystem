@@ -6,7 +6,9 @@ using System;
 using DevExpress.XtraBars;
 using DevExpress.XtraEditors;
 using DevExpress.XtraSplashScreen;
-using HealthMonitoringSystem.WinApp.MedicamentService;
+using HealthMonitoringSystem.BLL;
+using HealthMonitoringSystem.Entity;
+using HealthMonitoringSystem.Entity.Classes;
 
 #endregion
 
@@ -63,11 +65,11 @@ namespace HealthMonitoringSystem.WinApp.GUI
                 _medicament.IsActive = checkEditIsActive.Checked;
             }
             Extensions.Extensions.ShowWaitForm(description: "İlaç kaydediliyor...");
-            MedicamentSolClient client = Extensions.Extensions.GetMedicamentSolClient();
+            MedicamentManager client = new MedicamentManager();
             ProcessResult processResult = update ? client.Update(_medicament) : client.Insert(_medicament);
             SplashScreenManager.CloseForm(false);
             Extensions.Extensions.ProcessResultMessage(processResult.Errors, (int) processResult.Result);
-            if (processResult.Result == ExtensionsBLLResult.Success)
+            if (processResult.Result == Entity.Classes.Extensions.BLLResult.Success)
                 Close();
         }
 

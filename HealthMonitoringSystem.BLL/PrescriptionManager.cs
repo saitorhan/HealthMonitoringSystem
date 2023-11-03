@@ -5,6 +5,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using HealthMonitoringSystem.DAL.Abstract;
+using HealthMonitoringSystem.DAL.Content.MsSqlContent;
 using HealthMonitoringSystem.Entity;
 using HealthMonitoringSystem.Entity.Classes;
 
@@ -16,9 +17,9 @@ namespace HealthMonitoringSystem.BLL
     {
         private IPrescriptionDAL _prescriptionDal;
 
-        public PrescriptionManager(IPrescriptionDAL prescriptionDal)
+        public PrescriptionManager()
         {
-            _prescriptionDal = prescriptionDal;
+            _prescriptionDal = new MsSqlPrescriptionDal();
         }
 
         public Prescription Select(int id)

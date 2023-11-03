@@ -9,6 +9,8 @@ using DevExpress.XtraBars;
 using DevExpress.XtraEditors;
 using DevExpress.XtraSplashScreen;
 using HealthMonitoringSystem.BLL;
+using HealthMonitoringSystem.Entity;
+using HealthMonitoringSystem.Entity.Classes;
 using HealthMonitoringSystem.WinApp.Extensions;
 
 #endregion
@@ -75,11 +77,11 @@ namespace HealthMonitoringSystem.WinApp.GUI
             if (Extensions.Extensions.DeletingAlert(diagnosis.Name) != DialogResult.Yes)
                 return;
             Extensions.Extensions.ShowWaitForm(description: "İlaç siliniyor...");
-            DiagnosisSolClient client = Extensions.Extensions.GetDiagnosisSolClient();
+            DiagnosisManager client = new DiagnosisManager();
             ProcessResult processResult = client.Delete(diagnosis.Id);
             SplashScreenManager.CloseForm(false);
             Extensions.Extensions.ProcessResultMessage(processResult.Errors, (int) processResult.Result);
-            if (processResult.Result == ExtensionsBLLResult.Success)
+            if (processResult.Result == Entity.Classes.Extensions.BLLResult.Success)
                 RefreshData(1);
         }
 
@@ -117,11 +119,11 @@ namespace HealthMonitoringSystem.WinApp.GUI
             if (Extensions.Extensions.DeletingAlert(medicament.Name) != DialogResult.Yes)
                 return;
             Extensions.Extensions.ShowWaitForm(description: "Hastalık ismi siliniyor...");
-            MedicamentSolClient client = Extensions.Extensions.GetMedicamentSolClient();
-            MedicamentService.ProcessResult processResult = client.Delete(medicament.Id);
+            MedicamentManager client = new MedicamentManager();
+            ProcessResult processResult = client.Delete(medicament.Id);
             SplashScreenManager.CloseForm(false);
             Extensions.Extensions.ProcessResultMessage(processResult.Errors, (int) processResult.Result);
-            if (processResult.Result == MedicamentService.ExtensionsBLLResult.Success)
+            if (processResult.Result == Entity.Classes.Extensions.BLLResult.Success)
                 RefreshData(2);
         }
 

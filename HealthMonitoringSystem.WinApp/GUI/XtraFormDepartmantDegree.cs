@@ -12,7 +12,6 @@ using DevExpress.XtraSplashScreen;
 using HealthMonitoringSystem.BLL;
 using HealthMonitoringSystem.Entity;
 using HealthMonitoringSystem.Entity.Classes;
-using HealthMonitoringSystem.WinApp.DepartmentService;
 using HealthMonitoringSystem.WinApp.Extensions;
 
 #endregion
@@ -79,11 +78,11 @@ namespace HealthMonitoringSystem.WinApp.GUI
             if (Extensions.Extensions.DeletingAlert(department.Name) != DialogResult.Yes) return;
 
             Extensions.Extensions.ShowWaitForm(description: "Departman siliniyor...");
-            DepartmentSolClient client = Extensions.Extensions.getDepartmentSolClient();
+            DepartmentManager client = new DepartmentManager();
             ProcessResult processResult = client.Delete(department.Id);
             SplashScreenManager.CloseForm(false);
             Extensions.Extensions.ProcessResultMessage(processResult.Errors, (int) processResult.Result);
-            if (processResult.Result == ExtensionsBLLResult.Success)
+            if (processResult.Result == Entity.Classes.Extensions.BLLResult.Success)
                 RefreshData(1);
         }
 
@@ -144,11 +143,11 @@ namespace HealthMonitoringSystem.WinApp.GUI
                 return;
 
             Extensions.Extensions.ShowWaitForm(description: "Departman siliniyor...");
-            DegreeSolClient client = Extensions.Extensions.GetDegreeSolClient();
-            DegreeService.ProcessResult processResult = client.Delete(department.Id);
+            DegreeManager client = new DegreeManager();
+            ProcessResult processResult = client.Delete(department.Id);
             SplashScreenManager.CloseForm(false);
             Extensions.Extensions.ProcessResultMessage(processResult.Errors, (int) processResult.Result);
-            if (processResult.Result == DegreeService.ExtensionsBLLResult.Success)
+            if (processResult.Result == Entity.Classes.Extensions.BLLResult.Success)
                 RefreshData(2);
         }
 

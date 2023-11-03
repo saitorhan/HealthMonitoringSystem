@@ -116,5 +116,11 @@ namespace HealthMonitoringSystem.Entity
 
         [DataMember]
         public virtual ICollection<Rendezvous> Rendezvouses { get; set; }
+
+        [NotMapped]
+        public string NameSurname
+        {
+            get { return String.Format("{0} {1}", Name, Surname); }
+        }
     }
 }

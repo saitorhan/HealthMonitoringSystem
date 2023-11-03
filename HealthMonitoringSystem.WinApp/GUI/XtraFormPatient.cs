@@ -7,9 +7,13 @@ using System.Linq;
 using DevExpress.XtraBars;
 using DevExpress.XtraEditors;
 using DevExpress.XtraSplashScreen;
+using HealthMonitoringSystem.BLL;
 using HealthMonitoringSystem.WinApp.Extensions;
 using HealthMonitoringSystem.WinApp.PatientService;
 using HealthMonitoringSystem.WinApp.Resources;
+using HealthMonitoringSystem.Entity;
+using HealthMonitoringSystem.Entity.Classes;
+using Patient = HealthMonitoringSystem.Entity.Patient;
 
 #endregion
 
@@ -87,15 +91,15 @@ namespace HealthMonitoringSystem.WinApp.GUI
         {
             if (!GetPatientValues()) return;
             Extensions.Extensions.ShowWaitForm(description: "Hasta kaydediliyor...");
-            PatientSolClient client = Extensions.Extensions.GetPatientClient();
+            PatientManager client = new PatientManager();
             ProcessResult processResult = update ? client.Update(patient) : client.Insert(patient);
             if (getPatientId)
             {
-                patient = client.PatientByTc(patient.TcNo);
+                patient = client.Select(patient.TcNo);
             }
             SplashScreenManager.CloseForm(false);
-            Extensions.Extensions.ProcessResultMessage(processResult.Errors.ToArray(), (int) processResult.Result);
-            if (processResult.Result != ExtensionsBLLResult.Success) return;
+            Extensions.Extensions.ProcessResultMessage(processResult.Errors, (int) processResult.Result);
+            if (processResult.Result != Entity.Classes.Extensions.BLLResult.Success) return;
             Result = true;
             Close();
         }

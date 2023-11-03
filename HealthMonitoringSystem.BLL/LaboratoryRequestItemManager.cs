@@ -4,6 +4,7 @@
 
 using System.Collections.Generic;
 using HealthMonitoringSystem.DAL.Abstract;
+using HealthMonitoringSystem.DAL.Content.MsSqlContent;
 using HealthMonitoringSystem.Entity;
 
 #endregion
@@ -14,9 +15,9 @@ namespace HealthMonitoringSystem.BLL
     {
         private ILaboratoryRequestItemDAL _laboratoryRequestItemDal;
 
-        public LaboratoryRequestItemManager(ILaboratoryRequestItemDAL laboratoryRequestItemDal)
+        public LaboratoryRequestItemManager()
         {
-            _laboratoryRequestItemDal = laboratoryRequestItemDal;
+            _laboratoryRequestItemDal = new MsSqlLaboratoryRequestItemDal();
         }
 
         public LaboratoryRequestItem Select(int id)

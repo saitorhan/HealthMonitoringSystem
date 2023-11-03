@@ -139,5 +139,11 @@ namespace HealthMonitoringSystem.Entity
         {
             get { return String.Format("{0} {1}", Name, Surname); }
         }
+
+        [NotMapped]
+        public string GenderS
+        {
+            get { return Gender ? "Erkek" : "Kadın"; }
+        }
     }
 }

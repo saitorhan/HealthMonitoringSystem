@@ -6,6 +6,7 @@ using DevExpress.XtraEditors.Repository;
 using DevExpress.XtraGrid;
 using DevExpress.XtraGrid.Columns;
 using DevExpress.XtraGrid.Views.Grid;
+using HealthMonitoringSystem.Entity;
 
 namespace HealthMonitoringSystem.WinApp.GUI
 {
@@ -183,7 +184,7 @@ namespace HealthMonitoringSystem.WinApp.GUI
             // 
             // bindingSourceDoctor
             // 
-            this.bindingSourceDoctor.DataSource = typeof(HealthMonitoringSystem.WinApp.DoctorService.Doctor);
+            this.bindingSourceDoctor.DataSource = typeof(Doctor);
             this.bindingSourceDoctor.CurrentChanged += new System.EventHandler(this.bindingSourceDoctor_CurrentChanged);
             // 
             // gridView1
@@ -282,11 +283,11 @@ namespace HealthMonitoringSystem.WinApp.GUI
             // 
             // bindingSourceMail
             // 
-            this.bindingSourceMail.DataSource = typeof(HealthMonitoringSystem.WinApp.DoctorMailService.DoctorMail);
+            this.bindingSourceMail.DataSource = typeof(DoctorMail);
             // 
             // bindingSourcePhone
             // 
-            this.bindingSourcePhone.DataSource = typeof(HealthMonitoringSystem.WinApp.DoctorPhoneService.DoctorPhone);
+            this.bindingSourcePhone.DataSource = typeof(DoctorPhone);
             // 
             // XtraFormDoctor
             // 

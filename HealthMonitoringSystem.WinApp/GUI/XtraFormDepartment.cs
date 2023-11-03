@@ -10,7 +10,6 @@ using DevExpress.XtraSplashScreen;
 using HealthMonitoringSystem.BLL;
 using HealthMonitoringSystem.Entity;
 using HealthMonitoringSystem.Entity.Classes;
-using HealthMonitoringSystem.WinApp.DepartmentService;
 using HealthMonitoringSystem.WinApp.Extensions;
 
 #endregion

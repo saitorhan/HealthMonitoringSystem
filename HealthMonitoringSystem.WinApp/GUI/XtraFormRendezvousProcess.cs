@@ -8,17 +8,11 @@ using System.Windows.Forms;
 using DevExpress.XtraBars;
 using DevExpress.XtraEditors;
 using DevExpress.XtraSplashScreen;
+using HealthMonitoringSystem.BLL;
+using HealthMonitoringSystem.Entity;
+using HealthMonitoringSystem.Entity.Classes;
 using HealthMonitoringSystem.WinApp.Extensions;
-using HealthMonitoringSystem.WinApp.PatientService;
-using HealthMonitoringSystem.WinApp.RendezvousService;
-using HealthMonitoringSystem.WinApp.RendezvousTimeService;
 using HealthMonitoringSystem.WinApp.Resources;
-using Department = HealthMonitoringSystem.WinApp.DepartmentService.Department;
-using ExtensionsBLLResult = HealthMonitoringSystem.WinApp.RendezvousService.ExtensionsBLLResult;
-using Patient = HealthMonitoringSystem.WinApp.PatientService.Patient;
-using ProcessResult = HealthMonitoringSystem.WinApp.RendezvousService.ProcessResult;
-using Rendezvous = HealthMonitoringSystem.WinApp.RendezvousService.Rendezvous;
-using RendezvousTime = HealthMonitoringSystem.WinApp.RendezvousTimeService.RendezvousTime;
 
 #endregion
 
@@ -51,7 +45,7 @@ namespace HealthMonitoringSystem.WinApp.GUI
         {
             int id = (int) lookUpEditDoctor.EditValue;
             Extensions.Extensions.ShowWaitForm("Uygun muayene saatleri sorgulanıyor...");
-            RendezvousTimeSolClient client = Extensions.Extensions.GetRendezvousTimeService();
+            RendezvousTimeManager client = new RendezvousTimeManager();
             bindingSourceTimes.DataSource = client.AvailableRendezvousTimes(DateTime.Today, id).ToList();
             SplashScreenManager.CloseForm(false);
         }
@@ -64,8 +58,8 @@ namespace HealthMonitoringSystem.WinApp.GUI
         private void simpleButtonPatientInfos_Click(object sender, EventArgs e)
         {
             Extensions.Extensions.ShowWaitForm(description: "Hasta bilgisi sorgulanıyor...");
-            PatientSolClient client = Extensions.Extensions.GetPatientClient();
-            patient = client.PatientByTc(textEditTCNO.Text.Trim());
+            PatientManager client = new PatientManager();
+            patient = client.Select(textEditTCNO.Text.Trim());
             SplashScreenManager.CloseForm(false);
             if (patient.IsNotNull())
                 labelControlPatientName.Text = patient.NameSurname;
@@ -98,11 +92,11 @@ namespace HealthMonitoringSystem.WinApp.GUI
             rendezvous.DoctorId = (int) (lookUpEditDoctor.EditValue.IsNull() ? 0 : lookUpEditDoctor.EditValue);
 
             Extensions.Extensions.ShowWaitForm(description: "Randevu kaydediliyor...");
-            RendezvousSolClient client = Extensions.Extensions.GetRendezvousService();
+            RendezvousManager client = new RendezvousManager();
             result = client.Insert(rendezvous, true);
             SplashScreenManager.CloseForm(false);
             Extensions.Extensions.ProcessResultMessage(result.Errors.ToArray(), (int) result.Result);
-            if (result.Result == ExtensionsBLLResult.Success) Close();
+            if (result.Result == Entity.Classes.Extensions.BLLResult.Success) Close();
         }
 
         private void barButtonItemRefresh_ItemClick(object sender, ItemClickEventArgs e)
@@ -112,17 +106,6 @@ namespace HealthMonitoringSystem.WinApp.GUI
             bindingSourceDepartment.DataSource = GlobalVariables.Departments;
             lookUpEditDepartment.Refresh();
             SplashScreenManager.CloseForm(false);
-        }
-    }
-}
-
-namespace HealthMonitoringSystem.WinApp.DepartmentService
-{
-    public partial class Doctor
-    {
-        public string NameSurname
-        {
-            get { return String.Format("{0} {1}", Name, Surname); }
         }
     }
 }

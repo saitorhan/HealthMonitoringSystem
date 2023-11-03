@@ -9,8 +9,12 @@ using System.Windows.Forms;
 using DevExpress.XtraBars;
 using DevExpress.XtraEditors;
 using DevExpress.XtraSplashScreen;
+using HealthMonitoringSystem.BLL;
 using HealthMonitoringSystem.WinApp.Extensions;
 using HealthMonitoringSystem.WinApp.PatientService;
+using HealthMonitoringSystem.Entity;
+using HealthMonitoringSystem.Entity.Classes;
+using Patient = HealthMonitoringSystem.Entity.Patient;
 
 #endregion
 
@@ -30,7 +34,7 @@ namespace HealthMonitoringSystem.WinApp.GUI
 
         private void RefreshData()
         {
-            PatientSolClient client = Extensions.Extensions.GetPatientClient();
+            PatientManager client = new PatientManager();
             if (client.IsNull())
             {
                 DialogResult result =
@@ -81,12 +85,12 @@ namespace HealthMonitoringSystem.WinApp.GUI
             }
 
             Extensions.Extensions.ShowWaitForm(description: "Hasta siliniyor...");
-            PatientSolClient client = Extensions.Extensions.GetPatientClient();
+            PatientManager client = new PatientManager();
 
             ProcessResult processResult = client.Delete(patient.Id);
             SplashScreenManager.CloseForm(false);
             Extensions.Extensions.ProcessResultMessage(processResult.Errors, (int) processResult.Result);
-            if (processResult.Result == ExtensionsBLLResult.Success)
+            if (processResult.Result == Entity.Classes.Extensions.BLLResult.Success)
                 RefreshData();
         }
 
@@ -109,22 +113,6 @@ namespace HealthMonitoringSystem.WinApp.GUI
             Extensions.Extensions.ShowWaitForm(description: "Hasta listesi yenileniyor...");
             RefreshData();
             SplashScreenManager.CloseForm(false);
-        }
-    }
-}
-
-namespace HealthMonitoringSystem.WinApp.PatientService
-{
-    public partial class Patient
-    {
-        public string NameSurname
-        {
-            get { return String.Format("{0} {1}", Name, Surname); }
-        }
-
-        public string GenderS
-        {
-            get { return Gender ? "Erkek" : "Kadın"; }
         }
     }
 }

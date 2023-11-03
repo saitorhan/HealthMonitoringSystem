@@ -5,6 +5,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Runtime.Serialization;
 
 #endregion
@@ -38,5 +39,9 @@ namespace HealthMonitoringSystem.Entity
 
         [DataMember]
         public virtual ICollection<Examination> Examinations { get; set; }
+
+
+        [NotMapped]
+        public string DisplayName => Name;
     }
 }

@@ -3,6 +3,7 @@ using System.Windows.Forms;
 using DevExpress.XtraBars;
 using DevExpress.XtraBars.Ribbon;
 using DevExpress.XtraEditors;
+using HealthMonitoringSystem.Entity;
 
 namespace HealthMonitoringSystem.WinApp.GUI
 {
@@ -151,15 +152,15 @@ namespace HealthMonitoringSystem.WinApp.GUI
             // 
             // bindingSourceCities
             // 
-            this.bindingSourceCities.DataSource = typeof(HealthMonitoringSystem.WinApp.CityService.City);
+            this.bindingSourceCities.DataSource = typeof(City);
             // 
             // bindingSourceCountries
             // 
-            this.bindingSourceCountries.DataSource = typeof(HealthMonitoringSystem.WinApp.CounrtyService.Country);
+            this.bindingSourceCountries.DataSource = typeof(Country);
             // 
             // bindingSourceBloodGroups
             // 
-            this.bindingSourceBloodGroups.DataSource = typeof(HealthMonitoringSystem.WinApp.BloodGroupService.BloodGroup);
+            this.bindingSourceBloodGroups.DataSource = typeof(BloodGroup);
             // 
             // tableLayoutPanel1
             // 

@@ -7,6 +7,7 @@ using DevExpress.XtraEditors.Repository;
 using DevExpress.XtraGrid;
 using DevExpress.XtraGrid.Columns;
 using DevExpress.XtraGrid.Views.Grid;
+using HealthMonitoringSystem.Entity;
 
 namespace HealthMonitoringSystem.WinApp.GUI
 {
@@ -225,7 +226,7 @@ namespace HealthMonitoringSystem.WinApp.GUI
             // 
             // bindingSourceDepartment
             // 
-            this.bindingSourceDepartment.DataSource = typeof(HealthMonitoringSystem.WinApp.DepartmentService.Department);
+            this.bindingSourceDepartment.DataSource = typeof(Department);
             // 
             // gridView1
             // 
@@ -317,7 +318,7 @@ namespace HealthMonitoringSystem.WinApp.GUI
             // 
             // bindingSourceDegree
             // 
-            this.bindingSourceDegree.DataSource = typeof(HealthMonitoringSystem.WinApp.DegreeService.Degree);
+            this.bindingSourceDegree.DataSource = typeof(Degree);
             // 
             // gridView2
             // 

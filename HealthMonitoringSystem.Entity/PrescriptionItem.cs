@@ -2,8 +2,10 @@
 
 #region usings
 
+using System;
 using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Runtime.Serialization;
 
 #endregion
@@ -44,5 +46,25 @@ namespace HealthMonitoringSystem.Entity
 
         [DataMember]
         public Medicament Medicament { get; set; }
+
+        [NotMapped]
+        public string SUsePerDay
+        {
+            get
+            {
+                if (UsePerDay < 1) return "BELİRTİLMEDİ";
+                string s = UsePerDay.ToString();
+                string[] split = s.Split(',');
+                int day;
+                int use;
+
+                if (split.Length != 2) return "BELİRTİLMEDİ";
+
+                Int32.TryParse(split[0], out day);
+                Int32.TryParse(split[1], out use);
+
+                return String.Format("{0} {1} defa", day == 1 ? "Günde" : day + " günde", use);
+            }
+        }
     }
 }

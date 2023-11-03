@@ -5,6 +5,7 @@
 using System;
 using System.Collections.Generic;
 using HealthMonitoringSystem.DAL.Abstract;
+using HealthMonitoringSystem.DAL.Content.MsSqlContent;
 using HealthMonitoringSystem.Entity;
 using HealthMonitoringSystem.Entity.Classes;
 
@@ -16,9 +17,9 @@ namespace HealthMonitoringSystem.BLL
     {
         private IDoctorMailDAL _doctorMailDal;
 
-        public DoctorMailManager(IDoctorMailDAL doctorMailDal)
+        public DoctorMailManager()
         {
-            _doctorMailDal = doctorMailDal;
+            _doctorMailDal = new MsSqlDoctorMailDal();
         }
 
         public DoctorMail Select(int id)

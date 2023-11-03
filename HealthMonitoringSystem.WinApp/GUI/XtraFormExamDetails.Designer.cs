@@ -4,6 +4,7 @@ using DevExpress.XtraEditors;
 using DevExpress.XtraGrid;
 using DevExpress.XtraGrid.Columns;
 using DevExpress.XtraGrid.Views.Grid;
+using HealthMonitoringSystem.Entity;
 
 namespace HealthMonitoringSystem.WinApp.GUI
 {
@@ -136,7 +137,7 @@ namespace HealthMonitoringSystem.WinApp.GUI
             // 
             // bindingSourcePrescription
             // 
-            this.bindingSourcePrescription.DataSource = typeof(HealthMonitoringSystem.WinApp.PrescriptionItemService.PrescriptionItem);
+            this.bindingSourcePrescription.DataSource = typeof(PrescriptionItem);
             // 
             // gridView1
             // 
@@ -280,7 +281,7 @@ namespace HealthMonitoringSystem.WinApp.GUI
             // 
             // bindingSourceResults
             // 
-            this.bindingSourceResults.DataSource = typeof(HealthMonitoringSystem.WinApp.LaboratoryRequestItemService.LaboratoryRequestItem);
+            this.bindingSourceResults.DataSource = typeof(LaboratoryRequestItem);
             // 
             // gridViewLabResults
             // 
@@ -353,7 +354,7 @@ namespace HealthMonitoringSystem.WinApp.GUI
             // 
             // bindingSourceLabRequests
             // 
-            this.bindingSourceLabRequests.DataSource = typeof(HealthMonitoringSystem.WinApp.LaboratoryRequestService.LaboratoryRequest);
+            this.bindingSourceLabRequests.DataSource = typeof(LaboratoryRequest);
             this.bindingSourceLabRequests.CurrentChanged += new System.EventHandler(this.bindingSourceLabRequests_CurrentChanged);
             // 
             // XtraFormExamDetails
