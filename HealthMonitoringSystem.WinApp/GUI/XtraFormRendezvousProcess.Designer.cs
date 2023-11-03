@@ -94,7 +94,8 @@ namespace HealthMonitoringSystem.WinApp.GUI
             // labelControlPatientName
             // 
             this.labelControlPatientName.Appearance.Font = new System.Drawing.Font("Tahoma", 10F);
-            this.labelControlPatientName.Location = new System.Drawing.Point(101, 163);
+            this.labelControlPatientName.Appearance.Options.UseFont = true;
+            this.labelControlPatientName.Location = new System.Drawing.Point(101, 176);
             this.labelControlPatientName.Name = "labelControlPatientName";
             this.labelControlPatientName.Size = new System.Drawing.Size(0, 16);
             this.labelControlPatientName.TabIndex = 2;
@@ -102,7 +103,8 @@ namespace HealthMonitoringSystem.WinApp.GUI
             // labelControl2
             // 
             this.labelControl2.Appearance.Font = new System.Drawing.Font("Tahoma", 10F);
-            this.labelControl2.Location = new System.Drawing.Point(18, 163);
+            this.labelControl2.Appearance.Options.UseFont = true;
+            this.labelControl2.Location = new System.Drawing.Point(18, 176);
             this.labelControl2.Name = "labelControl2";
             this.labelControl2.Size = new System.Drawing.Size(54, 16);
             this.labelControl2.TabIndex = 2;
@@ -110,7 +112,7 @@ namespace HealthMonitoringSystem.WinApp.GUI
             // 
             // lookUpEditDepartment
             // 
-            this.lookUpEditDepartment.Location = new System.Drawing.Point(101, 199);
+            this.lookUpEditDepartment.Location = new System.Drawing.Point(101, 212);
             this.lookUpEditDepartment.Name = "lookUpEditDepartment";
             this.lookUpEditDepartment.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
@@ -126,11 +128,11 @@ namespace HealthMonitoringSystem.WinApp.GUI
             // 
             // bindingSourceDepartment
             // 
-            this.bindingSourceDepartment.DataSource = typeof(Department);
+            this.bindingSourceDepartment.DataSource = typeof(HealthMonitoringSystem.Entity.Department);
             // 
             // labelControl3
             // 
-            this.labelControl3.Location = new System.Drawing.Point(18, 202);
+            this.labelControl3.Location = new System.Drawing.Point(18, 215);
             this.labelControl3.Name = "labelControl3";
             this.labelControl3.Size = new System.Drawing.Size(63, 13);
             this.labelControl3.TabIndex = 4;
@@ -138,7 +140,7 @@ namespace HealthMonitoringSystem.WinApp.GUI
             // 
             // labelControl4
             // 
-            this.labelControl4.Location = new System.Drawing.Point(18, 228);
+            this.labelControl4.Location = new System.Drawing.Point(18, 241);
             this.labelControl4.Name = "labelControl4";
             this.labelControl4.Size = new System.Drawing.Size(67, 13);
             this.labelControl4.TabIndex = 5;
@@ -146,7 +148,7 @@ namespace HealthMonitoringSystem.WinApp.GUI
             // 
             // lookUpEditDoctor
             // 
-            this.lookUpEditDoctor.Location = new System.Drawing.Point(101, 225);
+            this.lookUpEditDoctor.Location = new System.Drawing.Point(101, 238);
             this.lookUpEditDoctor.Name = "lookUpEditDoctor";
             this.lookUpEditDoctor.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
@@ -162,12 +164,12 @@ namespace HealthMonitoringSystem.WinApp.GUI
             // 
             // bindingSourceDoctor
             // 
-            this.bindingSourceDoctor.DataSource = typeof(Doctor);
+            this.bindingSourceDoctor.DataSource = typeof(HealthMonitoringSystem.Entity.Doctor);
             // 
             // gridControlTimes
             // 
             this.gridControlTimes.DataSource = this.bindingSourceTimes;
-            this.gridControlTimes.Location = new System.Drawing.Point(101, 251);
+            this.gridControlTimes.Location = new System.Drawing.Point(101, 264);
             this.gridControlTimes.MainView = this.gridView1;
             this.gridControlTimes.Name = "gridControlTimes";
             this.gridControlTimes.Size = new System.Drawing.Size(144, 177);
@@ -177,7 +179,7 @@ namespace HealthMonitoringSystem.WinApp.GUI
             // 
             // bindingSourceTimes
             // 
-            this.bindingSourceTimes.DataSource = typeof(RendezvousTime);
+            this.bindingSourceTimes.DataSource = typeof(HealthMonitoringSystem.Entity.RendezvousTime);
             // 
             // gridView1
             // 
@@ -200,7 +202,7 @@ namespace HealthMonitoringSystem.WinApp.GUI
             // 
             // labelControl5
             // 
-            this.labelControl5.Location = new System.Drawing.Point(15, 251);
+            this.labelControl5.Location = new System.Drawing.Point(15, 264);
             this.labelControl5.Name = "labelControl5";
             this.labelControl5.Size = new System.Drawing.Size(68, 13);
             this.labelControl5.TabIndex = 8;
@@ -220,14 +222,14 @@ namespace HealthMonitoringSystem.WinApp.GUI
             this.ribbonControl1.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
             this.ribbonPage1});
             this.ribbonControl1.ShowPageHeadersMode = DevExpress.XtraBars.Ribbon.ShowPageHeadersMode.Hide;
-            this.ribbonControl1.Size = new System.Drawing.Size(263, 96);
+            this.ribbonControl1.Size = new System.Drawing.Size(275, 126);
             this.ribbonControl1.ToolbarLocation = DevExpress.XtraBars.Ribbon.RibbonQuickAccessToolbarLocation.Hidden;
             // 
             // barButtonItemSave
             // 
             this.barButtonItemSave.Caption = "Kaydet";
             this.barButtonItemSave.Id = 1;
-            this.barButtonItemSave.LargeGlyph = global::HealthMonitoringSystem.WinApp.Properties.Resources.save;
+            this.barButtonItemSave.ImageOptions.LargeImage = global::HealthMonitoringSystem.WinApp.Properties.Resources.save;
             this.barButtonItemSave.Name = "barButtonItemSave";
             this.barButtonItemSave.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItemSave_ItemClick);
             // 
@@ -235,7 +237,7 @@ namespace HealthMonitoringSystem.WinApp.GUI
             // 
             this.barButtonItemCancel.Caption = "İptal";
             this.barButtonItemCancel.Id = 2;
-            this.barButtonItemCancel.LargeGlyph = global::HealthMonitoringSystem.WinApp.Properties.Resources.remove;
+            this.barButtonItemCancel.ImageOptions.LargeImage = global::HealthMonitoringSystem.WinApp.Properties.Resources.remove;
             this.barButtonItemCancel.Name = "barButtonItemCancel";
             this.barButtonItemCancel.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItemCancel_ItemClick);
             // 
@@ -243,7 +245,7 @@ namespace HealthMonitoringSystem.WinApp.GUI
             // 
             this.barButtonItemRefresh.Caption = "Bölüm ve Doktor Listesi Yenile";
             this.barButtonItemRefresh.Id = 3;
-            this.barButtonItemRefresh.LargeGlyph = global::HealthMonitoringSystem.WinApp.Properties.Resources.refresh;
+            this.barButtonItemRefresh.ImageOptions.LargeImage = global::HealthMonitoringSystem.WinApp.Properties.Resources.refresh;
             this.barButtonItemRefresh.Name = "barButtonItemRefresh";
             this.barButtonItemRefresh.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItemRefresh_ItemClick);
             // 
@@ -256,16 +258,16 @@ namespace HealthMonitoringSystem.WinApp.GUI
             // 
             // ribbonPageGroup1
             // 
+            this.ribbonPageGroup1.CaptionButtonVisible = DevExpress.Utils.DefaultBoolean.False;
             this.ribbonPageGroup1.ItemLinks.Add(this.barButtonItemSave);
             this.ribbonPageGroup1.ItemLinks.Add(this.barButtonItemCancel);
             this.ribbonPageGroup1.ItemLinks.Add(this.barButtonItemRefresh);
             this.ribbonPageGroup1.Name = "ribbonPageGroup1";
-            this.ribbonPageGroup1.ShowCaptionButton = false;
             this.ribbonPageGroup1.Text = "İşlemler";
             // 
             // simpleButtonPatientInfos
             // 
-            this.simpleButtonPatientInfos.Location = new System.Drawing.Point(128, 125);
+            this.simpleButtonPatientInfos.Location = new System.Drawing.Point(128, 138);
             this.simpleButtonPatientInfos.Name = "simpleButtonPatientInfos";
             this.simpleButtonPatientInfos.Size = new System.Drawing.Size(111, 23);
             this.simpleButtonPatientInfos.TabIndex = 9;
@@ -274,7 +276,7 @@ namespace HealthMonitoringSystem.WinApp.GUI
             // 
             // simpleButtonNewPatient
             // 
-            this.simpleButtonNewPatient.Location = new System.Drawing.Point(32, 125);
+            this.simpleButtonNewPatient.Location = new System.Drawing.Point(32, 138);
             this.simpleButtonNewPatient.Name = "simpleButtonNewPatient";
             this.simpleButtonNewPatient.Size = new System.Drawing.Size(90, 23);
             this.simpleButtonNewPatient.TabIndex = 11;
@@ -285,7 +287,7 @@ namespace HealthMonitoringSystem.WinApp.GUI
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(263, 439);
+            this.ClientSize = new System.Drawing.Size(275, 457);
             this.Controls.Add(this.simpleButtonNewPatient);
             this.Controls.Add(this.simpleButtonPatientInfos);
             this.Controls.Add(this.ribbonControl1);
@@ -300,7 +302,7 @@ namespace HealthMonitoringSystem.WinApp.GUI
             this.Controls.Add(this.textEditTCNO);
             this.Controls.Add(this.labelControl1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
-            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.IconOptions.Icon = ((System.Drawing.Icon)(resources.GetObject("XtraFormRendezvousProcess.IconOptions.Icon")));
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "XtraFormRendezvousProcess";

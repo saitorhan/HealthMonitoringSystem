@@ -73,14 +73,14 @@ namespace HealthMonitoringSystem.WinApp.GUI
             this.ribbonControl1.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
             this.ribbonPage1});
             this.ribbonControl1.ShowPageHeadersMode = DevExpress.XtraBars.Ribbon.ShowPageHeadersMode.Hide;
-            this.ribbonControl1.Size = new System.Drawing.Size(238, 96);
+            this.ribbonControl1.Size = new System.Drawing.Size(224, 126);
             this.ribbonControl1.ToolbarLocation = DevExpress.XtraBars.Ribbon.RibbonQuickAccessToolbarLocation.Hidden;
             // 
             // barButtonItemCountrySave
             // 
             this.barButtonItemCountrySave.Caption = "Kaydet";
             this.barButtonItemCountrySave.Id = 1;
-            this.barButtonItemCountrySave.LargeGlyph = global::HealthMonitoringSystem.WinApp.Properties.Resources.save;
+            this.barButtonItemCountrySave.ImageOptions.LargeImage = global::HealthMonitoringSystem.WinApp.Properties.Resources.save;
             this.barButtonItemCountrySave.Name = "barButtonItemCountrySave";
             this.barButtonItemCountrySave.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItemCountrySave_ItemClick);
             // 
@@ -88,7 +88,7 @@ namespace HealthMonitoringSystem.WinApp.GUI
             // 
             this.barButtonItemCancel.Caption = "İptal";
             this.barButtonItemCancel.Id = 2;
-            this.barButtonItemCancel.LargeGlyph = global::HealthMonitoringSystem.WinApp.Properties.Resources.remove;
+            this.barButtonItemCancel.ImageOptions.LargeImage = global::HealthMonitoringSystem.WinApp.Properties.Resources.remove;
             this.barButtonItemCancel.Name = "barButtonItemCancel";
             this.barButtonItemCancel.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItemCancel_ItemClick);
             // 
@@ -101,15 +101,15 @@ namespace HealthMonitoringSystem.WinApp.GUI
             // 
             // ribbonPageGroup1
             // 
+            this.ribbonPageGroup1.CaptionButtonVisible = DevExpress.Utils.DefaultBoolean.False;
             this.ribbonPageGroup1.ItemLinks.Add(this.barButtonItemCountrySave);
             this.ribbonPageGroup1.ItemLinks.Add(this.barButtonItemCancel);
             this.ribbonPageGroup1.Name = "ribbonPageGroup1";
-            this.ribbonPageGroup1.ShowCaptionButton = false;
             this.ribbonPageGroup1.Text = "İşlemler";
             // 
             // labelControl2
             // 
-            this.labelControl2.Location = new System.Drawing.Point(26, 151);
+            this.labelControl2.Location = new System.Drawing.Point(10, 173);
             this.labelControl2.Name = "labelControl2";
             this.labelControl2.Size = new System.Drawing.Size(35, 13);
             this.labelControl2.TabIndex = 3;
@@ -117,7 +117,7 @@ namespace HealthMonitoringSystem.WinApp.GUI
             // 
             // textEditCountryName
             // 
-            this.textEditCountryName.Location = new System.Drawing.Point(80, 148);
+            this.textEditCountryName.Location = new System.Drawing.Point(64, 170);
             this.textEditCountryName.MenuManager = this.ribbonControl1;
             this.textEditCountryName.Name = "textEditCountryName";
             this.textEditCountryName.Properties.Mask.EditMask = "[A-ZĞÜŞİÖÇ ]+";
@@ -128,16 +128,16 @@ namespace HealthMonitoringSystem.WinApp.GUI
             // checkEditIsActive
             // 
             this.checkEditIsActive.EditValue = true;
-            this.checkEditIsActive.Location = new System.Drawing.Point(78, 174);
+            this.checkEditIsActive.Location = new System.Drawing.Point(62, 196);
             this.checkEditIsActive.MenuManager = this.ribbonControl1;
             this.checkEditIsActive.Name = "checkEditIsActive";
             this.checkEditIsActive.Properties.Caption = "Aktif";
-            this.checkEditIsActive.Size = new System.Drawing.Size(75, 19);
+            this.checkEditIsActive.Size = new System.Drawing.Size(75, 20);
             this.checkEditIsActive.TabIndex = 2;
             // 
             // cityBindingSource
             // 
-            this.cityBindingSource.DataSource = typeof(City);
+            this.cityBindingSource.DataSource = typeof(HealthMonitoringSystem.Entity.City);
             // 
             // countriesBindingSource
             // 
@@ -150,7 +150,7 @@ namespace HealthMonitoringSystem.WinApp.GUI
             // 
             // labelControl1
             // 
-            this.labelControl1.Location = new System.Drawing.Point(26, 113);
+            this.labelControl1.Location = new System.Drawing.Point(10, 135);
             this.labelControl1.Name = "labelControl1";
             this.labelControl1.Size = new System.Drawing.Size(40, 13);
             this.labelControl1.TabIndex = 2;
@@ -158,13 +158,13 @@ namespace HealthMonitoringSystem.WinApp.GUI
             // 
             // lookUpEditCities
             // 
-            this.lookUpEditCities.Location = new System.Drawing.Point(80, 110);
+            this.lookUpEditCities.Location = new System.Drawing.Point(64, 132);
             this.lookUpEditCities.MenuManager = this.ribbonControl1;
             this.lookUpEditCities.Name = "lookUpEditCities";
             this.lookUpEditCities.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.lookUpEditCities.Properties.Columns.AddRange(new DevExpress.XtraEditors.Controls.LookUpColumnInfo[] {
-            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("Name", "Şehirler", 37, DevExpress.Utils.FormatType.None, "", true, DevExpress.Utils.HorzAlignment.Near)});
+            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("Name", "Şehirler", 37, DevExpress.Utils.FormatType.None, "", true, DevExpress.Utils.HorzAlignment.Near, DevExpress.Data.ColumnSortOrder.None, DevExpress.Utils.DefaultBoolean.Default)});
             this.lookUpEditCities.Properties.DataSource = this.cityBindingSource;
             this.lookUpEditCities.Properties.DisplayMember = "Name";
             this.lookUpEditCities.Properties.NullText = "Şehir Seçiniz";
@@ -177,7 +177,7 @@ namespace HealthMonitoringSystem.WinApp.GUI
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(238, 214);
+            this.ClientSize = new System.Drawing.Size(224, 236);
             this.Controls.Add(this.lookUpEditCities);
             this.Controls.Add(this.checkEditIsActive);
             this.Controls.Add(this.textEditCountryName);
@@ -185,7 +185,7 @@ namespace HealthMonitoringSystem.WinApp.GUI
             this.Controls.Add(this.labelControl1);
             this.Controls.Add(this.ribbonControl1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
-            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.IconOptions.Icon = ((System.Drawing.Icon)(resources.GetObject("XtraFormCountry.IconOptions.Icon")));
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "XtraFormCountry";

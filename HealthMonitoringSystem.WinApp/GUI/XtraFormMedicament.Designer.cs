@@ -70,14 +70,14 @@ namespace HealthMonitoringSystem.WinApp.GUI
             this.ribbonControl1.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
             this.ribbonPage1});
             this.ribbonControl1.ShowPageHeadersMode = DevExpress.XtraBars.Ribbon.ShowPageHeadersMode.Hide;
-            this.ribbonControl1.Size = new System.Drawing.Size(282, 96);
+            this.ribbonControl1.Size = new System.Drawing.Size(292, 126);
             this.ribbonControl1.ToolbarLocation = DevExpress.XtraBars.Ribbon.RibbonQuickAccessToolbarLocation.Hidden;
             // 
             // barButtonItemSave
             // 
             this.barButtonItemSave.Caption = "Kaydet";
             this.barButtonItemSave.Id = 1;
-            this.barButtonItemSave.LargeGlyph = global::HealthMonitoringSystem.WinApp.Properties.Resources.save;
+            this.barButtonItemSave.ImageOptions.LargeImage = global::HealthMonitoringSystem.WinApp.Properties.Resources.save;
             this.barButtonItemSave.Name = "barButtonItemSave";
             this.barButtonItemSave.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItemSave_ItemClick);
             // 
@@ -85,7 +85,7 @@ namespace HealthMonitoringSystem.WinApp.GUI
             // 
             this.barButtonItemCancel.Caption = "İptal";
             this.barButtonItemCancel.Id = 2;
-            this.barButtonItemCancel.LargeGlyph = global::HealthMonitoringSystem.WinApp.Properties.Resources.remove;
+            this.barButtonItemCancel.ImageOptions.LargeImage = global::HealthMonitoringSystem.WinApp.Properties.Resources.remove;
             this.barButtonItemCancel.Name = "barButtonItemCancel";
             this.barButtonItemCancel.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItemCancel_ItemClick);
             // 
@@ -98,16 +98,16 @@ namespace HealthMonitoringSystem.WinApp.GUI
             // 
             // ribbonPageGroup1
             // 
+            this.ribbonPageGroup1.CaptionButtonVisible = DevExpress.Utils.DefaultBoolean.False;
             this.ribbonPageGroup1.ItemLinks.Add(this.barButtonItemSave);
             this.ribbonPageGroup1.ItemLinks.Add(this.barButtonItemCancel);
             this.ribbonPageGroup1.Name = "ribbonPageGroup1";
-            this.ribbonPageGroup1.ShowCaptionButton = false;
             this.ribbonPageGroup1.Text = "İşlemler";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(11, 115);
+            this.label1.Location = new System.Drawing.Point(10, 135);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(42, 13);
             this.label1.TabIndex = 1;
@@ -116,7 +116,7 @@ namespace HealthMonitoringSystem.WinApp.GUI
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(11, 145);
+            this.label3.Location = new System.Drawing.Point(10, 165);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(24, 13);
             this.label3.TabIndex = 3;
@@ -124,7 +124,7 @@ namespace HealthMonitoringSystem.WinApp.GUI
             // 
             // textEditName
             // 
-            this.textEditName.Location = new System.Drawing.Point(104, 112);
+            this.textEditName.Location = new System.Drawing.Point(103, 132);
             this.textEditName.MenuManager = this.ribbonControl1;
             this.textEditName.Name = "textEditName";
             this.textEditName.Properties.Mask.EditMask = "[A-ZĞÜŞİÖÇ 1-9]+";
@@ -134,7 +134,7 @@ namespace HealthMonitoringSystem.WinApp.GUI
             // 
             // textEditNote
             // 
-            this.textEditNote.Location = new System.Drawing.Point(104, 142);
+            this.textEditNote.Location = new System.Drawing.Point(103, 162);
             this.textEditNote.MenuManager = this.ribbonControl1;
             this.textEditNote.Name = "textEditNote";
             this.textEditNote.Properties.Mask.EditMask = "[A-ZĞÜŞİÖÇ 1-9]+";
@@ -145,18 +145,18 @@ namespace HealthMonitoringSystem.WinApp.GUI
             // checkEditIsActive
             // 
             this.checkEditIsActive.EditValue = true;
-            this.checkEditIsActive.Location = new System.Drawing.Point(102, 229);
+            this.checkEditIsActive.Location = new System.Drawing.Point(101, 249);
             this.checkEditIsActive.MenuManager = this.ribbonControl1;
             this.checkEditIsActive.Name = "checkEditIsActive";
             this.checkEditIsActive.Properties.Caption = "Aktif";
-            this.checkEditIsActive.Size = new System.Drawing.Size(95, 19);
+            this.checkEditIsActive.Size = new System.Drawing.Size(95, 20);
             this.checkEditIsActive.TabIndex = 4;
             this.checkEditIsActive.CheckedChanged += new System.EventHandler(this.checkEditActive_CheckedChanged);
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(11, 175);
+            this.label4.Location = new System.Drawing.Point(10, 195);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(75, 13);
             this.label4.TabIndex = 10;
@@ -165,7 +165,7 @@ namespace HealthMonitoringSystem.WinApp.GUI
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(11, 205);
+            this.label5.Location = new System.Drawing.Point(10, 225);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(79, 13);
             this.label5.TabIndex = 13;
@@ -173,7 +173,7 @@ namespace HealthMonitoringSystem.WinApp.GUI
             // 
             // textBoxUseDay
             // 
-            this.textBoxUseDay.Location = new System.Drawing.Point(104, 172);
+            this.textBoxUseDay.Location = new System.Drawing.Point(103, 192);
             this.textBoxUseDay.MenuManager = this.ribbonControl1;
             this.textBoxUseDay.Name = "textBoxUseDay";
             this.textBoxUseDay.Properties.Mask.EditMask = "\\d +";
@@ -185,7 +185,7 @@ namespace HealthMonitoringSystem.WinApp.GUI
             // 
             // textBoxUsePer
             // 
-            this.textBoxUsePer.Location = new System.Drawing.Point(104, 202);
+            this.textBoxUsePer.Location = new System.Drawing.Point(103, 222);
             this.textBoxUsePer.MenuManager = this.ribbonControl1;
             this.textBoxUsePer.Name = "textBoxUsePer";
             this.textBoxUsePer.Properties.Mask.EditMask = "\\d+";
@@ -199,7 +199,7 @@ namespace HealthMonitoringSystem.WinApp.GUI
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(282, 267);
+            this.ClientSize = new System.Drawing.Size(292, 285);
             this.Controls.Add(this.textBoxUsePer);
             this.Controls.Add(this.textBoxUseDay);
             this.Controls.Add(this.label5);
@@ -211,7 +211,7 @@ namespace HealthMonitoringSystem.WinApp.GUI
             this.Controls.Add(this.label1);
             this.Controls.Add(this.ribbonControl1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
-            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.IconOptions.Icon = ((System.Drawing.Icon)(resources.GetObject("XtraFormMedicament.IconOptions.Icon")));
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "XtraFormMedicament";

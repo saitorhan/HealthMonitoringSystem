@@ -65,14 +65,14 @@ namespace HealthMonitoringSystem.WinApp.GUI
             this.ribbonControl1.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
             this.ribbonPage1});
             this.ribbonControl1.ShowPageHeadersMode = DevExpress.XtraBars.Ribbon.ShowPageHeadersMode.Hide;
-            this.ribbonControl1.Size = new System.Drawing.Size(254, 96);
+            this.ribbonControl1.Size = new System.Drawing.Size(255, 126);
             this.ribbonControl1.ToolbarLocation = DevExpress.XtraBars.Ribbon.RibbonQuickAccessToolbarLocation.Hidden;
             // 
             // barButtonItemSave
             // 
             this.barButtonItemSave.Caption = "Kaydet";
             this.barButtonItemSave.Id = 1;
-            this.barButtonItemSave.LargeGlyph = global::HealthMonitoringSystem.WinApp.Properties.Resources.save;
+            this.barButtonItemSave.ImageOptions.LargeImage = global::HealthMonitoringSystem.WinApp.Properties.Resources.save;
             this.barButtonItemSave.Name = "barButtonItemSave";
             this.barButtonItemSave.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItemSave_ItemClick);
             // 
@@ -80,7 +80,7 @@ namespace HealthMonitoringSystem.WinApp.GUI
             // 
             this.barButtonItem1.Caption = "İptal";
             this.barButtonItem1.Id = 2;
-            this.barButtonItem1.LargeGlyph = global::HealthMonitoringSystem.WinApp.Properties.Resources.remove;
+            this.barButtonItem1.ImageOptions.LargeImage = global::HealthMonitoringSystem.WinApp.Properties.Resources.remove;
             this.barButtonItem1.Name = "barButtonItem1";
             this.barButtonItem1.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem1_ItemClick);
             // 
@@ -93,15 +93,15 @@ namespace HealthMonitoringSystem.WinApp.GUI
             // 
             // ribbonPageGroup1
             // 
+            this.ribbonPageGroup1.CaptionButtonVisible = DevExpress.Utils.DefaultBoolean.False;
             this.ribbonPageGroup1.ItemLinks.Add(this.barButtonItemSave);
             this.ribbonPageGroup1.ItemLinks.Add(this.barButtonItem1);
             this.ribbonPageGroup1.Name = "ribbonPageGroup1";
-            this.ribbonPageGroup1.ShowCaptionButton = false;
             this.ribbonPageGroup1.Text = "İşlemler";
             // 
             // labelControl1
             // 
-            this.labelControl1.Location = new System.Drawing.Point(12, 105);
+            this.labelControl1.Location = new System.Drawing.Point(7, 135);
             this.labelControl1.Name = "labelControl1";
             this.labelControl1.Size = new System.Drawing.Size(19, 13);
             this.labelControl1.TabIndex = 1;
@@ -109,7 +109,7 @@ namespace HealthMonitoringSystem.WinApp.GUI
             // 
             // labelControl2
             // 
-            this.labelControl2.Location = new System.Drawing.Point(12, 131);
+            this.labelControl2.Location = new System.Drawing.Point(7, 161);
             this.labelControl2.Name = "labelControl2";
             this.labelControl2.Size = new System.Drawing.Size(41, 13);
             this.labelControl2.TabIndex = 2;
@@ -117,7 +117,7 @@ namespace HealthMonitoringSystem.WinApp.GUI
             // 
             // textEditName
             // 
-            this.textEditName.Location = new System.Drawing.Point(90, 102);
+            this.textEditName.Location = new System.Drawing.Point(85, 132);
             this.textEditName.MenuManager = this.ribbonControl1;
             this.textEditName.Name = "textEditName";
             this.textEditName.Properties.Mask.EditMask = "[A-Z ĞÜŞİÖÇ10-9]+";
@@ -129,7 +129,7 @@ namespace HealthMonitoringSystem.WinApp.GUI
             // 
             // textEditShortName
             // 
-            this.textEditShortName.Location = new System.Drawing.Point(90, 128);
+            this.textEditShortName.Location = new System.Drawing.Point(85, 158);
             this.textEditShortName.MenuManager = this.ribbonControl1;
             this.textEditShortName.Name = "textEditShortName";
             this.textEditShortName.Properties.Mask.EditMask = "[A-Z ĞÜŞİÖÇ10-9.]+";
@@ -142,21 +142,21 @@ namespace HealthMonitoringSystem.WinApp.GUI
             // checkEditActive
             // 
             this.checkEditActive.EditValue = true;
-            this.checkEditActive.Location = new System.Drawing.Point(88, 179);
+            this.checkEditActive.Location = new System.Drawing.Point(83, 209);
             this.checkEditActive.MenuManager = this.ribbonControl1;
             this.checkEditActive.Name = "checkEditActive";
             this.checkEditActive.Properties.Caption = "Aktif";
-            this.checkEditActive.Size = new System.Drawing.Size(75, 19);
+            this.checkEditActive.Size = new System.Drawing.Size(75, 20);
             this.checkEditActive.TabIndex = 2;
             this.checkEditActive.CheckedChanged += new System.EventHandler(this.checkEditActive_CheckedChanged);
             // 
             // checkEditAdmin
             // 
-            this.checkEditAdmin.Location = new System.Drawing.Point(88, 154);
+            this.checkEditAdmin.Location = new System.Drawing.Point(83, 184);
             this.checkEditAdmin.MenuManager = this.ribbonControl1;
             this.checkEditAdmin.Name = "checkEditAdmin";
             this.checkEditAdmin.Properties.Caption = "Yönetici Değil";
-            this.checkEditAdmin.Size = new System.Drawing.Size(94, 19);
+            this.checkEditAdmin.Size = new System.Drawing.Size(94, 20);
             this.checkEditAdmin.TabIndex = 4;
             this.checkEditAdmin.CheckedChanged += new System.EventHandler(this.checkEditAdmin_CheckedChanged);
             // 
@@ -164,7 +164,7 @@ namespace HealthMonitoringSystem.WinApp.GUI
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(254, 206);
+            this.ClientSize = new System.Drawing.Size(255, 243);
             this.Controls.Add(this.checkEditAdmin);
             this.Controls.Add(this.checkEditActive);
             this.Controls.Add(this.textEditShortName);
@@ -173,7 +173,7 @@ namespace HealthMonitoringSystem.WinApp.GUI
             this.Controls.Add(this.labelControl1);
             this.Controls.Add(this.ribbonControl1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
-            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.IconOptions.Icon = ((System.Drawing.Icon)(resources.GetObject("XtraFormDegree.IconOptions.Icon")));
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "XtraFormDegree";

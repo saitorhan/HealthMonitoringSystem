@@ -51,6 +51,7 @@ namespace HealthMonitoringSystem.WinApp.GUI
             this.ribbonPage1 = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup1 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPageGroup2 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.ribbonPageGroup3 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.splitContainerControl1 = new DevExpress.XtraEditors.SplitContainerControl();
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
             this.gridControlCity = new DevExpress.XtraGrid.GridControl();
@@ -65,9 +66,12 @@ namespace HealthMonitoringSystem.WinApp.GUI
             this.colCity = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colIsActive1 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colName1 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.ribbonPageGroup3 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainerControl1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.splitContainerControl1.Panel1)).BeginInit();
+            this.splitContainerControl1.Panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.splitContainerControl1.Panel2)).BeginInit();
+            this.splitContainerControl1.Panel2.SuspendLayout();
             this.splitContainerControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
             this.groupControl1.SuspendLayout();
@@ -99,14 +103,14 @@ namespace HealthMonitoringSystem.WinApp.GUI
             this.ribbonControl1.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
             this.ribbonPage1});
             this.ribbonControl1.ShowPageHeadersMode = DevExpress.XtraBars.Ribbon.ShowPageHeadersMode.Hide;
-            this.ribbonControl1.Size = new System.Drawing.Size(750, 96);
+            this.ribbonControl1.Size = new System.Drawing.Size(816, 126);
             this.ribbonControl1.ToolbarLocation = DevExpress.XtraBars.Ribbon.RibbonQuickAccessToolbarLocation.Hidden;
             // 
             // barButtonItemAddNewCity
             // 
             this.barButtonItemAddNewCity.Caption = "Yeni";
             this.barButtonItemAddNewCity.Id = 1;
-            this.barButtonItemAddNewCity.LargeGlyph = global::HealthMonitoringSystem.WinApp.Properties.Resources.add;
+            this.barButtonItemAddNewCity.ImageOptions.LargeImage = global::HealthMonitoringSystem.WinApp.Properties.Resources.add;
             this.barButtonItemAddNewCity.Name = "barButtonItemAddNewCity";
             this.barButtonItemAddNewCity.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItemAddNewCity_ItemClick);
             // 
@@ -114,7 +118,7 @@ namespace HealthMonitoringSystem.WinApp.GUI
             // 
             this.barButtonItemEditCity.Caption = "Düzenle";
             this.barButtonItemEditCity.Id = 2;
-            this.barButtonItemEditCity.LargeGlyph = global::HealthMonitoringSystem.WinApp.Properties.Resources.edit;
+            this.barButtonItemEditCity.ImageOptions.LargeImage = global::HealthMonitoringSystem.WinApp.Properties.Resources.edit;
             this.barButtonItemEditCity.Name = "barButtonItemEditCity";
             this.barButtonItemEditCity.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItemEditCity_ItemClick);
             // 
@@ -122,7 +126,7 @@ namespace HealthMonitoringSystem.WinApp.GUI
             // 
             this.barButtonItemDeleteCity.Caption = "Sil";
             this.barButtonItemDeleteCity.Id = 3;
-            this.barButtonItemDeleteCity.LargeGlyph = global::HealthMonitoringSystem.WinApp.Properties.Resources.delete;
+            this.barButtonItemDeleteCity.ImageOptions.LargeImage = global::HealthMonitoringSystem.WinApp.Properties.Resources.delete;
             this.barButtonItemDeleteCity.Name = "barButtonItemDeleteCity";
             this.barButtonItemDeleteCity.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItemDeleteCity_ItemClick);
             // 
@@ -130,7 +134,7 @@ namespace HealthMonitoringSystem.WinApp.GUI
             // 
             this.barButtonItemAddNewCountry.Caption = "Yeni";
             this.barButtonItemAddNewCountry.Id = 4;
-            this.barButtonItemAddNewCountry.LargeGlyph = global::HealthMonitoringSystem.WinApp.Properties.Resources.add;
+            this.barButtonItemAddNewCountry.ImageOptions.LargeImage = global::HealthMonitoringSystem.WinApp.Properties.Resources.add;
             this.barButtonItemAddNewCountry.Name = "barButtonItemAddNewCountry";
             this.barButtonItemAddNewCountry.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItemAddNewCountry_ItemClick);
             // 
@@ -138,7 +142,7 @@ namespace HealthMonitoringSystem.WinApp.GUI
             // 
             this.barButtonItemEditCountry.Caption = "Düzenle";
             this.barButtonItemEditCountry.Id = 5;
-            this.barButtonItemEditCountry.LargeGlyph = global::HealthMonitoringSystem.WinApp.Properties.Resources.edit;
+            this.barButtonItemEditCountry.ImageOptions.LargeImage = global::HealthMonitoringSystem.WinApp.Properties.Resources.edit;
             this.barButtonItemEditCountry.Name = "barButtonItemEditCountry";
             this.barButtonItemEditCountry.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItemEditCountry_ItemClick);
             // 
@@ -146,7 +150,7 @@ namespace HealthMonitoringSystem.WinApp.GUI
             // 
             this.barButtonItemDeleteCountry.Caption = "Sil";
             this.barButtonItemDeleteCountry.Id = 6;
-            this.barButtonItemDeleteCountry.LargeGlyph = global::HealthMonitoringSystem.WinApp.Properties.Resources.delete;
+            this.barButtonItemDeleteCountry.ImageOptions.LargeImage = global::HealthMonitoringSystem.WinApp.Properties.Resources.delete;
             this.barButtonItemDeleteCountry.Name = "barButtonItemDeleteCountry";
             this.barButtonItemDeleteCountry.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItemDeleteCountry_ItemClick);
             // 
@@ -154,7 +158,7 @@ namespace HealthMonitoringSystem.WinApp.GUI
             // 
             this.barButtonItemRefresh.Caption = "Yenile";
             this.barButtonItemRefresh.Id = 7;
-            this.barButtonItemRefresh.LargeGlyph = global::HealthMonitoringSystem.WinApp.Properties.Resources.refresh;
+            this.barButtonItemRefresh.ImageOptions.LargeImage = global::HealthMonitoringSystem.WinApp.Properties.Resources.refresh;
             this.barButtonItemRefresh.Name = "barButtonItemRefresh";
             this.barButtonItemRefresh.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItemRefresh_ItemClick);
             // 
@@ -169,32 +173,45 @@ namespace HealthMonitoringSystem.WinApp.GUI
             // 
             // ribbonPageGroup1
             // 
+            this.ribbonPageGroup1.CaptionButtonVisible = DevExpress.Utils.DefaultBoolean.False;
             this.ribbonPageGroup1.ItemLinks.Add(this.barButtonItemAddNewCity);
             this.ribbonPageGroup1.ItemLinks.Add(this.barButtonItemEditCity);
             this.ribbonPageGroup1.ItemLinks.Add(this.barButtonItemDeleteCity);
             this.ribbonPageGroup1.Name = "ribbonPageGroup1";
-            this.ribbonPageGroup1.ShowCaptionButton = false;
             this.ribbonPageGroup1.Text = "Şehir İşlemleri";
             // 
             // ribbonPageGroup2
             // 
+            this.ribbonPageGroup2.CaptionButtonVisible = DevExpress.Utils.DefaultBoolean.False;
             this.ribbonPageGroup2.ItemLinks.Add(this.barButtonItemAddNewCountry);
             this.ribbonPageGroup2.ItemLinks.Add(this.barButtonItemEditCountry);
             this.ribbonPageGroup2.ItemLinks.Add(this.barButtonItemDeleteCountry);
             this.ribbonPageGroup2.Name = "ribbonPageGroup2";
-            this.ribbonPageGroup2.ShowCaptionButton = false;
             this.ribbonPageGroup2.Text = "İlçe İşlemleri";
+            // 
+            // ribbonPageGroup3
+            // 
+            this.ribbonPageGroup3.CaptionButtonVisible = DevExpress.Utils.DefaultBoolean.False;
+            this.ribbonPageGroup3.ItemLinks.Add(this.barButtonItemRefresh);
+            this.ribbonPageGroup3.Name = "ribbonPageGroup3";
+            this.ribbonPageGroup3.Text = "Yenile";
             // 
             // splitContainerControl1
             // 
             this.splitContainerControl1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.splitContainerControl1.Location = new System.Drawing.Point(0, 96);
+            this.splitContainerControl1.Location = new System.Drawing.Point(0, 126);
             this.splitContainerControl1.Name = "splitContainerControl1";
+            // 
+            // splitContainerControl1.Panel1
+            // 
             this.splitContainerControl1.Panel1.Controls.Add(this.groupControl1);
             this.splitContainerControl1.Panel1.Text = "Panel1";
+            // 
+            // splitContainerControl1.Panel2
+            // 
             this.splitContainerControl1.Panel2.Controls.Add(this.groupControl2);
             this.splitContainerControl1.Panel2.Text = "Panel2";
-            this.splitContainerControl1.Size = new System.Drawing.Size(750, 398);
+            this.splitContainerControl1.Size = new System.Drawing.Size(816, 491);
             this.splitContainerControl1.SplitterPosition = 384;
             this.splitContainerControl1.TabIndex = 1;
             this.splitContainerControl1.Text = "splitContainerControl1";
@@ -205,7 +222,7 @@ namespace HealthMonitoringSystem.WinApp.GUI
             this.groupControl1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.groupControl1.Location = new System.Drawing.Point(0, 0);
             this.groupControl1.Name = "groupControl1";
-            this.groupControl1.Size = new System.Drawing.Size(384, 398);
+            this.groupControl1.Size = new System.Drawing.Size(384, 491);
             this.groupControl1.TabIndex = 0;
             this.groupControl1.Text = "Şehirler";
             // 
@@ -213,18 +230,18 @@ namespace HealthMonitoringSystem.WinApp.GUI
             // 
             this.gridControlCity.DataSource = this.bindingSourceCity;
             this.gridControlCity.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.gridControlCity.Location = new System.Drawing.Point(2, 21);
+            this.gridControlCity.Location = new System.Drawing.Point(2, 23);
             this.gridControlCity.MainView = this.gridView1;
             this.gridControlCity.MenuManager = this.ribbonControl1;
             this.gridControlCity.Name = "gridControlCity";
-            this.gridControlCity.Size = new System.Drawing.Size(380, 375);
+            this.gridControlCity.Size = new System.Drawing.Size(380, 466);
             this.gridControlCity.TabIndex = 0;
             this.gridControlCity.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView1});
             // 
             // bindingSourceCity
             // 
-            this.bindingSourceCity.DataSource = typeof(City);
+            this.bindingSourceCity.DataSource = typeof(HealthMonitoringSystem.Entity.City);
             this.bindingSourceCity.CurrentChanged += new System.EventHandler(this.bindingSourceCity_CurrentChanged);
             // 
             // gridView1
@@ -262,7 +279,7 @@ namespace HealthMonitoringSystem.WinApp.GUI
             this.groupControl2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.groupControl2.Location = new System.Drawing.Point(0, 0);
             this.groupControl2.Name = "groupControl2";
-            this.groupControl2.Size = new System.Drawing.Size(361, 398);
+            this.groupControl2.Size = new System.Drawing.Size(422, 491);
             this.groupControl2.TabIndex = 0;
             this.groupControl2.Text = "İlçeler";
             // 
@@ -270,18 +287,18 @@ namespace HealthMonitoringSystem.WinApp.GUI
             // 
             this.gridControlCountry.DataSource = this.bindingSourceCountry;
             this.gridControlCountry.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.gridControlCountry.Location = new System.Drawing.Point(2, 21);
+            this.gridControlCountry.Location = new System.Drawing.Point(2, 23);
             this.gridControlCountry.MainView = this.gridView2;
             this.gridControlCountry.MenuManager = this.ribbonControl1;
             this.gridControlCountry.Name = "gridControlCountry";
-            this.gridControlCountry.Size = new System.Drawing.Size(357, 375);
+            this.gridControlCountry.Size = new System.Drawing.Size(418, 466);
             this.gridControlCountry.TabIndex = 0;
             this.gridControlCountry.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView2});
             // 
             // bindingSourceCountry
             // 
-            this.bindingSourceCountry.DataSource = typeof(Country);
+            this.bindingSourceCountry.DataSource = typeof(HealthMonitoringSystem.Entity.Country);
             // 
             // gridView2
             // 
@@ -322,26 +339,23 @@ namespace HealthMonitoringSystem.WinApp.GUI
             this.colName1.VisibleIndex = 0;
             this.colName1.Width = 130;
             // 
-            // ribbonPageGroup3
-            // 
-            this.ribbonPageGroup3.ItemLinks.Add(this.barButtonItemRefresh);
-            this.ribbonPageGroup3.Name = "ribbonPageGroup3";
-            this.ribbonPageGroup3.ShowCaptionButton = false;
-            this.ribbonPageGroup3.Text = "Yenile";
-            // 
             // XtraFormCityCountry
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(750, 494);
+            this.ClientSize = new System.Drawing.Size(816, 617);
             this.Controls.Add(this.splitContainerControl1);
             this.Controls.Add(this.ribbonControl1);
-            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.IconOptions.Icon = ((System.Drawing.Icon)(resources.GetObject("XtraFormCityCountry.IconOptions.Icon")));
             this.Name = "XtraFormCityCountry";
             this.Text = "Şehir ve İlçe İşlemleri";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.XtraFormCityCountry_Load);
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.splitContainerControl1.Panel1)).EndInit();
+            this.splitContainerControl1.Panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.splitContainerControl1.Panel2)).EndInit();
+            this.splitContainerControl1.Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.splitContainerControl1)).EndInit();
             this.splitContainerControl1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).EndInit();
@@ -355,6 +369,7 @@ namespace HealthMonitoringSystem.WinApp.GUI
             ((System.ComponentModel.ISupportInitialize)(this.bindingSourceCountry)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView2)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 

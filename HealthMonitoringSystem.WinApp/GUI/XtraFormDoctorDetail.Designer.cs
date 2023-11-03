@@ -101,8 +101,8 @@ namespace HealthMonitoringSystem.WinApp.GUI
             ((System.ComponentModel.ISupportInitialize)(this.gridViewMails)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.lookUpEditDepartmant.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.lookUpEditDegree.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dateEditBirthDay.Properties.CalendarTimeProperties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dateEditBirthDay.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dateEditBirthDay.Properties.CalendarTimeProperties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEditDoctorSurname.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEditDoctorName.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEditFatherName.Properties)).BeginInit();
@@ -126,7 +126,7 @@ namespace HealthMonitoringSystem.WinApp.GUI
             this.ribbonControl1.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
             this.ribbonPage1});
             this.ribbonControl1.ShowPageHeadersMode = DevExpress.XtraBars.Ribbon.ShowPageHeadersMode.Hide;
-            this.ribbonControl1.Size = new System.Drawing.Size(634, 96);
+            this.ribbonControl1.Size = new System.Drawing.Size(674, 126);
             this.ribbonControl1.ToolbarLocation = DevExpress.XtraBars.Ribbon.RibbonQuickAccessToolbarLocation.Hidden;
             this.ribbonControl1.Click += new System.EventHandler(this.ribbonControl1_Click);
             // 
@@ -134,7 +134,7 @@ namespace HealthMonitoringSystem.WinApp.GUI
             // 
             this.barButtonItemSaveNewDoctor.Caption = "Kaydet";
             this.barButtonItemSaveNewDoctor.Id = 1;
-            this.barButtonItemSaveNewDoctor.LargeGlyph = global::HealthMonitoringSystem.WinApp.Properties.Resources.save;
+            this.barButtonItemSaveNewDoctor.ImageOptions.LargeImage = global::HealthMonitoringSystem.WinApp.Properties.Resources.save;
             this.barButtonItemSaveNewDoctor.Name = "barButtonItemSaveNewDoctor";
             this.barButtonItemSaveNewDoctor.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItemSaveNewDoctor_ItemClick);
             // 
@@ -142,7 +142,7 @@ namespace HealthMonitoringSystem.WinApp.GUI
             // 
             this.barButtonItemCancelNewDoctor.Caption = "İptal";
             this.barButtonItemCancelNewDoctor.Id = 2;
-            this.barButtonItemCancelNewDoctor.LargeGlyph = global::HealthMonitoringSystem.WinApp.Properties.Resources.remove;
+            this.barButtonItemCancelNewDoctor.ImageOptions.LargeImage = global::HealthMonitoringSystem.WinApp.Properties.Resources.remove;
             this.barButtonItemCancelNewDoctor.Name = "barButtonItemCancelNewDoctor";
             this.barButtonItemCancelNewDoctor.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItemCancelNewDoctor_ItemClick);
             // 
@@ -155,19 +155,19 @@ namespace HealthMonitoringSystem.WinApp.GUI
             // 
             // ribbonPageGroup1
             // 
+            this.ribbonPageGroup1.CaptionButtonVisible = DevExpress.Utils.DefaultBoolean.False;
             this.ribbonPageGroup1.ItemLinks.Add(this.barButtonItemSaveNewDoctor);
             this.ribbonPageGroup1.ItemLinks.Add(this.barButtonItemCancelNewDoctor);
             this.ribbonPageGroup1.Name = "ribbonPageGroup1";
-            this.ribbonPageGroup1.ShowCaptionButton = false;
             this.ribbonPageGroup1.Text = "İşlemler";
             // 
             // degreeBindingSource
             // 
-            this.degreeBindingSource.DataSource = typeof(Degree);
+            this.degreeBindingSource.DataSource = typeof(HealthMonitoringSystem.Entity.Degree);
             // 
             // departmentBindingSource
             // 
-            this.departmentBindingSource.DataSource = typeof(Department);
+            this.departmentBindingSource.DataSource = typeof(HealthMonitoringSystem.Entity.Department);
             // 
             // panelControl1
             // 
@@ -190,7 +190,7 @@ namespace HealthMonitoringSystem.WinApp.GUI
             this.panelControl1.Controls.Add(this.labelControl3);
             this.panelControl1.Controls.Add(this.LabelControlSurname);
             this.panelControl1.Controls.Add(this.LabelControlName);
-            this.panelControl1.Location = new System.Drawing.Point(12, 102);
+            this.panelControl1.Location = new System.Drawing.Point(12, 135);
             this.panelControl1.Name = "panelControl1";
             this.panelControl1.Size = new System.Drawing.Size(619, 367);
             this.panelControl1.TabIndex = 0;
@@ -225,18 +225,18 @@ namespace HealthMonitoringSystem.WinApp.GUI
             // 
             this.gridControlPhones.DataSource = this.bindingSourcePhones;
             this.gridControlPhones.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.gridControlPhones.Location = new System.Drawing.Point(2, 21);
+            this.gridControlPhones.Location = new System.Drawing.Point(2, 23);
             this.gridControlPhones.MainView = this.gridViewPhones;
             this.gridControlPhones.MenuManager = this.ribbonControl1;
             this.gridControlPhones.Name = "gridControlPhones";
-            this.gridControlPhones.Size = new System.Drawing.Size(310, 152);
+            this.gridControlPhones.Size = new System.Drawing.Size(310, 150);
             this.gridControlPhones.TabIndex = 0;
             this.gridControlPhones.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridViewPhones});
             // 
             // bindingSourcePhones
             // 
-            this.bindingSourcePhones.DataSource = typeof(DoctorPhone);
+            this.bindingSourcePhones.DataSource = typeof(HealthMonitoringSystem.Entity.DoctorPhone);
             // 
             // gridViewPhones
             // 
@@ -270,18 +270,18 @@ namespace HealthMonitoringSystem.WinApp.GUI
             // 
             this.gridControlMails.DataSource = this.bindingSourceMail;
             this.gridControlMails.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.gridControlMails.Location = new System.Drawing.Point(2, 21);
+            this.gridControlMails.Location = new System.Drawing.Point(2, 23);
             this.gridControlMails.MainView = this.gridViewMails;
             this.gridControlMails.MenuManager = this.ribbonControl1;
             this.gridControlMails.Name = "gridControlMails";
-            this.gridControlMails.Size = new System.Drawing.Size(310, 153);
+            this.gridControlMails.Size = new System.Drawing.Size(310, 151);
             this.gridControlMails.TabIndex = 0;
             this.gridControlMails.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridViewMails});
             // 
             // bindingSourceMail
             // 
-            this.bindingSourceMail.DataSource = typeof(DoctorMail);
+            this.bindingSourceMail.DataSource = typeof(HealthMonitoringSystem.Entity.DoctorMail);
             // 
             // gridViewMails
             // 
@@ -316,7 +316,7 @@ namespace HealthMonitoringSystem.WinApp.GUI
             this.lookUpEditDepartmant.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.lookUpEditDepartmant.Properties.Columns.AddRange(new DevExpress.XtraEditors.Controls.LookUpColumnInfo[] {
-            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("Name", "Deparman Adı", 37, DevExpress.Utils.FormatType.None, "", true, DevExpress.Utils.HorzAlignment.Near)});
+            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("Name", "Deparman Adı", 37, DevExpress.Utils.FormatType.None, "", true, DevExpress.Utils.HorzAlignment.Near, DevExpress.Data.ColumnSortOrder.None, DevExpress.Utils.DefaultBoolean.Default)});
             this.lookUpEditDepartmant.Properties.DataSource = this.departmentBindingSource;
             this.lookUpEditDepartmant.Properties.DisplayMember = "Name";
             this.lookUpEditDepartmant.Properties.NullText = "Departman Seçiniz";
@@ -332,7 +332,7 @@ namespace HealthMonitoringSystem.WinApp.GUI
             this.lookUpEditDegree.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.lookUpEditDegree.Properties.Columns.AddRange(new DevExpress.XtraEditors.Controls.LookUpColumnInfo[] {
-            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("ShortName", "Ünvan", 66, DevExpress.Utils.FormatType.None, "", true, DevExpress.Utils.HorzAlignment.Near)});
+            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("ShortName", "Ünvan", 66, DevExpress.Utils.FormatType.None, "", true, DevExpress.Utils.HorzAlignment.Near, DevExpress.Data.ColumnSortOrder.None, DevExpress.Utils.DefaultBoolean.Default)});
             this.lookUpEditDegree.Properties.DataSource = this.degreeBindingSource;
             this.lookUpEditDegree.Properties.DisplayMember = "ShortName";
             this.lookUpEditDegree.Properties.NullText = "Ünvan Seçiniz";
@@ -410,7 +410,7 @@ namespace HealthMonitoringSystem.WinApp.GUI
             this.checkEditIsActive.MenuManager = this.ribbonControl1;
             this.checkEditIsActive.Name = "checkEditIsActive";
             this.checkEditIsActive.Properties.Caption = "Aktif";
-            this.checkEditIsActive.Size = new System.Drawing.Size(73, 19);
+            this.checkEditIsActive.Size = new System.Drawing.Size(73, 20);
             this.checkEditIsActive.TabIndex = 8;
             this.checkEditIsActive.CheckedChanged += new System.EventHandler(this.checkEditIsActive_CheckedChanged_1);
             // 
@@ -480,7 +480,7 @@ namespace HealthMonitoringSystem.WinApp.GUI
             // 
             // labelControlMail
             // 
-            this.labelControlMail.Location = new System.Drawing.Point(312, 484);
+            this.labelControlMail.Location = new System.Drawing.Point(315, 511);
             this.labelControlMail.Name = "labelControlMail";
             this.labelControlMail.Size = new System.Drawing.Size(61, 13);
             this.labelControlMail.TabIndex = 52;
@@ -488,7 +488,7 @@ namespace HealthMonitoringSystem.WinApp.GUI
             // 
             // textEditPhone
             // 
-            this.textEditPhone.Location = new System.Drawing.Point(101, 481);
+            this.textEditPhone.Location = new System.Drawing.Point(104, 508);
             this.textEditPhone.MenuManager = this.ribbonControl1;
             this.textEditPhone.Name = "textEditPhone";
             this.textEditPhone.Properties.Mask.EditMask = "\\d{10}";
@@ -498,7 +498,7 @@ namespace HealthMonitoringSystem.WinApp.GUI
             // 
             // simpleButtonNewPhone
             // 
-            this.simpleButtonNewPhone.Location = new System.Drawing.Point(252, 478);
+            this.simpleButtonNewPhone.Location = new System.Drawing.Point(255, 505);
             this.simpleButtonNewPhone.Name = "simpleButtonNewPhone";
             this.simpleButtonNewPhone.Size = new System.Drawing.Size(45, 23);
             this.simpleButtonNewPhone.TabIndex = 68;
@@ -507,7 +507,7 @@ namespace HealthMonitoringSystem.WinApp.GUI
             // 
             // labelControlPhone
             // 
-            this.labelControlPhone.Location = new System.Drawing.Point(12, 484);
+            this.labelControlPhone.Location = new System.Drawing.Point(15, 511);
             this.labelControlPhone.Name = "labelControlPhone";
             this.labelControlPhone.Size = new System.Drawing.Size(83, 13);
             this.labelControlPhone.TabIndex = 51;
@@ -515,7 +515,7 @@ namespace HealthMonitoringSystem.WinApp.GUI
             // 
             // textEditMail
             // 
-            this.textEditMail.Location = new System.Drawing.Point(379, 481);
+            this.textEditMail.Location = new System.Drawing.Point(382, 508);
             this.textEditMail.MenuManager = this.ribbonControl1;
             this.textEditMail.Name = "textEditMail";
             this.textEditMail.Size = new System.Drawing.Size(145, 20);
@@ -523,7 +523,7 @@ namespace HealthMonitoringSystem.WinApp.GUI
             // 
             // simpleButtonNewMail
             // 
-            this.simpleButtonNewMail.Location = new System.Drawing.Point(530, 478);
+            this.simpleButtonNewMail.Location = new System.Drawing.Point(533, 505);
             this.simpleButtonNewMail.Name = "simpleButtonNewMail";
             this.simpleButtonNewMail.Size = new System.Drawing.Size(45, 23);
             this.simpleButtonNewMail.TabIndex = 69;
@@ -534,7 +534,7 @@ namespace HealthMonitoringSystem.WinApp.GUI
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(634, 511);
+            this.ClientSize = new System.Drawing.Size(674, 553);
             this.Controls.Add(this.panelControl1);
             this.Controls.Add(this.simpleButtonNewMail);
             this.Controls.Add(this.textEditMail);
@@ -544,7 +544,7 @@ namespace HealthMonitoringSystem.WinApp.GUI
             this.Controls.Add(this.textEditPhone);
             this.Controls.Add(this.labelControlMail);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
-            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.IconOptions.Icon = ((System.Drawing.Icon)(resources.GetObject("XtraFormDoctorDetail.IconOptions.Icon")));
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "XtraFormDoctorDetail";
