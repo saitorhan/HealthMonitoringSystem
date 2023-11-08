@@ -76,7 +76,7 @@ namespace HealthMonitoringSystem.WinApp.GUI
             // 
             // labelControl1
             // 
-            this.labelControl1.Location = new System.Drawing.Point(12, 102);
+            this.labelControl1.Location = new System.Drawing.Point(12, 145);
             this.labelControl1.Name = "labelControl1";
             this.labelControl1.Size = new System.Drawing.Size(60, 13);
             this.labelControl1.TabIndex = 0;
@@ -84,7 +84,7 @@ namespace HealthMonitoringSystem.WinApp.GUI
             // 
             // textEditTCNO
             // 
-            this.textEditTCNO.Location = new System.Drawing.Point(95, 99);
+            this.textEditTCNO.Location = new System.Drawing.Point(95, 142);
             this.textEditTCNO.Name = "textEditTCNO";
             this.textEditTCNO.Properties.Mask.EditMask = "\\d{11}";
             this.textEditTCNO.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.RegEx;
@@ -95,7 +95,7 @@ namespace HealthMonitoringSystem.WinApp.GUI
             // 
             this.labelControlPatientName.Appearance.Font = new System.Drawing.Font("Tahoma", 10F);
             this.labelControlPatientName.Appearance.Options.UseFont = true;
-            this.labelControlPatientName.Location = new System.Drawing.Point(101, 176);
+            this.labelControlPatientName.Location = new System.Drawing.Point(101, 219);
             this.labelControlPatientName.Name = "labelControlPatientName";
             this.labelControlPatientName.Size = new System.Drawing.Size(0, 16);
             this.labelControlPatientName.TabIndex = 2;
@@ -104,7 +104,7 @@ namespace HealthMonitoringSystem.WinApp.GUI
             // 
             this.labelControl2.Appearance.Font = new System.Drawing.Font("Tahoma", 10F);
             this.labelControl2.Appearance.Options.UseFont = true;
-            this.labelControl2.Location = new System.Drawing.Point(18, 176);
+            this.labelControl2.Location = new System.Drawing.Point(18, 219);
             this.labelControl2.Name = "labelControl2";
             this.labelControl2.Size = new System.Drawing.Size(54, 16);
             this.labelControl2.TabIndex = 2;
@@ -112,7 +112,7 @@ namespace HealthMonitoringSystem.WinApp.GUI
             // 
             // lookUpEditDepartment
             // 
-            this.lookUpEditDepartment.Location = new System.Drawing.Point(101, 212);
+            this.lookUpEditDepartment.Location = new System.Drawing.Point(101, 255);
             this.lookUpEditDepartment.Name = "lookUpEditDepartment";
             this.lookUpEditDepartment.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
@@ -132,7 +132,7 @@ namespace HealthMonitoringSystem.WinApp.GUI
             // 
             // labelControl3
             // 
-            this.labelControl3.Location = new System.Drawing.Point(18, 215);
+            this.labelControl3.Location = new System.Drawing.Point(18, 258);
             this.labelControl3.Name = "labelControl3";
             this.labelControl3.Size = new System.Drawing.Size(63, 13);
             this.labelControl3.TabIndex = 4;
@@ -140,7 +140,7 @@ namespace HealthMonitoringSystem.WinApp.GUI
             // 
             // labelControl4
             // 
-            this.labelControl4.Location = new System.Drawing.Point(18, 241);
+            this.labelControl4.Location = new System.Drawing.Point(18, 284);
             this.labelControl4.Name = "labelControl4";
             this.labelControl4.Size = new System.Drawing.Size(67, 13);
             this.labelControl4.TabIndex = 5;
@@ -148,7 +148,7 @@ namespace HealthMonitoringSystem.WinApp.GUI
             // 
             // lookUpEditDoctor
             // 
-            this.lookUpEditDoctor.Location = new System.Drawing.Point(101, 238);
+            this.lookUpEditDoctor.Location = new System.Drawing.Point(101, 281);
             this.lookUpEditDoctor.Name = "lookUpEditDoctor";
             this.lookUpEditDoctor.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
@@ -169,7 +169,7 @@ namespace HealthMonitoringSystem.WinApp.GUI
             // gridControlTimes
             // 
             this.gridControlTimes.DataSource = this.bindingSourceTimes;
-            this.gridControlTimes.Location = new System.Drawing.Point(101, 264);
+            this.gridControlTimes.Location = new System.Drawing.Point(101, 307);
             this.gridControlTimes.MainView = this.gridView1;
             this.gridControlTimes.Name = "gridControlTimes";
             this.gridControlTimes.Size = new System.Drawing.Size(144, 177);
@@ -202,7 +202,7 @@ namespace HealthMonitoringSystem.WinApp.GUI
             // 
             // labelControl5
             // 
-            this.labelControl5.Location = new System.Drawing.Point(15, 264);
+            this.labelControl5.Location = new System.Drawing.Point(15, 307);
             this.labelControl5.Name = "labelControl5";
             this.labelControl5.Size = new System.Drawing.Size(68, 13);
             this.labelControl5.TabIndex = 8;
@@ -267,7 +267,7 @@ namespace HealthMonitoringSystem.WinApp.GUI
             // 
             // simpleButtonPatientInfos
             // 
-            this.simpleButtonPatientInfos.Location = new System.Drawing.Point(128, 138);
+            this.simpleButtonPatientInfos.Location = new System.Drawing.Point(128, 181);
             this.simpleButtonPatientInfos.Name = "simpleButtonPatientInfos";
             this.simpleButtonPatientInfos.Size = new System.Drawing.Size(111, 23);
             this.simpleButtonPatientInfos.TabIndex = 9;
@@ -276,7 +276,7 @@ namespace HealthMonitoringSystem.WinApp.GUI
             // 
             // simpleButtonNewPatient
             // 
-            this.simpleButtonNewPatient.Location = new System.Drawing.Point(32, 138);
+            this.simpleButtonNewPatient.Location = new System.Drawing.Point(32, 181);
             this.simpleButtonNewPatient.Name = "simpleButtonNewPatient";
             this.simpleButtonNewPatient.Size = new System.Drawing.Size(90, 23);
             this.simpleButtonNewPatient.TabIndex = 11;
@@ -287,7 +287,7 @@ namespace HealthMonitoringSystem.WinApp.GUI
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(275, 457);
+            this.ClientSize = new System.Drawing.Size(275, 503);
             this.Controls.Add(this.simpleButtonNewPatient);
             this.Controls.Add(this.simpleButtonPatientInfos);
             this.Controls.Add(this.ribbonControl1);

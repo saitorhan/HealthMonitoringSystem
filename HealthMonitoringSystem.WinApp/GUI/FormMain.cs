@@ -125,13 +125,13 @@ namespace HealthMonitoringSystem.WinApp.GUI
         {
             if (GlobalVariables.Doctor.IsNotNull())
             {
-                Text = String.Format("Safer Hastane Yönetim Sistemi (Mevcut Kullanıcı:{1} {0})",
+                Text = String.Format("Hastane Yönetim Sistemi (Mevcut Kullanıcı:{1} {0})",
                     GlobalVariables.Doctor.Name + " " + GlobalVariables.Doctor.Surname,
                     GlobalVariables.Doctor.Degree.ShortName);
             }
             else if (GlobalVariables.Personnel.IsNotNull())
             {
-                Text = String.Format("Safer Hastane Yönetim Sistemi (Mevcut Kullanıcı: {0})",
+                Text = String.Format("Hastane Yönetim Sistemi (Mevcut Kullanıcı: {0})",
                     GlobalVariables.Personnel.Name + " " + GlobalVariables.Personnel.Surname);
             }
         }
