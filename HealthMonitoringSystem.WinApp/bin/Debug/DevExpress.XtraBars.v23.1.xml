@@ -30528,7 +30528,7 @@ The DefaultBoolean.Default value is equivalent to DefaultBoolean.True if the sta
       <summary>
         <para>Gets or sets the background color of the <see href="https://docs.devexpress.com/WindowsForms/404480/controls-and-libraries/ribbon-bars-and-menu/ribbon/visual-elements/ribbon-message">message</see>.</para>
       </summary>
-      <value>The background color.</value>
+      <value>The semi-transparent color (for example, Color.FromArgb(32, Color.Red)).</value>
     </member>
     <member name="M:DevExpress.XtraBars.Ribbon.RibbonMessageArgs.GetHashCode">
       <summary>

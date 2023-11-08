@@ -5256,13 +5256,13 @@
       <summary>
         <para>Gets or sets the selected range in the document.</para>
       </summary>
-      <value>A <see cref="T:DevExpress.XtraRichEdit.API.Native.DocumentRange"/> object, representing the <see cref="P:DevExpress.XtraRichEdit.API.Native.DocumentRange.Start">DocumentRange.Start</see> and <see cref="P:DevExpress.XtraRichEdit.API.Native.DocumentRange.End">DocumentRange.End</see> positions of the selected text.</value>
+      <value>A range that the selected text occupies.</value>
     </member>
     <member name="P:DevExpress.XtraRichEdit.API.Native.Document.Selections">
       <summary>
-        <para>Provides access to a collection of selections in the document.</para>
+        <para>Retrieves a collection of selections in the document.</para>
       </summary>
-      <value>A <see cref="T:DevExpress.XtraRichEdit.API.Native.SelectionCollection"/> object containing ranges selected in the document.</value>
+      <value>A <see cref="T:DevExpress.XtraRichEdit.API.Native.SelectionCollection"/> object that contains ranges selected in the document.</value>
     </member>
     <member name="P:DevExpress.XtraRichEdit.API.Native.Document.TableStyles">
       <summary>
@@ -6371,7 +6371,7 @@
       <summary>
         <para>Specifies an application used to modify the document.</para>
       </summary>
-      <value>The application name. The default is “DevExpress Office File API/23.1.5.0”.</value>
+      <value>The application name. The default is “DevExpress Office File API/23.1.6.0”.</value>
     </member>
     <member name="P:DevExpress.XtraRichEdit.API.Native.DocumentProperties.AppVersion">
       <summary>
@@ -11401,7 +11401,7 @@
       <summary>
         <para>Gets the name of the application used to modify the document.</para>
       </summary>
-      <value>The application’s name. The default is “DevExpress Office File API/23.1.5.0”.</value>
+      <value>The application’s name. The default is “DevExpress Office File API/23.1.6.0”.</value>
     </member>
     <member name="P:DevExpress.XtraRichEdit.API.Native.ReadOnlyDocumentBuiltInProperties.AppVersion">
       <summary>

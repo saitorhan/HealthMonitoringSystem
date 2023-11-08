@@ -1163,7 +1163,7 @@
       <summary>
         <para>Registers the specified assembly that contains custom skins.</para>
       </summary>
-      <param name="asm">An assembly that should be registered.</param>
+      <param name="assembly">An assembly that should be registered.</param>
       <returns>true, if the assembly is successfully registered; othrewise, false.</returns>
     </member>
     <member name="M:DevExpress.Skins.SkinManager.RegisterSkinPatch(System.IO.Stream,System.Boolean)">
@@ -11505,7 +11505,7 @@ The <see cref="F:DevExpress.Utils.DefaultBoolean.Default">DefaultBoolean.Default
       <summary>
         <para>Gets or sets the timeframe during which a tooltip is visible on-screen.</para>
       </summary>
-      <value>Integer value that specifies the tooltip duration.</value>
+      <value>An integer value that specifies the duration of the tooltip, in ms.</value>
     </member>
     <member name="E:DevExpress.Utils.ToolTipController.BeforeShow">
       <summary>

@@ -15710,7 +15710,7 @@
       </summary>
       <param name="pages">The pages from which to return bricks.</param>
       <param name="tag">The tag value. A brick is returned if its tag value matches the specified value.</param>
-      <returns>Bricks from the specified pages.</returns>
+      <returns>Bricks from specified pages.</returns>
     </member>
     <member name="M:DevExpress.XtraPrinting.BrickSelector.GetBricksByText(DevExpress.XtraPrinting.Document,System.String)">
       <summary>

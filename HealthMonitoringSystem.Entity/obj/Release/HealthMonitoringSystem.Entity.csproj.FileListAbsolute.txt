@@ -18,3 +18,15 @@ C:\Users\saito\Downloads\HealthMonitoringSystem\HealthMonitoringSystem.Entity\bi
 C:\Users\saito\Downloads\HealthMonitoringSystem\HealthMonitoringSystem.Entity\obj\Release\HealthMonitoringSystem.Entity.csprojResolveAssemblyReference.cache
 C:\Users\saito\Downloads\HealthMonitoringSystem\HealthMonitoringSystem.Entity\obj\Release\HealthMonitoringSystem.Entity.dll
 C:\Users\saito\Downloads\HealthMonitoringSystem\HealthMonitoringSystem.Entity\obj\Release\HealthMonitoringSystem.Entity.pdb
+C:\Users\sorhan\source\repos\saitorhan\HealthMonitoringSystem\HealthMonitoringSystem.Entity\bin\Release\HealthMonitoringSystem.Entity.dll.config
+C:\Users\sorhan\source\repos\saitorhan\HealthMonitoringSystem\HealthMonitoringSystem.Entity\bin\Release\HealthMonitoringSystem.Entity.dll
+C:\Users\sorhan\source\repos\saitorhan\HealthMonitoringSystem\HealthMonitoringSystem.Entity\bin\Release\HealthMonitoringSystem.Entity.pdb
+C:\Users\sorhan\source\repos\saitorhan\HealthMonitoringSystem\HealthMonitoringSystem.Entity\bin\Release\EntityFramework.dll
+C:\Users\sorhan\source\repos\saitorhan\HealthMonitoringSystem\HealthMonitoringSystem.Entity\bin\Release\EntityFramework.SqlServer.dll
+C:\Users\sorhan\source\repos\saitorhan\HealthMonitoringSystem\HealthMonitoringSystem.Entity\bin\Release\EntityFramework.xml
+C:\Users\sorhan\source\repos\saitorhan\HealthMonitoringSystem\HealthMonitoringSystem.Entity\bin\Release\EntityFramework.SqlServer.xml
+C:\Users\sorhan\source\repos\saitorhan\HealthMonitoringSystem\HealthMonitoringSystem.Entity\obj\Release\HealthMonitoringSystem.Entity.csproj.AssemblyReference.cache
+C:\Users\sorhan\source\repos\saitorhan\HealthMonitoringSystem\HealthMonitoringSystem.Entity\obj\Release\HealthMonitoringSystem.Entity.csproj.CoreCompileInputs.cache
+C:\Users\sorhan\source\repos\saitorhan\HealthMonitoringSystem\HealthMonitoringSystem.Entity\obj\Release\HealthMonitoringSystem.Entity.csproj.CopyComplete
+C:\Users\sorhan\source\repos\saitorhan\HealthMonitoringSystem\HealthMonitoringSystem.Entity\obj\Release\HealthMonitoringSystem.Entity.dll
+C:\Users\sorhan\source\repos\saitorhan\HealthMonitoringSystem\HealthMonitoringSystem.Entity\obj\Release\HealthMonitoringSystem.Entity.pdb

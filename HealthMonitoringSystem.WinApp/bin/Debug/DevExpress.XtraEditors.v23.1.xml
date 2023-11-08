@@ -10232,7 +10232,20 @@ The DefaultBoolean.Default value is equivalent to DefaultBoolean.False.</value>
     </member>
     <member name="F:DevExpress.XtraEditors.Controls.SearchMode.AutoSearch">
       <summary>
-        <para>The editor unlocks its text box and allows users to type in text. Data source records that match this text are shown in the drop-down panel. Handle the editor AutoSearch event to fine-tune the search.</para>
+        <para>The editor unlocks its text box and allows users to type in text. Data source records that match this text are shown in the drop-down panel. The user must highlight the required row to select a new value.</para>
+        <para />
+        <para>Handle the <see cref="E:DevExpress.XtraEditors.LookUpEdit.AutoSearchComplete">AutoSearch</see> event to fine-tune the search:</para>
+        <para />
+        <para>```csharp</para>
+        <para>void LookUpEdit_AutoSearchComplete(object sender, LookUpEditAutoSearchCompleteEventArgs e) {</para>
+        <para>LookUpEdit le = sender as LookUpEdit;</para>
+        <para>var popupForm = le.GetPopupEditForm();</para>
+        <para>if(popupForm != null) {</para>
+        <para />
+        <para />
+        <para>}</para>
+        <para>}</para>
+        <para>```</para>
         <para />
       </summary>
     </member>
@@ -28437,7 +28450,7 @@ The DefaultBoolean.Default value is equivalent to DefaultBoolean.True if the sta
     </member>
     <member name="P:DevExpress.XtraEditors.Repository.RepositoryItemTextEdit.Padding">
       <summary>
-        <para>Gets or sets the <see cref="T:DevExpress.XtraEditors.TextEdit"/> padding.</para>
+        <para>Gets or sets the <see cref="T:DevExpress.XtraEditors.TextEdit"/> padding. The MemoEdit does not fully support this property, use the <see cref="P:DevExpress.XtraEditors.Repository.RepositoryItemTextEdit.MaskBoxPadding">MaskBoxPadding</see> property instead.</para>
       </summary>
       <value>A System.Windows.Forms.Padding structure that specifies the amount of space between the editor’s text and the border.</value>
     </member>
